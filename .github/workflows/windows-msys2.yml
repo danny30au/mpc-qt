@@ -3,6 +3,7 @@ name: Msys2 CI
 on:
   push:
   pull_request:
+  work_flow:
 
 jobs:
   build:
