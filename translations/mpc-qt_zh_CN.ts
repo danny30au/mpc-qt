@@ -137,7 +137,7 @@
     </message>
     <message>
         <source>4:3 Aspect ratio</source>
-        <translation type="unfinished"></translation>
+        <translation>4:3 长宽比</translation>
     </message>
 </context>
 <context>
@@ -1623,6 +1623,30 @@
     <message>
         <source>M&amp;aximum</source>
         <translation>最大化(&amp;A)</translation>
+    </message>
+    <message>
+        <source>&amp;Resize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Increase Width</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>D&amp;ecrease Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>I&amp;ncrease Height</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Re&amp;set Size</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4320,7 +4344,7 @@ media file played</source>
     </message>
     <message>
         <source>%</source>
-        <translation type="unfinished">%</translation>
+        <translation>%</translation>
     </message>
     <message>
         <source>Enable background box</source>
@@ -4336,7 +4360,7 @@ media file played</source>
     </message>
     <message>
         <source>Show video preview (restart required)</source>
-        <translation type="unfinished"></translation>
+        <translation>显示视频预览（需重新启动）</translation>
     </message>
 </context>
 <context>
