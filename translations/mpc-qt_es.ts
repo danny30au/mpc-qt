@@ -24,14 +24,6 @@
         <translation>Ratón en pantalla completa</translation>
     </message>
     <message>
-        <source>Volume Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Volume Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Volume Mute</source>
         <translation type="unfinished"></translation>
     </message>
@@ -89,6 +81,14 @@
     </message>
     <message>
         <source>Extra Play Times: Decrement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move Subtitles Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move Subtitles Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -157,6 +157,34 @@
     </message>
     <message>
         <source>Reset Move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rotate Clockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rotate Counterclockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Rotate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Resize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Increase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Decrease</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -466,7 +494,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Editar</translation>
+        <translation type="vanished">&amp;Editar</translation>
     </message>
     <message>
         <source>&amp;Extra Play Times</source>
@@ -1609,10 +1637,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Re&amp;set Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Move</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1626,6 +1650,30 @@
     </message>
     <message>
         <source>R&amp;eset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>R&amp;otate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Clockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>C&amp;ounterclockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Horizontal Flip</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Play</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2423,7 +2471,7 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Replace file name with title</source>
-        <translation>Sustituir el nombre de archivo por el título</translation>
+        <translation type="vanished">Sustituir el nombre de archivo por el título</translation>
     </message>
     <message>
         <source>History</source>
@@ -2535,7 +2583,7 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>Vea &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;el repositorio fuente&lt;/a&gt; para los nombres de iconos.</translation>
+        <translation type="vanished">Vea &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;el repositorio fuente&lt;/a&gt; para los nombres de iconos.</translation>
     </message>
     <message>
         <source>Fallback</source>
@@ -3887,10 +3935,6 @@ archivo multimedia reproducido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>~/mpc-qt-log.txt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Every </source>
         <translation type="unfinished"></translation>
     </message>
@@ -4384,6 +4428,22 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Show video preview (restart required)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation>Vea &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;el repositorio fuente&lt;/a&gt; para los nombres de iconos.</translation>
+    </message>
+    <message>
+        <source>File title</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

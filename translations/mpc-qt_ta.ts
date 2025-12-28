@@ -24,14 +24,6 @@
         <translation>மவுச் முழுத்திரை</translation>
     </message>
     <message>
-        <source>Volume Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Volume Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Volume Mute</source>
         <translation type="unfinished"></translation>
     </message>
@@ -89,6 +81,14 @@
     </message>
     <message>
         <source>Extra Play Times: Decrement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move Subtitles Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move Subtitles Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -157,6 +157,34 @@
     </message>
     <message>
         <source>Reset Move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rotate Clockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rotate Counterclockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Rotate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Resize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Increase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Decrease</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -466,7 +494,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>திருத்து (&amp;e)</translation>
+        <translation type="vanished">திருத்து (&amp;e)</translation>
     </message>
     <message>
         <source>&amp;Extra Play Times</source>
@@ -1709,10 +1737,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Re&amp;set Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Move</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1726,6 +1750,30 @@
     </message>
     <message>
         <source>R&amp;eset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>R&amp;otate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Clockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>C&amp;ounterclockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Horizontal Flip</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Play</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2523,7 +2571,7 @@ media file played</source>
     </message>
     <message>
         <source>Replace file name with title</source>
-        <translation>கோப்பு பெயரை தலைப்புடன் மாற்றவும்</translation>
+        <translation type="vanished">கோப்பு பெயரை தலைப்புடன் மாற்றவும்</translation>
     </message>
     <message>
         <source>History</source>
@@ -2635,7 +2683,7 @@ media file played</source>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>படவுரு பெயர்களுக்கு &lt;a href = &quot;https://github.com/mpc-qt/mpc-qt/tree/mages/theme/black&quot;&gt; மூல ரெப்போ &lt;/a&gt; ஐப் பார்க்கவும்.</translation>
+        <translation type="vanished">படவுரு பெயர்களுக்கு &lt;a href = &quot;https://github.com/mpc-qt/mpc-qt/tree/mages/theme/black&quot;&gt; மூல ரெப்போ &lt;/a&gt; ஐப் பார்க்கவும்.</translation>
     </message>
     <message>
         <source>Fallback</source>
@@ -3996,7 +4044,7 @@ media file played</source>
     </message>
     <message>
         <source>~/mpc-qt-log.txt</source>
-        <translation>~/mpc-qt-log.txt</translation>
+        <translation type="vanished">~/mpc-qt-log.txt</translation>
     </message>
     <message>
         <source>Window update interval</source>
@@ -4520,6 +4568,22 @@ media file played</source>
     </message>
     <message>
         <source>Show video preview (restart required)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation>படவுரு பெயர்களுக்கு &lt;a href = &quot;https://github.com/mpc-qt/mpc-qt/tree/mages/theme/black&quot;&gt; மூல ரெப்போ &lt;/a&gt; ஐப் பார்க்கவும்.</translation>
+    </message>
+    <message>
+        <source>File title</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

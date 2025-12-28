@@ -24,14 +24,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Volume Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Volume Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Volume Mute</source>
         <translation type="unfinished"></translation>
     </message>
@@ -89,6 +81,14 @@
     </message>
     <message>
         <source>Extra Play Times: Decrement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move Subtitles Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move Subtitles Down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -157,6 +157,34 @@
     </message>
     <message>
         <source>Reset Move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rotate Clockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Rotate Counterclockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Rotate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reset Resize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Increase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Decrease</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -465,10 +493,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Extra Play Times</source>
         <translation type="unfinished"></translation>
     </message>
@@ -746,10 +770,6 @@
     </message>
     <message>
         <source>O</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&amp;Pause</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1561,10 +1581,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Re&amp;set Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Move</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1578,6 +1594,34 @@
     </message>
     <message>
         <source>R&amp;eset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>R&amp;otate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Clockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>C&amp;ounterclockwise</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Horizontal Flip</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Pause</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2346,10 +2390,6 @@ media file played</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Replace file name with title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>History</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2447,10 +2487,6 @@ media file played</source>
     </message>
     <message>
         <source>Folder (e.g. ~/Pictures/MyIcons/mpc-qt/leet)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3795,10 +3831,6 @@ media file played</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>~/mpc-qt-log.txt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Window update interval</source>
         <translation type="vanished">Window update interval</translation>
     </message>
@@ -4308,6 +4340,22 @@ media file played</source>
     </message>
     <message>
         <source>Show video preview (restart required)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File title</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

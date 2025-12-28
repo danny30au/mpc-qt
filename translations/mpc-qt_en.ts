@@ -25,11 +25,11 @@
     </message>
     <message>
         <source>Volume Up</source>
-        <translation>Volume Up</translation>
+        <translation type="vanished">Volume Up</translation>
     </message>
     <message>
         <source>Volume Down</source>
-        <translation>Volume Down</translation>
+        <translation type="vanished">Volume Down</translation>
     </message>
     <message>
         <source>Volume Mute</source>
@@ -90,6 +90,14 @@
     <message>
         <source>Extra Play Times: Decrement</source>
         <translation>Extra Play Times: Decrement</translation>
+    </message>
+    <message>
+        <source>Move Subtitles Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move Subtitles Down</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
@@ -158,6 +166,34 @@
     <message>
         <source>Reset Move</source>
         <translation>Reset Move</translation>
+    </message>
+    <message>
+        <source>Rotate Clockwise</source>
+        <translation>Rotate Clockwise</translation>
+    </message>
+    <message>
+        <source>Rotate Counterclockwise</source>
+        <translation>Rotate Counterclockwise</translation>
+    </message>
+    <message>
+        <source>Reset Rotate</source>
+        <translation>Reset Rotate</translation>
+    </message>
+    <message>
+        <source>Reset Resize</source>
+        <translation>Reset Resize</translation>
+    </message>
+    <message>
+        <source>Volume Increase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Decrease</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -466,7 +502,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Edit</translation>
+        <translation type="vanished">&amp;Edit</translation>
     </message>
     <message>
         <source>&amp;Extra Play Times</source>
@@ -1722,7 +1758,7 @@
     </message>
     <message>
         <source>Re&amp;set Size</source>
-        <translation>Re&amp;set Size</translation>
+        <translation type="vanished">Re&amp;set Size</translation>
     </message>
     <message>
         <source>&amp;Move</source>
@@ -1739,6 +1775,30 @@
     <message>
         <source>R&amp;eset</source>
         <translation>R&amp;eset</translation>
+    </message>
+    <message>
+        <source>R&amp;otate</source>
+        <translation>R&amp;otate</translation>
+    </message>
+    <message>
+        <source>&amp;Clockwise</source>
+        <translation>&amp;Clockwise</translation>
+    </message>
+    <message>
+        <source>C&amp;ounterclockwise</source>
+        <translation>C&amp;ounterclockwise</translation>
+    </message>
+    <message>
+        <source>&amp;Horizontal Flip</source>
+        <translation>&amp;Horizontal Flip</translation>
+    </message>
+    <message>
+        <source>&amp;Playlist</source>
+        <translation>&amp;Playlist</translation>
+    </message>
+    <message>
+        <source>&amp;Play</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2535,7 +2595,7 @@ media file played</translation>
     </message>
     <message>
         <source>Replace file name with title</source>
-        <translation>Replace file name with title</translation>
+        <translation type="vanished">Replace file name with title</translation>
     </message>
     <message>
         <source>History</source>
@@ -2647,7 +2707,7 @@ media file played</translation>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</translation>
+        <translation type="vanished">See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</translation>
     </message>
     <message>
         <source>Fallback</source>
@@ -4008,7 +4068,7 @@ media file played</translation>
     </message>
     <message>
         <source>~/mpc-qt-log.txt</source>
-        <translation>~/mpc-qt-log.txt</translation>
+        <translation type="vanished">~/mpc-qt-log.txt</translation>
     </message>
     <message>
         <source>Window update interval</source>
@@ -4533,6 +4593,22 @@ media file played</translation>
     <message>
         <source>Show video preview (restart required)</source>
         <translation>Show video preview (restart required)</translation>
+    </message>
+    <message>
+        <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
+        <translation>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File title</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

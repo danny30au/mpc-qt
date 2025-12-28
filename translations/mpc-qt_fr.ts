@@ -25,11 +25,11 @@
     </message>
     <message>
         <source>Volume Up</source>
-        <translation>Augmenter le volume</translation>
+        <translation type="vanished">Augmenter le volume</translation>
     </message>
     <message>
         <source>Volume Down</source>
-        <translation>Diminuer le volume</translation>
+        <translation type="vanished">Diminuer le volume</translation>
     </message>
     <message>
         <source>Volume Mute</source>
@@ -90,6 +90,14 @@
     <message>
         <source>Extra Play Times: Decrement</source>
         <translation>Lectures supplémentaires&#xa0;: Décrémenter</translation>
+    </message>
+    <message>
+        <source>Move Subtitles Up</source>
+        <translation>Déplacer les sous-titres vers le haut</translation>
+    </message>
+    <message>
+        <source>Move Subtitles Down</source>
+        <translation>Déplacer les sous-titres vers le bas</translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
@@ -158,6 +166,34 @@
     <message>
         <source>Reset Move</source>
         <translation>Centrer (déplacement)</translation>
+    </message>
+    <message>
+        <source>Rotate Clockwise</source>
+        <translation>Pivoter dans le sens horaire</translation>
+    </message>
+    <message>
+        <source>Rotate Counterclockwise</source>
+        <translation>Pivoter dans le sens antihoraire</translation>
+    </message>
+    <message>
+        <source>Reset Rotate</source>
+        <translation>Réinitialiser pivoter</translation>
+    </message>
+    <message>
+        <source>Reset Resize</source>
+        <translation>Réinitialiser redimensionner</translation>
+    </message>
+    <message>
+        <source>Volume Increase</source>
+        <translation>Augmenter le volume</translation>
+    </message>
+    <message>
+        <source>Volume Decrease</source>
+        <translation>Diminuer le volume</translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
+        <translation>Play / Pause</translation>
     </message>
 </context>
 <context>
@@ -462,7 +498,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Édition</translation>
+        <translation type="vanished">&amp;Édition</translation>
     </message>
     <message>
         <source>&amp;Extra Play Times</source>
@@ -1646,7 +1682,7 @@
     </message>
     <message>
         <source>Re&amp;set Size</source>
-        <translation>Ré&amp;initialiser la taille</translation>
+        <translation type="vanished">Ré&amp;initialiser la taille</translation>
     </message>
     <message>
         <source>&amp;Move</source>
@@ -1662,7 +1698,31 @@
     </message>
     <message>
         <source>R&amp;eset</source>
-        <translation>&amp;Centrer</translation>
+        <translation>&amp;Réinitialiser</translation>
+    </message>
+    <message>
+        <source>R&amp;otate</source>
+        <translation>&amp;Pivoter</translation>
+    </message>
+    <message>
+        <source>&amp;Clockwise</source>
+        <translation>&amp;Sens horaire</translation>
+    </message>
+    <message>
+        <source>C&amp;ounterclockwise</source>
+        <translation>S&amp;ens antihoraire</translation>
+    </message>
+    <message>
+        <source>&amp;Horizontal Flip</source>
+        <translation>&amp;Miroir</translation>
+    </message>
+    <message>
+        <source>&amp;Playlist</source>
+        <translation>L&amp;iste</translation>
+    </message>
+    <message>
+        <source>&amp;Play</source>
+        <translation>&amp;Play</translation>
     </message>
 </context>
 <context>
@@ -2455,7 +2515,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Replace file name with title</source>
-        <translation>Remplacer le nom du fichier par le titre</translation>
+        <translation type="vanished">Remplacer le nom du fichier par le titre</translation>
     </message>
     <message>
         <source>History</source>
@@ -2567,7 +2627,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>Voir &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;le dépôt source&lt;/a&gt; pour les noms des icônes.</translation>
+        <translation type="vanished">Voir &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;le dépôt source&lt;/a&gt; pour les noms des icônes.</translation>
     </message>
     <message>
         <source>Fallback</source>
@@ -3928,7 +3988,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>~/mpc-qt-log.txt</source>
-        <translation>~/mpc-qt-log.txt</translation>
+        <translation type="vanished">~/mpc-qt-log.txt</translation>
     </message>
     <message>
         <source>Window update interval</source>
@@ -4453,6 +4513,22 @@ fichier média lu</translation>
     <message>
         <source>Show video preview (restart required)</source>
         <translation>Afficher l&apos;aperçu vidéo (redémarrage requis)</translation>
+    </message>
+    <message>
+        <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
+        <translation>Il n’y a pas beaucoup de raisons d’utiliser cette option. HDMI prend en charge le PCM multicanal non compressé et mpv prend en charge le DTS-HD sans perte</translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation>Choisir un fichier journal</translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation>Voir &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;le dépôt source&lt;/a&gt; pour les noms des icônes.</translation>
+    </message>
+    <message>
+        <source>File title</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

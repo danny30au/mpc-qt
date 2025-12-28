@@ -25,11 +25,11 @@
     </message>
     <message>
         <source>Volume Up</source>
-        <translation>增加音量</translation>
+        <translation type="vanished">增加音量</translation>
     </message>
     <message>
         <source>Volume Down</source>
-        <translation>减少音量</translation>
+        <translation type="vanished">减少音量</translation>
     </message>
     <message>
         <source>Volume Mute</source>
@@ -92,6 +92,14 @@
         <translation>额外播放次数：减少</translation>
     </message>
     <message>
+        <source>Move Subtitles Up</source>
+        <translation>上移字幕</translation>
+    </message>
+    <message>
+        <source>Move Subtitles Down</source>
+        <translation>下移字幕</translation>
+    </message>
+    <message>
         <source>Decrease Aspect ratio</source>
         <translation>减少长宽比</translation>
     </message>
@@ -141,23 +149,51 @@
     </message>
     <message>
         <source>Move Left</source>
-        <translation type="unfinished"></translation>
+        <translation>向左移动</translation>
     </message>
     <message>
         <source>Move Right</source>
-        <translation type="unfinished"></translation>
+        <translation>向右移动</translation>
     </message>
     <message>
         <source>Move Up</source>
-        <translation type="unfinished"></translation>
+        <translation>向上移动</translation>
     </message>
     <message>
         <source>Move Down</source>
-        <translation type="unfinished"></translation>
+        <translation>向下移动</translation>
     </message>
     <message>
         <source>Reset Move</source>
-        <translation type="unfinished"></translation>
+        <translation>重置移动</translation>
+    </message>
+    <message>
+        <source>Rotate Clockwise</source>
+        <translation>顺时针旋转</translation>
+    </message>
+    <message>
+        <source>Rotate Counterclockwise</source>
+        <translation>逆时针旋转</translation>
+    </message>
+    <message>
+        <source>Reset Rotate</source>
+        <translation>重置旋转</translation>
+    </message>
+    <message>
+        <source>Reset Resize</source>
+        <translation>重置调整大小</translation>
+    </message>
+    <message>
+        <source>Volume Increase</source>
+        <translation>提高音量</translation>
+    </message>
+    <message>
+        <source>Volume Decrease</source>
+        <translation>降低音量</translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
+        <translation>播放/暂停</translation>
     </message>
 </context>
 <context>
@@ -466,7 +502,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>播放列表(&amp;E)</translation>
+        <translation type="vanished">播放列表(&amp;E)</translation>
     </message>
     <message>
         <source>&amp;Extra Play Times</source>
@@ -814,7 +850,7 @@
     </message>
     <message>
         <source>&amp;Up</source>
-        <translation>增加音量(&amp;U)</translation>
+        <translation>上(&amp;U)</translation>
     </message>
     <message>
         <source>0</source>
@@ -822,7 +858,7 @@
     </message>
     <message>
         <source>&amp;Down</source>
-        <translation>减少音量(&amp;D)</translation>
+        <translation>下(&amp;D)</translation>
     </message>
     <message>
         <source>9</source>
@@ -1634,7 +1670,7 @@
     </message>
     <message>
         <source>D&amp;isable</source>
-        <translation>关闭(%I)</translation>
+        <translation>关闭(&amp;I)</translation>
     </message>
     <message>
         <source>&amp;Minimum</source>
@@ -1666,23 +1702,47 @@
     </message>
     <message>
         <source>Re&amp;set Size</source>
-        <translation>重置大小(&amp;S)</translation>
+        <translation type="vanished">重置大小(&amp;S)</translation>
     </message>
     <message>
         <source>&amp;Move</source>
-        <translation type="unfinished"></translation>
+        <translation>移动(&amp;M)</translation>
     </message>
     <message>
         <source>&amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>左(&amp;L)</translation>
     </message>
     <message>
         <source>&amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>右(&amp;R)</translation>
     </message>
     <message>
         <source>R&amp;eset</source>
-        <translation type="unfinished"></translation>
+        <translation>重置(&amp;E)</translation>
+    </message>
+    <message>
+        <source>R&amp;otate</source>
+        <translation>旋转(&amp;O)</translation>
+    </message>
+    <message>
+        <source>&amp;Clockwise</source>
+        <translation>顺时针(&amp;C)</translation>
+    </message>
+    <message>
+        <source>C&amp;ounterclockwise</source>
+        <translation>逆时针(&amp;O)</translation>
+    </message>
+    <message>
+        <source>&amp;Horizontal Flip</source>
+        <translation>水平翻转(&amp;H)</translation>
+    </message>
+    <message>
+        <source>&amp;Playlist</source>
+        <translation>播放列表(&amp;P)</translation>
+    </message>
+    <message>
+        <source>&amp;Play</source>
+        <translation>播放(&amp;P)</translation>
     </message>
 </context>
 <context>
@@ -1881,19 +1941,19 @@
     <name>PlaybackManager</name>
     <message>
         <source>Speed: %1%</source>
-        <translation>速度:%1%</translation>
+        <translation>速度：%1%</translation>
     </message>
     <message>
         <source>Volume: %1%</source>
-        <translation>音量:%1%</translation>
+        <translation>音量：%1%</translation>
     </message>
     <message>
         <source>Mute: on</source>
-        <translation>静音:开</translation>
+        <translation>静音：开</translation>
     </message>
     <message>
         <source>Mute: off</source>
-        <translation>静音:关</translation>
+        <translation>静音：关</translation>
     </message>
     <message>
         <source>0: None</source>
@@ -1913,11 +1973,11 @@
     </message>
     <message>
         <source>Subtitles: on</source>
-        <translation>字幕： 开</translation>
+        <translation>字幕：开</translation>
     </message>
     <message>
         <source>Subtitles: off</source>
-        <translation>字幕： 关</translation>
+        <translation>字幕：关</translation>
     </message>
     <message>
         <source>File moved to recycle bin: %1</source>
@@ -2479,7 +2539,7 @@ media file played</source>
     </message>
     <message>
         <source>Replace file name with title</source>
-        <translation>用标题替换文件名</translation>
+        <translation type="vanished">用标题替换文件名</translation>
     </message>
     <message>
         <source>History</source>
@@ -2535,11 +2595,11 @@ media file played</source>
     </message>
     <message>
         <source>E&amp;xternal</source>
-        <translation>外部</translation>
+        <translation>外部(&amp;X)</translation>
     </message>
     <message>
         <source>Interna&amp;l</source>
-        <translation>内置</translation>
+        <translation>内部(&amp;L)</translation>
     </message>
     <message>
         <source>Browse...</source>
@@ -2583,7 +2643,7 @@ media file played</source>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>图标名称见 &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;源码仓库&lt;/a&gt;。</translation>
+        <translation type="vanished">图标名称见 &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;源码仓库&lt;/a&gt;。</translation>
     </message>
     <message>
         <source>Fallback</source>
@@ -3499,7 +3559,7 @@ media file played</source>
     </message>
     <message>
         <source>A&amp;utodetect</source>
-        <translation>自动选择</translation>
+        <translation>自动检测(&amp;U)</translation>
     </message>
     <message>
         <source>Linux - some gpus, does not always treat certain colorspaces like BT.2020 correctly</source>
@@ -3527,7 +3587,7 @@ media file played</source>
     </message>
     <message>
         <source>Pla&amp;y</source>
-        <translation>播放</translation>
+        <translation>播放(&amp;Y)</translation>
     </message>
     <message>
         <source>times</source>
@@ -3535,7 +3595,7 @@ media file played</source>
     </message>
     <message>
         <source>Repeat fore&amp;ver</source>
-        <translation>一直重复</translation>
+        <translation>一直重复(&amp;V)</translation>
     </message>
     <message>
         <source>Always loop images (manual progression)</source>
@@ -3780,7 +3840,7 @@ media file played</source>
     </message>
     <message>
         <source>Filesi&amp;ze</source>
-        <translation>文件大小</translation>
+        <translation>文件大小(&amp;Z)</translation>
     </message>
     <message>
         <source>MB</source>
@@ -3900,7 +3960,7 @@ media file played</source>
     </message>
     <message>
         <source>~/mpc-qt-log.txt</source>
-        <translation>~/mpc-qt-log.txt</translation>
+        <translation type="vanished">~/mpc-qt-log.txt</translation>
     </message>
     <message>
         <source>Every </source>
@@ -4260,7 +4320,7 @@ media file played</source>
     </message>
     <message>
         <source> ms</source>
-        <translation>毫秒</translation>
+        <translation> 毫秒</translation>
     </message>
     <message>
         <source>Remember panels state</source>
@@ -4398,6 +4458,22 @@ media file played</source>
         <source>Show video preview (restart required)</source>
         <translation>显示视频预览（需重新启动）</translation>
     </message>
+    <message>
+        <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
+        <translation>使用它的理由并不多。HDMI 支持未压缩的多声道 PCM，而 mpv支持无损的 DTS-HD</translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation>选择日志文件</translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation>图标名称见 &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;源码仓库&lt;/a&gt;。</translation>
+    </message>
+    <message>
+        <source>File title</source>
+        <translation>文件标题</translation>
+    </message>
 </context>
 <context>
     <name>ThumbnailerWindow</name>
@@ -4431,11 +4507,11 @@ media file played</source>
     </message>
     <message>
         <source>&amp;Go!</source>
-        <translation>快速跳转</translation>
+        <translation>快速跳转(&amp;G)！</translation>
     </message>
     <message>
         <source>Thu&amp;mbnail</source>
-        <translation>预览图</translation>
+        <translation>缩略图(&amp;M)</translation>
     </message>
     <message>
         <source>&amp;Quality</source>
@@ -4443,11 +4519,11 @@ media file played</source>
     </message>
     <message>
         <source>&amp;Columns</source>
-        <translation>列</translation>
+        <translation>列(&amp;C)</translation>
     </message>
     <message>
         <source>Save Thumbnails</source>
-        <translation>保存预览图</translation>
+        <translation>保存缩略图</translation>
     </message>
     <message>
         <source>%p%</source>
