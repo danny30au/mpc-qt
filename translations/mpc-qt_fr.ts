@@ -2631,15 +2631,15 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Fallback</source>
-        <translation>Fallback</translation>
+        <translation type="vanished">Fallback</translation>
     </message>
     <message>
         <source>Black (for white palette)</source>
-        <translation>Noir (pour palette blanche)</translation>
+        <translation type="vanished">Noir (pour palette blanche)</translation>
     </message>
     <message>
         <source>White (for black palette)</source>
-        <translation>Blanc (pour palette noire)</translation>
+        <translation type="vanished">Blanc (pour palette noire)</translation>
     </message>
     <message>
         <source>Widget Color</source>
@@ -4528,7 +4528,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>File title</source>
-        <translation type="unfinished"></translation>
+        <translation>Titre du fichier</translation>
     </message>
 </context>
 <context>

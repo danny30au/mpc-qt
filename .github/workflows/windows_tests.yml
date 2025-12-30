@@ -6,7 +6,7 @@ on:
 jobs:
   tests:
     name: Tests
-    runs-on: windows-2022
+    runs-on: windows-2025
     defaults:
       run:
         shell: msys2 {0}
@@ -58,11 +58,11 @@ jobs:
         mklink libglapi.dll "x64\libglapi.dll"
       working-directory: ${{ env.EXEDIR }}
 
-    - name: Start without config
-      uses: ./.github/actions/windows/tests/start
-
     - name: Start with config and video
       uses: ./.github/actions/windows/tests/start_with_config_video
+
+    - name: Start without config
+      uses: ./.github/actions/windows/tests/start
 
     - name: Upload screenshots
       if: ${{ !cancelled() }}
