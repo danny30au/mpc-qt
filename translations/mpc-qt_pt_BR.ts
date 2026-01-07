@@ -37,35 +37,35 @@
     </message>
     <message>
         <source>After Playback: Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: Sair</translation>
     </message>
     <message>
         <source>After Playback: Stand by</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: Aguarde</translation>
     </message>
     <message>
         <source>After Playback: Hibernate</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: Hibernar</translation>
     </message>
     <message>
         <source>After Playback: Shutdown</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: Desligar</translation>
     </message>
     <message>
         <source>After Playback: Log Off</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: faça logout</translation>
     </message>
     <message>
         <source>After Playback: Lock</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: Bloquear</translation>
     </message>
     <message>
         <source>After Playback: Play next file</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: Reproduza o ficheiro seguinte</translation>
     </message>
     <message>
         <source>After Playback: Do nothing</source>
-        <translation type="unfinished"></translation>
+        <translation>Após a reprodução: Não faça nada</translation>
     </message>
     <message>
         <source>On Top: Default</source>
@@ -1959,7 +1959,7 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation type="unfinished">Limpar</translation>
+        <translation type="obsolete">Limpar</translation>
     </message>
     <message>
         <source>Copy To clipboard</source>
@@ -2006,8 +2006,16 @@
         <translation>&amp;Remover Playlist</translation>
     </message>
     <message>
+        <source>&amp;Clear Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>&amp;Duplicar Playlist</translation>
+    </message>
+    <message>
+        <source>&amp;Rename Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Import Playlist</source>

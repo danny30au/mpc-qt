@@ -5,7 +5,7 @@ set -e
 
 VERSION=""
 if [ -v FORCE_VERSION ]; then
-    if [[ $FORCE_VERSION == "GithubAction" ]]; then
+    if [[ $FORCE_VERSION == "continuous" ]]; then
         VERSION=`date +'%Y.%m.%d'`
     else
         VERSION=$FORCE_VERSION
@@ -91,6 +91,7 @@ done
 echo "Copying other dlls to $DEST"
 cp $MINGW_BINDIR/libjpeg-*.dll                "$DEST"
 cp $MINGW_BINDIR/libcrypto-*.dll              "$DEST"
+cp $MINGW_BINDIR/vulkan-*.dll                 "$DEST"
 
 echo "All required DLLs from $MINGW_BINDIR have been copied to $DEST."
 

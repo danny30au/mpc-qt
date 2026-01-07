@@ -2111,7 +2111,7 @@
     </message>
     <message>
         <source>Clear</source>
-        <translation>Leeren</translation>
+        <translation type="vanished">Leeren</translation>
     </message>
     <message>
         <source>Copy To clipboard</source>
@@ -2158,8 +2158,16 @@
         <translation>Playlist entfe&amp;rnen</translation>
     </message>
     <message>
+        <source>&amp;Clear Playlist</source>
+        <translation>Playlist &amp;leeren</translation>
+    </message>
+    <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>Playlist &amp;duplizieren</translation>
+    </message>
+    <message>
+        <source>&amp;Rename Playlist</source>
+        <translation>Playlist &amp;umbenennen</translation>
     </message>
     <message>
         <source>&amp;Import Playlist</source>
@@ -3003,7 +3011,7 @@ media file played</source>
     </message>
     <message>
         <source>Hanning</source>
-        <translation type="unfinished"></translation>
+        <translation>Hanning</translation>
     </message>
     <message>
         <source>Hamming</source>
@@ -3015,11 +3023,11 @@ media file played</source>
     </message>
     <message>
         <source>Welch</source>
-        <translation type="unfinished"></translation>
+        <translation>Welch</translation>
     </message>
     <message>
         <source>Kaiser</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaiser</translation>
     </message>
     <message>
         <source>Blackman</source>
@@ -3035,7 +3043,7 @@ media file played</source>
     </message>
     <message>
         <source>Jinc</source>
-        <translation type="unfinished"></translation>
+        <translation>Jinc</translation>
     </message>
     <message>
         <source>Sphinx</source>
@@ -3103,7 +3111,7 @@ media file played</source>
     </message>
     <message>
         <source>Haasnsoft</source>
-        <translation type="unfinished"></translation>
+        <translation>Haasnsoft</translation>
     </message>
     <message>
         <source>Bicubic</source>
@@ -3155,7 +3163,7 @@ media file played</source>
     </message>
     <message>
         <source>Temporal</source>
-        <translation type="unfinished"></translation>
+        <translation>Temporal</translation>
     </message>
     <message>
         <source>Linear</source>
@@ -3219,7 +3227,7 @@ media file played</source>
     </message>
     <message>
         <source>BT.601-625</source>
-        <translation type="unfinished"></translation>
+        <translation>BT.601-625</translation>
     </message>
     <message>
         <source>BT.709</source>
@@ -3235,63 +3243,63 @@ media file played</source>
     </message>
     <message>
         <source>Adobe</source>
-        <translation type="unfinished"></translation>
+        <translation>Adobe</translation>
     </message>
     <message>
         <source>ProPhoto</source>
-        <translation type="unfinished"></translation>
+        <translation>ProPhoto</translation>
     </message>
     <message>
         <source>CIE1931</source>
-        <translation type="unfinished"></translation>
+        <translation>CIE1931</translation>
     </message>
     <message>
         <source>DCI-P3</source>
-        <translation type="unfinished"></translation>
+        <translation>DCI-P3</translation>
     </message>
     <message>
         <source>Target TRC</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziel-Farbraum</translation>
     </message>
     <message>
         <source>BT.1886</source>
-        <translation type="unfinished"></translation>
+        <translation>BT.1886</translation>
     </message>
     <message>
         <source>sRGB</source>
-        <translation type="unfinished"></translation>
+        <translation>sRGB</translation>
     </message>
     <message>
         <source>Gamma 1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Gamma 1.8</translation>
     </message>
     <message>
         <source>Gamma 2.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Gamma 2.2</translation>
     </message>
     <message>
         <source>Gamma 2.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Gamma 2.8</translation>
     </message>
     <message>
         <source>PQ</source>
-        <translation type="unfinished"></translation>
+        <translation>PQ (Perceptual Quantizer)</translation>
     </message>
     <message>
         <source>HLG</source>
-        <translation type="unfinished"></translation>
+        <translation>HLG (Hybrid-Log Gamma)</translation>
     </message>
     <message>
         <source>Panasonic V-Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Panasonic V-Log</translation>
     </message>
     <message>
         <source>Sony S-Log1</source>
-        <translation type="unfinished"></translation>
+        <translation>Sony S-Log1</translation>
     </message>
     <message>
         <source>Sony S-Log2</source>
-        <translation type="unfinished"></translation>
+        <translation>Sony S-Log2</translation>
     </message>
     <message>
         <source>HDR Tone mapping</source>
@@ -3303,19 +3311,19 @@ media file played</source>
     </message>
     <message>
         <source>Mobius</source>
-        <translation type="unfinished"></translation>
+        <translation>Möbius</translation>
     </message>
     <message>
         <source>Reinhard</source>
-        <translation type="unfinished"></translation>
+        <translation>Reinhard</translation>
     </message>
     <message>
         <source>Hable</source>
-        <translation type="unfinished"></translation>
+        <translation>Hable</translation>
     </message>
     <message>
         <source>Luma</source>
-        <translation type="unfinished"></translation>
+        <translation>Luma</translation>
     </message>
     <message>
         <source>Juncture</source>
@@ -3331,11 +3339,11 @@ media file played</source>
     </message>
     <message>
         <source>ICC Profile</source>
-        <translation type="unfinished"></translation>
+        <translation>ICC Profil</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Durchsuche</translation>
+        <translation>Durchsuchen</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3419,7 +3427,7 @@ media file played</source>
     </message>
     <message>
         <source>Oss</source>
-        <translation type="unfinished"></translation>
+        <translation>OSS</translation>
     </message>
     <message>
         <source>Mixer device</source>
@@ -3519,11 +3527,11 @@ media file played</source>
     </message>
     <message>
         <source>Show when moving the cursor, hide after:</source>
-        <translation>Beim Bewegen des Cursors anzeigen, ausblenden nach:</translation>
+        <translation>Anzeigen, wenn der Mauszeiger bewegt wird. Ausblenden nach:</translation>
     </message>
     <message>
         <source>Show when hovering control, hide after:</source>
-        <translation>Beim Bewegen des Steuerelements anzeigen, ausblenden nach:</translation>
+        <translation>Anzeigen, wenn der Mauszeiger über den Bedienelementen schwebt. Ausblenden nach:</translation>
     </message>
     <message>
         <source>Framedropping</source>
@@ -3820,7 +3828,7 @@ media file played</source>
     </message>
     <message>
         <source>Fuzzy</source>
-        <translation type="unfinished"></translation>
+        <translation>Ungefähr</translation>
     </message>
     <message>
         <source>Online database</source>
@@ -3832,7 +3840,7 @@ media file played</source>
     </message>
     <message>
         <source>https://</source>
-        <translation type="unfinished"></translation>
+        <translation>https://</translation>
     </message>
     <message>
         <source>Test</source>
@@ -3852,11 +3860,11 @@ media file played</source>
     </message>
     <message>
         <source>Encode</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodieren</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Unchecked directories will place output files in the source directory. Streams do not have a source directory and will bring up a dialog when a field is left blank; &lt;span style=&quot; font-weight:600;&quot;&gt;Alt+I&lt;/span&gt; will always ask where to place files. Directories will be created if necessary; this may not work across all filesystems.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wird kein Verzeichnis ausgewählt, werden die Dateien ins Quellverzeichnis geschrieben. Da Streams kein Quellverzeichnis haben, wird ggf. ein Dialogfeld eingeblendet, um den Speicherort zu erfragen; bei Nutzung des Tastenkürzels &lt;span style=&quot; font-weight:600;&quot;&gt;Alt+I&lt;/span&gt; wird immer nach dem Speicherort gefragt. Falls nötig, werden die entsprechenden Verzeichnisse angelegt; das funktioniert unter Umständen nicht bei allen Dateisystemen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Filename template</source>
@@ -3888,7 +3896,7 @@ media file played</source>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Colorspace</source>
@@ -3900,31 +3908,31 @@ media file played</source>
     </message>
     <message>
         <source>Don&apos;t encode the video</source>
-        <translation>Video nicht encoden</translation>
+        <translation>Video nicht kodieren</translation>
     </message>
     <message>
         <source>Hardsub</source>
-        <translation type="unfinished"></translation>
+        <translation>Untertitel ins Video einbetten</translation>
     </message>
     <message>
         <source>Filesi&amp;ze</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei&amp;größe</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation type="unfinished"></translation>
+        <translation>MB</translation>
     </message>
     <message>
         <source>Bitrate</source>
-        <translation type="unfinished">Bitrate</translation>
+        <translation>Bitrate</translation>
     </message>
     <message>
         <source>kBits</source>
-        <translation type="unfinished"></translation>
+        <translation>kBits</translation>
     </message>
     <message>
         <source>crf</source>
-        <translation type="unfinished"></translation>
+        <translation>crf</translation>
     </message>
     <message>
         <source>qmin</source>
@@ -3936,19 +3944,19 @@ media file played</source>
     </message>
     <message>
         <source>Don&apos;t encode the audio</source>
-        <translation type="unfinished"></translation>
+        <translation>Audio nicht kodieren</translation>
     </message>
     <message>
         <source>&quot;Don&apos;t encode&quot; checkboxes are ignored for audio-only or video-only files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Für Dateien, die nur Audio oder Video enthalten, wird die Auswahl &quot;nicht kodieren&quot; ignoriert.</translation>
     </message>
     <message>
         <source>Drop frames before the seek target in the decoder</source>
-        <translation type="unfinished"></translation>
+        <translation>Videobilder vor dem Suchziel im Decoder verwerfen</translation>
     </message>
     <message>
         <source>Show chapter marks in seek bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige Kapitel-Marken in der Suchleiste</translation>
     </message>
     <message>
         <source>Play next file in folder when there is only one item in the playlist</source>
@@ -3956,11 +3964,11 @@ media file played</source>
     </message>
     <message>
         <source>Above seekbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Über der Suchleiste</translation>
     </message>
     <message>
         <source>Below seekbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Unter der Suchleiste</translation>
     </message>
     <message>
         <source>OSD font:</source>
@@ -3968,11 +3976,11 @@ media file played</source>
     </message>
     <message>
         <source>Prefer Wayland over XWayland (restart required)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevorzuge Wayland vor XWayland (erfordert Neustart)</translation>
     </message>
     <message>
         <source>Turn on logging (may produce stuttering)</source>
-        <translation type="unfinished"></translation>
+        <translation>Schreibe Log-Daten mit (kann Ruckeln verursachen)</translation>
     </message>
     <message>
         <source>Debugging</source>
@@ -4024,11 +4032,11 @@ media file played</source>
     </message>
     <message>
         <source>Log file</source>
-        <translation type="unfinished"></translation>
+        <translation>Log-Datei</translation>
     </message>
     <message>
         <source>Create log file (contents will be overwritten)</source>
-        <translation type="unfinished"></translation>
+        <translation>Log-Datei anlegen (Inhalt wird überschrieben)</translation>
     </message>
     <message>
         <source>Window update interval</source>
@@ -4072,7 +4080,7 @@ media file played</source>
     </message>
     <message>
         <source>Hue</source>
-        <translation type="unfinished"></translation>
+        <translation>Farbton</translation>
     </message>
     <message>
         <source>Saturation</source>
@@ -4208,15 +4216,15 @@ media file played</source>
     </message>
     <message>
         <source>High-contrast timeline and volume sliders</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeitleiste und Lautstärkeregler mit hohem Kontrast</translation>
     </message>
     <message>
         <source>Default After Playback action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Verhalten nach dem Abspielen:</translation>
     </message>
     <message>
         <source>Do nothing</source>
-        <translation type="unfinished"></translation>
+        <translation>Nichts tun</translation>
     </message>
     <message>
         <source>Repeat</source>
@@ -4228,19 +4236,19 @@ media file played</source>
     </message>
     <message>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Beenden</translation>
     </message>
     <message>
         <source>After Playback</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach der Wiedergabe</translation>
     </message>
     <message>
         <source>Shaders contain special effects which can be added to the video rendering process. A list of community-made shaders can be found on &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;the mpv wiki&lt;/span&gt;&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Shader beinhalten Spezialeffekte, die während der Wiedergabe zu einem Video hinzugefügt werden können. Eine Liste mit Shadern aus der Community findet sich im &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;mpv Wiki&lt;/span&gt;&lt;/a&gt;.</translation>
     </message>
     <message>
         <source>Pipewire</source>
-        <translation type="unfinished"></translation>
+        <translation>Pipewire</translation>
     </message>
     <message>
         <source>Use time tooltip:</source>
@@ -4336,79 +4344,79 @@ media file played</source>
     </message>
     <message>
         <source>Send mouse events to mpv</source>
-        <translation type="unfinished"></translation>
+        <translation>Sende Maus-Eingaben an mpv</translation>
     </message>
     <message>
         <source>Send key events to mpv</source>
-        <translation type="unfinished"></translation>
+        <translation>Sende Tastatur-Eingaben an mpv</translation>
     </message>
     <message>
         <source>Remember file position</source>
-        <translation type="unfinished"></translation>
+        <translation>Wiedergabeposition merken</translation>
     </message>
     <message>
         <source>Use next/previous file in folder when there is only one item in the playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>Gehe zur nächsten/vorigen Datei im Verzeichnis, wenn nur eine Datei in der Playlist steht</translation>
     </message>
     <message>
         <source>Play next file</source>
-        <translation type="unfinished"></translation>
+        <translation>Nächste Datei wiedergeben</translation>
     </message>
     <message>
         <source>Delay step</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzögerung</translation>
     </message>
     <message>
         <source>Autodetect - best of VAAPI, DXVA, D3D11VA, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatische Auswahl - beste Methode von VAAPI, DXVA, D3D11VA etc.</translation>
     </message>
     <message>
         <source>Linux - works with Intel and AMD GPUs through Mesa, and with nVidia through a translation layer; may only be correct in BT.601 and BT.709</source>
-        <translation type="unfinished"></translation>
+        <translation>wird unter Linux über Mesa für Intel und AMD GPUs benutzt; funktioniert für nVidia GPUs über eine Übersetzungsschicht; ist eventuell nur in den Farbräumen BT.601 und BT.709 korrekt</translation>
     </message>
     <message>
         <source>nVidia only (faster than CUDA)</source>
-        <translation type="unfinished"></translation>
+        <translation>nur für nVidia GPUs (schneller als CUDA)</translation>
     </message>
     <message>
         <source>Show OSD timer on seek</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige die OSD-Zeitanzeige beim Suchen</translation>
     </message>
     <message>
         <source>Normal step</source>
-        <translation type="unfinished"></translation>
+        <translation>Normaler Schritt</translation>
     </message>
     <message>
         <source>Large step</source>
-        <translation type="unfinished"></translation>
+        <translation>Großer Schritt</translation>
     </message>
     <message>
         <source>Show time tooltip:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige Zeit als Tooltip:</translation>
     </message>
     <message>
         <source>Change OSD font:</source>
-        <translation type="unfinished"></translation>
+        <translation>OSD Schriftart ändern:</translation>
     </message>
     <message>
         <source>Only keep history for videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur den Verlauf für Videos merken</translation>
     </message>
     <message>
         <source>Cinema screen</source>
-        <translation type="unfinished"></translation>
+        <translation>Kinoleinwand</translation>
     </message>
     <message>
         <source>Update interval</source>
-        <translation type="unfinished"></translation>
+        <translation>Update-Intervall</translation>
     </message>
     <message>
         <source>No delay (consumes cpu, use this for testing)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ohne Verzögerung (verbraucht CPU-Leistung, zum Testen benutzen)</translation>
     </message>
     <message>
         <source> ms</source>
-        <translation type="unfinished"></translation>
+        <translation> ms</translation>
     </message>
     <message>
         <source>Remember panels state</source>
