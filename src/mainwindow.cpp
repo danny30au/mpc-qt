@@ -188,6 +188,7 @@ QVariantMap MainWindow::state()
         { WRAP(ui->actionAudioFilterAcompressor) },
         { WRAP(ui->actionAudioFilterCrossfeed) },
         { WRAP(ui->actionPlaySubtitlesEnabled) },
+        { WRAP(ui->actionDisableVideoAspect) },
         { WRAP(ui->actionPlayVolumeMute) },
         { "volume", volumeSlider_->value() },
         { "shownStatsPage", mpvObject_->selectedStatsPage() }
@@ -223,6 +224,7 @@ void MainWindow::setState(const QVariantMap &map)
     UNWRAP(ui->actionAudioFilterAcompressor, false);
     UNWRAP(ui->actionAudioFilterCrossfeed, false);
     UNWRAP(ui->actionPlaySubtitlesEnabled, true);
+    UNWRAP(ui->actionDisableVideoAspect, false);
     UNWRAP(ui->actionPlayVolumeMute, false);
 
     ui->actionAudioFilterExtrastereo->isChecked() ? on_actionAudioFilterExtrastereo_triggered(true) : qt_noop();
@@ -922,7 +924,7 @@ void MainWindow::connectPlaylistWindowToActions() const
             playlistWindow_, &PlaylistWindow::importTab);
     connect(ui->actionPlaylistExport, &QAction::triggered,
             playlistWindow_, &PlaylistWindow::exportTab);
-    connect(ui->actionPlaylistPlayCurrent, &QAction::triggered,
+    connect(ui->actionPlaylistPlaySelected, &QAction::triggered,
             playlistWindow_, &PlaylistWindow::playCurrentItem);
     connect(ui->actionPlaylistShowQuickQueue, &QAction::triggered,
             playlistWindow_, &PlaylistWindow::setQueueMode);
@@ -3522,6 +3524,11 @@ void MainWindow::hideTimer_timeout()
     if (fullscreenMode_ &&
             !ui->bottomArea->geometry().contains(mpvw->mapFromGlobal(QCursor::pos())))
         ui->bottomArea->hide();
+}
+
+void MainWindow::on_actionPlaylistRemoveSelected_triggered()
+{
+    emit removeSelectedPlaylistItem();
 }
 
 void MainWindow::on_actionPlaylistSearch_triggered()

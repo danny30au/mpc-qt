@@ -587,6 +587,8 @@ void Flow::setupMainWindowConnections()
             mainWindow->playlistWindow(), &PlaylistWindow::playCurrentItem);
     connect(mainWindow, &MainWindow::severalFilesOpenedForPlaylist,
             mainWindow->playlistWindow(), &PlaylistWindow::addToPlaylist);
+    connect(mainWindow, &MainWindow::removeSelectedPlaylistItem,
+            mainWindow->playlistWindow(), &PlaylistWindow::playlist_removeItemRequested);
 
     // manager -> mainwindow
     connect(playbackManager, &PlaybackManager::timeChanged,
@@ -1167,6 +1169,10 @@ void Flow::setupMpcHc()
     connect(mpcHcServer, &MpcHcServer::afterPlaybackLock,
             mainWindow, &MainWindow::httpAfterPlaybackLock);
 
+    // mpcHcServer -> playlistWindow
+    connect(mpcHcServer, &MpcHcServer::removeSelectedPlaylistItem,
+            mainWindow->playlistWindow(), &PlaylistWindow::playlist_removeItemRequested);
+            
     // mpcHcServer -> playbackManager
     connect(mpcHcServer, &MpcHcServer::nextFile,
             playbackManager, &PlaybackManager::playNext);
@@ -1437,7 +1443,7 @@ void Flow::mainwindow_takeImage(Helpers::ScreenshotRender render)
     // Only remember the screenshot dir if the user picked a different one from the default
     if (!lastScreenshotDir.isEmpty() ||
             QFileInfo(QUrl::fromLocalFile(picFile).toLocalFile()).path() != lastScreenshotDir)
-        lastScreenshotDir = picFile;
+        lastScreenshotDir = QFileInfo(QUrl::fromLocalFile(picFile).toLocalFile()).path();
 
     // Copy the temp file to the desired location, then delete it
     QFile tf(tempFile);
