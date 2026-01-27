@@ -145,12 +145,13 @@
     </message>
     <message>
         <source>Shortcut already used</source>
-        <translation type="unfinished"></translation>
+        <translation>ショートカットは既に使用されています</translation>
     </message>
     <message>
         <source>&quot;%1&quot; is already used by &quot;%2&quot;.
 Do you want to use it for &quot;%3&quot; instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; は既に &quot;%2&quot; で使用されています。
+代わりに &quot;%3&quot; で使用しますか?</translation>
     </message>
     <message>
         <source>4:3 Aspect ratio</source>
@@ -1330,6 +1331,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <translation type="vanished">毎回</translation>
     </message>
     <message>
+        <source>Re&amp;move File</source>
+        <translation>ファイルを削除(&amp;M)</translation>
+    </message>
+    <message>
         <source>View</source>
         <translation>表示</translation>
     </message>
@@ -1663,7 +1668,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>XWayland or X11</source>
-        <translation>XWayland または X11</translation>
+        <translation type="vanished">XWayland または X11</translation>
     </message>
     <message>
         <source>&amp;Input Cache Statistics</source>
@@ -1695,7 +1700,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>Move File to Recycle Bin</source>
-        <translation>ファイルをごみ箱に移動する</translation>
+        <translation type="vanished">ファイルをごみ箱に移動する</translation>
     </message>
     <message>
         <source>Screenshot</source>
@@ -1804,6 +1809,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <message>
         <source>&amp;Remove Selected</source>
         <translation>選択項目を削除(&amp;R)</translation>
+    </message>
+    <message>
+        <source>&amp;Move File to Recycle Bin</source>
+        <translation>ファイルをごみ箱へ移動(&amp;M)</translation>
     </message>
 </context>
 <context>

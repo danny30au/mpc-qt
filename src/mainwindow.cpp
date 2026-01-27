@@ -345,6 +345,11 @@ void MainWindow::setActionPlayLoopUse()
     ui->actionPlayLoopUse->setChecked(true);
 }
 
+void MainWindow::setRemoveFileNotRecycle()
+{
+    ui->actionFileMoveToRecycleBin->setText(tr("Re&move File"));
+}
+
 void MainWindow::resizePlaylistToFit()
 {
     if (ui->actionViewMusicMode->isChecked() && !playlistWindow_->isFloating()) {
@@ -2231,7 +2236,7 @@ void MainWindow::audioTrackSet(int64_t id)
 {
     if (audioTracksGroup != nullptr && id <= audioTracksGroup->actions().length()) {
         if (id <= 0)
-            id = audioTracksGroup->actions().length();
+            id = 1;
         audioTracksGroup->actions().constData()[static_cast <int> (id) -1]->setChecked(true);
     }
 }
@@ -2240,7 +2245,7 @@ void MainWindow::videoTrackSet(int64_t id)
 {
     if (videoTracksGroup != nullptr && id <= videoTracksGroup->actions().length()) {
         if (id <= 0)
-            id = videoTracksGroup->actions().length();
+            id = 1;
         videoTracksGroup->actions().constData()[static_cast <int> (id) -1]->setChecked(true);
     }
 }
@@ -2249,7 +2254,7 @@ void MainWindow::subtitleTrackSet(int64_t id)
 {
     if (subtitleTracksGroup != nullptr && id <= subtitleTracksGroup->actions().length()) {
         if (id <= 0)
-            id = subtitleTracksGroup->actions().length();
+            id = 1;
         subtitleTracksGroup->actions().constData()[static_cast <int> (id) -1]->setChecked(true);
     }
 }
@@ -3397,15 +3402,15 @@ void MainWindow::on_actionHelpAbout_triggered()
     dateLine = "<br>" + dateLineFmt.arg(QLocale().toString(buildDate, dateFormat),
                                         QLocale().toString(buildTime, timeFormat));
 #endif
-QString displayMode = tr("(Unknown)");
-#if defined(Q_OS_UNIX) && !defined(Q_OS_DARWIN)
-    if (qApp->nativeInterface<QNativeInterface::QX11Application>())
-        displayMode = tr("XWayland or X11");
-#if QT_VERSION >= QT_VERSION_CHECK(6,5,0)
-    else if (qApp->nativeInterface<QNativeInterface::QWaylandApplication>())
+    QString displayMode = tr("(Unknown)");
+    if (QGuiApplication::platformName() == "wayland")
         displayMode = "Wayland";
-#endif // is qt >= 6.5
-#endif // is Linux
+    else {
+        if (qEnvironmentVariable("XDG_SESSION_TYPE") == "wayland")
+            displayMode = "XWayland";
+        else
+            displayMode = "X11";
+    }
     QMessageBox::about(this, tr("About Media Player Classic Qute Theater"),
       "<h2>" + tr("Media Player Classic Qute Theater") + "</h2>" +
       "<p>" +  tr("A clone of Media Player Classic written in Qt") +

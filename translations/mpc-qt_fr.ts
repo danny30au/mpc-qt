@@ -145,12 +145,13 @@
     </message>
     <message>
         <source>Shortcut already used</source>
-        <translation type="unfinished"></translation>
+        <translation>Raccourci déjà utilisé</translation>
     </message>
     <message>
         <source>&quot;%1&quot; is already used by &quot;%2&quot;.
 Do you want to use it for &quot;%3&quot; instead?</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;%1&quot; est déjà utilisé par &quot;%2&quot;.
+Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translation>
     </message>
     <message>
         <source>4:3 Aspect ratio</source>
@@ -1282,6 +1283,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <translation>Journa&amp;l</translation>
     </message>
     <message>
+        <source>Re&amp;move File</source>
+        <translation>S&amp;upprimer le fichier</translation>
+    </message>
+    <message>
         <source>View</source>
         <translation>Affichage</translation>
     </message>
@@ -1587,7 +1592,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>XWayland or X11</source>
-        <translation>XWayland ou X11</translation>
+        <translation type="vanished">XWayland ou X11</translation>
     </message>
     <message>
         <source>&amp;Input Cache Statistics</source>
@@ -1619,7 +1624,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>Move File to Recycle Bin</source>
-        <translation>Déplacer le fichier dans la corbeille</translation>
+        <translation type="vanished">Déplacer le fichier dans la corbeille</translation>
     </message>
     <message>
         <source>Screenshot</source>
@@ -1740,6 +1745,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <message>
         <source>&amp;Remove Selected</source>
         <translation>&amp;Retirer la sélection</translation>
+    </message>
+    <message>
+        <source>&amp;Move File to Recycle Bin</source>
+        <translation>Dé&amp;placer dans la corbeille</translation>
     </message>
 </context>
 <context>

@@ -1314,6 +1314,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <translation type="vanished">Setiap kali</translation>
     </message>
     <message>
+        <source>Re&amp;move File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>View</source>
         <translation>Lihat</translation>
     </message>
@@ -1610,10 +1614,6 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>XWayland or X11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Input Cache Statistics</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1639,10 +1639,6 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>&amp;Compressor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Move File to Recycle Bin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1747,6 +1743,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>&amp;Remove Selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Move File to Recycle Bin</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
