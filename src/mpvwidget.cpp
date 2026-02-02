@@ -40,8 +40,8 @@
 }
 
 MpvObject::PropertyDispatchMap MpvObject::propertyDispatch = {
-    HANDLE_PROP("time-pos", self_playTimeChanged, toDouble, -1.0),
-    HANDLE_PROP("duration", self_playLengthChanged, toDouble, -1.0),
+    HANDLE_PROP("time-pos", self_playTimeChanged, toDouble, 0.0),
+    HANDLE_PROP("duration", self_playLengthChanged, toDouble, 0.0),
     HANDLE_PROP("seekable", seekableChanged, toBool, false),
     HANDLE_PROP("pause", pausedChanged, toBool, true),
     HANDLE_PROP("eof-reached", eofReachedChanged, toString, QString()),
@@ -338,7 +338,7 @@ void MpvObject::urlOpen(QUrl url)
 
 void MpvObject::fileOpen(QString filename, bool replaceMpvPlaylist)
 {
-    setSubFile("\n");
+    clearSubFiles();
     //setStartTime(0.0);
     if (replaceMpvPlaylist)
         emit ctrlCommand(QStringList({"loadfile", filename}));
@@ -445,6 +445,11 @@ void MpvObject::setSubFile(QString filename)
 void MpvObject::addSubFile(QString filename)
 {
     emit ctrlCommand(QStringList({"sub-add", filename}));
+}
+
+void MpvObject::clearSubFiles()
+{
+    emit ctrlSetOptionVariant("sub-files-clr", "");
 }
 
 void MpvObject::setSubtitlesDelay(int subDelayStep)

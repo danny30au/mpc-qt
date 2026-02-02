@@ -611,12 +611,6 @@ void PlaybackManager::setAfterPlaybackAlwaysDefault(Helpers::AfterPlayback mode)
     }
 }
 
-void PlaybackManager::setTimeShortMode(bool shortMode)
-{
-    timeShortMode = shortMode;
-    updateChapters();
-}
-
 void PlaybackManager::setSubtitlesPreferDefaultForced(bool forced)
 {
     subtitlesPreferDefaultForced = forced;
@@ -705,7 +699,8 @@ void PlaybackManager::startPlayWithUuid(QUrl what, QUuid playlistUuid,
     mpvObject_->fileOpen(what.isLocalFile() ? what.toLocalFile()
                                             : QUrl::fromPercentEncoding(what.toEncoded()),
                          replaceMpvPlaylist);
-    mpvObject_->setSubFile(with.toString());
+    if (!with.isEmpty())
+        mpvObject_->setSubFile(with.toString());
     mpvObject_->setPaused(playbackStartPaused);
     playbackStartState = playbackStartPaused ? PausedState : PlayingState;
 
@@ -853,8 +848,7 @@ void PlaybackManager::updateChapters()
         for (QVariant const &v : chapters) {
             QMap<QString, QVariant> node = v.toMap();
             QString text = QString("[%1] - %2").arg(
-                    toDateFormatFixed(node["time"].toDouble(),
-                                    timeShortMode ? Helpers::ShortFormat : Helpers::LongFormat),
+                    toDateFormatFixed(node["time"].toDouble(), Helpers::ShortFormat),
                     node["title"].toString());
             Chapter item { node["time"].toDouble(), text };
             list.append(item);

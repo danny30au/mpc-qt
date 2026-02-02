@@ -26,6 +26,10 @@ jobs:
         libqt6svg6-dev \
         libgl-dev \
         libmpv-dev
+    - name: Install newer Qt version
+      uses: jurplel/install-qt-action@v4
+      with:
+        cache: true
     - uses: actions/checkout@v4
       with:
         fetch-depth: 1000
@@ -71,6 +75,7 @@ jobs:
 
   flatpak:
     name: Flatpak
+    if: ${{ github.ref_name == 'master' }}
     needs: tests
     uses: ./.github/workflows/flatpak.yml
 
