@@ -144,6 +144,14 @@
         <translation>Zoom zurücksetzen</translation>
     </message>
     <message>
+        <source>Skip Backward / Previous</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Skip Forward / Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Shortcut already used</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4601,6 +4609,18 @@ media file played</source>
     </message>
     <message>
         <source>File title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>CRF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lossless</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

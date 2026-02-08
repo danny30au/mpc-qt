@@ -144,6 +144,14 @@
         <translation>ズームをリセット</translation>
     </message>
     <message>
+        <source>Skip Backward / Previous</source>
+        <translation>巻き戻し / 前へ</translation>
+    </message>
+    <message>
+        <source>Skip Forward / Next</source>
+        <translation>早送り / 次へ</translation>
+    </message>
+    <message>
         <source>Shortcut already used</source>
         <translation>ショートカットは既に使用されています</translation>
     </message>
@@ -4643,6 +4651,18 @@ media file played</source>
     <message>
         <source>File title</source>
         <translation>ファイル タイトル</translation>
+    </message>
+    <message>
+        <source>CRF</source>
+        <translation>CRF</translation>
+    </message>
+    <message>
+        <source>Lossless</source>
+        <translation>ロスレス</translation>
+    </message>
+    <message>
+        <source>Speed</source>
+        <translation>速度</translation>
     </message>
 </context>
 <context>

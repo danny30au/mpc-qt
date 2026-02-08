@@ -144,6 +144,14 @@
         <translation>Réinitialiser le zoom</translation>
     </message>
     <message>
+        <source>Skip Backward / Previous</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Skip Forward / Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Shortcut already used</source>
         <translation>Raccourci déjà utilisé</translation>
     </message>
@@ -4575,6 +4583,18 @@ fichier média lu</translation>
     <message>
         <source>File title</source>
         <translation>Titre du fichier</translation>
+    </message>
+    <message>
+        <source>CRF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lossless</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Speed</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
