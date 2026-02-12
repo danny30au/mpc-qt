@@ -382,8 +382,14 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
     if ((insideMpv || object == playlistWindow_) && event->type() == QEvent::MouseMove) {
         this->mouseMoveEvent(static_cast<QMouseEvent*>(event));
     }
-    if (object == ui->bottomArea && event->type() == QEvent::Leave)
-        this->leaveBottomArea();
+    if (object == ui->bottomArea) {
+        if (event->type() == QEvent::Leave) {
+            this->leaveBottomArea();
+            mpvObject_->setIsInBottomArea(false);
+        }
+        else if (event->type() == QEvent::Enter)
+            mpvObject_->setIsInBottomArea(true);
+    }
 
     if (event->type() == QEvent::ApplicationPaletteChange)
         positionSlider_->applicationPaletteChanged();
@@ -1114,6 +1120,7 @@ void MainWindow::checkBottomArea(QPointF mousePosition)
                 ui->bottomArea->show();
         } else if (ui->bottomArea->isVisible() && !hideTimer.isActive()) {
             startTimer = true;
+            mpvObject_->setIsInBottomArea(false);
         }
         break;
     case Helpers::ShowWhenMoving:

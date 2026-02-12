@@ -403,6 +403,11 @@ void MpvObject::setMouseHideTime(int msec)
         hideTimer->start();
 }
 
+void MpvObject::setIsInBottomArea(bool entered)
+{
+    isInBottomArea = entered;
+}
+
 void MpvObject::setLogoUrl(const QString &filename)
 {
     if (widget)
@@ -745,7 +750,7 @@ void MpvObject::showCursor()
 
 void MpvObject::hideCursor()
 {
-    if (!widget)
+    if (!widget || isInBottomArea)
         return;
     auto w = widget->self()->window();
     if (widget->self()->cursor() == Qt::ArrowCursor || w->isFullScreen()
@@ -753,11 +758,8 @@ void MpvObject::hideCursor()
         if (QGuiApplication::platformName().contains("wayland") && !w->isActiveWindow())
             return;
         widget->self()->setCursor(Qt::BlankCursor);
-        //REMOVEME: work around KDE Plasma 6.2.4 bug where cursor stays visible in rightmost position
-        if (w->isFullScreen() && QCursor::pos().x() == w->geometry().right()) {
+        if (w->isFullScreen())
             w->setCursor(Qt::BlankCursor);
-            Logger::log(logModule, "workaround: hiding cursor on rightmost pixels");
-        }
     }
 }
 
