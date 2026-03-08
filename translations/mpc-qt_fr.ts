@@ -361,6 +361,19 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
     </message>
 </context>
 <context>
+    <name>Logger</name>
+    <message>
+        <source>Ambiguous shortcut detected</source>
+        <translation>Raccourci ambigu détecté</translation>
+    </message>
+    <message>
+        <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
+No action will be triggered.</source>
+        <translation>Le raccourci «&#xa0;%1&#xa0;» est utilisé pour plus d&apos;une commande. Utilisez la page «&#xa0;Raccourcis&#xa0;» dans les options pour le réaffecter.
+Aucune action ne sera déclenchée.</translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <source>Media Player Classic Qute Theater</source>
@@ -1947,6 +1960,10 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
 <context>
     <name>PaletteEditor</name>
     <message>
+        <source>Generate palette from:</source>
+        <translation>Générer la palette d&apos;après&#xa0;:</translation>
+    </message>
+    <message>
         <source>Button</source>
         <translation>Bouton</translation>
     </message>
@@ -1960,7 +1977,7 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
     </message>
     <message>
         <source>Generate</source>
-        <translation>Générer</translation>
+        <translation type="vanished">Générer</translation>
     </message>
 </context>
 <context>
@@ -2661,11 +2678,11 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Theme</source>
-        <translation>Thème</translation>
+        <translation type="vanished">Thème</translation>
     </message>
     <message>
         <source>Built-in fallback</source>
-        <translation>Fallback intégré</translation>
+        <translation type="vanished">Fallback intégré</translation>
     </message>
     <message>
         <source>Custom</source>
@@ -2697,15 +2714,15 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Widget Color</source>
-        <translation>Couleur du widget</translation>
+        <translation type="vanished">Couleur du widget</translation>
     </message>
     <message>
         <source>Use custom theme</source>
-        <translation>Utiliser un thème personnalisé</translation>
+        <translation type="vanished">Utiliser un thème personnalisé</translation>
     </message>
     <message>
         <source>Window Color</source>
-        <translation>Couleur de la fenêtre</translation>
+        <translation type="vanished">Couleur de la fenêtre</translation>
     </message>
     <message>
         <source>HHHHHH</source>
@@ -2713,11 +2730,11 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Info Background</source>
-        <translation>Arrière-plan des infos</translation>
+        <translation type="vanished">Arrière-plan des infos</translation>
     </message>
     <message>
         <source>Info Foreground</source>
-        <translation>Premier plan des infos</translation>
+        <translation type="vanished">Premier plan des infos</translation>
     </message>
     <message>
         <source>Control</source>
@@ -4274,7 +4291,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>Locale (détection automatique)</translation>
+        <translation type="vanished">Locale (détection automatique)</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4498,7 +4515,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>Le redémarrage de l&apos;application est nécessaire pour appliquer les changements</translation>
+        <translation type="vanished">Le redémarrage de l&apos;application est nécessaire pour appliquer les changements</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
@@ -4578,7 +4595,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>Voir &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;le dépôt source&lt;/a&gt; pour les noms des icônes.</translation>
+        <translation type="vanished">Voir &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;le dépôt source&lt;/a&gt; pour les noms des icônes.</translation>
     </message>
     <message>
         <source>File title</source>
@@ -4595,6 +4612,46 @@ fichier média lu</translation>
     <message>
         <source>Speed</source>
         <translation>Vitesse</translation>
+    </message>
+    <message>
+        <source>Others</source>
+        <translation>Autres</translation>
+    </message>
+    <message>
+        <source>Video background</source>
+        <translation>Arrière-plan vidéo</translation>
+    </message>
+    <message>
+        <source>Status bar background</source>
+        <translation>Arrière-plan de la barre d&apos;état</translation>
+    </message>
+    <message>
+        <source>Status bar foreground</source>
+        <translation>Avant-plan de la barre d&apos;état</translation>
+    </message>
+    <message>
+        <source>Use custom colors</source>
+        <translation>Utiliser des couleurs personnalisées</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Source</translation>
+    </message>
+    <message>
+        <source>Built-in</source>
+        <translation>Intégrées</translation>
+    </message>
+    <message>
+        <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
+        <translation>Les icônes doivent utiliser les mêmes noms que dans le &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;dépôt&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
+        <translation>Utiliser l&apos;anglais pour l&apos;interface</translation>
+    </message>
+    <message>
+        <source>Mono</source>
+        <translation>Mono</translation>
     </message>
 </context>
 <context>

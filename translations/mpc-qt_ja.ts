@@ -361,6 +361,19 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
 </context>
 <context>
+    <name>Logger</name>
+    <message>
+        <source>Ambiguous shortcut detected</source>
+        <translation>曖昧なショートカットが検出されました</translation>
+    </message>
+    <message>
+        <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
+No action will be triggered.</source>
+        <translation>キーシーケンス &quot;%1&quot; は複数のコマンドで使用されています。「オプション」の「キー」ページで割り当てを変更してください。
+アクションは実行されません。</translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <source>Media Player Classic Qute Theater</source>
@@ -2011,6 +2024,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
 <context>
     <name>PaletteEditor</name>
     <message>
+        <source>Generate palette from:</source>
+        <translation>パレットの生成元 :</translation>
+    </message>
+    <message>
         <source>Button</source>
         <translation>ボタン</translation>
     </message>
@@ -2024,7 +2041,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>Generate</source>
-        <translation>生成</translation>
+        <translation type="vanished">生成</translation>
     </message>
 </context>
 <context>
@@ -2729,11 +2746,11 @@ media file played</source>
     </message>
     <message>
         <source>Theme</source>
-        <translation>テーマ</translation>
+        <translation type="vanished">テーマ</translation>
     </message>
     <message>
         <source>Built-in fallback</source>
-        <translation>内蔵フォールバック</translation>
+        <translation type="vanished">内蔵フォールバック</translation>
     </message>
     <message>
         <source>Custom</source>
@@ -2765,15 +2782,15 @@ media file played</source>
     </message>
     <message>
         <source>Widget Color</source>
-        <translation>ウィジェットの色</translation>
+        <translation type="vanished">ウィジェットの色</translation>
     </message>
     <message>
         <source>Use custom theme</source>
-        <translation>カスタム テーマを使用する</translation>
+        <translation type="vanished">カスタム テーマを使用する</translation>
     </message>
     <message>
         <source>Window Color</source>
-        <translation>ウィンドウの色</translation>
+        <translation type="vanished">ウィンドウの色</translation>
     </message>
     <message>
         <source>HHHHHH</source>
@@ -2781,11 +2798,11 @@ media file played</source>
     </message>
     <message>
         <source>Info Background</source>
-        <translation>情報欄の背景色</translation>
+        <translation type="vanished">情報欄の背景色</translation>
     </message>
     <message>
         <source>Info Foreground</source>
-        <translation>情報欄の文字色</translation>
+        <translation type="vanished">情報欄の文字色</translation>
     </message>
     <message>
         <source>Control</source>
@@ -4342,7 +4359,7 @@ media file played</source>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>地域 (自動検出)</translation>
+        <translation type="vanished">地域 (自動検出)</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4566,7 +4583,7 @@ media file played</source>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>変更を適用するにはアプリケーションの再起動が必要です</translation>
+        <translation type="vanished">変更を適用するにはアプリケーションの再起動が必要です</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
@@ -4646,7 +4663,7 @@ media file played</source>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>アイコン名については、 &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;ソース リポジトリ&lt;/a&gt; を参照してください。</translation>
+        <translation type="vanished">アイコン名については、 &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;ソース リポジトリ&lt;/a&gt; を参照してください。</translation>
     </message>
     <message>
         <source>File title</source>
@@ -4663,6 +4680,46 @@ media file played</source>
     <message>
         <source>Speed</source>
         <translation>速度</translation>
+    </message>
+    <message>
+        <source>Others</source>
+        <translation>その他</translation>
+    </message>
+    <message>
+        <source>Video background</source>
+        <translation>ビデオの背景</translation>
+    </message>
+    <message>
+        <source>Status bar background</source>
+        <translation>ステータスバーの背景</translation>
+    </message>
+    <message>
+        <source>Status bar foreground</source>
+        <translation>ステータスバーの前景</translation>
+    </message>
+    <message>
+        <source>Use custom colors</source>
+        <translation>カスタムカラーを使用</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>ソース</translation>
+    </message>
+    <message>
+        <source>Built-in</source>
+        <translation>内蔵</translation>
+    </message>
+    <message>
+        <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
+        <translation>アイコンは&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;リポジトリ&lt;/a&gt;と同じ名前を使用する必要があります。</translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
+        <translation>インターフェースには英語を使用する</translation>
+    </message>
+    <message>
+        <source>Mono</source>
+        <translation>モノラル</translation>
     </message>
 </context>
 <context>

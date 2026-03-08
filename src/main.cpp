@@ -11,7 +11,6 @@
 #include <QStyleFactory>
 #include <QLockFile>
 #include <QThread>
-#include <QTranslator>
 #ifdef Boost_FOUND
 #include <boost/stacktrace.hpp>
 #endif
@@ -49,7 +48,6 @@ static constexpr char optConsoleLogEx[] = "--log-to-console";
 int main(int argc, char *argv[])
 {
     QCoreApplication::setApplicationName("MPC-QT");
-    Logger::log(logModule, "starting logging");
     #if !defined(Q_OS_WIN)
     std::signal(SIGHUP, signalHandler);
     #endif
@@ -70,6 +68,7 @@ int main(int argc, char *argv[])
     }
     Logger::setConsoleLogging(foundLoggingOpt);
     Logger::singleton();
+    Logger::log(logModule, "starting logging");
     QApplication::setWindowIcon(QIcon(":/images/icon/mpc-qt.svg"));
 
     // Qt sets the locale in the QApplication constructor, but libmpv requires
@@ -83,11 +82,6 @@ int main(int argc, char *argv[])
     qRegisterMetaType<uint64_t>("uint64_t");
     qRegisterMetaType<uint16_t>("uint16_t");
 
-    QTranslator qtTranslator;
-    QTranslator appTranslator;
-
-    Flow::setTranslation(&qtTranslator, &appTranslator);
-
 #ifndef MPCQT_VERSION_STR
 #define MPCQT_VERSION_STR MainWindow::tr("Development Build")
 #endif
@@ -96,6 +90,7 @@ int main(int argc, char *argv[])
     // Spin up the application
     Flow f;
     f.parseArgs();
+    f.setTranslation(false);
     f.detectMode();
     if (f.earlyQuit())
         return 0;
@@ -180,6 +175,7 @@ Flow::~Flow()
             if (playlistsBackupLoaded)
                 storage.writeVList(filePlaylistsBackup, PlaylistCollection::getBackup()->toVList());
         }
+        Logger::setMainWindow(nullptr);
         delete mainWindow;
         mainWindow = nullptr;
     }
@@ -305,6 +301,7 @@ void Flow::init() {
     // Create our windows
     Logger::log(logModule, "creating main window");
     mainWindow = new MainWindow();
+    Logger::setMainWindow(mainWindow);
     Logger::log(logModule, "creating playback manager");
     playbackManager = new PlaybackManager(this);
     playbackManager->setMpvObject(mainWindow->mpvObject(), true);
@@ -448,26 +445,39 @@ void Flow::earlyPlatformOverride()
 }
 
 // Register the translations
-void Flow::setTranslation(QTranslator *qtTranslator, QTranslator *appTranslator)
+void Flow::setTranslation(bool updateTranslations)
 {
+    if (cliNoConfig)
+        return;
     QLocale locale;
-    Storage s;
-    QVariantMap settings = s.readVMap(fileSettings);
-    int localeSetting = settings.value("playerLanguageComboBox_v2", 0).toInt();
-    if (localeSetting != 0)
+    if (settings.empty())
+        settings = storage.readVMap(fileSettings);
+    bool forceEnglish = settings.value("playerLanguageForceEnglish", false).toBool();
+    if (forceEnglish)
         locale = QLocale("en");
 
-    if (qtTranslator->load(locale, "qtbase", "_", ":/i18n"))
-        QApplication::installTranslator(qtTranslator);
+    if (qtTranslator.load(locale, "qtbase", "_", ":/i18n"))
+        QApplication::installTranslator(&qtTranslator);
 
-    if (appTranslator->load(locale, "mpc-qt", "_", ":/i18n"))
-        QApplication::installTranslator(appTranslator);
+    if (appTranslator.load(locale, "mpc-qt", "_", ":/i18n"))
+        QApplication::installTranslator(&appTranslator);
+
+    if (updateTranslations) {
+        mainWindow->updateLanguage();
+        mainWindow->playlistWindow()->updateLanguage();
+        settingsWindow->updateLanguage();
+        propertiesWindow->updateLanguage();
+        favoritesWindow->updateLanguage();
+        gotoWindow->updateLanguage();
+        logWindow->updateLanguage();
+        libraryWindow->updateLanguage();
+        thumbnailerWindow->updateLanguage();
+    }
 }
 
 void Flow::readConfig()
 {
     if (!cliNoConfig) {
-        settings = storage.readVMap(fileSettings);
         keyMap = storage.readVMap(fileKeys);
     }
 
@@ -1576,10 +1586,11 @@ void Flow::mpcHcServer_fileSelected(QString fileName)
 
 void Flow::settingswindow_settingsData(const QVariantMap &settings)
 {
+    Logger::log(logModule, "settingswindow_settingsData");
     // The selected options have changed, so write them to disk
     this->settings = settings;
     writeConfig(true);
-    Logger::log(logModule, "settingswindow_settingsData");
+    setTranslation(true);
 }
 
 void Flow::settingswindow_inhibitScreensaver(bool yes)

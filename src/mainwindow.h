@@ -50,9 +50,11 @@ public:
     void fixMpvwSize();
     void setActionPlayLoopUse();
     void setRemoveFileNotRecycle();
+    void updateLanguage();
 
 protected:
     void resizeEvent(QResizeEvent *event);
+    void changeEvent(QEvent *event) override;
     bool eventFilter(QObject *object, QEvent *event);
     void closeEvent(QCloseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
@@ -242,7 +244,7 @@ public slots:
     void setRecentDocuments(const QList<TrackInfo> &tracks);
     void setControlsInFullscreen(bool hide, int showWhen, int showWhenDuration, bool setControlsInFullscreen);
     void setFavoriteTracks(QList<TrackInfo> files, QList<TrackInfo> streams);
-    void setIconTheme(IconThemer::FolderMode folderMode, QString fallbackFolder, QString customFolder);
+    void setIconTheme(IconThemer::FolderMode folderMode, const QString& customFolder);
     void setHighContrastWidgets(bool yes);
     void setInfoColors(const QColor &foreground, const QColor &background);
     void setTime(double time, double length);

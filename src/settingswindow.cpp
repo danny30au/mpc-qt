@@ -160,7 +160,7 @@ QHash<QString, QStringList> SettingMap::indexedValueToText = {
     {"ccHdrCompute", {"auto", "yes", "no"}},
     {"ytdlpMaxHeight", {"240", "360", "480", "720", "1080", "1440",
                              "2160", "2880", "4320"}},
-    {"audioChannels", {"auto-safe", "auto", "stereo"}},
+    {"audioChannels", {"auto-safe", "auto", "stereo", "mono"}},
     {"audioRenderer", {"pulse", "alsa", "oss", "null"}},
     {"audioAutoloadMatch", { "exact", "fuzzy", "all" }},
     {"framedroppingMode", {"no", "vo", "decoder", "decoder+vo"}},
@@ -381,6 +381,12 @@ void SettingsWindow::setWaylandOptions(bool isWayland, bool isWaylandMode)
     ui->tweaksPreferWayland->setEnabled(isWayland);
 }
 
+void SettingsWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+    takeKeyMap(acceptedKeyMap);
+}
+
 void SettingsWindow::setupPageTree()
 {
     // Expand every item on pageTree
@@ -434,7 +440,7 @@ void SettingsWindow::setupPaletteEditor()
 {
     paletteEditor = new PaletteEditor(this);
     paletteEditor->setObjectName("interfaceWidgetCustomPalette");
-    ui->interfaceWidgetCustomHost->layout()->addWidget(paletteEditor);
+    ui->interfaceWidgetCustomLayout->insertWidget(0, paletteEditor);
 }
 
 void SettingsWindow::setupColorPickers()
@@ -726,16 +732,20 @@ void SettingsWindow::sendSignals()
 
     emit logoSource(selectedLogo());
     emit iconTheme(static_cast<IconThemer::FolderMode>(WIDGET_LOOKUP(ui->interfaceIconsTheme).toInt()),
-                   autoIcons,
                    WIDGET_LOOKUP(ui->interfaceIconsCustomFolder).toString());
     emit highContrastWidgets(WIDGET_LOOKUP(ui->interfaceWidgetHighContast).toBool());
-    emit applicationPalette(WIDGET_LOOKUP(ui->interfaceWidgetCustom).toBool()
-                            ? paletteEditor->variantToPalette(WIDGET_LOOKUP(paletteEditor))
-                            : paletteEditor->systemPalette());
-    emit videoColor(QString("#%1").arg(WIDGET_LOOKUP(ui->windowVideoValue).toString()));
-    emit option("background-color", QString("#%1").arg(WIDGET_LOOKUP(ui->windowVideoValue).toString()));
-    emit infoStatsColors(QString("#%1").arg(WIDGET_LOOKUP(ui->windowInfoForegroundValue).toString()),
-                         QString("#%1").arg(WIDGET_LOOKUP(ui->windowInfoBackgroundValue).toString()));
+    bool useCustomColors = WIDGET_LOOKUP(ui->interfaceWidgetCustom).toBool();
+    emit applicationPalette(useCustomColors ? paletteEditor->variantToPalette(WIDGET_LOOKUP(paletteEditor))
+                                         : paletteEditor->systemPalette());
+    emit videoColor(useCustomColors ? QString("#%1").arg(WIDGET_LOOKUP(ui->windowVideoValue).toString())
+                                    : "000000");
+    emit option("background-color", useCustomColors
+                                    ? QString("#%1").arg(WIDGET_LOOKUP(ui->windowVideoValue).toString())
+                                    : "000000");
+    QString infoForegroundColor = QString("#%1").arg(WIDGET_LOOKUP(ui->windowInfoForegroundValue).toString());
+    QString infoBackgroundColor = QString("#%1").arg(WIDGET_LOOKUP(ui->windowInfoBackgroundValue).toString());
+    emit infoStatsColors(useCustomColors ? infoForegroundColor : "FFFFFF",
+                         useCustomColors ? infoBackgroundColor : "000000");
 
     emit stylesheetIsFusion(WIDGET_LOOKUP(ui->stylesheetFusion).toBool());
     emit stylesheetText(WIDGET_LOOKUP(ui->stylesheetText).toString());
@@ -950,7 +960,7 @@ void SettingsWindow::sendSignals()
     int index = WIDGET_LOOKUP(ui->audioDevice).toInt();
     emit option("audio-device", audioDevices.value(index).deviceName());
     index = WIDGET_LOOKUP(ui->audioChannels).toInt();
-    emit option("audio-channels", index < 3 ? SettingMap::indexedValueToText[ui->audioChannels->objectName()][index]
+    emit option("audio-channels", index < 4 ? SettingMap::indexedValueToText[ui->audioChannels->objectName()][index]
                                          : channelSwitcher());
     bool flag = WIDGET_LOOKUP(ui->audioStreamSilence).toBool();
     emit option("stream-silence", flag);
@@ -1261,6 +1271,7 @@ void SettingsWindow::on_buttonBox_clicked(QAbstractButton *button)
     }
     if (buttonRole == QDialogButtonBox::ApplyRole) {
         sendSignals();
+        takeKeyMap(acceptedKeyMap);
         ui->buttonBox->button(QDialogButtonBox::Apply)->setEnabled(false);
     }
     else
@@ -1271,7 +1282,6 @@ void SettingsWindow::closeEvent(QCloseEvent *event)
 {
     Q_UNUSED(event)
     sendSignals();
-    setCustomMpvOptions();
     ui->keysSearchField->clear();
     ui->videoPreset->setCurrentIndex(0);
 }

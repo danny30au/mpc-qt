@@ -295,6 +295,16 @@ void PlaylistWindow::tabsFromVList(const QVariantList &qvl)
     updatePlaylistHasItems();
 }
 
+void PlaylistWindow::updateIcons()
+{
+    themer.updateIcons();
+}
+
+void PlaylistWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 bool PlaylistWindow::eventFilter(QObject *obj, QEvent *event)
 {
     Q_UNUSED(obj)
@@ -428,11 +438,9 @@ void PlaylistWindow::addQuickQueue()
     ui->quickPage->layout()->addWidget(queueWidget);
 }
 
-void PlaylistWindow::setIconTheme(IconThemer::FolderMode folderMode,
-                                  const QString &fallbackFolder,
-                                  const QString &customFolder)
+void PlaylistWindow::setIconTheme(IconThemer::FolderMode folderMode, const QString &customFolder)
 {
-    themer.setIconFolders(folderMode, fallbackFolder, customFolder);
+    themer.setIconFolders(folderMode, customFolder);
 }
 
 void PlaylistWindow::setHideFullscreen(bool hidden)

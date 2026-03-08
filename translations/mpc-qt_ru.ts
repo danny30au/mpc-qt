@@ -352,6 +352,18 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
 </context>
 <context>
+    <name>Logger</name>
+    <message>
+        <source>Ambiguous shortcut detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
+No action will be triggered.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <source>Media Player Classic Qute Theater</source>
@@ -1970,6 +1982,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
 <context>
     <name>PaletteEditor</name>
     <message>
+        <source>Generate palette from:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Button</source>
         <translation>Кнопка</translation>
     </message>
@@ -1983,7 +1999,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>Generate</source>
-        <translation>Сгенерировать</translation>
+        <translation type="vanished">Сгенерировать</translation>
     </message>
 </context>
 <context>
@@ -2688,11 +2704,11 @@ media file played</source>
     </message>
     <message>
         <source>Theme</source>
-        <translation>Тема</translation>
+        <translation type="vanished">Тема</translation>
     </message>
     <message>
         <source>Built-in fallback</source>
-        <translation>Встроенная</translation>
+        <translation type="vanished">Встроенная</translation>
     </message>
     <message>
         <source>Custom</source>
@@ -2724,15 +2740,15 @@ media file played</source>
     </message>
     <message>
         <source>Widget Color</source>
-        <translation>Цвет виджета</translation>
+        <translation type="vanished">Цвет виджета</translation>
     </message>
     <message>
         <source>Use custom theme</source>
-        <translation>Использовать другую тему</translation>
+        <translation type="vanished">Использовать другую тему</translation>
     </message>
     <message>
         <source>Window Color</source>
-        <translation>Цвет фона</translation>
+        <translation type="vanished">Цвет фона</translation>
     </message>
     <message>
         <source>HHHHHH</source>
@@ -2740,11 +2756,11 @@ media file played</source>
     </message>
     <message>
         <source>Info Background</source>
-        <translation>Информация заднего плана</translation>
+        <translation type="vanished">Информация заднего плана</translation>
     </message>
     <message>
         <source>Info Foreground</source>
-        <translation>Информация переднего плана</translation>
+        <translation type="vanished">Информация переднего плана</translation>
     </message>
     <message>
         <source>Control</source>
@@ -4289,7 +4305,7 @@ media file played</source>
     </message>
     <message>
         <source>Locale (Autodetect)</source>
-        <translation>Локальный (Автоопределение)</translation>
+        <translation type="vanished">Локальный (Автоопределение)</translation>
     </message>
     <message>
         <source>Medium</source>
@@ -4517,7 +4533,7 @@ media file played</source>
     </message>
     <message>
         <source>Requires restarting the application to apply changes</source>
-        <translation>Требуется перезапуск приложения для применения изменений</translation>
+        <translation type="vanished">Требуется перезапуск приложения для применения изменений</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
@@ -4597,7 +4613,7 @@ media file played</source>
     </message>
     <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
-        <translation>Смотри &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;репозиторий исходного кода&lt;/a&gt; для названий значков.</translation>
+        <translation type="vanished">Смотри &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;репозиторий исходного кода&lt;/a&gt; для названий значков.</translation>
     </message>
     <message>
         <source>File title</source>
@@ -4613,6 +4629,46 @@ media file played</source>
     </message>
     <message>
         <source>Speed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Others</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Status bar background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Status bar foreground</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use custom colors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation type="unfinished">Источник</translation>
+    </message>
+    <message>
+        <source>Built-in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mono</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

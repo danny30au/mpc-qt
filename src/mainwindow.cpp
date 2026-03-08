@@ -356,6 +356,11 @@ void MainWindow::setRemoveFileNotRecycle()
     ui->actionFileMoveToRecycleBin->setText(tr("Re&move File"));
 }
 
+void MainWindow::updateLanguage()
+{
+    ui->retranslateUi(this);
+}
+
 void MainWindow::resizePlaylistToFit()
 {
     if (ui->actionViewMusicMode->isChecked() && !playlistWindow_->isFloating()) {
@@ -376,6 +381,21 @@ void MainWindow::resizeEvent(QResizeEvent *event)
     resizePlaylistToFit();
 }
 
+void MainWindow::changeEvent(QEvent *event)
+{
+    if (event->type() == QEvent::ThemeChange || event->type() == QEvent::PaletteChange) {
+        positionSlider_->applicationPaletteChanged();
+        volumeSlider_->applicationPaletteChanged();
+        themer.updateIcons();
+        playlistWindow_->updateIcons();
+        ui->menubar->setStyle(ui->menubar->style());
+        if (tooltip)
+            tooltip->updatePalette();
+        if (videoPreview)
+            videoPreview->updatePalette();
+    }
+}
+
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
 {
     bool insideMpv = mpvw ? object == mpvw : false;
@@ -390,9 +410,6 @@ bool MainWindow::eventFilter(QObject *object, QEvent *event)
         else if (event->type() == QEvent::Enter)
             mpvObject_->setIsInBottomArea(true);
     }
-
-    if (event->type() == QEvent::ApplicationPaletteChange)
-        positionSlider_->applicationPaletteChanged();
 
     if (Platform::isWindows && event->type() == QEvent::KeyPress) {
         QKeyEvent *ke = static_cast<QKeyEvent*>(event);
@@ -1851,9 +1868,9 @@ void MainWindow::setFavoriteTracks(QList<TrackInfo> files, QList<TrackInfo> stre
         addTracks(streams);
 }
 
-void MainWindow::setIconTheme(IconThemer::FolderMode folderMode, QString fallbackFolder, QString customFolder)
+void MainWindow::setIconTheme(IconThemer::FolderMode folderMode, const QString& customFolder)
 {
-    themer.setIconFolders(folderMode, fallbackFolder, customFolder);
+    themer.setIconFolders(folderMode, customFolder);
 }
 
 void MainWindow::setHighContrastWidgets(bool yes)
@@ -2403,7 +2420,8 @@ void MainWindow::setVideoBitrate(double bitrate)
 void MainWindow::setIsVideo(bool isVideo)
 {
     isVideo_ = isVideo;
-    showStepAndSubsButtons(isVideo);
+    if (isPlaying)
+        showStepAndSubsButtons(isVideo);
 }
 
 void MainWindow::setVideoPreviewItem(QUrl itemUrl)

@@ -47,6 +47,9 @@ public:
     QVariantList tabsToVList(bool saveQuickPlaylist) const;
     void tabsFromVList(const QVariantList &qvl);
 
+    void updateIcons();
+    void updateLanguage();
+
 protected:
     bool eventFilter(QObject *obj, QEvent *event);
     void dragEnterEvent(QDragEnterEvent *event);
@@ -82,7 +85,7 @@ signals:
     void playlistMovedToBackup(QUuid backupUuid);
 
 public slots:
-    void setIconTheme(IconThemer::FolderMode folderMode, const QString &fallbackFolder, const QString &customFolder);
+    void setIconTheme(IconThemer::FolderMode folderMode, const QString &customFolder);
     void setHideFullscreen(bool hidden);
     void setRememberSelectedPlaylist(bool remember);
 
