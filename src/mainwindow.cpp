@@ -379,6 +379,7 @@ void MainWindow::resizeEvent(QResizeEvent *event)
     updateBottomAreaGeometry();
     checkBottomArea(QCursor::pos());
     resizePlaylistToFit();
+    emit windowResized();
 }
 
 void MainWindow::changeEvent(QEvent *event)
@@ -394,6 +395,8 @@ void MainWindow::changeEvent(QEvent *event)
         if (videoPreview)
             videoPreview->updatePalette();
     }
+    else if (event->type() == QEvent::WindowStateChange && isMaximized())
+        emit windowMaximized();
 }
 
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
@@ -455,8 +458,8 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
 {
     if (fullscreenMode_)
         checkBottomArea(event->globalPosition());
-    if (mousePressedInsideStatustime) {
-        mousePressedInsideStatustime = false;
+    if (mousePressedInBottomArea) {
+        mousePressedInBottomArea = false;
         QWindow *parentWindow = this->window()->windowHandle();
         parentWindow->startSystemMove();
     }
@@ -473,14 +476,9 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     QPoint pos = event->globalPosition().toPoint();
     bool isInMpvw = mpvw ? insideWidget(pos, mpvw) : false;
-    bool isInBottomArea = ui->bottomArea->isVisible() ? insideWidget(pos, ui->bottomArea) : false;
-    mousePressedInsideStatustime = insideWidget(pos, statusTime);
+    mousePressedInBottomArea = ui->bottomArea->isVisible() ? insideWidget(pos, ui->bottomArea) : false;
     if (isInMpvw && mouseStateEvent(MouseState::fromMouseEvent(event, MouseState::MouseDown)))
         event->accept();
-    else if (isInBottomArea && !mousePressedInsideStatustime)  {
-        QWindow *parentWindow = this->window()->windowHandle();
-        parentWindow->startSystemMove();
-    }
     else
         QMainWindow::mousePressEvent(event);
 }
@@ -498,7 +496,7 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event)
 {
     QPoint pos = event->globalPosition().toPoint();
     bool ok = mpvw ? insideWidget(pos, mpvw) : false;
-    if (mousePressedInsideStatustime && insideWidget(pos, statusTime)) {
+    if (mousePressedInBottomArea && insideWidget(pos, statusTime)) {
         if (event->button() == Qt::MouseButton::LeftButton)
             setTimeRemainingMode(!timeRemainingMode);
     }
@@ -508,7 +506,7 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event)
         else
             QMainWindow::mouseReleaseEvent(event);
     }
-    mousePressedInsideStatustime = false;
+    mousePressedInBottomArea = false;
 }
 
 void MainWindow::wheelEvent(QWheelEvent *event)

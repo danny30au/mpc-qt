@@ -173,6 +173,8 @@ signals:
     void chapterSelected(int64_t id);
     void timeSelected(double time);
     void fullscreenModeChanged(bool fullscreen);
+    void windowResized();
+    void windowMaximized();
     void zoomPresetChanged(int which);
     void playCurrentItemRequested();
     void favoriteCurrentTrack();
@@ -526,7 +528,7 @@ private:
     bool timeShortMode = true;
     bool timeRemainingMode = false;
     bool timePercentageMode = false;
-    bool mousePressedInsideStatustime = false;
+    bool mousePressedInBottomArea = false;
 
     QString previousOpenDir;
     QSize noVideoSize_ = QSize(500,270);
