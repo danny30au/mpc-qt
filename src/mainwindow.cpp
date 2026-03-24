@@ -389,7 +389,7 @@ void MainWindow::changeEvent(QEvent *event)
         volumeSlider_->applicationPaletteChanged();
         themer.updateIcons();
         playlistWindow_->updateIcons();
-        ui->menubar->setStyle(ui->menubar->style());
+        updatePalette();
         if (tooltip)
             tooltip->updatePalette();
         if (videoPreview)
@@ -458,7 +458,7 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
 {
     if (fullscreenMode_)
         checkBottomArea(event->globalPosition());
-    if (mousePressedInBottomArea) {
+    else if (mousePressedInBottomArea) {
         mousePressedInBottomArea = false;
         QWindow *parentWindow = this->window()->windowHandle();
         parentWindow->startSystemMove();
@@ -1014,6 +1014,13 @@ void MainWindow::setUiDecorationState(DecorationState state)
     }
 
     updateWindowFlags();
+}
+
+void MainWindow::updatePalette()
+{
+    QPalette palette = QApplication::palette();
+    palette.setColor(ui->menubar->backgroundRole(), palette.Window);
+    ui->menubar->setPalette(palette);
 }
 
 void MainWindow::setOSDPage(int page)
@@ -2442,7 +2449,7 @@ void MainWindow::libraryWindowClosed()
 
 void MainWindow::mpvObject_mouseReleased()
 {
-    if (!isPlaying) {
+    if (!isPlaying && !mousePressedInBottomArea) {
         emit playCurrentItemRequested();
         return;
     }
@@ -3161,7 +3168,8 @@ void MainWindow::on_actionViewOptions_triggered()
 
 void MainWindow::on_actionPlayPause_triggered()
 {
-    on_play_clicked();
+    if (!mousePressedInBottomArea)
+        on_play_clicked();
 }
 
 void MainWindow::on_actionPlayStop_triggered()

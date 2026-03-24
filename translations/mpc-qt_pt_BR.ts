@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>After Playback: Log Off</source>
-        <translation>Após a reprodução: faça logout</translation>
+        <translation>Após a reprodução: Faça Logout</translation>
     </message>
     <message>
         <source>After Playback: Lock</source>
@@ -61,7 +61,7 @@
     </message>
     <message>
         <source>After Playback: Play next file</source>
-        <translation>Após a reprodução: Reproduza o ficheiro seguinte</translation>
+        <translation>Após a reprodução: Reproduza o próximo arquivo</translation>
     </message>
     <message>
         <source>After Playback: Do nothing</source>
@@ -2388,7 +2388,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Misc</source>
-        <translation>Outros</translation>
+        <translation type="vanished">Outros</translation>
     </message>
     <message>
         <source>Export</source>
@@ -3511,43 +3511,11 @@ arquivo de mídia reproduzido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Placement</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Override default subtitle placement</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Left</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Right</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Top</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bottom</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Position</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use margins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3569,14 +3537,6 @@ arquivo de mídia reproduzido</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Yes and only zoom signs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Force</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3625,10 +3585,6 @@ arquivo de mídia reproduzido</translation>
     </message>
     <message>
         <source>Prefer forced and/or default subtitle tracks</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Automatically load external subtitles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4429,6 +4385,10 @@ arquivo de mídia reproduzido</translation>
     </message>
     <message>
         <source>Remember last window size and position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use dark colors</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

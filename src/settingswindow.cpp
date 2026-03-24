@@ -482,10 +482,6 @@ void SettingsWindow::setupUnimplementedWidgets()
     ui->shadersWikiTab->setVisible(false);
     ui->shadersPresetsBox->setVisible(false);
 
-    ui->subtitlePlacementBox->setVisible(false);
-    ui->subtitlesAssOverride->setVisible(false);
-    ui->subtitlesAssOverrideLabel->setVisible(false);
-
     ui->subtitlesDatabaseBox->setVisible(false);
 
     ui->encodeTab->setEnabled(false);
@@ -735,8 +731,13 @@ void SettingsWindow::sendSignals()
                    WIDGET_LOOKUP(ui->interfaceIconsCustomFolder).toString());
     emit highContrastWidgets(WIDGET_LOOKUP(ui->interfaceWidgetHighContast).toBool());
     bool useCustomColors = WIDGET_LOOKUP(ui->interfaceWidgetCustom).toBool();
-    emit applicationPalette(useCustomColors ? paletteEditor->variantToPalette(WIDGET_LOOKUP(paletteEditor))
-                                         : paletteEditor->systemPalette());
+    bool useDarkColors = WIDGET_LOOKUP(ui->interfaceWidgetDark).toBool();
+    if (useDarkColors)
+        emit applicationPalette(paletteEditor->darkPalette());
+    else if (useCustomColors)
+        emit applicationPalette(paletteEditor->variantToPalette(WIDGET_LOOKUP(paletteEditor)));
+    else
+        emit applicationPalette(paletteEditor->systemPalette());
     emit videoColor(useCustomColors ? QString("#%1").arg(WIDGET_LOOKUP(ui->windowVideoValue).toString())
                                     : "000000");
     emit option("background-color", useCustomColors
@@ -747,7 +748,7 @@ void SettingsWindow::sendSignals()
     emit infoStatsColors(useCustomColors ? infoForegroundColor : "FFFFFF",
                          useCustomColors ? infoBackgroundColor : "000000");
 
-    emit stylesheetIsFusion(WIDGET_LOOKUP(ui->stylesheetFusion).toBool());
+    emit stylesheetIsFusion(WIDGET_LOOKUP(ui->stylesheetFusion).toBool() || useDarkColors);
     emit stylesheetText(WIDGET_LOOKUP(ui->stylesheetText).toString());
 
     emit webserverListening(WIDGET_LOOKUP(ui->webEnableServer).toBool());
@@ -1050,9 +1051,8 @@ void SettingsWindow::sendSignals()
     emit subsPreferDefaultForced(WIDGET_LOOKUP(ui->subtitlesPreferDefaultForced_v3).toBool());
     emit subsPreferExternal(WIDGET_LOOKUP(ui->subtitlesPreferExternal).toBool());
     emit subsIgnoreEmbeded(WIDGET_LOOKUP(ui->subtitlesIgnoreEmbedded).toBool());
-    bool subsAutoload = WIDGET_LOOKUP(ui->subtitlesAutoloadExternal).toBool();
     emit option("sub-filter-sdh", WIDGET_LOOKUP(ui->subtitlesRemoveSdh).toBool());
-    emit option("sub-auto", subsAutoload ? WIDGET_TO_TEXT(ui->subtitlesAutoloadMatch) : QString("no"));
+    emit option("sub-auto", WIDGET_TO_TEXT(ui->subtitlesAutoloadMatch));
     emit option("sub-file-paths", WIDGET_PLACEHOLD_LOOKUP(ui->subtitlesAutoloadPath).split(';'));
 
     emit screenshotDirectory(
@@ -1246,7 +1246,7 @@ void SettingsWindow::on_pageTree_itemSelectionChanged()
     if (!modelIndex.isValid())
         return;
 
-    static int parentIndex[] = { 0, 6, 13, 14, 17, 19, 20, 21 };
+    static int parentIndex[] = { 0, 6, 13, 14, 16, 18, 19, 20 };
     int index = 0;
     if (!modelIndex.parent().isValid())
         index = parentIndex[modelIndex.row()];
