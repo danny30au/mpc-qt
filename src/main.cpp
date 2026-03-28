@@ -434,7 +434,7 @@ void Flow::earlyPlatformOverride()
         isWayland = true;
         Storage s;
         QVariantMap settings = s.readVMap(fileSettings);
-        if (!settings.value("tweaksPreferWayland", QVariant(false)).toBool())
+        if (!settings.value("tweaksPreferWayland", QVariant(true)).toBool())
             qputenv("QT_QPA_PLATFORM", "xcb");
         else if (!qEnvironmentVariableIsEmpty("WAYLAND_DISPLAY"))
             isWaylandMode = true;
@@ -587,6 +587,10 @@ void Flow::setupMainWindowConnections()
             mainWindow, &MainWindow::setPlaylistQuickQueueMode);
     connect(mainWindow->playlistWindow(), &PlaylistWindow::hideFullscreenChanged,
             mainWindow, &MainWindow::setFullscreenHidePanels);
+
+    // playlistwindow -> manager
+    connect(mainWindow->playlistWindow(), &PlaylistWindow::closingPlaylist,
+            playbackManager, &PlaybackManager::closingPlaylist);
 
     // propertieswindow -> mainwindow
     connect(propertiesWindow, &PropertiesWindow::artistAndTitleChanged,
