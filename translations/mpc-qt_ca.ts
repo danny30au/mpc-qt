@@ -262,6 +262,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <translation>Posició de la finestra principal.</translation>
     </message>
     <message>
+        <source>Append the file(s) to the current playlist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>URLs to open, optionally.</source>
         <translation>URLs a obrir, opcionalment.</translation>
     </message>
@@ -1824,6 +1828,22 @@ No action will be triggered.</source>
     <message>
         <source>&amp;Move File to Recycle Bin</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Sí</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation type="unfinished">Auto</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">No</translation>
     </message>
 </context>
 <context>

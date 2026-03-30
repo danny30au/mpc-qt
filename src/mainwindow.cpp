@@ -458,7 +458,9 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
 {
     if (fullscreenMode_)
         checkBottomArea(event->globalPosition());
-    else if (mousePressedInBottomArea) {
+    else if (mousePressedInBottomArea &&
+             (event->globalPosition().toPoint() - mousePressPosition).manhattanLength()
+             > QApplication::startDragDistance()) {
         mousePressedInBottomArea = false;
         QWindow *parentWindow = this->window()->windowHandle();
         parentWindow->startSystemMove();
@@ -474,9 +476,10 @@ static bool insideWidget(QPoint p, QWidget const *widget) {
 
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
-    QPoint pos = event->globalPosition().toPoint();
-    bool isInMpvw = mpvw ? insideWidget(pos, mpvw) : false;
-    mousePressedInBottomArea = ui->bottomArea->isVisible() ? insideWidget(pos, ui->bottomArea) : false;
+    mousePressPosition = event->globalPosition().toPoint();
+    bool isInMpvw = mpvw ? insideWidget(mousePressPosition, mpvw) : false;
+    mousePressedInBottomArea = ui->bottomArea->isVisible() ?
+        insideWidget(mousePressPosition, ui->bottomArea) : false;
     if (isInMpvw && mouseStateEvent(MouseState::fromMouseEvent(event, MouseState::MouseDown)))
         event->accept();
     else
@@ -759,6 +762,11 @@ void MainWindow::setupActionGroups()
     ag->addAction(ui->actionPlayAfterOnceShutdown);
     ag->addAction(ui->actionPlayAfterOnceStandby);
     ag->addAction(ui->actionPlayAfterAlwaysNext);
+
+    ag = new QActionGroup(this);
+    ag->addAction(ui->actionVideoFiltersDeinterlaceYes);
+    ag->addAction(ui->actionVideoFiltersDeinterlaceAuto);
+    ag->addAction(ui->actionVideoFiltersDeinterlaceNo);
 }
 
 void MainWindow::setupPositionSlider()
@@ -2204,7 +2212,10 @@ void MainWindow::setVideoTracks(QList<Track> tracks)
     }
     ui->menuPlayVideo->addSeparator();
     ui->menuPlayVideo->addMenu(ui->menuPlayVideoFilters);
-    ui->menuPlayVideoFilters->addAction(ui->actionVideoFilterDeinterlace);
+    ui->menuPlayVideoFilters->addMenu(ui->menuPlayVideoFiltersDeinterlace);
+    ui->menuPlayVideoFiltersDeinterlace->addAction(ui->actionVideoFiltersDeinterlaceYes);
+    ui->menuPlayVideoFiltersDeinterlace->addAction(ui->actionVideoFiltersDeinterlaceAuto);
+    ui->menuPlayVideoFiltersDeinterlace->addAction(ui->actionVideoFiltersDeinterlaceNo);
     ui->menuPlayVideo->addMenu(ui->menuPlayVideoAspect);
     ui->menuPlayVideoAspect->addAction(ui->actionVideoAspectName);
     ui->menuPlayVideoAspect->addSeparator();
@@ -2275,8 +2286,9 @@ void MainWindow::setSubtitleTracks(QList<Track > tracks)
     ui->menuPlaySubtitles->addAction(ui->actionPlaySubtitlesPrevious);
     ui->menuPlaySubtitles->addAction(ui->actionPlaySubtitlesNext);
     ui->menuPlaySubtitles->addAction(ui->actionPlaySubtitlesCopy);
-    ui->menuPlaySubtitles->addAction(ui->actionDecreaseSubtitlesDelay);
-    ui->menuPlaySubtitles->addAction(ui->actionIncreaseSubtitlesDelay);
+    ui->menuPlaySubtitles->addMenu(ui->menuPlaySubtitlesDelay);
+    ui->menuPlaySubtitlesDelay->addAction(ui->actionDecreaseSubtitlesDelay);
+    ui->menuPlaySubtitlesDelay->addAction(ui->actionIncreaseSubtitlesDelay);
     ui->menuPlaySubtitles->addMenu(ui->menuPlaySubtitlesMove);
     ui->menuPlaySubtitlesMove->addAction(ui->actionMoveSubtitlesUp);
     ui->menuPlaySubtitlesMove->addAction(ui->actionMoveSubtitlesDown);
@@ -3245,13 +3257,19 @@ void MainWindow::on_actionAudioFilterCrossfeed_triggered(bool checked)
     emit audioFilter("bs2b", "profile=cmoy", checked);
 }
 
-void MainWindow::on_actionVideoFilterDeinterlace_triggered(bool checked)
+void MainWindow::on_actionVideoFiltersDeinterlaceYes_triggered()
 {
-    // Deinterlacing doesn't work with hardware acceleration
-    if (checked)
-        mpvObject_->setCachedMpvOption("hwdec", "no");
+    emit deinterlaceSelected(PlaybackManager::Deinterlace::Yes);
+}
 
-    emit videoFilter("yadif", "mode=1", checked);
+void MainWindow::on_actionVideoFiltersDeinterlaceAuto_triggered()
+{
+    emit deinterlaceSelected(PlaybackManager::Deinterlace::Auto);
+}
+
+void MainWindow::on_actionVideoFiltersDeinterlaceNo_triggered()
+{
+    emit deinterlaceSelected(PlaybackManager::Deinterlace::No);
 }
 
 void MainWindow::on_actionPlayAudioTrackNext_triggered()

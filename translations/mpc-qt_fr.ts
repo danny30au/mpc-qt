@@ -271,6 +271,10 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
         <translation>Position de la fenêtre principale.</translation>
     </message>
     <message>
+        <source>Append the file(s) to the current playlist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>URLs to open, optionally.</source>
         <translation>URLs à ouvrir, facultatif.</translation>
     </message>
@@ -1782,6 +1786,22 @@ Aucune action ne sera déclenchée.</translation>
     <message>
         <source>&amp;Move File to Recycle Bin</source>
         <translation>Dé&amp;placer dans la corbeille</translation>
+    </message>
+    <message>
+        <source>Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Oui</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation type="unfinished">Auto</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Non</translation>
     </message>
 </context>
 <context>

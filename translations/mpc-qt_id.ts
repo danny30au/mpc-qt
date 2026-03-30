@@ -263,6 +263,10 @@ Apakah Anda ingin menggunakannya untuk &quot;%3&quot;?</translation>
         <translation>Posisi jendela utama.</translation>
     </message>
     <message>
+        <source>Append the file(s) to the current playlist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>URLs to open, optionally.</source>
         <translation>Tautan untuk membuka, opsional.</translation>
     </message>
@@ -1782,6 +1786,22 @@ Tidak ada tindakan yang akan dipicu.</translation>
     <message>
         <source>&amp;Move File to Recycle Bin</source>
         <translation>Pindahkan File ke Recycle Bin</translation>
+    </message>
+    <message>
+        <source>Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Ya</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation type="unfinished">Otomatis</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Tidak</translation>
     </message>
 </context>
 <context>

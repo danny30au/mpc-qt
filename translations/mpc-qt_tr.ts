@@ -263,6 +263,10 @@ Bunun yerine “%3” için kullanmak ister misiniz?</translation>
         <translation>Ana pencere konumu.</translation>
     </message>
     <message>
+        <source>Append the file(s) to the current playlist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>URLs to open, optionally.</source>
         <translation>Açılacak URL, isteğe bağlı.</translation>
     </message>
@@ -1826,6 +1830,22 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     <message>
         <source>&amp;Move File to Recycle Bin</source>
         <translation>Dosyayı Çöp Kutusuna &amp;Taşı</translation>
+    </message>
+    <message>
+        <source>Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Evet</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation type="unfinished">Kendiliğinden</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Hayır</translation>
     </message>
 </context>
 <context>

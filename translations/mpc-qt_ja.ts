@@ -271,6 +271,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <translation>メインウィンドウの位置。</translation>
     </message>
     <message>
+        <source>Append the file(s) to the current playlist.</source>
+        <translation>ファイルを現在の再生リストに追加します。</translation>
+    </message>
+    <message>
         <source>URLs to open, optionally.</source>
         <translation>開くURL(任意)。</translation>
     </message>
@@ -1846,6 +1850,22 @@ No action will be triggered.</source>
     <message>
         <source>&amp;Move File to Recycle Bin</source>
         <translation>ファイルをごみ箱へ移動(&amp;M)</translation>
+    </message>
+    <message>
+        <source>Delay</source>
+        <translation>遅延</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>はい</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>自動</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>いいえ</translation>
     </message>
 </context>
 <context>

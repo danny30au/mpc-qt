@@ -3,6 +3,7 @@
 
 #include <QLayout>
 #include <QMainWindow>
+#include <QApplication>
 #include <QGuiApplication>
 #include <QThread>
 #include <QTimer>
@@ -57,6 +58,7 @@ MpvObject::PropertyDispatchMap MpvObject::propertyDispatch = {
     HANDLE_PROP("decoder-frame-drop-count", decoderFramedropsChanged, toLongLong, 0ll),
     HANDLE_PROP("audio-bitrate", audioBitrateChanged, toDouble, 0.0),
     HANDLE_PROP("video-bitrate", videoBitrateChanged, toDouble, 0.0),
+    HANDLE_PROP("video-frame-info/interlaced", interlacedChanged, toBool, false),
     HANDLE_PROP("video-params/aspect", self_aspectChanged, toDouble, 0.0),
     HANDLE_PROP("video-params/aspect-name", aspectNameChanged, toString, QString()),
     HANDLE_PROP("metadata", self_metadata, toMap, QVariantMap()),
@@ -153,6 +155,7 @@ MpvObject::MpvObject(QObject *owner, const QString &clientName) : QObject(owner)
         { "pause", 0, MPV_FORMAT_FLAG },
         { "eof-reached", 0, MPV_FORMAT_FLAG },
         { "idle-active", 0, MPV_FORMAT_FLAG },
+        { "video-frame-info/interlaced", 0, MPV_FORMAT_FLAG },
         { "video-params/aspect", 0, MPV_FORMAT_DOUBLE },
         { "video-params/aspect-name", 0, MPV_FORMAT_STRING },
         { "media-title", 0, MPV_FORMAT_STRING },
@@ -1126,8 +1129,10 @@ void MpvGlWidget::mouseMoveEvent(QMouseEvent *event)
 
         if (e == 0) {
             setCursor(Qt::ArrowCursor);
-            if (!windowDragging && event->buttons().testAnyFlag(Qt::LeftButton)
-                && event->position() != mousePressPosition) {
+            if (!windowDragging
+                && event->buttons().testAnyFlag(Qt::LeftButton)
+                && (event->position() - mousePressPosition).manhattanLength()
+                    > QApplication::startDragDistance()) {
                 QWindow *parentWindow = this->window()->windowHandle();
                 parentWindow->startSystemMove();
                 windowDragging = true;

@@ -271,6 +271,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <translation>主窗口位置。</translation>
     </message>
     <message>
+        <source>Append the file(s) to the current playlist.</source>
+        <translation>将文件添加到当前播放列表。</translation>
+    </message>
+    <message>
         <source>URLs to open, optionally.</source>
         <translation>要打开的URL，可选。</translation>
     </message>
@@ -341,7 +345,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <name>LogWindow</name>
     <message>
         <source>Log Messages</source>
-        <translation>日志</translation>
+        <translation>日志消息</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -349,7 +353,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     </message>
     <message>
         <source>Save</source>
-        <translation>粘贴</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Clear</source>
@@ -633,7 +637,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>P&amp;roperties</source>
-        <translation>属性(&amp;P)</translation>
+        <translation>属性(&amp;R)</translation>
     </message>
     <message>
         <source>Shift+F10</source>
@@ -1802,6 +1806,22 @@ No action will be triggered.</source>
     <message>
         <source>&amp;Move File to Recycle Bin</source>
         <translation>将文件移至回收站(&amp;M)</translation>
+    </message>
+    <message>
+        <source>Delay</source>
+        <translation>延迟</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>是</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>自动</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>否</translation>
     </message>
 </context>
 <context>
@@ -3006,7 +3026,7 @@ media file played</source>
     </message>
     <message>
         <source>Anti-ring</source>
-        <translation>防边缘伪影‌</translation>
+        <translation>抗振铃</translation>
     </message>
     <message>
         <source>Blur</source>
@@ -3951,7 +3971,7 @@ media file played</source>
     </message>
     <message>
         <source>Drop frames before the seek target in the decoder</source>
-        <translation>跳转时丢弃目标前已解码帧‌</translation>
+        <translation>解码器丢弃跳转目标之前的帧</translation>
     </message>
     <message>
         <source>Show chapter marks in seek bar</source>

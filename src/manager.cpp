@@ -58,11 +58,10 @@ QString TrackData::formatted(const QString &nowPlayingTitle)
     QString output;
     output.append(QString("%1: ").arg(trackId));
     if (!lang.isEmpty()) {
-#if QT_VERSION < QT_VERSION_CHECK(6,3,0)
-        QString langName = QLocale::languageToString(QLocale(lang).language());
-#else
-        QString langName = QLocale::languageToString(QLocale::codeToLanguage(lang, QLocale::AnyLanguageCode));
-#endif
+        QLocale locale = QLocale(lang);
+        QString langName = QLocale::languageToString(locale.language());
+        if (locale.script() != QLocale(locale.language()).script())
+            langName.append(QString(" (%1)").arg(QLocale::scriptToString(locale.script())));
         output.append(QString("%1 ").arg(langName));
         output.append(QString("[%1] ").arg(lang));
     }
@@ -150,6 +149,8 @@ void PlaybackManager::setMpvObject(MpvObject *mpvObject, bool makeConnections)
                 this, &PlaybackManager::mpvw_aspectNameChanged);
         connect(mpvObject, &MpvObject::hwdecCurrentChanged,
                 this, &PlaybackManager::mpvw_hwdecCurrentChanged);
+        connect(mpvObject, &MpvObject::interlacedChanged,
+                this, &PlaybackManager::mpvw_interlacedChanged);
 
         connect(this, &PlaybackManager::hasNoVideo,
                 mpvObject, &MpvObject::setDrawLogo);
@@ -705,6 +706,8 @@ void PlaybackManager::startPlayWithUuid(QUrl what, QUuid playlistUuid,
     audioTrackIsUserSelected = false;
     subtitleTrackSelected = -1;
     subtitleTrackIsUserSelected = false;
+    setDeinterlace(deinterlaceMode_ == Deinterlace::Yes);
+
     if (!isRepeating)
         emit startedPlayingFile(what);
     mpvObject_->fileOpen(what.isLocalFile() ? what.toLocalFile()
@@ -761,8 +764,8 @@ void PlaybackManager::selectDesiredTracks()
                     if (isSubs && it.value().isForced)
                         lastGoodTrack = it.key();
                     else{
-                        Logger::log(logModule,
-                                    "lang track auto selected: " + QString::number(it.key()));
+                        Logger::log(logModule, QString(isSubs ? "subs" : "audio") +
+                                    " lang track auto selected: " + QString::number(it.key()));
                         return it.key();
                     }
                 }
@@ -771,9 +774,13 @@ void PlaybackManager::selectDesiredTracks()
                     "lastGoodTrack track auto selected: " + QString::number(lastGoodTrack));
         return lastGoodTrack;
     };
-    int64_t videoId = videoTrackSelected;
-    int64_t audioId = audioTrackSelected;
-    int64_t subsId = subtitleTrackSelected;
+    int64_t videoId = videoTrackIsUserSelected ? videoTrackSelected : -1;
+    int64_t audioId = audioTrackIsUserSelected ? audioTrackSelected : -1;
+    int64_t subsId = subtitleTrackIsUserSelected ? subtitleTrackSelected : -1;
+
+    Logger::log(logModule, "videoId: " + QString::number(videoId));
+    Logger::log(logModule, "audioId: " + QString::number(audioId));
+    Logger::log(logModule, "subsId: " + QString::number(subsId));
 
     if (audioId < 0)
         audioId = findTrackByLangPreference(audioLangPref, audioListData, false);
@@ -813,6 +820,22 @@ void PlaybackManager::restoreVideoTrack(int64_t id)
     videoTrackSelected = id;
     if (id > -1)
         videoTrackIsUserSelected = true;
+}
+
+void PlaybackManager::setDeinterlaceMode(PlaybackManager::Deinterlace deinterlaceMode)
+{
+    deinterlaceMode_ = deinterlaceMode;
+    if (deinterlaceMode == Deinterlace::Yes ||
+        (deinterlaceMode == Deinterlace::Auto &&
+         mpvObject_->getMpvPropertyVariant("video-frame-info/interlaced").toBool()))
+        setDeinterlace(true);
+    else
+        setDeinterlace(false);
+}
+
+void PlaybackManager::setHwdecBackend(QString backend)
+{
+    hwdecBackend = backend;
 }
 
 void PlaybackManager::checkAfterPlayback()
@@ -949,6 +972,14 @@ bool PlaybackManager::playNextFile(bool replaceMpvPlaylist, int delta)
 void PlaybackManager::playPrevFile()
 {
     playNextFile(true, -1);
+}
+
+void PlaybackManager::setDeinterlace(bool enable)
+{
+    // Deinterlacing doesn't work with hardware acceleration
+    mpvObject_->setCachedMpvOption("hwdec", enable ? "no" : hwdecBackend);
+    emit videoFilter("yadif", "mode=1", enable);
+    deinterlaceEnabled = enable;
 }
 
 void PlaybackManager::mpvw_playTimeChanged(double time)
@@ -1158,6 +1189,12 @@ void PlaybackManager::mpvw_hwdecCurrentChanged(QString newHwdecCurrent)
     fastHardwareDecoding = !(newHwdecCurrent.isEmpty() ||
                              newHwdecCurrent == "no" ||
                              newHwdecCurrent.contains("copy"));
+}
+
+void PlaybackManager::mpvw_interlacedChanged(bool interlaced)
+{
+    if (interlaced && !deinterlaceEnabled && deinterlaceMode_ == Deinterlace::Auto)
+        setDeinterlace(true);
 }
 
 void PlaybackManager::mpvw_metadataChanged(QVariantMap metadata)
