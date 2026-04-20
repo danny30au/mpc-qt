@@ -68,7 +68,9 @@ MpvObject::PropertyDispatchMap MpvObject::propertyDispatch = {
     HANDLE_PROP("file-size", fileSizeChanged, toLongLong, 0ll),
     HANDLE_PROP("path", filePathChanged, toString, QString()),
     HANDLE_PROP("sub-text", subTextChanged, toString, QString()),
-    HANDLE_PROP("hwdec-current", hwdecCurrentChanged, toString, QString())
+    HANDLE_PROP("hwdec-current", hwdecCurrentChanged, toString, QString()),
+    HANDLE_PROP("paused-for-cache", pausedForCacheChanged, toString, QString()),
+    HANDLE_PROP("cache-buffering-state", bufferStateChanged, toLongLong, 0ll)
 };
 
 MpvObject::MpvObject(QObject *owner, const QString &clientName) : QObject(owner)
@@ -143,8 +145,9 @@ MpvObject::MpvObject(QObject *owner, const QString &clientName) : QObject(owner)
         { "scripts", scripts },
         { "clipboard-backends", "clr" }
     };
-    QMetaObject::invokeMethod(ctrl, "create", Qt::BlockingQueuedConnection,
-                              Q_ARG(MpvController::OptionList, earlyOptions));
+    QMetaObject::invokeMethod(ctrl, [this, earlyOptions]() {
+        this->ctrl->create(earlyOptions);
+    }, Qt::BlockingQueuedConnection);
 
     // clean up objects when the worker thread is deleted
     connect(worker, &QThread::finished, ctrl, &MpvController::deleteLater);
@@ -171,6 +174,7 @@ MpvObject::MpvObject(QObject *owner, const QString &clientName) : QObject(owner)
         { "audio-bitrate", 0, MPV_FORMAT_DOUBLE },
         { "video-bitrate", 0, MPV_FORMAT_DOUBLE },
         { "paused-for-cache", 0, MPV_FORMAT_FLAG },
+        { "cache-buffering-state", 0, MPV_FORMAT_INT64 },
         { "metadata", 0, MPV_FORMAT_NODE },
         { "audio-device-list", 0, MPV_FORMAT_NODE },
         { "filename", 0, MPV_FORMAT_STRING },
@@ -185,19 +189,17 @@ MpvObject::MpvObject(QObject *owner, const QString &clientName) : QObject(owner)
         "time-pos", "avsync", "estimated-vf-fps", "frame-drop-count",
         "decoder-frame-drop-count", "audio-bitrate", "video-bitrate"
     };
-    QMetaObject::invokeMethod(ctrl, "observeProperties",
-                              Qt::QueuedConnection,
-                              Q_ARG(MpvController::PropertyList, options),
-                              Q_ARG(QSet<QString>, throttled));
+    QMetaObject::invokeMethod(ctrl, [this, options, throttled]() {
+        this->ctrl->observeProperties(options, throttled);
+    }, Qt::QueuedConnection);
 
-    QMetaObject::invokeMethod(ctrl, "addHook",
-                              Qt::QueuedConnection,
-                              Q_ARG(QString, "on_unload"),
-                              Q_ARG(uint64_t, reinterpret_cast<uint64_t>(this)));
+    QMetaObject::invokeMethod(ctrl, [this]() {
+        this->ctrl->addHook("on_unload", reinterpret_cast<uint64_t>(this));
+    }, Qt::QueuedConnection);
 
-    QMetaObject::invokeMethod(ctrl, "setLogLevel",
-                              Qt::QueuedConnection,
-                              Q_ARG(QString, "info"));
+    QMetaObject::invokeMethod(ctrl, [this]() {
+        this->ctrl->setLogLevel("info");
+    }, Qt::QueuedConnection);
 }
 
 MpvObject::~MpvObject()
@@ -213,8 +215,9 @@ MpvObject::~MpvObject()
         // no explicit delete. deleteLater will be called at thread finish.
         // Instead tell mpv to stop sending wake notifications so the
         // can be reliably idle when we end it.
-        QMetaObject::invokeMethod(ctrl, "stop",
-                                  Qt::BlockingQueuedConnection);
+        QMetaObject::invokeMethod(ctrl, [this]() {
+            this->ctrl->stop();
+        }, Qt::BlockingQueuedConnection);
         ctrl = nullptr;
     }
     worker->quit();
@@ -550,11 +553,9 @@ bool MpvObject::setChapter(int64_t chapter)
     // MPV_ERROR_PROPERTY_FORMAT: past-the-end value requested
     // MPV_ERROR_SUCCESS: success
     int r;
-    QMetaObject::invokeMethod(ctrl, "setPropertyVariant",
-                              Qt::BlockingQueuedConnection,
-                              Q_RETURN_ARG(int, r),
-                              Q_ARG(QString, "chapter"),
-                              Q_ARG(QVariant, QVariant(qlonglong(chapter))));
+    QMetaObject::invokeMethod(ctrl, [this, chapter, &r]() {
+        r = this->ctrl->setPropertyVariant("chapter", QVariant(qlonglong(chapter)));
+    }, Qt::BlockingQueuedConnection);
     return r == MPV_ERROR_SUCCESS;
 }
 
@@ -690,21 +691,18 @@ void MpvObject::setUncachedMpvOption(const QString &option, const QVariant &valu
 QVariant MpvObject::blockingMpvCommand(const QVariant &params)
 {
     QVariant v;
-    QMetaObject::invokeMethod(ctrl, "command",
-                              Qt::BlockingQueuedConnection,
-                              Q_RETURN_ARG(QVariant, v),
-                              Q_ARG(QVariant, params));
+    QMetaObject::invokeMethod(ctrl, [this, params, &v]() {
+        v = this->ctrl->command(params);
+    }, Qt::BlockingQueuedConnection);
     return v;
 }
 
 QVariant MpvObject::blockingSetMpvPropertyVariant(QString name, const QVariant &value)
 {
     int v;
-    QMetaObject::invokeMethod(ctrl, "setPropertyVariant",
-                              Qt::BlockingQueuedConnection,
-                              Q_RETURN_ARG(int, v),
-                              Q_ARG(QString, name),
-                              Q_ARG(QVariant, value));
+    QMetaObject::invokeMethod(ctrl, [this, name, value, &v]() {
+        v = this->ctrl->setPropertyVariant(name, value);
+    }, Qt::BlockingQueuedConnection);
     return v == MPV_ERROR_SUCCESS ? QVariant()
                                   : QVariant::fromValue(MpvErrorCode(v));
 }
@@ -712,11 +710,9 @@ QVariant MpvObject::blockingSetMpvPropertyVariant(QString name, const QVariant &
 QVariant MpvObject::blockingSetMpvOptionVariant(QString name, const QVariant &value)
 {
     int v;
-    QMetaObject::invokeMethod(ctrl, "setOptionVariant",
-                              Qt::BlockingQueuedConnection,
-                              Q_RETURN_ARG(int, v),
-                              Q_ARG(QString, name),
-                              Q_ARG(QVariant, value));
+    QMetaObject::invokeMethod(ctrl, [this, name, value, &v]() {
+        v = this->ctrl->setOptionVariant(name, value);
+    }, Qt::BlockingQueuedConnection);
     return v == MPV_ERROR_SUCCESS ? QVariant()
                                   : QVariant::fromValue(MpvErrorCode(v));
 }
@@ -724,10 +720,9 @@ QVariant MpvObject::blockingSetMpvOptionVariant(QString name, const QVariant &va
 QVariant MpvObject::getMpvPropertyVariant(QString name)
 {
     QVariant v;
-    QMetaObject::invokeMethod(ctrl, "getPropertyVariant",
-                              Qt::BlockingQueuedConnection,
-                              Q_RETURN_ARG(QVariant, v),
-                              Q_ARG(QString, name));
+    QMetaObject::invokeMethod(ctrl, [this, name, &v]() {
+        v = this->ctrl->getPropertyVariant(name);
+    }, Qt::BlockingQueuedConnection);
     return v;
 }
 
@@ -1194,7 +1189,10 @@ void MpvGlWidget::keyReleaseEvent(QKeyEvent *event)
 
 void MpvGlWidget::render_update(void *ctx)
 {
-    QMetaObject::invokeMethod(static_cast<MpvGlWidget*>(ctx), "maybeUpdate");
+    auto widget = static_cast<MpvGlWidget*>(ctx);
+    QMetaObject::invokeMethod(widget, [widget]() {
+        widget->maybeUpdate();
+    });
 }
 
 void MpvGlWidget::maybeUpdate()
@@ -1492,13 +1490,13 @@ void MpvController::handleMpvEvent(mpv_event *event)
             return (prop->format != MPV_FORMAT_INT64 || prop->data == nullptr) ?
                         dflt : *static_cast<int64_t*>(prop->data);
         };
-        auto asString = [&](QString dflt = QString()) {
+        auto asString = [&](const QString& dflt = QString()) {
             return (!(prop->format == MPV_FORMAT_STRING ||
                       prop->format == MPV_FORMAT_OSD_STRING) ||
                     prop->data == nullptr) ?
                         dflt : QString(*static_cast<char**>(prop->data));
         };
-        auto asNode = [&](QVariant dflt = QVariant()) {
+        auto asNode = [&](const QVariant& dflt = QVariant()) {
             return (prop->format != MPV_FORMAT_NODE || prop->data == nullptr) ?
                         dflt : mpv::qt::node_to_variant(
                             static_cast<mpv_node*>(prop->data));
@@ -1525,9 +1523,10 @@ void MpvController::handleMpvEvent(mpv_event *event)
         QVariant v = propertyToVariant(static_cast<mpv_event_property*>(event->data));
         if (!event->reply_userdata)
             return;
-        QMetaObject::invokeMethod(reinterpret_cast<MpvCallback*>(event->reply_userdata),
-                                  "reply", Qt::QueuedConnection,
-                                  Q_ARG(QVariant, v));
+        auto callback = reinterpret_cast<MpvCallback*>(event->reply_userdata);
+        QMetaObject::invokeMethod(callback, [callback, v]() {
+            callback->reply(v);
+        }, Qt::QueuedConnection);
         break;
     }
     case MPV_EVENT_COMMAND_REPLY:
@@ -1535,9 +1534,10 @@ void MpvController::handleMpvEvent(mpv_event *event)
         QVariant v = QVariant::fromValue<MpvErrorCode>(MpvErrorCode(event->error));
         if (!event->reply_userdata)
             return;
-        QMetaObject::invokeMethod(reinterpret_cast<MpvCallback*>(event->reply_userdata),
-                                  "reply", Qt::QueuedConnection,
-                                  Q_ARG(QVariant, v));
+        auto callback = reinterpret_cast<MpvCallback*>(event->reply_userdata);
+        QMetaObject::invokeMethod(callback, [callback, v]() {
+            callback->reply(v);
+        }, Qt::QueuedConnection);
         break;
     }
     case MPV_EVENT_PROPERTY_CHANGE: {
@@ -1595,6 +1595,8 @@ void MpvController::handleMpvEvent(mpv_event *event)
 
 void MpvController::mpvWakeup(void *ctx)
 {
-    QMetaObject::invokeMethod(static_cast<MpvController*>(ctx), "parseMpvEvents",
-                              Qt::QueuedConnection);
+    auto controller = static_cast<MpvController*>(ctx);
+    QMetaObject::invokeMethod(controller, [controller]() {
+        controller->parseMpvEvents();
+    }, Qt::QueuedConnection);
 }

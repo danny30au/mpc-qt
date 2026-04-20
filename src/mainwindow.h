@@ -55,6 +55,7 @@ public:
 protected:
     void resizeEvent(QResizeEvent *event);
     void changeEvent(QEvent *event) override;
+    void moveEvent(QMoveEvent *event) override;
     bool eventFilter(QObject *object, QEvent *event);
     void closeEvent(QCloseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
@@ -177,6 +178,7 @@ signals:
     void fullscreenModeChanged(bool fullscreen);
     void windowResized();
     void windowMaximized();
+    void windowMoved();
     void zoomPresetChanged(int which);
     void playCurrentItemRequested();
     void favoriteCurrentTrack();
@@ -273,7 +275,7 @@ public slots:
     void setTimeTooltip(bool show, bool above);
     void setOsdTimerOnSeek(bool enabled);
     void setFullscreenHidePanels(bool hidden);
-    void setPlaybackState(PlaybackManager::PlaybackState state);
+    void setPlaybackState(PlaybackManager::PlaybackState state, int64_t bufferFillState);
     void setPlaybackType(PlaybackManager::PlaybackType type);
     void disableChaptersMenus();
     void setChapters(QList<Chapter> chapters);

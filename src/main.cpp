@@ -116,13 +116,18 @@ void signalHandler(int signal) {
         if (signal == SIGSEGV)
             Logger::log(logModule, "Segmentation fault!");
         Logger::log(logModule, "Please report this error.");
-        QMetaObject::invokeMethod(Logger::singleton(), "flushMessages", Qt::BlockingQueuedConnection);
+        auto logger = Logger::singleton();
+        QMetaObject::invokeMethod(logger, [logger]() {
+            logger->flushMessages();
+        }, Qt::BlockingQueuedConnection);
         if (signal == SIGSEGV) {
             std::signal(SIGSEGV, SIG_DFL);
             std::raise(SIGSEGV);
         }
     }
-    QMetaObject::invokeMethod(qApp, "exit", Qt::QueuedConnection);
+    QMetaObject::invokeMethod(qApp, []() {
+        QApplication::exit();
+    }, Qt::QueuedConnection);
 }
 
 //---------------------------------------------------------------------------
@@ -932,6 +937,8 @@ void Flow::setupFlowConnections()
             this, &Flow::mainwindow_windowResized);
     connect(mainWindow, &MainWindow::windowMaximized,
             this, &Flow::mainwindow_windowMaximized);
+    connect(mainWindow, &MainWindow::windowMoved,
+            this, &Flow::mainwindow_windowMoved);
 
     // manager -> this
     connect(playbackManager, &PlaybackManager::playLengthChanged,
@@ -1421,6 +1428,11 @@ void Flow::mainwindow_windowMaximized()
     windowManager.updateAppWindowGeometryCache(mainWindow, true);
 }
 
+void Flow::mainwindow_windowMoved()
+{
+    windowManager.updateAppWindowGeometryCache(mainWindow, false);
+}
+
 void Flow::mainwindow_recentOpened(const TrackInfo &track)
 {
     updateRecentPosition(false);
@@ -1807,7 +1819,9 @@ void Flow::updateRecents(QUrl url, QUuid listUuid, QUuid itemUuid, QString title
 void Flow::endProgram()
 {
     Logger::log(logModule, "endProgram");
-    QMetaObject::invokeMethod(qApp, "exit", Qt::QueuedConnection);
+    QMetaObject::invokeMethod(qApp, []() {
+        QApplication::exit();
+    }, Qt::QueuedConnection);
 }
 
 void Flow::importPlaylist(QString fname)

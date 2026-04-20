@@ -399,6 +399,12 @@ void MainWindow::changeEvent(QEvent *event)
         emit windowMaximized();
 }
 
+void MainWindow::moveEvent(QMoveEvent *event)
+{
+    Q_UNUSED(event)
+    emit windowMoved();
+}
+
 bool MainWindow::eventFilter(QObject *object, QEvent *event)
 {
     bool insideMpv = mpvw ? object == mpvw : false;
@@ -2094,7 +2100,7 @@ void MainWindow::setFullscreenHidePanels(bool hidden)
     }
 }
 
-void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state)
+void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state, int64_t bufferFillState)
 {
     // Update the fullscreen state
     if (state == PlaybackManager::StoppedState) {
@@ -2108,11 +2114,26 @@ void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state)
     }
 
     // Update the UI
-    ui->status->setText(state==PlaybackManager::StoppedState ? tr("Stopped") :
-                        state==PlaybackManager::PausedState ? tr("Paused") :
-                        state==PlaybackManager::PlayingState ? tr("Playing") :
-                        state==PlaybackManager::BufferingState ? tr("Buffering") :
-                                                                 tr("Unknown"));
+    switch (state) {
+    case PlaybackManager::StoppedState:
+        ui->status->setText(tr("Stopped"));
+        break;
+    case PlaybackManager::PausedState:
+        ui->status->setText(tr("Paused"));
+        break;
+    case PlaybackManager::PlayingState:
+        ui->status->setText(tr("Playing"));
+        break;
+    case PlaybackManager::LoadingState:
+        ui->status->setText(tr("Loading"));
+        break;
+    case PlaybackManager::BufferingState:
+        ui->status->setText(tr("Buffering (%1%)").arg(bufferFillState));
+        break;
+    case PlaybackManager::WaitingState:
+        ui->status->setText(tr("Unknown"));
+        break;
+    }
     isPlaying = state != PlaybackManager::StoppedState;
     isPaused = state == PlaybackManager::PausedState;
     setUiEnabledState(state != PlaybackManager::StoppedState);
