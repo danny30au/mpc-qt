@@ -317,7 +317,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <name>LibraryWindow</name>
     <message>
         <source>Library</source>
-        <translation>Библиотека</translation>
+        <translation type="vanished">Библиотека</translation>
     </message>
     <message>
         <source>Restore</source>
@@ -330,6 +330,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <message>
         <source>Close</source>
         <translation>Закрыть</translation>
+    </message>
+    <message>
+        <source>Playlists Backup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -353,6 +357,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <message>
         <source>Save File</source>
         <translation>Сохранить файл</translation>
+    </message>
+    <message>
+        <source>Log files (*.log)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1475,7 +1483,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Libr&amp;ary</source>
-        <translation>Биб&amp;лиотека</translation>
+        <translation type="vanished">Биб&amp;лиотека</translation>
     </message>
     <message>
         <source>Ctrl+=</source>
@@ -1832,6 +1840,10 @@ No action will be triggered.</source>
     <message>
         <source>No</source>
         <translation type="unfinished">Нет</translation>
+    </message>
+    <message>
+        <source>Pl&amp;aylists Backup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4506,6 +4518,10 @@ media file played</source>
     <message>
         <source>ICC profile files (*.icc *.icm)</source>
         <translation>Файлы профилей ICC (*.icc *.icm)</translation>
+    </message>
+    <message>
+        <source>Log files (*.log)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Allows dark theme support on Windows</source>

@@ -325,7 +325,7 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <name>LibraryWindow</name>
     <message>
         <source>Library</source>
-        <translation>Knihovna</translation>
+        <translation type="vanished">Knihovna</translation>
     </message>
     <message>
         <source>Restore</source>
@@ -338,6 +338,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <message>
         <source>Close</source>
         <translation>Zavřít</translation>
+    </message>
+    <message>
+        <source>Playlists Backup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -361,6 +365,10 @@ Do you want to use it for &quot;%3&quot; instead?</source>
     <message>
         <source>Save File</source>
         <translation>Uložit soubor</translation>
+    </message>
+    <message>
+        <source>Log files (*.log)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1482,10 +1490,6 @@ No action will be triggered.</source>
         <translation type="vanished">&lt;unknown&gt;</translation>
     </message>
     <message>
-        <source>Libr&amp;ary</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Ctrl+=</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1884,6 +1888,10 @@ No action will be triggered.</source>
     <message>
         <source>No</source>
         <translation type="unfinished">No</translation>
+    </message>
+    <message>
+        <source>Pl&amp;aylists Backup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -4562,6 +4570,10 @@ media file played</source>
     <message>
         <source>ICC profile files (*.icc *.icm)</source>
         <translation>Soubory ICC profilů (*.icc *.icm)</translation>
+    </message>
+    <message>
+        <source>Log files (*.log)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Allows dark theme support on Windows</source>
