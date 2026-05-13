@@ -342,7 +342,7 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
     </message>
     <message>
         <source>Playlists Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Sauvegarde des listes de lecture</translation>
     </message>
 </context>
 <context>
@@ -369,7 +369,7 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichiers journaux (*.log)</translation>
     </message>
 </context>
 <context>
@@ -1821,7 +1821,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Pl&amp;aylists Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;auvegarde des listes de lecture</translation>
     </message>
 </context>
 <context>
@@ -2742,7 +2742,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Fallback</source>
-        <translation type="vanished">Fallback</translation>
+        <translation>Fallback</translation>
     </message>
     <message>
         <source>Black (for white palette)</source>
@@ -4503,7 +4503,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichiers journaux (*.log)</translation>
     </message>
     <message>
         <source>Allows dark theme support on Windows</source>
@@ -4712,6 +4712,30 @@ fichier média lu</translation>
     <message>
         <source>VP8</source>
         <translation type="vanished">VP8</translation>
+    </message>
+    <message>
+        <source>Replay Gain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Album</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pre-amp</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source> dB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent clipping</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
