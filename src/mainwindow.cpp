@@ -398,6 +398,8 @@ void MainWindow::changeEvent(QEvent *event)
             tooltip->updatePalette();
         if (videoPreview)
             videoPreview->updatePalette();
+        if (statusTime)
+            statusTime->updatePalette();
     }
     else if (event->type() == QEvent::WindowStateChange && isMaximized())
         emit windowMaximized();
@@ -509,11 +511,7 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event)
 {
     QPoint pos = event->globalPosition().toPoint();
     bool ok = mpvw ? insideWidget(pos, mpvw) : false;
-    if (mousePressedInBottomArea && insideWidget(pos, statusTime)) {
-        if (event->button() == Qt::MouseButton::LeftButton)
-            setTimeRemainingMode(!timeRemainingMode);
-    }
-    else {
+    if (!(mousePressedInBottomArea && insideWidget(pos, statusTime))) {
         if (ok && mouseStateEvent(MouseState::fromMouseEvent(event, MouseState::MouseUp)))
             event->accept();
         else
@@ -882,6 +880,8 @@ void MainWindow::setupStatus()
     ui->statusbarLayout->insertWidget(2, statusTime);
     connect(statusTime, &StatusTime::customContextMenuRequested,
             this, &MainWindow::statusTime_customContextMenuRequested);
+    connect(statusTime, &StatusTime::doubleClicked,
+            ui->actionNavigateGoto, &QAction::trigger);
 }
 
 void MainWindow::setupSizing()
@@ -3420,16 +3420,14 @@ void MainWindow::on_actionPlayLoopStart_triggered()
 {
     positionSlider_->setLoopA(mpvObject_->playTime());
     if (ui->actionPlayLoopUse->isChecked())
-        mpvObject_->setLoopPoints(positionSlider_->loopA(),
-                                  positionSlider_->loopB());
+        armAbLoop();
 }
 
 void MainWindow::on_actionPlayLoopEnd_triggered()
 {
     positionSlider_->setLoopB(mpvObject_->playTime());
     if (ui->actionPlayLoopUse->isChecked())
-        mpvObject_->setLoopPoints(positionSlider_->loopA(),
-                                  positionSlider_->loopB());
+        armAbLoop();
 }
 
 void MainWindow::on_actionPlayLoopUse_toggled(bool checked)
@@ -3441,11 +3439,22 @@ void MainWindow::on_actionPlayLoopUse_toggled(bool checked)
         if (positionSlider_->loopB() < 0 )
             positionSlider_->setLoopB(mpvObject_->playLength());
 
-        mpvObject_->setLoopPoints(positionSlider_->loopA(),
-                                  positionSlider_->loopB());
+        armAbLoop();
     }
     else
         mpvObject_->setLoopPoints(-1, -1);
+}
+
+void MainWindow::armAbLoop()
+{
+    double a = positionSlider_->loopA();
+    double b = positionSlider_->loopB();
+    mpvObject_->setLoopPoints(a, b);
+    if (a < 0 || b < 0)
+        return;
+    double loopEnd = std::max(a, b);
+    if (mpvObject_->playTime() > loopEnd)
+        mpvObject_->setTime(std::min(a, b));
 }
 
 void MainWindow::on_actionPlayLoopClear_triggered()

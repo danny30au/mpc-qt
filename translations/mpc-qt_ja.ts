@@ -893,7 +893,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Up</source>
-        <translation>音量を上げる(&amp;U)</translation>
+        <translation>上(&amp;U)</translation>
     </message>
     <message>
         <source>0</source>
@@ -901,7 +901,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Down</source>
-        <translation>音量を下げる(&amp;D)</translation>
+        <translation>下(&amp;D)</translation>
     </message>
     <message>
         <source>9</source>
@@ -1189,7 +1189,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Increment</source>
-        <translation>拡大(&amp;I)</translation>
+        <translation>上げる(&amp;I)</translation>
     </message>
     <message>
         <source>E</source>
@@ -1197,7 +1197,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Decrement</source>
-        <translation>縮小(&amp;D)</translation>
+        <translation>下げる(&amp;D)</translation>
     </message>
     <message>
         <source>Shift+E</source>
@@ -4807,7 +4807,7 @@ media file played</source>
     </message>
     <message>
         <source>Search settings…</source>
-        <translation type="unfinished"></translation>
+        <translation>検索設定…</translation>
     </message>
 </context>
 <context>
@@ -4815,6 +4815,14 @@ media file played</source>
     <message>
         <source> (%1%)</source>
         <translation> (%1%)</translation>
+    </message>
+    <message>
+        <source>Played</source>
+        <translation>再生</translation>
+    </message>
+    <message>
+        <source>Remaining</source>
+        <translation>残り時間</translation>
     </message>
 </context>
 <context>

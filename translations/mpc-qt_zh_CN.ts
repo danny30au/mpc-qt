@@ -4683,7 +4683,7 @@ media file played</source>
     </message>
     <message>
         <source>Search settings…</source>
-        <translation type="unfinished"></translation>
+        <translation>搜索设置…</translation>
     </message>
 </context>
 <context>
@@ -4691,6 +4691,14 @@ media file played</source>
     <message>
         <source> (%1%)</source>
         <translation> (%1%)</translation>
+    </message>
+    <message>
+        <source>Played</source>
+        <translation>已播放</translation>
+    </message>
+    <message>
+        <source>Remaining</source>
+        <translation>还剩</translation>
     </message>
 </context>
 <context>
