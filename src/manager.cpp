@@ -1096,8 +1096,6 @@ void PlaybackManager::mpvw_mediaTitleChanged(QString title)
 {
     nowPlayingTitle_ = title;
     emit titleChanged(title);
-    emit titleChangedWithFilename(title,
-                                  nowPlaying().isLocalFile() ? nowPlaying().fileName() : QString());
 }
 
 void PlaybackManager::mpvw_chaptersChanged(QVariantList chapters)
@@ -1115,6 +1113,8 @@ void PlaybackManager::mpvw_tracksChanged(QVariantList tracks)
     audioListData.clear();
     subtitleList.clear();
     subtitleListData.clear();
+    if (tracks.empty())
+        return;
     Track track;
 
     for (QVariant const &trackItem : tracks) {
