@@ -1012,6 +1012,7 @@
       </property>
       <addaction name="actionVideoAspectName"/>
       <addaction name="action43VideoAspect"/>
+      <addaction name="action169VideoAspect"/>
       <addaction name="actionDecreaseVideoAspect"/>
       <addaction name="actionIncreaseVideoAspect"/>
       <addaction name="actionResetVideoAspect"/>
@@ -2371,6 +2372,11 @@
     <string notr="true">4:3</string>
    </property>
   </action>
+  <action name="action169VideoAspect">
+   <property name="text">
+    <string notr="true">16:9</string>
+   </property>
+  </action>
   <action name="actionDecreaseVideoAspect">
    <property name="text">
     <string>&amp;Decrease</string>
@@ -2523,6 +2529,9 @@
    </property>
   </action>
   <action name="actionFlipHorizontal">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string>&amp;Horizontal Flip</string>
    </property>

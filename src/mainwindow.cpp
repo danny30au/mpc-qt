@@ -1976,6 +1976,8 @@ void MainWindow::setMediaTitle(const QString &title)
             newTitle.clear();
             break;
     }
+    if (title.isEmpty())
+        newTitle = QString();
     if (!newTitle.isEmpty())
         windowTitle = newTitle;
 
@@ -2292,6 +2294,7 @@ void MainWindow::setVideoTracks(QList<Track> tracks)
     ui->menuPlayVideoAspect->addAction(ui->actionVideoAspectName);
     ui->menuPlayVideoAspect->addSeparator();
     ui->menuPlayVideoAspect->addAction(ui->action43VideoAspect);
+    ui->menuPlayVideoAspect->addAction(ui->action169VideoAspect);
     ui->menuPlayVideoAspect->addAction(ui->actionDecreaseVideoAspect);
     ui->menuPlayVideoAspect->addAction(ui->actionIncreaseVideoAspect);
     ui->menuPlayVideoAspect->addAction(ui->actionResetVideoAspect);
@@ -3048,6 +3051,13 @@ void MainWindow::on_action43VideoAspect_triggered()
     mpvObject_->setVideoAspectPreset(1.3333);
 }
 
+void MainWindow::on_action169VideoAspect_triggered()
+{
+    mpvObject_->disableVideoAspect(false);
+    ui->actionDisableVideoAspect->setChecked(false);
+    mpvObject_->setVideoAspectPreset(16.0/9);
+}
+
 void MainWindow::on_actionDecreaseVideoAspect_triggered()
 {
     mpvObject_->disableVideoAspect(false);
@@ -3223,18 +3233,16 @@ void MainWindow::on_actionRotateCounterclockwise_triggered()
     mpvObject_->setVideoRotate(currentAngle);
 }
 
-void MainWindow::on_actionFlipHorizontal_triggered()
+void MainWindow::on_actionFlipHorizontal_toggled(bool checked)
 {
-    flipped = !flipped;
-    mpvObject_->setVideoFlip(flipped);
+    emit videoFilter("hflip", "", checked);
 }
 
 void MainWindow::on_actionResetRotate_triggered()
 {
     currentAngle = 0;
-    flipped = false;
     mpvObject_->setVideoRotate(0);
-    mpvObject_->setVideoFlip(false);
+    ui->actionFlipHorizontal->setChecked(false);
 }
 
 void MainWindow::on_actionViewOntopAlways_toggled(bool checked)
