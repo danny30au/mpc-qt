@@ -100,8 +100,24 @@
         <translation>下移字幕</translation>
     </message>
     <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation>减少字幕延迟</translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation>增加字幕延迟</translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation>减少音频延迟</translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation>增加音频延迟</translation>
+    </message>
+    <message>
         <source>16:9 Aspect ratio</source>
-        <translation type="unfinished"></translation>
+        <translation>16:9 宽高比</translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
@@ -1388,16 +1404,28 @@ No action will be triggered.</source>
         <translation>快速打开</translation>
     </message>
     <message>
+        <source>Software Decoding</source>
+        <translation>软件解码</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation>硬件解码：%1</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation>硬件解码：%1（慢）</translation>
+    </message>
+    <message>
         <source>Remaining time</source>
-        <translation>剩余时间</translation>
+        <translation type="vanished">剩余时间</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation>高精度时间戳</translation>
+        <translation type="vanished">高精度时间戳</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation>显示百分比</translation>
+        <translation type="vanished">显示百分比</translation>
     </message>
     <message>
         <source>No files favorited</source>
@@ -1847,6 +1875,14 @@ No action will be triggered.</source>
         <source>Pl&amp;aylists Backup</source>
         <translation>播放列表备份(&amp;A)</translation>
     </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation>减少延迟</translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation>增加延迟</translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2001,6 +2037,10 @@ No action will be triggered.</source>
         <source>Subtitles delay: %1 ms</source>
         <translation>字幕延迟：%1 毫秒</translation>
     </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation>音频延迟：%1 毫秒</translation>
+    </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
@@ -2126,7 +2166,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>关闭标签页</translation>
+        <translation type="vanished">关闭标签页</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -4699,6 +4739,18 @@ media file played</source>
     <message>
         <source> (%1%)</source>
         <translation> (%1%)</translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation type="unfinished">剩余时间</translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation type="unfinished">高精度时间戳</translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
+        <translation type="unfinished">显示百分比</translation>
     </message>
     <message>
         <source>Played</source>

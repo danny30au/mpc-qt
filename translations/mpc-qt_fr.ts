@@ -100,8 +100,24 @@
         <translation>Déplacer les sous-titres vers le bas</translation>
     </message>
     <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation>Diminuer le délai des sous-titres</translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation>Augmenter le délai des sous-titres</translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation>Diminuer le délai audio</translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation>Augmenter le délai audio</translation>
+    </message>
+    <message>
         <source>16:9 Aspect ratio</source>
-        <translation type="unfinished"></translation>
+        <translation>Ratio d&apos;aspect 16:9</translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
@@ -1340,16 +1356,28 @@ Aucune action ne sera déclenchée.</translation>
         <translation>Ouverture rapide</translation>
     </message>
     <message>
+        <source>Software Decoding</source>
+        <translation>Décodage logiciel</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation>Décodage matériel&#xa0;: %1</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation>Décodage matériel&#xa0;: %1 (lent)</translation>
+    </message>
+    <message>
         <source>Remaining time</source>
-        <translation>Temps restant</translation>
+        <translation type="vanished">Temps restant</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation>Haute précision</translation>
+        <translation type="vanished">Haute précision</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation>Afficher le pourcentage</translation>
+        <translation type="vanished">Afficher le pourcentage</translation>
     </message>
     <message>
         <source>No files favorited</source>
@@ -1827,6 +1855,14 @@ Aucune action ne sera déclenchée.</translation>
         <source>Pl&amp;aylists Backup</source>
         <translation>S&amp;auvegarde des listes de lecture</translation>
     </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation>Diminuer le délai</translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation>Augmenter le délai</translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -1981,6 +2017,10 @@ Aucune action ne sera déclenchée.</translation>
         <source>Subtitles delay: %1 ms</source>
         <translation>Délai des sous-titres : %1 ms</translation>
     </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation>Délai audio&#xa0;: %1 ms</translation>
+    </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
@@ -2106,7 +2146,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Fermer l’onglet</translation>
+        <translation type="vanished">Fermer l’onglet</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -4755,6 +4795,18 @@ fichier média lu</translation>
     <message>
         <source> (%1%)</source>
         <translation> (%1 %)</translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation type="unfinished">Temps restant</translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation type="unfinished">Haute précision</translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
+        <translation type="unfinished">Afficher le pourcentage</translation>
     </message>
     <message>
         <source>Played</source>

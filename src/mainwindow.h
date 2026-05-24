@@ -8,7 +8,6 @@
 #include <QSystemTrayIcon>
 #include "helpers.h"
 #include "widgets/drawnslider.h"
-#include "widgets/drawnstatus.h"
 #include "widgets/tooltip.h"
 #include "widgets/videopreview.h"
 #include "manager.h"
@@ -287,6 +286,7 @@ public slots:
     void setAudioTracks(QList<Track> tracks);
     void setVideoTracks(QList<Track> tracks);
     void setSubtitleTracks(QList<Track> tracks);
+    void setHwdecTooltip(const QString &tooltip, bool fastHardwareDecoding);
     void audioTrackSet(int64_t id);
     void videoTrackSet(int64_t id);
     void subtitleTrackSet(int64_t id);
@@ -296,9 +296,6 @@ public slots:
     void setVolumeMax(int level);
     void setSubtitlesEnabled(bool enabled, bool onInit = false);
     void setSubtitlesDelayStep(int subtitlesDelayStep);
-    void setTimeShortMode(bool shortened);
-    void setTimeRemainingMode(bool isRemaining);
-    void setTimePercentageMode(bool isPercentage);
     void resetPlayAfterOnce();
     void setPlayAfterAlways(Helpers::AfterPlayback action);
     void setPlayAfterAlwaysDefault(Helpers::AfterPlayback action);
@@ -436,6 +433,8 @@ private slots:
 
     void on_actionPlayAudioTrackNext_triggered();
     void on_actionPlayAudioTrackPrevious_triggered();
+    void on_actionDecreaseAudioDelay_triggered();
+    void on_actionIncreaseAudioDelay_triggered();
     
     void on_actionPlaySubtitlesEnabled_triggered(bool checked);
     void on_actionPlaySubtitlesNext_triggered();
@@ -481,7 +480,6 @@ private slots:
     void on_actionPlaylistFinishSearching_triggered();
 
     void mpvw_customContextMenuRequested(const QPoint &pos);
-    void statusTime_customContextMenuRequested(const QPointF &p);
     void position_sliderMoved(int position);
     void position_hoverValue(double value, QString text, double mouseX);
     void position_hoverEnd();
@@ -510,7 +508,6 @@ private:
     VolumeSlider *volumeSlider_ = nullptr;
     VideoPreview *videoPreview = nullptr;
     Tooltip *tooltip = nullptr;
-    StatusTime *statusTime = nullptr;
     PlaylistWindow *playlistWindow_ = nullptr;
     QMenu moreRecentsMenu;
     QMenu *contextMenu = nullptr;
@@ -539,9 +536,6 @@ private:
     bool timeTooltipShown = true;
     bool timeTooltipAbove = true;
     bool osdTimerOnSeek = false;
-    bool timeShortMode = true;
-    bool timeRemainingMode = false;
-    bool timePercentageMode = false;
     bool mousePressedInBottomArea = false;
     QPoint mousePressPosition;
 
@@ -555,6 +549,7 @@ private:
     bool isVideo_ = false;
     QString subtitleText;
     int subtitlesDelayStep = 100;
+    int audioDelayStep = 10;
     int volumeStep = 10;
     bool frozenWindow = true;
     double sizeFactor_ = 1;

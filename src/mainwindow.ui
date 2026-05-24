@@ -763,7 +763,10 @@
           </item>
           <item>
            <widget class="QWidget" name="statusbar" native="true">
-            <layout class="QHBoxLayout" name="statusbarLayout" stretch="0,1">
+            <property name="contextMenuPolicy">
+             <enum>Qt::ContextMenuPolicy::CustomContextMenu</enum>
+            </property>
+            <layout class="QHBoxLayout" name="statusbarLayout" stretch="0,1,0">
              <property name="leftMargin">
               <number>6</number>
              </property>
@@ -783,6 +786,19 @@
               <widget class="QLabel" name="status">
                <property name="text">
                 <string>Stopped</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="StatusTime" name="statusTime">
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
+               <property name="contextMenuPolicy">
+                <enum>Qt::ContextMenuPolicy::CustomContextMenu</enum>
+               </property>
+               <property name="text">
+                <string notr="true">00:00:00 / 00:00:00</string>
                </property>
               </widget>
              </item>
@@ -959,7 +975,15 @@
       <addaction name="actionAudioFilterAcompressor"/>
       <addaction name="actionAudioFilterCrossfeed"/>
      </widget>
+     <widget class="QMenu" name="menuPlayAudioDelay">
+      <property name="title">
+       <string>Delay</string>
+      </property>
+      <addaction name="actionDecreaseAudioDelay"/>
+      <addaction name="actionIncreaseAudioDelay"/>
+     </widget>
      <addaction name="menuPlayAudioFilters"/>
+     <addaction name="menuPlayAudioDelay"/>
      <addaction name="actionPlayAudioTrackPrevious"/>
      <addaction name="actionPlayAudioTrackNext"/>
     </widget>
@@ -1011,6 +1035,7 @@
        <string>&amp;Aspect ratio</string>
       </property>
       <addaction name="actionVideoAspectName"/>
+      <addaction name="separator"/>
       <addaction name="action43VideoAspect"/>
       <addaction name="action169VideoAspect"/>
       <addaction name="actionDecreaseVideoAspect"/>
@@ -2287,6 +2312,16 @@
     <string>&amp;Crossfeed (for headphones)</string>
    </property>
   </action>
+  <action name="actionDecreaseAudioDelay">
+   <property name="text">
+    <string>Decrease Delay</string>
+   </property>
+  </action>
+  <action name="actionIncreaseAudioDelay">
+   <property name="text">
+    <string>Increase Delay</string>
+   </property>
+  </action>
   <action name="actionPlayAudioTrackPrevious">
    <property name="text">
     <string>&amp;Previous Audio Track</string>
@@ -2621,6 +2656,13 @@
    </property>
   </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StatusTime</class>
+   <extends>QLabel</extends>
+   <header>widgets/drawnstatus.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

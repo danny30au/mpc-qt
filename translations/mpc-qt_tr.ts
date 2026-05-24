@@ -92,6 +92,22 @@
         <translation>Altyazıları Aşağı Taşı</translation>
     </message>
     <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>16:9 Aspect ratio</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1380,16 +1396,28 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
         <translation>Tez Aç</translation>
     </message>
     <message>
+        <source>Software Decoding</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Remaining time</source>
-        <translation>Kalan süre</translation>
+        <translation type="vanished">Kalan süre</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation>Yüksek kesinlik</translation>
+        <translation type="vanished">Yüksek kesinlik</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation>Yüzdeyi göster</translation>
+        <translation type="vanished">Yüzdeyi göster</translation>
     </message>
     <message>
         <source>No files favorited</source>
@@ -1871,6 +1899,14 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
         <source>Pl&amp;aylists Backup</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2025,6 +2061,10 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
         <source>Subtitles delay: %1 ms</source>
         <translation>Altyazı gecikmesi: %1 ms</translation>
     </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
@@ -2150,7 +2190,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Sekmeyi Kapat</translation>
+        <translation type="vanished">Sekmeyi Kapat</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -4787,6 +4827,18 @@ yeni bir &amp;oynatıcı aç</translation>
     <message>
         <source> (%1%)</source>
         <translation> (%%1)</translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation type="unfinished">Kalan süre</translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation type="unfinished">Yüksek kesinlik</translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
+        <translation type="unfinished">Yüzdeyi göster</translation>
     </message>
     <message>
         <source>Played</source>

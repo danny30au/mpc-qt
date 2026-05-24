@@ -100,6 +100,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>4:3 Aspect ratio</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1258,19 +1274,19 @@ No action will be triggered.</source>
         <translation>Hurtigåpning</translation>
     </message>
     <message>
+        <source>Software Decoding</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Remaining time</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>High precision</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Show percentage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1677,6 +1693,14 @@ No action will be triggered.</source>
         <source>Pl&amp;aylists Backup</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -1831,6 +1855,10 @@ No action will be triggered.</source>
         <source>Subtitles delay: %1 ms</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
@@ -1944,10 +1972,6 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4373,6 +4397,18 @@ media file played</source>
     <name>StatusTime</name>
     <message>
         <source> (%1%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -100,8 +100,24 @@
         <translation>Bewege Untertitel runter</translation>
     </message>
     <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation>Untertitel-Verzögerung reduzieren</translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation>Untertitel-Verzögerung erhöhen</translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation>Audioverzögerung verringern</translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation>Audioverzögerung erhöhen</translation>
+    </message>
+    <message>
         <source>16:9 Aspect ratio</source>
-        <translation type="unfinished"></translation>
+        <translation>16:9 Seitenverhältnis</translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
@@ -346,7 +362,7 @@ Möchten Sie es stattdessen für „%3“ verwenden?</translation>
     </message>
     <message>
         <source>Playlists Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Playlist-Backup</translation>
     </message>
 </context>
 <context>
@@ -373,7 +389,7 @@ Möchten Sie es stattdessen für „%3“ verwenden?</translation>
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation type="unfinished"></translation>
+        <translation>Log-Dateien (*.log)</translation>
     </message>
 </context>
 <context>
@@ -1388,16 +1404,28 @@ Es wird keine Aktion ausgelöst.</translation>
         <translation>Schnelles Öffnen</translation>
     </message>
     <message>
+        <source>Software Decoding</source>
+        <translation>Software-Dekodierung</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation>Hardware-Dekodierung: %1</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation>Hardware-Dekodierung: %1 (langsam)</translation>
+    </message>
+    <message>
         <source>Remaining time</source>
-        <translation>Verbleibende Zeit</translation>
+        <translation type="vanished">Verbleibende Zeit</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation>Hohe Genauigkeit</translation>
+        <translation type="vanished">Hohe Genauigkeit</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation>Prozentsatz anzeigen</translation>
+        <translation type="vanished">Prozentsatz anzeigen</translation>
     </message>
     <message>
         <source>No files favorited</source>
@@ -1413,7 +1441,7 @@ Es wird keine Aktion ausgelöst.</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Laden</translation>
     </message>
     <message>
         <source>Buffering (%1%)</source>
@@ -1885,7 +1913,15 @@ Es wird keine Aktion ausgelöst.</translation>
     </message>
     <message>
         <source>Pl&amp;aylists Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Pl&amp;aylist-Backup</translation>
+    </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation>Verzögerung reduzieren</translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation>Verzögerung erhöhen</translation>
     </message>
 </context>
 <context>
@@ -2041,6 +2077,10 @@ Es wird keine Aktion ausgelöst.</translation>
         <source>Subtitles delay: %1 ms</source>
         <translation>Untertitel-Verzögerung: %1 ms</translation>
     </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation>Audioverzögerung: %1 ms</translation>
+    </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
@@ -2166,7 +2206,7 @@ Es wird keine Aktion ausgelöst.</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Tab schließen</translation>
+        <translation type="vanished">Tab schließen</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -4095,7 +4135,7 @@ media file played</source>
     </message>
     <message>
         <source>Client</source>
-        <translation type="unfinished"></translation>
+        <translation>Client</translation>
     </message>
     <message>
         <source>Event messages</source>
@@ -4535,11 +4575,11 @@ media file played</source>
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation type="unfinished"></translation>
+        <translation>Log-Dateien (*.log)</translation>
     </message>
     <message>
         <source>Allows dark theme support on Windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Erlaubt Unterstützung für dunkles Thema in Windows</translation>
     </message>
     <message>
         <source>Audio balance</source>
@@ -4619,7 +4659,7 @@ media file played</source>
     </message>
     <message>
         <source>Preset applied</source>
-        <translation type="unfinished"></translation>
+        <translation>Voreinstellung angewendet</translation>
     </message>
     <message>
         <source>Position ASS subs relative to the video frame</source>
@@ -4667,7 +4707,7 @@ media file played</source>
     </message>
     <message>
         <source>File title</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateititel</translation>
     </message>
     <message>
         <source>CRF</source>
@@ -4687,31 +4727,31 @@ media file played</source>
     </message>
     <message>
         <source>Video background</source>
-        <translation type="unfinished"></translation>
+        <translation>Video-Hintergrund</translation>
     </message>
     <message>
         <source>Status bar background</source>
-        <translation type="unfinished"></translation>
+        <translation>Statusleistenhintergrund</translation>
     </message>
     <message>
         <source>Status bar foreground</source>
-        <translation type="unfinished"></translation>
+        <translation>Statusleistenvordergrund</translation>
     </message>
     <message>
         <source>Use custom colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Eigene Farben nutzen</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Quelle</translation>
     </message>
     <message>
         <source>Built-in</source>
-        <translation type="unfinished"></translation>
+        <translation>Eingebaut</translation>
     </message>
     <message>
         <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Icons müssen die gleichen Namen wie im &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;Repository&lt;/a&gt; nutzen.</translation>
     </message>
     <message>
         <source>Use English for the interface</source>
@@ -4723,11 +4763,11 @@ media file played</source>
     </message>
     <message>
         <source>Remember last window size and position</source>
-        <translation type="unfinished"></translation>
+        <translation>Letzte Fenstergröße und -position merken</translation>
     </message>
     <message>
         <source>Use dark colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Dunkle Farben nutzen</translation>
     </message>
     <message>
         <source>Replay Gain</source>
@@ -4755,7 +4795,7 @@ media file played</source>
     </message>
     <message>
         <source>Search settings…</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen durchsuchen…</translation>
     </message>
     <message>
         <source>A&amp;pplication name only</source>
@@ -4767,6 +4807,18 @@ media file played</source>
     <message>
         <source> (%1%)</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation type="unfinished">Verbleibende Zeit</translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation type="unfinished">Hohe Genauigkeit</translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
+        <translation type="unfinished">Prozentsatz anzeigen</translation>
     </message>
     <message>
         <source>Played</source>
@@ -4781,7 +4833,7 @@ media file played</source>
     <name>ThumbnailerWindow</name>
     <message>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Quelle</translation>
     </message>
     <message>
         <source>&amp;Browse...</source>
@@ -4789,7 +4841,7 @@ media file played</source>
     </message>
     <message>
         <source>Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>%</source>
@@ -4797,15 +4849,15 @@ media file played</source>
     </message>
     <message>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Breite</translation>
     </message>
     <message>
         <source>Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Layout</translation>
     </message>
     <message>
         <source>Rows</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeilen</translation>
     </message>
     <message>
         <source>&amp;Go!</source>
@@ -4813,11 +4865,11 @@ media file played</source>
     </message>
     <message>
         <source>Thu&amp;mbnail</source>
-        <translation type="unfinished"></translation>
+        <translation>Thu&amp;mbnail</translation>
     </message>
     <message>
         <source>&amp;Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Qualität</translation>
     </message>
     <message>
         <source>&amp;Columns</source>
@@ -4825,7 +4877,7 @@ media file played</source>
     </message>
     <message>
         <source>Save Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorschaubilder speichern</translation>
     </message>
     <message>
         <source>%p%</source>

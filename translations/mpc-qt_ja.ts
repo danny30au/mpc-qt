@@ -100,8 +100,24 @@
         <translation>字幕を下に移動</translation>
     </message>
     <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation>字幕の遅延を減らす</translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation>字幕の遅延を増やす</translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation>音声の遅延を減らす</translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation>音声の遅延を増やす</translation>
+    </message>
+    <message>
         <source>16:9 Aspect ratio</source>
-        <translation type="unfinished"></translation>
+        <translation>16:9 アスペクト比</translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
@@ -1388,16 +1404,28 @@ No action will be triggered.</source>
         <translation>クイック再生</translation>
     </message>
     <message>
+        <source>Software Decoding</source>
+        <translation>ソフトウェアデコード</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation>ハードウェアデコード : %1</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation>ハードウェアデコード : %1 (低速)</translation>
+    </message>
+    <message>
         <source>Remaining time</source>
-        <translation>残り時間</translation>
+        <translation type="vanished">残り時間</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation>高精度</translation>
+        <translation type="vanished">高精度</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation>パーセンテージを表示</translation>
+        <translation type="vanished">パーセンテージを表示</translation>
     </message>
     <message>
         <source>No files favorited</source>
@@ -1891,6 +1919,14 @@ No action will be triggered.</source>
         <source>Pl&amp;aylists Backup</source>
         <translation>再生リストのバックアップ(&amp;A)</translation>
     </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation>遅延を減らす</translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation>遅延を増やす</translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2045,6 +2081,10 @@ No action will be triggered.</source>
         <source>Subtitles delay: %1 ms</source>
         <translation>字幕の遅延 : %1 ミリ秒</translation>
     </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation>音声遅延 : %1 ミリ秒</translation>
+    </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
@@ -2170,7 +2210,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>タブを閉じる</translation>
+        <translation type="vanished">タブを閉じる</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -4823,6 +4863,18 @@ media file played</source>
     <message>
         <source> (%1%)</source>
         <translation> (%1%)</translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation type="unfinished">残り時間</translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation type="unfinished">高精度</translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
+        <translation type="unfinished">パーセンテージを表示</translation>
     </message>
     <message>
         <source>Played</source>

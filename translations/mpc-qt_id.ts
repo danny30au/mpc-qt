@@ -92,6 +92,22 @@
         <translation>Pindahkan Subtitle ke Bawah</translation>
     </message>
     <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>16:9 Aspect ratio</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1372,16 +1388,28 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <translation>Buka Cepat</translation>
     </message>
     <message>
+        <source>Software Decoding</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Remaining time</source>
-        <translation>Sisa waktu</translation>
+        <translation type="vanished">Sisa waktu</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation>Presisi tinggi</translation>
+        <translation type="vanished">Presisi tinggi</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation>Tampilkan persentase</translation>
+        <translation type="vanished">Tampilkan persentase</translation>
     </message>
     <message>
         <source>No files favorited</source>
@@ -1827,6 +1855,14 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <source>Pl&amp;aylists Backup</source>
         <translation>Cadangan Daftar Putar</translation>
     </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -1981,6 +2017,10 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <source>Subtitles delay: %1 ms</source>
         <translation>Penundaan subtitle: %1 md</translation>
     </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
@@ -2098,7 +2138,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Tutup Tab</translation>
+        <translation type="vanished">Tutup Tab</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -4571,6 +4611,18 @@ file media yang diputar</translation>
     <message>
         <source> (%1%)</source>
         <translation> (%1%)</translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation type="unfinished">Sisa waktu</translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation type="unfinished">Presisi tinggi</translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
+        <translation type="unfinished">Tampilkan persentase</translation>
     </message>
     <message>
         <source>Played</source>
