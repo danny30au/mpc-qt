@@ -2,6 +2,49 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="zh_CN">
 <context>
+    <name>About</name>
+    <message>
+        <source>Development Build</source>
+        <translation>开发版本</translation>
+    </message>
+    <message>
+        <source>Version %1</source>
+        <translation>版本 %1</translation>
+    </message>
+    <message>
+        <source>Built on %1 at %2</source>
+        <translation>构建于 %1 %2</translation>
+    </message>
+    <message>
+        <source>(Unknown)</source>
+        <translation>（未知）</translation>
+    </message>
+    <message>
+        <source>About Media Player Classic Qute Theater</source>
+        <translation>关于 Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>Media Player Classic Qute Theater</source>
+        <translation>Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>A clone of Media Player Classic written in Qt</source>
+        <translation>使用 Qt 编写的 Media Player Classic 克隆</translation>
+    </message>
+    <message>
+        <source>Based on Qt %1 and %2</source>
+        <translation>基于 Qt %1 和 %2</translation>
+    </message>
+    <message>
+        <source>Running on %1</source>
+        <translation>运行于 %1</translation>
+    </message>
+    <message>
+        <source>Running under %1</source>
+        <translation type="obsolete">在 1% 中运行</translation>
+    </message>
+</context>
+<context>
     <name>ActionEditor</name>
     <message>
         <source>Command</source>
@@ -1473,27 +1516,27 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Development Build</source>
-        <translation>开发构建</translation>
+        <translation type="vanished">开发构建</translation>
     </message>
     <message>
         <source>Version %1</source>
-        <translation>版本 %1</translation>
+        <translation type="vanished">版本 %1</translation>
     </message>
     <message>
         <source>About Media Player Classic Qute Theater</source>
-        <translation>关于 Media Player Classic Qute Theater</translation>
+        <translation type="vanished">关于 Media Player Classic Qute Theater</translation>
     </message>
     <message>
         <source>A clone of Media Player Classic written in Qt</source>
-        <translation>使用 Qt 编写的 Media Player Classic 克隆</translation>
+        <translation type="vanished">使用 Qt 编写的 Media Player Classic 克隆</translation>
     </message>
     <message>
         <source>Based on Qt %1 and %2</source>
-        <translation>基于 Qt %1 和 %2</translation>
+        <translation type="vanished">基于 Qt %1 和 %2</translation>
     </message>
     <message>
         <source>Built on %1 at %2</source>
-        <translation>于 %1 %2 构建</translation>
+        <translation type="vanished">于 %1 %2 构建</translation>
     </message>
     <message>
         <source>Ctrl+Q</source>
@@ -1701,11 +1744,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>(Unknown)</source>
-        <translation>（未知）</translation>
+        <translation type="vanished">（未知）</translation>
     </message>
     <message>
         <source>Running under %1</source>
-        <translation>在 1% 中运行</translation>
+        <translation type="vanished">在 1% 中运行</translation>
     </message>
     <message>
         <source>XWayland or X11</source>
@@ -2234,7 +2277,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Save As...</source>
-        <translation>保存为…</translation>
+        <translation type="vanished">保存为…</translation>
     </message>
     <message>
         <source>Sort By Label</source>
@@ -4733,6 +4776,10 @@ media file played</source>
         <source>A&amp;pplication name only</source>
         <translation>仅应用程序名称(&amp;P)</translation>
     </message>
+    <message>
+        <source>Loop back to first/last file in folder if needed</source>
+        <translation>如果需要，循环返回到文件夹中的第一个/最后一个文件</translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4753,12 +4800,20 @@ media file played</source>
         <translation>显示百分比</translation>
     </message>
     <message>
+        <source>Played: %1</source>
+        <translation>已播放：%1</translation>
+    </message>
+    <message>
+        <source>Remaining: %1</source>
+        <translation>剩余：%1</translation>
+    </message>
+    <message>
         <source>Played</source>
-        <translation>已播放</translation>
+        <translation type="vanished">已播放</translation>
     </message>
     <message>
         <source>Remaining</source>
-        <translation>还剩</translation>
+        <translation type="vanished">还剩</translation>
     </message>
 </context>
 <context>

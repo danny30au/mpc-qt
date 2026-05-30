@@ -2,6 +2,49 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="fr">
 <context>
+    <name>About</name>
+    <message>
+        <source>Development Build</source>
+        <translation>Version de développement</translation>
+    </message>
+    <message>
+        <source>Version %1</source>
+        <translation>Version %1</translation>
+    </message>
+    <message>
+        <source>Built on %1 at %2</source>
+        <translation>Date de compilation&#xa0;: %1 à %2</translation>
+    </message>
+    <message>
+        <source>(Unknown)</source>
+        <translation>(inconnu)</translation>
+    </message>
+    <message>
+        <source>About Media Player Classic Qute Theater</source>
+        <translation>À propos de Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>Media Player Classic Qute Theater</source>
+        <translation>Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>A clone of Media Player Classic written in Qt</source>
+        <translation>Un clone de Media Player Classic écrit en Qt</translation>
+    </message>
+    <message>
+        <source>Based on Qt %1 and %2</source>
+        <translation>Basé sur Qt %1 et %2</translation>
+    </message>
+    <message>
+        <source>Running on %1</source>
+        <translation>Fonctionne sous %1</translation>
+    </message>
+    <message>
+        <source>Running under %1</source>
+        <translation type="obsolete">Fonctionne sous %1</translation>
+    </message>
+</context>
+<context>
     <name>ActionEditor</name>
     <message>
         <source>Command</source>
@@ -1425,27 +1468,27 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Development Build</source>
-        <translation>Version de développement</translation>
+        <translation type="vanished">Version de développement</translation>
     </message>
     <message>
         <source>Version %1</source>
-        <translation>Version %1</translation>
+        <translation type="vanished">Version %1</translation>
     </message>
     <message>
         <source>About Media Player Classic Qute Theater</source>
-        <translation>À propos de Media Player Classic Qute Theater</translation>
+        <translation type="vanished">À propos de Media Player Classic Qute Theater</translation>
     </message>
     <message>
         <source>A clone of Media Player Classic written in Qt</source>
-        <translation>Un clone de Media Player Classic écrit en Qt</translation>
+        <translation type="vanished">Un clone de Media Player Classic écrit en Qt</translation>
     </message>
     <message>
         <source>Based on Qt %1 and %2</source>
-        <translation>Basé sur Qt %1 et %2</translation>
+        <translation type="vanished">Basé sur Qt %1 et %2</translation>
     </message>
     <message>
         <source>Built on %1 at %2</source>
-        <translation>Construit le %1 à %2</translation>
+        <translation type="vanished">Construit le %1 à %2</translation>
     </message>
     <message>
         <source>Ctrl+Q</source>
@@ -1669,11 +1712,11 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>(Unknown)</source>
-        <translation>(inconnu)</translation>
+        <translation type="vanished">(inconnu)</translation>
     </message>
     <message>
         <source>Running under %1</source>
-        <translation>Fonctionne sous %1</translation>
+        <translation type="vanished">Fonctionne sous %1</translation>
     </message>
     <message>
         <source>XWayland or X11</source>
@@ -2214,7 +2257,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Save As...</source>
-        <translation>Enregistrer sous...</translation>
+        <translation type="vanished">Enregistrer sous...</translation>
     </message>
     <message>
         <source>Sort By Label</source>
@@ -4789,6 +4832,10 @@ fichier média lu</translation>
         <source>A&amp;pplication name only</source>
         <translation>Nom de l&apos;a&amp;pplication</translation>
     </message>
+    <message>
+        <source>Loop back to first/last file in folder if needed</source>
+        <translation>Retourner au premier/dernier fichier du dossier si nécessaire</translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4798,23 +4845,31 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Remaining time</source>
-        <translation type="unfinished">Temps restant</translation>
+        <translation>Temps restant</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation type="unfinished">Haute précision</translation>
+        <translation>Haute précision</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation type="unfinished">Afficher le pourcentage</translation>
+        <translation>Afficher le pourcentage</translation>
+    </message>
+    <message>
+        <source>Played: %1</source>
+        <translation>Lu&#xa0;: %1</translation>
+    </message>
+    <message>
+        <source>Remaining: %1</source>
+        <translation>Restant&#xa0;: %1</translation>
     </message>
     <message>
         <source>Played</source>
-        <translation>Lu</translation>
+        <translation type="vanished">Lu</translation>
     </message>
     <message>
         <source>Remaining</source>
-        <translation>Restant</translation>
+        <translation type="vanished">Restant</translation>
     </message>
 </context>
 <context>
