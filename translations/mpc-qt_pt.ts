@@ -1,602 +1,608 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="id">
+<TS version="2.1" language="pt">
 <context>
     <name>About</name>
     <message>
         <source>Development Build</source>
-        <translation>Versi untuk Pengembang</translation>
+        <translation type="unfinished">Development Build</translation>
     </message>
     <message>
         <source>Version %1</source>
-        <translation>Versi %1</translation>
+        <translation type="unfinished">Version %1</translation>
     </message>
     <message>
         <source>Built on %1 at %2</source>
-        <translation>Dibangun pada %1 pukul %2</translation>
+        <translation type="unfinished">Built on %1 at %2</translation>
     </message>
     <message>
         <source>(Unknown)</source>
-        <translation>(Tidak diketahui)</translation>
+        <translation type="unfinished">(Unknown)</translation>
     </message>
     <message>
         <source>About Media Player Classic Qute Theater</source>
-        <translation>Tentang Media Player Classic Qute Theater</translation>
+        <translation type="unfinished">About Media Player Classic Qute Theater</translation>
     </message>
     <message>
         <source>Media Player Classic Qute Theater</source>
-        <translation>Media Player Classic Qute Theater</translation>
+        <translation type="unfinished">Media Player Classic Qute Theater</translation>
     </message>
     <message>
         <source>A clone of Media Player Classic written in Qt</source>
-        <translation>Kloning Media Player Classic yang ditulis dalam Qt</translation>
+        <translation type="unfinished">A clone of Media Player Classic written in Qt</translation>
     </message>
     <message>
         <source>Based on Qt %1 and %2</source>
-        <translation>Berdasarkan Qt %1 dan %2</translation>
+        <translation type="unfinished">Based on Qt %1 and %2</translation>
     </message>
     <message>
         <source>Running on %1</source>
-        <translation>Berjalan di %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Running under %1</source>
-        <translation type="obsolete">Berjalan di bawah %1</translation>
+        <translation type="obsolete">Running under %1</translation>
     </message>
 </context>
 <context>
     <name>ActionEditor</name>
     <message>
         <source>Command</source>
-        <translation>Perintah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Key</source>
-        <translation>Kunci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mouse Window</source>
-        <translation>Kursor mode Jendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mouse Fullscr</source>
-        <translation type="vanished">Kursor Layar Penuh</translation>
+        <translation type="vanished">Mouse Fullscr</translation>
     </message>
     <message>
         <source>Mouse Fullscreen</source>
-        <translation>Layar Penuh Mouse</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume Up</source>
+        <translation type="vanished">Volume Up</translation>
+    </message>
+    <message>
+        <source>Volume Down</source>
+        <translation type="vanished">Volume Down</translation>
     </message>
     <message>
         <source>Volume Mute</source>
-        <translation>Bisukan Volume</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Exit</source>
-        <translation>Setelah Pemutaran: Keluar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Stand by</source>
-        <translation>Setelah Pemutaran: Siaga</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Hibernate</source>
-        <translation>Setelah Pemutaran: Hibernasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Shutdown</source>
-        <translation>Setelah Pemutaran: Matikan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Log Off</source>
-        <translation>Setelah Pemutaran: Keluar Sesi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Lock</source>
-        <translation>Setelah Pemutaran: Kunci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Play next file</source>
-        <translation>Setelah Pemutaran: Putar file berikutnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback: Do nothing</source>
-        <translation>Setelah Pemutaran: Tidak melakukan apa pun</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On Top: Default</source>
-        <translation>Di Atas: Default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On Top: Always</source>
-        <translation>Di Atas: Selalu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On Top: While Playing</source>
-        <translation>Di Atas: Saat Memutar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On Top: While Playing Video</source>
-        <translation>Di Atas: Saat Memutar Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Extra Play Times: Increment</source>
-        <translation>Waktu Putar Tambahan: Tambah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Extra Play Times: Decrement</source>
-        <translation>Waktu Putar Tambahan: Kurangi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Move Subtitles Up</source>
-        <translation>Pindahkan Subtitle ke Atas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Move Subtitles Down</source>
-        <translation>Pindahkan Subtitle ke Bawah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decrease Subtitles Delay</source>
-        <translation>Kurangi Delay Subtitle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Increase Subtitles Delay</source>
-        <translation>Tambahkan Delay Subtitle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decrease Audio Delay</source>
-        <translation>Kurangi Delay Audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Increase Audio Delay</source>
-        <translation>Tambahkan Delay Audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>16:9 Aspect ratio</source>
-        <translation>Rasio aspek 16:9</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
-        <translation>Kurangi Rasio Aspek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Increase Aspect ratio</source>
-        <translation>Tambah Rasio Aspek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reset Aspect ratio</source>
-        <translation>Atur Ulang Rasio Aspek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable Aspect ratio</source>
-        <translation>Nonaktifkan Rasio Aspek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decrease Pan and Scan</source>
-        <translation>Kurangi Pan and Scan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Increase Pan and Scan</source>
-        <translation>Tambah Pan and Scan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Minimum Pan and Scan</source>
-        <translation>Pan and Scan Minimum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Maximum Pan and Scan</source>
-        <translation>Pan and Scan Maksimum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decrease Zoom</source>
-        <translation>Kurangi Zoom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Increase Zoom</source>
-        <translation>Tambah Zoom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reset Zoom</source>
-        <translation>Atur Ulang Zoom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Skip Backward / Previous</source>
-        <translation>Lewati Mundur / Sebelumnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Skip Forward / Next</source>
-        <translation>Lewati Maju / Berikutnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shortcut already used</source>
-        <translation>Pintasan sudah digunakan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&quot;%1&quot; is already used by &quot;%2&quot;.
 Do you want to use it for &quot;%3&quot; instead?</source>
-        <translation>&quot;%1&quot; sudah digunakan oleh &quot;%2&quot;.
-Apakah Anda ingin menggunakannya untuk &quot;%3&quot;?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>4:3 Aspect ratio</source>
-        <translation>Rasio aspek 4:3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Move Left</source>
-        <translation>Gerak Kiri</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Move Right</source>
-        <translation>Gerak Kanan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Move Up</source>
-        <translation>Gerak Atas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Move Down</source>
-        <translation>Gerak Bawah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reset Move</source>
-        <translation>Atur Ulang Gerakan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Rotate Clockwise</source>
-        <translation>Putar Searah Jarum Jam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Rotate Counterclockwise</source>
-        <translation>Putar Berlawanan Jarum Jam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reset Rotate</source>
-        <translation>Atur Ulang Rotasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reset Resize</source>
-        <translation>Atur Ulang Ukuran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Volume Increase</source>
-        <translation>Tambah Volume</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Volume Decrease</source>
-        <translation>Kurangi Volume</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play / Pause</source>
-        <translation>Putar / Jeda</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ButtonWidget</name>
     <message>
         <source>B</source>
-        <translation>B</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>K</source>
-        <translation>K</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>↑↓</source>
-        <translation>↑↓</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritesWindow</name>
     <message>
         <source>Organize Favorites</source>
-        <translation>Atur unggulan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Update</source>
-        <translation type="vanished">Perbar&amp;ui</translation>
+        <translation type="vanished">&amp;Update</translation>
     </message>
     <message>
         <source>&amp;Files</source>
-        <translation>Berkas (&amp;F)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Streams</source>
-        <translation>&amp;Siaran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Remove</source>
-        <translation>Hapus (&amp;R)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Flow</name>
     <message>
         <source>Media Player Classic Qute Theater</source>
-        <translation>Media Player Classic Qute Theater</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start a new process without saving data.</source>
-        <translation>Mulai proses baru tanpa menyimpannya.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Main window size.</source>
-        <translation>Ukuran jendela utama.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Main window position.</source>
-        <translation>Posisi jendela utama.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Append the file(s) to the current playlist.</source>
-        <translation>Tambahkan file ke daftar putar saat ini.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>URLs to open, optionally.</source>
-        <translation>Tautan untuk membuka, opsional.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Simpan Gambar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playing Media</source>
-        <translation>Putar Media</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do not load any config files.</source>
-        <translation>Jangan memuat konfigurasi apapun.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do not load file history, playlists, or favorites.</source>
-        <translation>Jangan memuat histori berkas, daftar putar atau unggulan.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Also write logging messages to console.</source>
-        <translation>Tulis juga pesan log ke konsol.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>GoToWindow</name>
     <message>
         <source>Go To...</source>
-        <translation>Pergi Ke..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Waktu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Go!</source>
-        <translation>Mainkan!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Frame</source>
-        <translation>Bingkai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a timecode using the format [hh:]mm:ss.ms to jump to a specified time. You do not need to enter the separators explicitely.</source>
-        <translation>Masukkan waktu menggunakan format [jj:]mm:dd.md untuk melompat ke waktu yang ditentukan. Anda tidak perlu memasukkan pemisah secara eksplisit.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>LibraryWindow</name>
     <message>
         <source>Library</source>
-        <translation type="vanished">Pustaka</translation>
+        <translation type="vanished">Library</translation>
     </message>
     <message>
         <source>Restore</source>
-        <translation>Kembalikan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Hapus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playlists Backup</source>
-        <translation>Cadangan Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>LogWindow</name>
     <message>
         <source>Log Messages</source>
-        <translation>Log Pesan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Salin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>Bersihkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save File</source>
-        <translation>Simpan Berkas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation>Berkas log (*.log)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Logger</name>
     <message>
         <source>Ambiguous shortcut detected</source>
-        <translation>Pintasan ambigu terdeteksi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
 No action will be triggered.</source>
-        <translation>Urutan tombol &quot;%1&quot; digunakan untuk lebih dari satu perintah. Gunakan halaman &quot;Tombol&quot; di Opsi untuk menetapkan ulang.
-Tidak ada tindakan yang akan dipicu.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <source>Media Player Classic Qute Theater</source>
-        <translation>Media Player Classic Qute Theater</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>Jeda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Berhenti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Skip Backward</source>
-        <translation>Lompat Mundur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Speed Decrease</source>
-        <translation>Turunkan Kecepatan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Speed Increase</source>
-        <translation>Naikkan Kecepatan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Skip Forward</source>
-        <translation>Lompat Maju</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Step Backward</source>
-        <translation>Langkah Mundur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Step Forward</source>
-        <translation>Langkah Maju</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Set Loop Start</source>
-        <translation>Tandai awal perulangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Set Loop End</source>
-        <translation>Tandai akhir perulangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Chapter</source>
-        <translation>Bagian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Frame rate</source>
-        <translation>Kecepatan bingkai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync Offset</source>
-        <translation>Batas Singkronisasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Framedrops</source>
-        <translation>Bingkai yang dihilangkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>vo: 0, decoder: 0</source>
-        <translation>vo: 0, decoder: 0</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bitrate</source>
-        <translation>kecepatan bit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Stopped</source>
-        <translation>Dihentikan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation>Berkas (&amp;F)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>O&amp;pen Disc</source>
-        <translation>Buka Diska (&amp;P)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Recent &amp;Files</source>
-        <translation>Berkas Terakhir (&amp;F)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subtitle Data&amp;base</source>
-        <translation>Data&amp;base Takarir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;View</source>
-        <translation>Lihat (&amp;V)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Presets</source>
-        <translation>&amp;Preset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Zoom</source>
-        <translation>Perbesar (&amp;Z)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On &amp;Top</source>
-        <translation>&amp;Tetap Diatas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OS&amp;D</source>
-        <translation>Tampilan Informasi pada Layar (&amp;D)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>P&amp;lay</source>
-        <translation>Putar (&amp;L)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Audio</source>
-        <translation>&amp;Audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Su&amp;btitles</source>
-        <translation>Takarir (&amp;B)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Video Stream</source>
-        <translation type="vanished">Siaran &amp;Video</translation>
+        <translation type="vanished">&amp;Video Stream</translation>
     </message>
     <message>
         <source>V&amp;olume</source>
-        <translation>V&amp;olume</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Af&amp;ter Playback</source>
-        <translation>Selesai Pemu&amp;taran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Loop</source>
-        <translation>Putar U&amp;lang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Navigate</source>
-        <translation>&amp;Navigasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Chapters</source>
-        <translation>Bagian (&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favo&amp;rites</source>
-        <translation>Unggulan (&amp;R)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation>Bantuan (&amp;H)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Edit</source>
@@ -604,103 +610,103 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Extra Play Times</source>
-        <translation>Waktu Putar &amp;Ekstra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Quick Open File...</source>
-        <translation>Buka Berkas Cepat(&amp;Q)..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Open File...</source>
-        <translation>Buka Berkas(&amp;O)..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+O</source>
-        <translation>Ctrl+O</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open &amp;DVD/BD...</source>
-        <translation>Buka &amp;DVD/BD..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+D</source>
-        <translation>Ctrl+D</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open De&amp;vice...</source>
-        <translation>Buka Perangkat(&amp;V)..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+V</source>
-        <translation>Ctrl+V</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open Dir&amp;ectory...</source>
-        <translation>Buka Dir&amp;ektori..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Clear list</source>
-        <translation>Bersihkan daftar(&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Close File</source>
-        <translation>Tutup Berkas (&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+W</source>
-        <translation>Ctrl+W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Save a Copy...</source>
-        <translation>&amp;Simpan sebagai Salinan..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save &amp;Image...</source>
-        <translation>S&amp;impan Gambar..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+I</source>
-        <translation>Alt+I</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save &amp;Thumbnails</source>
-        <translation>Simpan Pra-&amp;Tampil</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>Muat Takarir(&amp;L)..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+L</source>
-        <translation>Ctrl+L</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save S&amp;ubtitle...</source>
-        <translation>Simpan Takarir(&amp;U)..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+S</source>
-        <translation>Ctrl+S</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Upload...</source>
-        <translation>&amp;Unggah..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Download...</source>
-        <translation>Un&amp;duh..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Search...</source>
-        <translation>Cari(&amp;S)..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>P&amp;roperties</source>
-        <translation>P&amp;roperti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shift+F10</source>
@@ -708,119 +714,119 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>Keluar (&amp;X)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+X</source>
-        <translation>Alt+X</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hide &amp;Menu</source>
-        <translation>Sembunyikan &amp;Menu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
-        <translation>Bilah proses (&amp;K)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Controls</source>
-        <translation>Kontrol (&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Information</source>
-        <translation>&amp;Informasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
-        <translation>&amp;Statistik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
-        <translation>S&amp;tatus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
-        <translation>Su&amp;bsingkronisasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play&amp;list</source>
-        <translation>Daftar Putar (&amp;L)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
-        <translation>Tangkapan (&amp;R)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
-        <translation>Na&amp;vigasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
-        <translation>&amp;Minimal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Compact</source>
-        <translation>Ringkas (&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Normal</source>
-        <translation>&amp;Normal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
-        <translation>Layar penuh (&amp;U)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+Return</source>
@@ -828,127 +834,127 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
-        <translation>Otomatis Menyesuaikan (&amp;F)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
-        <translation>Penyesuaian Otomatis (Hanya &amp;Lebar)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
-        <translation>&amp;Nonaktifkan snapping</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Default</source>
-        <translation>Bawaan (&amp;D)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Always</source>
-        <translation>Sel&amp;alu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+A</source>
-        <translation>Ctrl+A</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>While &amp;Playing</source>
-        <translation>Saat memutar (&amp;P)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>While Playing &amp;Video</source>
-        <translation>Saat Memutarkan &amp;Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Options...</source>
-        <translation>&amp;Opsi..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>O</source>
-        <translation>O</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Pause</source>
-        <translation>Jeda (&amp;P)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Space</source>
-        <translation type="vanished">Ruang kosong</translation>
+        <translation type="vanished">Space</translation>
     </message>
     <message>
         <source>&amp;Stop</source>
-        <translation>&amp;Berhenti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>.</source>
-        <translation>.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>F&amp;rame Step Forward</source>
-        <translation>Bingkai Maju Selangkah (&amp;R)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Right</source>
-        <translation type="vanished">Ctrl+→</translation>
+        <translation type="vanished">Ctrl+Right</translation>
     </message>
     <message>
         <source>Fra&amp;me Step Backward</source>
-        <translation>Bingkai Mundur Selangkah (&amp;M)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Left</source>
-        <translation type="vanished">Ctrl+←</translation>
+        <translation type="vanished">Ctrl+Left</translation>
     </message>
     <message>
         <source>&amp;Decrease Rate</source>
-        <translation>&amp;Tingkat Penurunan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Down</source>
-        <translation type="vanished">Ctrl+↓</translation>
+        <translation type="vanished">Ctrl+Down</translation>
     </message>
     <message>
         <source>&amp;Increase Rate</source>
-        <translation>&amp;Tingkat Kenaikan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Up</source>
-        <translation type="vanished">Ctrl+↑</translation>
+        <translation type="vanished">Ctrl+Up</translation>
     </message>
     <message>
         <source>R&amp;eset Rate</source>
-        <translation>Tingkat R&amp;eset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+R</source>
-        <translation>Ctrl+R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Up</source>
-        <translation>Naik (&amp;U)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>0</source>
@@ -956,47 +962,47 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Down</source>
-        <translation>Turun (&amp;D)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>9</source>
-        <translation>9</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Mute</source>
-        <translation>&amp;Hening</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+M</source>
-        <translation>Ctrl+M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Exit</source>
-        <translation>Keluar (&amp;E)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Stand by</source>
-        <translation>&amp;Siaga</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Hibernate</source>
-        <translation>&amp;Hibernasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shut&amp;down</source>
-        <translation>Matikan (&amp;D)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Log &amp;Off</source>
-        <translation>L&amp;og Keluar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Lock</source>
-        <translation>Kunci (&amp;L)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do &amp;Nothing</source>
-        <translation>Tidak melakuka&amp;n apapun</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play next in the &amp;folder</source>
@@ -1004,7 +1010,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Previous</source>
-        <translation>Sebelumnya (&amp;P)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>PgUp</source>
@@ -1012,71 +1018,75 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Next</source>
-        <translation>Selanjut&amp;nya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>PgDown</source>
-        <translation type="vanished">PgDn</translation>
+        <translation type="vanished">PgDown</translation>
     </message>
     <message>
         <source>&amp;Go To...</source>
-        <translation>Per&amp;gi Ke..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+G</source>
-        <translation>Ctrl+G</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Title Menu</source>
-        <translation>Menu Judul (&amp;T)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+T</source>
-        <translation>Alt+T</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Root Menu</source>
-        <translation>Menu Utama (&amp;R)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+R</source>
-        <translation>Alt+R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Subtitle Menu</source>
-        <translation>Menu Takarir (&amp;S)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Audio Menu</source>
-        <translation>Menu &amp;Audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Angle &amp;Menu</source>
-        <translation>Sudut &amp;Menu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Chapt&amp;er Menu</source>
-        <translation>M&amp;enu Bagian</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Add to Favorites...</source>
+        <translation type="vanished">&amp;Add to Favorites...</translation>
     </message>
     <message>
         <source>&amp;Organize Favorites...</source>
-        <translation>Atur Fav&amp;orit..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Home Page</source>
-        <translation>&amp;Halaman Utama</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;About This Program...</source>
-        <translation>Tentang &amp;Aplikasi ini..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open &amp;Network Stream...</source>
-        <translation>Buka Siara&amp;n Berjaringan..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save I&amp;mage (Auto)</source>
-        <translation>Si&amp;mpan Gambar (Oto.)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>F5</source>
@@ -1084,55 +1094,55 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Smaller Only)</source>
-        <translation>Penyesuaian Otomatis (Hanya pengecilan)(&amp;S)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+6</source>
-        <translation>Alt+6</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Play Current</source>
-        <translation type="vanished">&amp;Putar Ini</translation>
+        <translation type="vanished">&amp;Play Current</translation>
     </message>
     <message>
         <source>Return</source>
-        <translation type="vanished">Kembali</translation>
+        <translation type="vanished">Return</translation>
     </message>
     <message>
         <source>Seek Forwards</source>
-        <translation type="vanished">Pindah Maju</translation>
+        <translation type="vanished">Seek Forwards</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="vanished">Kanan</translation>
+        <translation type="vanished">Right</translation>
     </message>
     <message>
         <source>Seek Backwards</source>
-        <translation type="vanished">Pindah Mundur</translation>
+        <translation type="vanished">Seek Backwards</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="vanished">Kiri</translation>
+        <translation type="vanished">Left</translation>
     </message>
     <message>
         <source>Seek Forwards Finely</source>
-        <translation type="vanished">Pindah Maju Perlahan</translation>
+        <translation type="vanished">Seek Forwards Finely</translation>
     </message>
     <message>
         <source>Shift+Right</source>
-        <translation type="vanished">Shift+→</translation>
+        <translation type="vanished">Shift+Right</translation>
     </message>
     <message>
         <source>Seek Backwards Finely</source>
-        <translation type="vanished">Pindah Mundur Perlahan</translation>
+        <translation type="vanished">Seek Backwards Finely</translation>
     </message>
     <message>
         <source>Shift+Left</source>
-        <translation type="vanished">Shift+←</translation>
+        <translation type="vanished">Shift+Left</translation>
     </message>
     <message>
         <source>&amp;Set Loop Start</source>
-        <translation>Tandai awal perulangan (&amp;S)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Home</source>
@@ -1140,11 +1150,15 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Set &amp;Loop End</source>
-        <translation>Tandai Akhir Peru&amp;langan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+End</source>
         <translation type="vanished">Ctrl+End</translation>
+    </message>
+    <message>
+        <source>&amp;Use Loop Points</source>
+        <translation type="vanished">&amp;Use Loop Points</translation>
     </message>
     <message>
         <source>Ctrl+Backspace</source>
@@ -1152,7 +1166,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Clear Loop</source>
-        <translation>Hapus Perulangan (&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Backspace</source>
@@ -1160,23 +1174,23 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Search Playlist</source>
-        <translation>Cari Daftar Putar (&amp;S)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+F</source>
-        <translation>Ctrl+F</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Quick Queue Toggle</source>
-        <translation>&amp;Pengalihan Antrian Cepat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Q</source>
-        <translation>Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Finish Searching</source>
-        <translation>Selesai Mencari (&amp;F)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Esc</source>
@@ -1184,127 +1198,127 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>Tab Baru (&amp;N)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
-        <translation>Ctrl+Shift+T</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>Tutup tab (&amp;L)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Tutup Tab</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
-        <translation>Ctrl+Shift+W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp;Duplikasi Tab</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
-        <translation>Ctrl+Shift+D</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Import Playlist</source>
-        <translation>&amp;Impor Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+O</source>
-        <translation>Ctrl+Shift+O</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>E&amp;xport Playlist</source>
-        <translation>E&amp;xpor Playlist</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+S</source>
-        <translation>Ctrl+Shift+S</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Queue &amp;Visible</source>
-        <translation>Antrian &amp;Terlihat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+Q</source>
-        <translation>Ctrl+Shift+Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Increment</source>
-        <translation>Urut Na&amp;ik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>E</source>
-        <translation>E</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Decrement</source>
-        <translation>Urut Turun (&amp;D)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shift+E</source>
-        <translation>Shift+E</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Clear Play Times</source>
-        <translation>Bersihkan Waktu Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+E</source>
-        <translation>Ctrl+E</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Copy Selection</source>
-        <translation>&amp;Pilihan Salinan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+C</source>
-        <translation>Ctrl+Shift+C</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>Tempel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+V</source>
-        <translation>Ctrl+Shift+V</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>C&amp;opy Queue</source>
-        <translation>Salin Antrian (&amp;o)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Alt+C</source>
-        <translation>Ctrl+Alt+C</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste and Q&amp;ueue</source>
-        <translation>Tempel dan Antrikan (&amp;u)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Alt+V</source>
-        <translation>Ctrl+Alt+V</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>About &amp;Qt...</source>
-        <translation>Tentang &amp;Qt..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save Pl&amp;ain Image...</source>
-        <translation>Simpan G&amp;ambar Polos..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt+Shift+I</source>
-        <translation>Alt+Shift+I</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save Plain Ima&amp;ge (Auto)</source>
-        <translation>Simpan &amp;Gambar Polos (Oto)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shift+F5</source>
@@ -1312,7 +1326,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Export Encode...</source>
-        <translation>Ekspor Pengkode..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>F12</source>
@@ -1320,27 +1334,27 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>S&amp;how Quick Queue</source>
-        <translation>Tampilkan Antrian Cepat (&amp;h)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+`</source>
-        <translation>Ctrl+`</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save &amp;Window Image...</source>
-        <translation>Simpan Gambar Jendela (&amp;w)..</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save Window Image</source>
-        <translation>Simpan Gambar Jendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Alt+I</source>
-        <translation>Ctrl+Alt+I</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save Window Image (Auto)</source>
-        <translation>Simpan Gambar Jendela (Oto)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+F5</source>
@@ -1348,179 +1362,167 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Do No&amp;thing</source>
-        <translation type="vanished">&amp;Tidak melakukan apapun</translation>
+        <translation type="vanished">Do No&amp;thing</translation>
     </message>
     <message>
         <source>Repe&amp;at</source>
-        <translation type="vanished">Ul&amp;ang</translation>
+        <translation type="vanished">Repe&amp;at</translation>
     </message>
     <message>
         <source>&amp;Repeat</source>
-        <translation>Ulang (&amp;R)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Application Messages</source>
-        <translation>Pesan &amp;Aplikasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;General Statistics</source>
-        <translation>&amp;Statistik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Frame Timings</source>
-        <translation type="vanished">Pewaktu Bingkai (&amp;f)</translation>
+        <translation type="vanished">&amp;Frame Timings</translation>
     </message>
     <message>
         <source>&amp;Cycle</source>
-        <translation>Siklus (&amp;c)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+J</source>
-        <translation>Ctrl+J</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;No Messages</source>
-        <translation>Tidak me&amp;nampilkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Escape Fullscreen</source>
-        <translation>K&amp;eluar Layar Penuh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enable &amp;Subtitles</source>
-        <translation>Hidupkan Takarir (&amp;S)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Next Subtitle</source>
-        <translation type="vanished">Takarir Selanjut&amp;nya</translation>
+        <translation type="vanished">&amp;Next Subtitle</translation>
     </message>
     <message>
         <source>&amp;Previous Subtitle</source>
-        <translation type="vanished">Takarir Sebelumnya (&amp;p)</translation>
+        <translation type="vanished">&amp;Previous Subtitle</translation>
     </message>
     <message>
         <source>Lo&amp;g</source>
-        <translation>Lo&amp;g</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Once</source>
-        <translation type="vanished">Sekali</translation>
+        <translation type="vanished">Once</translation>
     </message>
     <message>
         <source>Every time</source>
-        <translation type="vanished">Setiap kali</translation>
+        <translation type="vanished">Every time</translation>
     </message>
     <message>
         <source>Re&amp;move File</source>
-        <translation>Hapus File</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>View</source>
-        <translation>Lihat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hide &amp;Borders</source>
-        <translation>Sembunyikan &amp;Batas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sho&amp;w Caption and Menu</source>
-        <translation>Tampilkan teks dan menu (&amp;W)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Quick Open</source>
-        <translation>Buka Cepat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Software Decoding</source>
-        <translation>Dekoding Perangkat Lunak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hardware Decoding: %1</source>
-        <translation>Dekoding Perangkat Keras: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hardware Decoding: %1 (slow)</source>
-        <translation>Dekoding Perangkat Keras: %1 (lambat)</translation>
-    </message>
-    <message>
-        <source>Remaining time</source>
-        <translation type="vanished">Sisa waktu</translation>
-    </message>
-    <message>
-        <source>High precision</source>
-        <translation type="vanished">Presisi tinggi</translation>
-    </message>
-    <message>
-        <source>Show percentage</source>
-        <translation type="vanished">Tampilkan persentase</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No files favorited</source>
-        <translation>Tidak ada berkas unggulan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No streams favorited</source>
-        <translation>Tidak ada Siaran Unggulan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> [Freestanding]</source>
-        <translation> ·[Berdiri sendiri]</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Memuat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Buffering (%1%)</source>
-        <translation>Membuffer (%1%)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Quick Add To Playlist</source>
-        <translation>Tambah Cepat ke Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Quick Open File</source>
-        <translation>Buka Berkas Cepat (&amp;Q)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open Directory</source>
-        <translation>Buka Direktori</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter Network Stream</source>
-        <translation>Masukki Siaran Jaringan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Network Stream</source>
-        <translation>SIaran Jaringan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open Subtitle</source>
-        <translation>Buka Takarir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Development Build</source>
-        <translation type="vanished">Versi untuk Pengembang</translation>
+        <translation type="vanished">Development Build</translation>
     </message>
     <message>
         <source>Version %1</source>
-        <translation type="vanished">Versi &amp;1</translation>
+        <translation type="vanished">Version %1</translation>
     </message>
     <message>
         <source>About Media Player Classic Qute Theater</source>
-        <translation type="vanished">Tentang Media Player Classic Qute Theater</translation>
+        <translation type="vanished">About Media Player Classic Qute Theater</translation>
     </message>
     <message>
         <source>A clone of Media Player Classic written in Qt</source>
-        <translation type="vanished">Sebuah klon dari Media Player Classic menggunakan Qt</translation>
+        <translation type="vanished">A clone of Media Player Classic written in Qt</translation>
     </message>
     <message>
         <source>Based on Qt %1 and %2</source>
-        <translation type="vanished">Dibuat dengan Qt %1 dan %2</translation>
+        <translation type="vanished">Based on Qt %1 and %2</translation>
     </message>
     <message>
         <source>Built on %1 at %2</source>
-        <translation type="vanished">Dibangun dari %1 pada %2</translation>
+        <translation type="vanished">Built on %1 at %2</translation>
     </message>
     <message>
         <source>Alt+Q</source>
@@ -1528,23 +1530,23 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+Q</source>
-        <translation>Ctrl+Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paused</source>
-        <translation>Dijeda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playing</source>
-        <translation>Memutar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Buffering</source>
-        <translation type="vanished">Penyangga</translation>
+        <translation type="vanished">Buffering</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Tidak diketahui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&lt;unknown&gt;</source>
@@ -1552,27 +1554,31 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Libr&amp;ary</source>
-        <translation type="vanished">Pust&amp;aka</translation>
+        <translation type="vanished">Libr&amp;ary</translation>
     </message>
     <message>
         <source>Ctrl+=</source>
-        <translation>Ctrl+=</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+-</source>
-        <translation>Ctrl+-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Copy Subtitle</source>
-        <translation>Salin Takarir (&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Controls in Fullscreen</source>
-        <translation>Kontrol dalam Layar penuh</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>i</source>
+        <translation type="vanished">i</translation>
     </message>
     <message>
         <source>&amp;Previous File</source>
-        <translation>Berkas Sebelumnya (&amp;P)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+PgUp</source>
@@ -1580,7 +1586,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Next File</source>
-        <translation>Berkas Selanjut&amp;nya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+PgDown</source>
@@ -1588,1648 +1594,1816 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Play next &amp;file</source>
-        <translation>Mai&amp;nkan berkas selanjutnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subtitles</source>
-        <translation>Takarir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Senyap</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Add to Favorites</source>
-        <translation>T&amp;ambah ke Unggulan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Decrease Delay</source>
-        <translation>Turunkan penun&amp;daan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Increase Delay</source>
-        <translation>Na&amp;ikkan Penundaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Video</source>
-        <translation>&amp;Video</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Aspect</source>
+        <translation type="vanished">&amp;Decrease Aspect</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Aspect</source>
+        <translation type="vanished">&amp;Increase Aspect</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Aspect</source>
+        <translation type="vanished">&amp;Reset Aspect</translation>
+    </message>
+    <message>
+        <source>Disable &amp;aspect</source>
+        <translation type="vanished">Disable &amp;aspect</translation>
     </message>
     <message>
         <source>&amp;Show OSD Timer</source>
-        <translation>Tampilkan Pewaktu OSD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>I</source>
-        <translation>I</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Decrease Aspect ratio</source>
-        <translation type="vanished">Turunkan Rasio Aspek (&amp;D)</translation>
+        <translation type="vanished">&amp;Decrease Aspect ratio</translation>
     </message>
     <message>
         <source>&amp;Increase Aspect ratio</source>
-        <translation type="vanished">Na&amp;ikkan Rasio aspek</translation>
+        <translation type="vanished">&amp;Increase Aspect ratio</translation>
     </message>
     <message>
         <source>&amp;Reset Aspect ratio</source>
-        <translation type="vanished">&amp;Reset Rasio aspek</translation>
+        <translation type="vanished">&amp;Reset Aspect ratio</translation>
     </message>
     <message>
         <source>Disable &amp;Aspect ratio</source>
-        <translation type="vanished">Non&amp;aktifkan Rasio Aspek</translation>
+        <translation type="vanished">Disable &amp;Aspect ratio</translation>
     </message>
     <message>
         <source>C</source>
-        <translation>C</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>%1 / %2</source>
-        <translation>%1 / %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Seek Forwards (normal step)</source>
-        <translation>Maju (langkah normal)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Seek Backwards (normal step)</source>
-        <translation>Mundur (langkah normal)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Seek Forwards (large step)</source>
-        <translation>Maju (langkah besar)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Seek Backwards (large step)</source>
-        <translation>Mundur (langkah besar)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Judul</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Aspect ratio</source>
-        <translation>Rasio aspek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Pan and Scan</source>
-        <translation>Pan and Scan</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decrease &amp;Pan and Scan</source>
+        <translation type="vanished">Decrease &amp;Pan and Scan</translation>
+    </message>
+    <message>
+        <source>Increase Pan and &amp;Scan</source>
+        <translation type="vanished">Increase Pan and &amp;Scan</translation>
+    </message>
+    <message>
+        <source>&amp;Minimum Pan and Scan</source>
+        <translation type="vanished">&amp;Minimum Pan and Scan</translation>
+    </message>
+    <message>
+        <source>M&amp;aximum Pan and Scan</source>
+        <translation type="vanished">M&amp;aximum Pan and Scan</translation>
     </message>
     <message>
         <source>Music Mode</source>
-        <translation>Mode Musik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Previous Audio Track</source>
-        <translation>Trek Audio Sebelumnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Next Audio Track</source>
-        <translation>Trek Audio Berikutnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;50%</source>
-        <translation>50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;100%</source>
-        <translation>100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;200%</source>
-        <translation>200%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>25%</source>
-        <translation>25%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;75%</source>
-        <translation>75%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15&amp;0%</source>
-        <translation>150%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;400%</source>
-        <translation>400%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;300%</source>
-        <translation>300%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>vo: %1, decoder: %2</source>
-        <translation>vo: %1, dekoder: %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>v: %1 kb/s, a: %2 kb/s</source>
-        <translation>v: %1 kb/d, a: %2 kb/d</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>v: 0 kb/s, a: 0kb/s</source>
-        <translation>v: 0 kb/d, a: 0 kb/d</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>(Unknown)</source>
-        <translation type="vanished">(Tidak Diketahui)</translation>
+        <translation type="vanished">(Unknown)</translation>
     </message>
     <message>
         <source>Running under %1</source>
-        <translation type="vanished">Berjalan di bawah %1</translation>
+        <translation type="vanished">Running under %1</translation>
+    </message>
+    <message>
+        <source>XWayland or X11</source>
+        <translation type="vanished">XWayland or X11</translation>
     </message>
     <message>
         <source>&amp;Input Cache Statistics</source>
-        <translation>Statistik Cache Masukan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Previous Subtitles track</source>
-        <translation>Trek Subtitle Sebelumnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Next Subtitles track</source>
-        <translation>Trek Subtitle Berikutnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Filters</source>
-        <translation>Filter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Deinterlace</source>
-        <translation>Deinterlace</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Extra Stereo</source>
-        <translation>Stereo Ekstra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Compressor</source>
-        <translation>Kompresor</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Move File to Recycle Bin</source>
+        <translation type="vanished">Move File to Recycle Bin</translation>
     </message>
     <message>
         <source>Screenshot</source>
-        <translation>Tangkapan Layar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Crossfeed (for headphones)</source>
-        <translation>Crossfeed (untuk headphone)</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Zoom</source>
+        <translation type="vanished">&amp;Decrease Zoom</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Zoom</source>
+        <translation type="vanished">&amp;Increase Zoom</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Zoom</source>
+        <translation type="vanished">&amp;Reset Zoom</translation>
     </message>
     <message>
         <source>More Files</source>
-        <translation>File Lainnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Decrease</source>
-        <translation>Kurangi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Increase</source>
-        <translation>Tambah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Reset</source>
-        <translation>Atur Ulang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D&amp;isable</source>
-        <translation>Nonaktifkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Minimum</source>
-        <translation>Minimum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M&amp;aximum</source>
-        <translation>Maksimum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Resize</source>
-        <translation>Ubah Ukuran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Decrease Width</source>
-        <translation>Kurangi Lebar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Increase Width</source>
-        <translation>Tambah Lebar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D&amp;ecrease Height</source>
-        <translation>Kurangi Tinggi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>I&amp;ncrease Height</source>
-        <translation>Tambah Tinggi</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Re&amp;set Size</source>
+        <translation type="vanished">Re&amp;set Size</translation>
     </message>
     <message>
         <source>&amp;Move</source>
-        <translation>Pindahkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Left</source>
-        <translation>Kiri</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Right</source>
-        <translation>Kanan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>R&amp;eset</source>
-        <translation>Atur Ulang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>R&amp;otate</source>
-        <translation>Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Clockwise</source>
-        <translation>Searah Jarum Jam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>C&amp;ounterclockwise</source>
-        <translation>Berlawanan Jarum Jam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Horizontal Flip</source>
-        <translation>Balik Horizontal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Playlist</source>
-        <translation>Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Play</source>
-        <translation>Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Play Selected</source>
-        <translation>Putar yang Dipilih</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Remove Selected</source>
-        <translation>Hapus yang Dipilih</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Move File to Recycle Bin</source>
-        <translation>Pindahkan File ke Recycle Bin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delay</source>
-        <translation>Tunda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Ya</translation>
+        <translation type="unfinished">Yes</translation>
     </message>
     <message>
         <source>Auto</source>
-        <translation>Otomatis</translation>
+        <translation type="unfinished">Auto</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Tidak</translation>
+        <translation type="unfinished">No</translation>
     </message>
     <message>
         <source>Pl&amp;aylists Backup</source>
-        <translation>Cadangan Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decrease Delay</source>
-        <translation>Kurangi Delay</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Increase Delay</source>
-        <translation>Tambahkan Delay</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MouseState</name>
     <message>
         <source>None</source>
-        <translation>Tidak Ada</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wheel</source>
-        <translation>Roda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Kiri</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Kanan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Middle</source>
-        <translation>Tengah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Kembali</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Forward</source>
-        <translation>Maju</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Task</source>
-        <translation>Tugas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton4</source>
-        <translation>XButton4</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton5</source>
-        <translation>XButton5</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton6</source>
-        <translation>XButton6</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton7</source>
-        <translation>XButton7</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton8</source>
-        <translation>XButton8</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton9</source>
-        <translation>XButton9</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton10</source>
-        <translation>XButton10</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton11</source>
-        <translation>XButton11</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton12</source>
-        <translation>XButton12</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton13</source>
-        <translation>XButton13</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton14</source>
-        <translation>XButton14</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton15</source>
-        <translation>XButton15</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton16</source>
-        <translation>XButton16</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton17</source>
-        <translation>XButton17</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton18</source>
-        <translation>XButton18</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton19</source>
-        <translation>XButton19</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton20</source>
-        <translation>XButton20</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton21</source>
-        <translation>XButton21</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton22</source>
-        <translation>XButton22</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton23</source>
-        <translation>XButton23</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>XButton24</source>
-        <translation>XButton24</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shift</source>
-        <translation>Shift</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Control</source>
-        <translation>Control</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alt</source>
-        <translation>Alt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Meta</source>
-        <translation>Meta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Down</source>
-        <translation>Bawah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Up</source>
-        <translation>Atas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Twice</source>
-        <translation>Dua Kali</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MpvObject</name>
     <message>
         <source>Subtitles delay: %1 ms</source>
-        <translation>Penundaan subtitle: %1 md</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio delay: %1 ms</source>
-        <translation>Delay audio: %1 ms</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>OpenFileDialog</name>
     <message>
         <source>Open File</source>
-        <translation>Buka File</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fi&amp;le</source>
-        <translation>File</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Subtitles</source>
-        <translation>Subtitle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select File</source>
-        <translation>Pilih File</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PaletteEditor</name>
     <message>
         <source>Generate palette from:</source>
-        <translation>Buat palet dari:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Button</source>
-        <translation>Tombol</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Button &amp;&amp; Window</source>
-        <translation>Tombol  Jendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reset to System</source>
-        <translation>Atur Ulang ke Sistem</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Generate</source>
+        <translation type="vanished">Generate</translation>
     </message>
 </context>
 <context>
     <name>PlaybackManager</name>
     <message>
         <source>Speed: %1%</source>
-        <translation>Kecepatan: %1%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Volume: %1%</source>
-        <translation>Volume: %1%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mute: on</source>
-        <translation>Bisukan: aktif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mute: off</source>
-        <translation>Bisukan: nonaktif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>0: None</source>
-        <translation>0: Tidak Ada</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Aspect ratio: %1</source>
-        <translation>Rasio aspek: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio track: </source>
-        <translation>Trek audio: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subtitles track: </source>
-        <translation>Trek subtitle: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subtitles: on</source>
-        <translation>Subtitle: aktif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subtitles: off</source>
-        <translation>Subtitle: nonaktif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>File moved to recycle bin: %1</source>
-        <translation>File dipindahkan ke recycle bin: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Failed to move file to recycle bin: %1</source>
-        <translation>Gagal memindahkan file ke recycle bin: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PlaylistCollection</name>
     <message>
+        <source>Quick playlist</source>
+        <translation type="vanished">Quick playlist</translation>
+    </message>
+    <message>
         <source>Quick Playlist</source>
-        <translation>Daftar Putar Cepat</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PlaylistWindow</name>
     <message>
         <source>P&amp;laylist</source>
-        <translation>Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Cari</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Visible Items to Quick Queue</source>
-        <translation>Item Terlihat ke Antrean Cepat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Tab Baru</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="vanished">Tutup Tab</translation>
+        <translation type="vanished">Close Tab</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Duplikasi Tab</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import Playlist</source>
-        <translation>Impor Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Export Playlist</source>
-        <translation>Ekspor Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show Queue</source>
-        <translation>Tampilkan Antrean</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation>Daftar Putar</translation>
-    </message>
-    <message>
-        <source>New Playlist</source>
-        <translation>Daftar Putar Baru</translation>
-    </message>
-    <message>
-        <source>Enter Playlist Name</source>
-        <translation>Masukkan Nama Daftar Putar</translation>
-    </message>
-    <message>
-        <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>File daftar putar (*.m3u *.m3u8)</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Buka</translation>
-    </message>
-    <message>
-        <source>Add</source>
-        <translation>Tambah</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Hapus</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation type="obsolete">Bersihkan</translation>
-    </message>
-    <message>
-        <source>Copy To clipboard</source>
-        <translation>Salin ke Clipboard</translation>
-    </message>
-    <message>
-        <source>Save As...</source>
-        <translation type="vanished">Simpan Sebagai...</translation>
-    </message>
-    <message>
-        <source>Sort By Label</source>
-        <translation>Urutkan Berdasarkan Label</translation>
-    </message>
-    <message>
-        <source>Sort By Url</source>
-        <translation>Urutkan Berdasarkan URL</translation>
-    </message>
-    <message>
-        <source>Restore</source>
-        <translation>Pulihkan</translation>
-    </message>
-    <message>
-        <source>Shuffle</source>
-        <translation>Acak</translation>
-    </message>
-    <message>
-        <source>Hide On Fullscreen</source>
-        <translation>Sembunyikan Saat Layar Penuh</translation>
-    </message>
-    <message>
-        <source>Enter playlist name</source>
-        <translation>Masukkan nama daftar putar</translation>
-    </message>
-    <message>
-        <source>&amp;New Playlist</source>
-        <translation>Daftar Putar Baru</translation>
-    </message>
-    <message>
-        <source>&amp;Remove Playlist</source>
-        <translation>Hapus daftar Puta&amp;r</translation>
-    </message>
-    <message>
-        <source>&amp;Clear Playlist</source>
-        <translation>Hapus Daftar Putar</translation>
-    </message>
-    <message>
-        <source>&amp;Duplicate Playlist</source>
-        <translation>Duplikasi Daftar Putar</translation>
-    </message>
-    <message>
-        <source>&amp;Rename Playlist</source>
-        <translation>Ganti Nama Daftar Putar</translation>
-    </message>
-    <message>
-        <source>&amp;Import Playlist</source>
-        <translation>Impor Daftar Putar</translation>
-    </message>
-    <message>
-        <source>&amp;Export Playlist</source>
-        <translation>Ekspor Daftar Putar</translation>
-    </message>
-    <message>
-        <source>Repeat</source>
-        <translation>Ulangi</translation>
-    </message>
-    <message>
-        <source>Reshuffle</source>
-        <translation>Acak Ulang</translation>
-    </message>
-    <message>
-        <source>Queue</source>
-        <translation>Antrean</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Quick Playlist</source>
-        <translation>Daftar Putar Cepat</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter Playlist Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import File</source>
+        <translation type="vanished">Import File</translation>
+    </message>
+    <message>
+        <source>Playlist files (*.m3u *.m3u8)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Export File</source>
+        <translation type="vanished">Export File</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation type="vanished">Clear</translation>
+    </message>
+    <message>
+        <source>Copy To clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save As...</source>
+        <translation type="vanished">Save As...</translation>
+    </message>
+    <message>
+        <source>Sort By Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sort By Url</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Randomize</source>
+        <translation type="vanished">Randomize</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Shuffle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Hide On Fullscreen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter playlist name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Remove Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Clear Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Rename Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Import Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Export Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Repeat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reshuffle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Queue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Quick playlist</source>
+        <translation type="obsolete">Quick playlist</translation>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8 *.txt)</source>
-        <translation>File daftar putar (*.m3u *.m3u8 *.txt)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import Playlist File</source>
-        <translation>Impor File Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Export Playlist File</source>
-        <translation>Ekspor File Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation>Tambah Folder</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PropertiesWindow</name>
     <message>
         <source>Properties</source>
-        <translation>Properti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Details</source>
-        <translation>Detail</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation>Jenis:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Size:</source>
-        <translation>Ukuran:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Media length:</source>
-        <translation>Durasi media:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Video size:</source>
-        <translation>Ukuran video:</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Created:</source>
+        <translation type="vanished">Created:</translation>
     </message>
     <message>
         <source>Clip</source>
-        <translation>Klip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clip:</source>
-        <translation>Klip:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Author:</source>
-        <translation>Penulis:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copyright:</source>
-        <translation>Hak Cipta:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Rating:</source>
-        <translation>Penilaian:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Location:</source>
-        <translation>Lokasi:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Deskripsi:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>MediaInfo</source>
-        <translation>MediaInfo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Save</source>
-        <translation>Simpan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Video</source>
-        <translation>Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation>Audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subtitles</source>
-        <translation>Subtitle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Umum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Menu
 </source>
-        <translation>Menu
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>File has no data for this section.
 </source>
-        <translation>File tidak memiliki data untuk bagian ini.
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Text documents (*.txt);;All files (*.*)</source>
-        <translation>Dokumen teks (*.txt);;Semua file (*.*)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Modified:</source>
-        <translation>Dimodifikasi:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>All Media (*.%1);;All Files (*.*)</source>
-        <translation>Semua Media (*.%1);;Semua File (*.*)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Subtitles (*.%1);;All Files (*.*)</source>
-        <translation>Semua Subtitle (*.%1);;Semua File (*.*)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Window text</source>
-        <translation>Teks jendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Button</source>
-        <translation>Tombol</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Light</source>
-        <translation>Terang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Midlight</source>
-        <translation>Agak Terang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Dark</source>
-        <translation>Gelap</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mid</source>
-        <translation>Sedang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Teks</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bright text</source>
-        <translation>Teks terang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Button text</source>
-        <translation>Teks tombol</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Base</source>
-        <translation>Dasar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>Jendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shadow</source>
-        <translation>Bayangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Highlight</source>
-        <translation>Sorotan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Highlighted text</source>
-        <translation>Teks yang disorot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Link</source>
-        <translation>Tautan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Link (visited)</source>
-        <translation>Tautan (sudah dikunjungi)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Base (alternate)</source>
-        <translation>Dasar (alternatif)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No role</source>
-        <translation>Tanpa peran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tooltip base</source>
-        <translation>Dasar tooltip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tooltip text</source>
-        <translation>Teks tooltip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Aktif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation>Dinonaktifkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Inactive</source>
-        <translation>Tidak Aktif</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ScreenCombo</name>
     <message>
         <source>Current</source>
-        <translation>Saat Ini</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SettingsWindow</name>
     <message>
         <source>Options</source>
-        <translation>Opsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Player</source>
-        <translation>Pemutar</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Formats</source>
+        <translation type="vanished">Formats</translation>
     </message>
     <message>
         <source>Keys</source>
-        <translation>Tombol</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Logo</source>
-        <translation>Logo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Interface</source>
-        <translation>Antarmuka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playback</source>
-        <translation>Pemutaran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Output</source>
-        <translation>Keluaran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shaders</source>
-        <translation>Shader</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fullscreen</source>
-        <translation>Layar Penuh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync</source>
-        <translation>Sinkronisasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hw. Decoding</source>
-        <translation>Dekoding Hw.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation>Daftar Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subtitles</source>
-        <translation>Subtitle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Default Style</source>
-        <translation>Gaya Default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Misc</source>
-        <translation type="vanished">Lain-lain</translation>
+        <translation type="vanished">Misc</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Ekspor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Encoding</source>
-        <translation>Pengodean</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tweaks</source>
-        <translation>Penyesuaian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Logging</source>
-        <translation>Pencatatan Log</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Miscellaneous</source>
-        <translation>Lain-lain</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&lt;big&gt;&lt;b&gt;Player</source>
-        <translation>&lt;big&gt;&lt;b&gt;Pemutar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open options</source>
-        <translation>Buka opsi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use the same player for
 each &amp;media file</source>
-        <translation>Gunakan pemutar yang sama untuk
-setiap file media</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open a new &amp;player for each
 media file played</source>
-        <translation>Buka pemutar baru untuk setiap
-file media yang diputar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Lainnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tray icon</source>
-        <translation>Ikon baki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show OSD</source>
-        <translation>Tampilkan OSD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Limit window proportions on resize</source>
-        <translation>Batasi proporsi jendela saat mengubah ukuran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable &quot;Open Disc&quot; menu</source>
-        <translation>Nonaktifkan menu &quot;Buka Disc&quot;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable screensaver while playing</source>
-        <translation>Nonaktifkan screensaver saat memutar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Title bar</source>
-        <translation>Bilah judul</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disp&amp;lay full path</source>
-        <translation>Tampilkan jalur lengkap</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>File &amp;name only</source>
-        <translation>Nama file saja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Don&apos;t prefi&amp;x anything</source>
-        <translation type="vanished">Jangan tambahkan awalan apa pun</translation>
+        <translation type="vanished">Don&apos;t prefi&amp;x anything</translation>
+    </message>
+    <message>
+        <source>Replace file name with title</source>
+        <translation type="vanished">Replace file name with title</translation>
     </message>
     <message>
         <source>History</source>
-        <translation>Riwayat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Keep history of recently opened files</source>
-        <translation>Simpan riwayat file yang baru dibuka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remember last selected playlist</source>
-        <translation>Ingat daftar putar yang terakhir dipilih</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remember last window geometry</source>
-        <translation type="vanished">Ingat geometri jendela terakhir</translation>
+        <translation type="vanished">Remember last window geometry</translation>
     </message>
     <message>
         <source>Remember last Pan-n-Scan Zoom</source>
-        <translation>Ingat Zoom Pan-n-Scan terakhir</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MIME types</source>
+        <translation type="vanished">MIME types</translation>
+    </message>
+    <message>
+        <source>Association</source>
+        <translation type="vanished">Association</translation>
     </message>
     <message>
         <source>Video</source>
-        <translation>Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation>Audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Semua</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/blob/master/DOCS/ipc.md&quot;&gt;JSON IPC&lt;/a&gt; available at %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>MPRIS</source>
-        <translation>MPRIS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation>Atur Ulang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>E&amp;xternal</source>
-        <translation>Eksternal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Interna&amp;l</source>
-        <translation>Internal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Browse...</source>
-        <translation>Jelajahi...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blank</source>
-        <translation>Kosong</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Color film stock</source>
+        <translation type="vanished">Color film stock</translation>
+    </message>
+    <message>
+        <source>Black and white film stock</source>
+        <translation type="vanished">Black and white film stock</translation>
     </message>
     <message>
         <source>Triangle in circle</source>
-        <translation>Segitiga dalam lingkaran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Multi purpose vehicle</source>
-        <translation>Kendaraan multiguna</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Icons</source>
-        <translation>Ikon</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Theme</source>
-        <translation type="vanished">Tema</translation>
+        <translation type="vanished">Theme</translation>
+    </message>
+    <message>
+        <source>Built-in fallback</source>
+        <translation type="vanished">Built-in fallback</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation>Kustom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>System (Linux only)</source>
-        <translation>Sistem (Hanya Linux)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Folder (e.g. ~/Pictures/MyIcons/mpc-qt/leet)</source>
-        <translation>Folder (mis. ~/Pictures/MyIcons/mpc-qt/leet)</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation type="vanished">See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</translation>
+    </message>
+    <message>
+        <source>Fallback</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Black (for white palette)</source>
+        <translation type="vanished">Black (for white palette)</translation>
+    </message>
+    <message>
+        <source>White (for black palette)</source>
+        <translation type="vanished">White (for black palette)</translation>
+    </message>
+    <message>
+        <source>Widget Color</source>
+        <translation type="vanished">Widget Color</translation>
+    </message>
+    <message>
+        <source>Use custom theme</source>
+        <translation type="vanished">Use custom theme</translation>
+    </message>
+    <message>
+        <source>Window Color</source>
+        <translation type="vanished">Window Color</translation>
+    </message>
+    <message>
+        <source>HHHHHH</source>
+        <translation type="vanished">HHHHHH</translation>
+    </message>
+    <message>
+        <source>Info Background</source>
+        <translation type="vanished">Info Background</translation>
+    </message>
+    <message>
+        <source>Info Foreground</source>
+        <translation type="vanished">Info Foreground</translation>
     </message>
     <message>
         <source>Control</source>
-        <translation>Kontrol</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Volume step</source>
-        <translation>Langkah volume</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Speed step</source>
-        <translation>Langkah kecepatan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto</source>
-        <translation>Otomatis</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time step</source>
+        <translation type="vanished">Time step</translation>
+    </message>
+    <message>
+        <source>Fine step</source>
+        <translation type="vanished">Fine step</translation>
     </message>
     <message>
         <source>Center window when zooming</source>
-        <translation>Pusatkan jendela saat memperbesar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto zoom</source>
-        <translation>Zoom otomatis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Autofit</source>
-        <translation>Penyesuaian otomatis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Autofit (Larger Only)</source>
-        <translation>Penyesuaian otomatis (Hanya yang Lebih Besar)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Autofit (Smaller Only)</source>
-        <translation>Penyesuaian otomatis (Hanya yang Lebih Kecil)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto fit factor</source>
-        <translation>Faktor penyesuaian otomatis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Autofitting in tiling window managers requires that the window be in floating mode.</source>
-        <translation>Penyesuaian otomatis pada pengelola jendela tiling mengharuskan jendela berada dalam mode mengambang.</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="vanished">Volume</translation>
     </message>
     <message>
         <source>Use Qt&apos;s inbuilt fusion style</source>
-        <translation>Gunakan gaya fusion bawaan Qt</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Balance</source>
+        <translation type="vanished">Balance</translation>
     </message>
     <message>
         <source>Default track preference</source>
-        <translation>Preferensi trek default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mouse hiding</source>
-        <translation>Penyembunyian kursor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Windowed</source>
-        <translation>Berjendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Video Renderer</source>
-        <translation>Perenderan Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Dumb mode</source>
-        <translation>Mode sederhana</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Umum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Framebuffer</source>
-        <translation>Framebuffer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>8 bits</source>
-        <translation>8 bit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>10 bits</source>
-        <translation>10 bit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>12 bits</source>
-        <translation>12 bit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>16 bits</source>
-        <translation>16 bit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>16 bits float</source>
-        <translation>16 bit float</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>32 bits float</source>
-        <translation>32 bit float</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alpha channel</source>
-        <translation>Saluran alfa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alpha</source>
-        <translation>Alfa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Campurkan pada hitam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Gunakan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Abaikan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sharpen</source>
-        <translation>Pertajam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation>Dinonaktifkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Presets</source>
-        <translation>Prasetel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Plain</source>
-        <translation>Polos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Low</source>
-        <translation>Rendah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>High</source>
-        <translation>Tinggi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Highest</source>
-        <translation>Tertinggi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Placebo</source>
-        <translation>Placebo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Load</source>
-        <translation>Muat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Dither</source>
-        <translation>Dither</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Dithering</source>
-        <translation>Dithering</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Depth</source>
-        <translation>Kedalaman</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Jenis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fruit</source>
-        <translation>Fruit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ordered</source>
-        <translation>Terurut</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Tidak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Often, LCDs perform dithering on their own, which conflicts with OpenGL&apos;s output and can lead to ugly output.  In which case you should lower the dither depth.</source>
-        <translation>Seringkali, LCD melakukan dithering sendiri, yang bertentangan dengan keluaran OpenGL dan dapat menghasilkan tampilan yang buruk. Dalam hal ini Anda sebaiknya menurunkan kedalaman dither.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Temporal dithering</source>
-        <translation>Dithering temporal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Period</source>
-        <translation>Periode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>This can lead to flicker on LCD displays, since these  have a high reaction time.</source>
-        <translation>Ini dapat menyebabkan kedipan pada layar LCD, karena layar tersebut memiliki waktu reaksi yang tinggi.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Scaling</source>
-        <translation>Penskalaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Correct downscaling</source>
-        <translation>Perbaiki penurunan skala</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Temporal interpolation</source>
-        <translation>Interpolasi temporal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blend subtitles</source>
-        <translation>Campurkan subtitle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sigmoidized upscaling</source>
-        <translation>Peningkatan skala tersigmoid</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Center</source>
-        <translation>Tengah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Slope</source>
-        <translation>Kemiringan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Scale</source>
-        <translation>Skala</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Scaler</source>
-        <translation>Penskal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Anti-ring</source>
-        <translation>Anti-ring</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blur</source>
-        <translation>Blur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Window</source>
-        <translation>Jendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Box</source>
-        <translation>Box</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Triangle</source>
-        <translation>Triangle</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bartlett</source>
-        <translation>Bartlett</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hanning</source>
-        <translation>Hanning</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hamming</source>
-        <translation>Hamming</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Quadric</source>
-        <translation>Quadric</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Welch</source>
-        <translation>Welch</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Kaiser</source>
-        <translation>Kaiser</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Blackman</source>
-        <translation>Blackman</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gaussian</source>
-        <translation>Gaussian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sinc</source>
-        <translation>Sinc</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Jinc</source>
-        <translation>Jinc</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sphinx</source>
-        <translation>Sphinx</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clamp</source>
-        <translation>Clamp</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Radius</source>
-        <translation>Radius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bilinear</source>
-        <translation>Bilinear</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bicubic_fast</source>
-        <translation>Bicubic_fast</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Oversample</source>
-        <translation>Oversample</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Spline16</source>
-        <translation>Spline16</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Spline36</source>
-        <translation>Spline36</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Spline64</source>
-        <translation>Spline64</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lanczos</source>
-        <translation>Lanczos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ginseng</source>
-        <translation>Ginseng</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ewa lanczos</source>
-        <translation>Ewa lanczos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ewa hanning</source>
-        <translation>Ewa hanning</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ewa ginseng</source>
-        <translation>Ewa ginseng</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ewa lanczos sharp</source>
-        <translation>Ewa lanczos sharp</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ewa lanczos soft</source>
-        <translation>Ewa lanczos soft</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Haasnsoft</source>
-        <translation>Haasnsoft</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bicubic</source>
-        <translation>Bicubic</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bc spline</source>
-        <translation>Bc spline</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Catmull rom</source>
-        <translation>Catmull rom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mitchell</source>
-        <translation>Mitchell</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Robidoux</source>
-        <translation>Robidoux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Robidoux sharp</source>
-        <translation>Robidoux sharp</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ewa robidoux</source>
-        <translation>Ewa robidoux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ewa robidoux sharp</source>
-        <translation>Ewa robidoux sharp</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Nearest</source>
-        <translation>Terdekat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downscale</source>
-        <translation>Penurunan skala</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unset</source>
-        <translation>Tidak diatur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Color</source>
-        <translation>Warna</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Temporal</source>
-        <translation>Temporal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Linear</source>
-        <translation>Linear</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deband</source>
-        <translation>Deband</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>State</source>
-        <translation>Status</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation>Diaktifkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Iterations</source>
-        <translation>Iterasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Threshold</source>
-        <translation>Ambang batas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Range</source>
-        <translation>Rentang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Grain</source>
-        <translation>Grain</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Color Correction</source>
-        <translation>Koreksi Warna</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamma</source>
-        <translation>Gamma</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Only implemented on Mac</source>
@@ -3237,11 +3411,11 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Autodetect</source>
-        <translation>Deteksi otomatis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Target Prim</source>
-        <translation>Target Prim</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>BT.470m</source>
@@ -3249,115 +3423,115 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>BT.601-525</source>
-        <translation>BT.601-525</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>BT.601-625</source>
-        <translation>BT.601-625</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>BT.709</source>
-        <translation>BT.709</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>BT.2020</source>
-        <translation>BT.2020</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Apple</source>
-        <translation>Apple</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Adobe</source>
-        <translation>Adobe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>ProPhoto</source>
-        <translation>ProPhoto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>CIE1931</source>
-        <translation>CIE1931</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>DCI-P3</source>
-        <translation>DCI-P3</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Target TRC</source>
-        <translation>Target TRC</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>BT.1886</source>
-        <translation>BT.1886</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>sRGB</source>
-        <translation>sRGB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamma 1.8</source>
-        <translation>Gamma 1.8</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamma 2.2</source>
-        <translation>Gamma 2.2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamma 2.8</source>
-        <translation>Gamma 2.8</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>PQ</source>
-        <translation>PQ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>HLG</source>
-        <translation>HLG</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Panasonic V-Log</source>
-        <translation>Panasonic V-Log</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sony S-Log1</source>
-        <translation>Sony S-Log1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sony S-Log2</source>
-        <translation>Sony S-Log2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>HDR Tone mapping</source>
-        <translation>Pemetaan nada HDR</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clip</source>
-        <translation>Clip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mobius</source>
-        <translation>Mobius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reinhard</source>
-        <translation>Reinhard</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hable</source>
-        <translation>Hable</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Luma</source>
-        <translation>Luma</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Juncture</source>
-        <translation>Juncture</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Contrast</source>
-        <translation>Kontras</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>HDR Desaturate</source>
@@ -3365,303 +3539,315 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>ICC Profile</source>
-        <translation>Profil ICC</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Jelajahi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio Renderer</source>
-        <translation>Perenderan Audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Device</source>
-        <translation>Perangkat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Channel layout</source>
-        <translation>Tata letak saluran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>System layout (stereo fallback)</source>
-        <translation>Tata letak sistem (fallback stereo)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Maximal layout (may output to unconnected channels)</source>
-        <translation>Tata letak maksimal (dapat mengeluarkan ke saluran yang tidak terhubung)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Stereo</source>
-        <translation>Stereo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio switcher (WIP)</source>
-        <translation>Pengalih audio (WIP)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Stream silence (HDMI fixup)</source>
-        <translation>Alirkan keheningan (perbaikan HDMI)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> seconds</source>
-        <translation> · detik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Pitch correction</source>
-        <translation>Koreksi nada</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exclusive mode</source>
-        <translation>Mode eksklusif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Normalize downmix</source>
-        <translation>Normalkan downmix</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use S/PDIF when available</source>
-        <translation>Gunakan S/PDIF bila tersedia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Pulse</source>
-        <translation>Pulse</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Buffer</source>
-        <translation>Buffer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fixes</source>
-        <translation>Perbaikan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Latency hacks</source>
-        <translation>Peretasan latensi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Alsa</source>
-        <translation>ALSA</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Resample (may introduce latency)</source>
-        <translation>Resampel (dapat menambah latensi)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ignore channel map (for specific alsa setups)</source>
-        <translation>Abaikan peta saluran (untuk pengaturan alsa tertentu)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Oss</source>
-        <translation>OSS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>Perangkat mixer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Saluran mixer</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Jack</source>
-        <translation>Jack</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Port</source>
-        <translation>Port</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto connect</source>
-        <translation>Sambung otomatis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start jackd at startup</source>
-        <translation>Mulai jackd saat startup</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Startup</source>
-        <translation>Startup</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filesystem</source>
-        <translation>Sistem File</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add shader file(s)...</source>
-        <translation>Tambah file shader...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Hapus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to shaders</source>
-        <translation>Tambah ke shader</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shader presets</source>
-        <translation>Prasetel shader</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Simpan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Hapus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wiki</source>
-        <translation>Wiki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Active shaders</source>
-        <translation>Shader aktif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fullscreen monitor</source>
-        <translation>Monitor layar penuh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Launch files in fullscreen</source>
-        <translation>Buka file dalam layar penuh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exit fullscreen at the end of playback</source>
-        <translation>Keluar dari layar penuh di akhir pemutaran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hiding</source>
-        <translation>Penyembunyian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hide docked panels</source>
-        <translation>Sembunyikan panel yang ditambatkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hide controls in fullscreen</source>
-        <translation>Sembunyikan kontrol dalam layar penuh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Never show</source>
-        <translation>Jangan pernah tampilkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show when moving the cursor, hide after:</source>
-        <translation>Tampilkan saat menggerakkan kursor, sembunyikan setelah:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show when hovering control, hide after:</source>
-        <translation>Tampilkan saat mengarahkan ke kontrol, sembunyikan setelah:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Framedropping</source>
-        <translation>Penjatuhan bingkai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decoder</source>
-        <translation>Dekoder</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Dekoder+Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>None</source>
-        <translation>Tidak Ada</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Non reference</source>
-        <translation>Bukan referensi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bi-directional</source>
-        <translation>Dua arah</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Non key</source>
-        <translation>Bukan kunci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio/Video sync</source>
-        <translation>Sinkronisasi Audio/Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Resample audio to match video</source>
-        <translation>Resampel audio agar sesuai video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Resample audio to match video (may drop frames)</source>
-        <translation>Resampel audio agar sesuai video (dapat menjatuhkan bingkai)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Drop or repeat video frames</source>
-        <translation>Jatuhkan atau ulangi bingkai video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Drop or repeat audio data</source>
-        <translation>Jatuhkan atau ulangi data audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Ukuran jatuhan audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Max audio change</source>
-        <translation>Perubahan audio maksimum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Max video change</source>
-        <translation>Perubahan video maksimum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hardware decoding may produce a smoother, more efficient overall experience and reduce strain on your cpu. However, some of the listed codecs (depending upon your installed hardware and software) may not be available, may be broken, and may produce incorrect output. A safe and always correct rule of thumb with respect to image quality is to prefer software decoding if your cpu can handle it.</source>
-        <translation>Dekoding perangkat keras dapat menghasilkan pengalaman keseluruhan yang lebih lancar dan efisien serta mengurangi beban pada CPU Anda. Namun, beberapa codec yang tercantum (tergantung pada perangkat keras dan perangkat lunak yang terpasang) mungkin tidak tersedia, mungkin rusak, dan mungkin menghasilkan keluaran yang salah. Aturan praktis yang aman dan selalu benar terkait kualitas gambar adalah lebih memilih dekoding perangkat lunak jika CPU Anda mampu menanganinya.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use hardware-accelerated decoding</source>
-        <translation>Gunakan dekoding yang dipercepat perangkat keras</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Codecs to allow hardware decoding</source>
-        <translation>Codec yang diizinkan untuk dekoding perangkat keras</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hardware decoding backend</source>
-        <translation>Backend dekoding perangkat keras</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hover over each backend to display a description.</source>
-        <translation>Arahkan kursor ke setiap backend untuk menampilkan deskripsi.</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Autodetect - best of VAAPI, DXVA, D3D11VA</source>
+        <translation type="vanished">Autodetect - best of VAAPI, DXVA, D3D11VA</translation>
     </message>
     <message>
         <source>A&amp;utodetect</source>
-        <translation>Deteksi otomatis</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Linux - requires Mesa 11 and most likely works with Intel GPUs only; may only be correct in BT.601 and BT.709</source>
+        <translation type="vanished">Linux - requires Mesa 11 and most likely works with Intel GPUs only; may only be correct in BT.601 and BT.709</translation>
     </message>
     <message>
         <source>Linux - some gpus, does not always treat certain colorspaces like BT.2020 correctly</source>
-        <translation>Linux - beberapa GPU, tidak selalu menangani ruang warna tertentu seperti BT.2020 dengan benar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Windows - not safe; it appears to always use BT.601 for forced RGB conversion, but actual behavior depends on the GPU drivers</source>
-        <translation>Windows - tidak aman; tampaknya selalu menggunakan BT.601 untuk konversi RGB paksa, tetapi perilaku sebenarnya bergantung pada driver GPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Windows 8+ - usually safe but rounds 10 bit to 8 bit</source>
-        <translation>Windows 8+ - biasanya aman tetapi membulatkan 10 bit ke 8 bit</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Raspberry PI - hardware overlay renderer</source>
+        <translation type="vanished">Raspberry PI - hardware overlay renderer</translation>
     </message>
     <message>
         <source>MacOS - safe</source>
@@ -3669,308 +3855,316 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>nVidia only (likely 10x0+ only) - safe</source>
-        <translation>Khusus nVidia (kemungkinan hanya 10x0+) - aman</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>PCI-E decoder card - safe</source>
-        <translation>Kartu dekoder PCI-E - aman</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Playback progression</source>
-        <translation>Progres pemutaran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Pla&amp;y</source>
-        <translation>Putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>times</source>
-        <translation>kali</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat fore&amp;ver</source>
-        <translation>Ulangi selamanya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Always loop images (manual progression)</source>
-        <translation>Selalu ulangi gambar (progres manual)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Display Format</source>
-        <translation>Format Tampilan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>qrc:/text/playlistFormat.html</source>
-        <translation>qrc:/text/playlistFormat.html</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Placement</source>
-        <translation type="vanished">Penempatan</translation>
+        <translation type="vanished">Placement</translation>
     </message>
     <message>
         <source>Override default subtitle placement</source>
-        <translation type="vanished">Timpa penempatan subtitle default</translation>
+        <translation type="vanished">Override default subtitle placement</translation>
     </message>
     <message>
         <source>X</source>
-        <translation>X</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="vanished">Kiri</translation>
+        <translation type="vanished">Left</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="vanished">Kanan</translation>
+        <translation type="vanished">Right</translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Top</source>
-        <translation type="vanished">Atas</translation>
+        <translation type="vanished">Top</translation>
     </message>
     <message>
         <source>Bottom</source>
-        <translation type="vanished">Bawah</translation>
+        <translation type="vanished">Bottom</translation>
     </message>
     <message>
         <source>Position</source>
-        <translation type="vanished">Posisi</translation>
+        <translation type="vanished">Position</translation>
     </message>
     <message>
         <source>Use margins</source>
-        <translation type="vanished">Gunakan margin</translation>
+        <translation type="vanished">Use margins</translation>
     </message>
     <message>
         <source>Force grayscale</source>
-        <translation>Paksa skala abu-abu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fix timing</source>
-        <translation>Perbaiki pengaturan waktu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Clear on seek</source>
-        <translation>Bersihkan saat pencarian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>ASS override</source>
         <extracomment>Might cause issues</extracomment>
-        <translation>Timpa ASS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Ya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yes and only zoom signs</source>
-        <translation type="vanished">Ya dan hanya perbesar tanda</translation>
+        <translation type="vanished">Yes and only zoom signs</translation>
     </message>
     <message>
         <source>Force</source>
-        <translation type="vanished">Paksa</translation>
+        <translation type="vanished">Force</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation>Font</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>Gaya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bold</source>
-        <translation>Tebal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Italic</source>
-        <translation>Miring</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Border style</source>
+        <translation type="vanished">Border style</translation>
     </message>
     <message>
         <source>Border size</source>
-        <translation>Ukuran batas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shadow offset</source>
-        <translation>Offset bayangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Screen Alignment &amp;&amp; Margins</source>
-        <translation>Perataan Layar  Margin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Position subs relative to the video frame</source>
-        <translation>Posisikan subtitle relatif terhadap bingkai video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Colors</source>
-        <translation>Warna</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Border color</source>
-        <translation>Warna batas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shadow color</source>
-        <translation>Warna bayangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Prefer forced and/or default subtitle tracks</source>
-        <translation>Utamakan trek subtitle yang dipaksakan dan/atau default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Automatically load external subtitles</source>
-        <translation type="vanished">Muat otomatis subtitle eksternal</translation>
+        <translation type="vanished">Automatically load external subtitles</translation>
     </message>
     <message>
         <source>Autoload paths</source>
-        <translation>Jalur muat otomatis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Path</source>
-        <translation>Jalur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Match</source>
-        <translation>Cocokkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exact</source>
-        <translation>Tepat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fuzzy</source>
-        <translation>Samar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Online database</source>
-        <translation>Basis data daring</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Base url of the online subtitle database:</source>
-        <translation>URL dasar basis data subtitle daring:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>https://</source>
-        <translation>https://</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Test</source>
-        <translation>Uji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Directories</source>
-        <translation>Direktori</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Screenshot</source>
-        <translation>Tangkapan Layar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Encode</source>
-        <translation>Enkode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Unchecked directories will place output files in the source directory. Streams do not have a source directory and will bring up a dialog when a field is left blank; &lt;span style=&quot; font-weight:600;&quot;&gt;Alt+I&lt;/span&gt; will always ask where to place files. Directories will be created if necessary; this may not work across all filesystems.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Direktori yang tidak dicentang akan menempatkan file keluaran di direktori sumber. Stream tidak memiliki direktori sumber dan akan memunculkan dialog ketika suatu kolom dibiarkan kosong; &lt;span style=&quot; font-weight:600;&quot;&gt;Alt+I&lt;/span&gt; akan selalu menanyakan tempat penyimpanan file. Direktori akan dibuat jika diperlukan; ini mungkin tidak berfungsi di semua sistem file.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filename template</source>
-        <translation>Templat nama file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>qrc:/text/encodeFormat.html</source>
-        <translation>qrc:/text/encodeFormat.html</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save with high bit depth</source>
-        <translation>Simpan dengan kedalaman bit tinggi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Kualitas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Halus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Source Chroma</source>
-        <translation>Kroma Sumber</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Compression</source>
-        <translation>Kompresi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Colorspace</source>
-        <translation>Ruang warna</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Include tag</source>
-        <translation>Sertakan tag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Don&apos;t encode the video</source>
-        <translation>Jangan enkode video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hardsub</source>
-        <translation>Hardsub</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filesi&amp;ze</source>
-        <translation>Ukuran file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>MB</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Bitrate</source>
-        <translation>Bitrate</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>kBits</source>
-        <translation>kBit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>crf</source>
-        <translation>crf</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>qmin</source>
-        <translation>qmin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>qmax</source>
-        <translation>qmax</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Don&apos;t encode the audio</source>
-        <translation>Jangan enkode audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&quot;Don&apos;t encode&quot; checkboxes are ignored for audio-only or video-only files.</source>
-        <translation>Kotak centang &quot;Jangan enkode&quot; diabaikan untuk file hanya-audio atau hanya-video.</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fast seek (when skipping)</source>
+        <translation type="vanished">Fast seek (when skipping)</translation>
     </message>
     <message>
         <source>Drop frames before the seek target in the decoder</source>
-        <translation>Jatuhkan bingkai sebelum target pencarian di dekoder</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show chapter marks in seek bar</source>
-        <translation>Tampilkan tanda bab di bilah pencarian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play next file in folder when there is only one item in the playlist</source>
@@ -3978,251 +4172,283 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Above seekbar</source>
-        <translation>Di atas bilah pencarian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Below seekbar</source>
-        <translation>Di bawah bilah pencarian</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OSD font:</source>
+        <translation type="vanished">OSD font:</translation>
     </message>
     <message>
         <source>Prefer Wayland over XWayland (restart required)</source>
-        <translation>Utamakan Wayland daripada XWayland (perlu mulai ulang)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Turn on logging (may produce stuttering)</source>
-        <translation>Aktifkan pencatatan log (dapat menyebabkan patah-patah)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Debugging</source>
-        <translation>Debugging</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Client</source>
-        <translation>Klien</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Event messages</source>
-        <translation>Pesan peristiwa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>mpv</source>
-        <translation>mpv</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No (complete silence)</source>
-        <translation>Tidak (diam sepenuhnya)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fatal</source>
-        <translation>Fatal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Kesalahan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Peringatan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Informational</source>
-        <translation>Informasional</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Verbose</source>
-        <translation>Lengkap</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Debug</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Trace (very noisy)</source>
-        <translation>Lacak (sangat bising)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Log file</source>
-        <translation>File log</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Create log file (contents will be overwritten)</source>
-        <translation>Buat file log (isinya akan ditimpa)</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>~/mpc-qt-log.txt</source>
+        <translation type="vanished">~/mpc-qt-log.txt</translation>
+    </message>
+    <message>
+        <source>Window update interval</source>
+        <translation type="vanished">Window update interval</translation>
+    </message>
+    <message>
+        <source>No delay (consumes cpu)</source>
+        <translation type="vanished">No delay (consumes cpu)</translation>
+    </message>
+    <message>
+        <source> msec</source>
+        <translation type="vanished"> msec</translation>
     </message>
     <message>
         <source>Every </source>
-        <translation>Setiap </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Window history</source>
-        <translation>Riwayat jendela</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Trim old lines</source>
-        <translation>Pangkas baris lama</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> lines</source>
-        <translation> baris</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Keep </source>
-        <translation>Simpan </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Color controls</source>
-        <translation>Kontrol warna</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Brightness</source>
-        <translation>Kecerahan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Hue</source>
-        <translation>Rona</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Saturation</source>
-        <translation>Saturasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Settings management</source>
-        <translation>Manajemen pengaturan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Export keys</source>
-        <translation>Ekspor tombol</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open Logo Image</source>
-        <translation>Buka Gambar Logo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio open settings</source>
-        <translation>Pengaturan buka audio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paths</source>
-        <translation>Jalur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Dela&amp;yed</source>
-        <translation>Tertunda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unlimited (consumes &amp;memory)</source>
-        <translation>Tidak terbatas (menggunakan memori)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto-load external audio files</source>
-        <translation>Muat otomatis file audio eksternal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Limit volume to 100% like mpc-hc</source>
-        <translation>Batasi volume hingga 100% seperti mpc-hc</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Shorten the playback time indicator like mpc-hc</source>
+        <translation type="vanished">Shorten the playback time indicator like mpc-hc</translation>
     </message>
     <message>
         <source>HDR Compute Peak</source>
-        <translation>Komputasi Puncak HDR</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Target Peak</source>
-        <translation>Puncak Target</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Based on TRC</source>
-        <translation>Berdasarkan TRC</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downscale in linear light</source>
-        <translation>Turunkan skala dalam cahaya linear</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Upscale in linear light</source>
-        <translation>Naikkan skala dalam cahaya linear</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use additive speed step</source>
-        <translation>Gunakan langkah kecepatan aditif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Prefer external subtitles over embedded subtitles</source>
-        <translation>Utamakan subtitle eksternal daripada subtitle tertanam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ignore embedded subtitles</source>
-        <translation>Abaikan subtitle tertanam</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Web Interface</source>
-        <translation>Antarmuka Web</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Allow access from localhost only</source>
-        <translation>Izinkan akses hanya dari localhost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>webroot</source>
-        <translation>webroot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Default page</source>
-        <translation>Halaman default</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>index.html</source>
-        <translation>index.html</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>TCP/IP</source>
-        <translation>TCP/IP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&lt;a href=&quot;#&quot;&gt;Launch in web browser...&lt;/a&gt;</source>
-        <translation>&lt;a href=&quot;#&quot;&gt;Buka di peramban web...&lt;/a&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Local files</source>
-        <translation>File lokal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Web root</source>
-        <translation>Akar web</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Security</source>
-        <translation>Keamanan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enable web server</source>
-        <translation>Aktifkan server web</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Serve pages from disk</source>
-        <translation>Sajikan halaman dari disk</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back color</source>
+        <translation type="vanished">Back color</translation>
+    </message>
+    <message>
+        <source>Enable back color</source>
+        <translation type="vanished">Enable back color</translation>
     </message>
     <message>
         <source>Stylesheet</source>
-        <translation>Stylesheet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Application Stylesheet</source>
-        <translation>Stylesheet Aplikasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>High-contrast timeline and volume sliders</source>
-        <translation>Penggeser linimasa dan volume kontras tinggi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Default After Playback action:</source>
-        <translation>Tindakan Setelah Pemutaran default:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do nothing</source>
-        <translation>Tidak melakukan apapun</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation>Ulangi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play next in the folder</source>
@@ -4230,517 +4456,517 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>Keluar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After Playback</source>
-        <translation>Setelah Pemutaran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shaders contain special effects which can be added to the video rendering process. A list of community-made shaders can be found on &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;the mpv wiki&lt;/span&gt;&lt;/a&gt;.</source>
-        <translation>Shader berisi efek khusus yang dapat ditambahkan ke proses perenderan video. Daftar shader buatan komunitas dapat ditemukan di &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;wiki mpv&lt;/span&gt;&lt;/a&gt;.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Pipewire</source>
-        <translation>Pipewire</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use time tooltip:</source>
+        <translation type="vanished">Use time tooltip:</translation>
     </message>
     <message>
         <source>Language Override</source>
-        <translation>Penggantian Bahasa</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Locale (Autodetect)</source>
+        <translation type="vanished">Locale (Autodetect)</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation>Sedang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>BT.470M</source>
-        <translation>BT.470M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>V-Gamut</source>
-        <translation>V-Gamut</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>S-Gamut</source>
-        <translation>S-Gamut</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>EBU3213</source>
-        <translation>EBU3213</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Film-C</source>
-        <translation>Film-C</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>ACES AP0</source>
-        <translation>ACES AP0</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>ACES AP1</source>
-        <translation>ACES AP1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamma 2.0</source>
-        <translation>Gamma 2.0</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamma 2.4</source>
-        <translation>Gamma 2.4</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamma 2.6</source>
-        <translation>Gamma 2.6</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>ST 428</source>
-        <translation>ST 428</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Target Gamut</source>
-        <translation>Gamut Target</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Gamut mapping</source>
-        <translation>Pemetaan gamut</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Perceptual</source>
-        <translation>Perseptual</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Relative</source>
-        <translation>Relatif</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Absolute</source>
-        <translation>Absolut</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Desaturate</source>
-        <translation>Desaturasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Darken</source>
-        <translation>Gelapkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Warn</source>
-        <translation>Peringatkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send mouse events to mpv</source>
-        <translation>Kirim peristiwa mouse ke mpv</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send key events to mpv</source>
-        <translation>Kirim peristiwa tombol ke mpv</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remember file position</source>
-        <translation>Ingat posisi file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use next/previous file in folder when there is only one item in the playlist</source>
-        <translation>Gunakan file berikutnya/sebelumnya dalam folder ketika hanya ada satu item dalam daftar putar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play next file</source>
-        <translation>Putar file berikutnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delay step</source>
-        <translation>Langkah penundaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Autodetect - best of VAAPI, DXVA, D3D11VA, etc.</source>
-        <translation>Deteksi otomatis - terbaik dari VAAPI, DXVA, D3D11VA, dll.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Linux - works with Intel and AMD GPUs through Mesa, and with nVidia through a translation layer; may only be correct in BT.601 and BT.709</source>
-        <translation>Linux - bekerja dengan GPU Intel dan AMD melalui Mesa, dan dengan nVidia melalui lapisan terjemahan; mungkin hanya benar pada BT.601 dan BT.709</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>nVidia only (faster than CUDA)</source>
-        <translation>Khusus nVidia (lebih cepat dari CUDA)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show OSD timer on seek</source>
-        <translation>Tampilkan timer OSD saat pencarian</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Normal step</source>
-        <translation>Langkah normal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Large step</source>
-        <translation>Langkah besar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show time tooltip:</source>
-        <translation>Tampilkan tooltip waktu:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change OSD font:</source>
-        <translation>Ubah font OSD:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Only keep history for videos</source>
-        <translation>Hanya simpan riwayat untuk video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cinema screen</source>
-        <translation>Layar sinema</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Update interval</source>
-        <translation>Interval pembaruan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No delay (consumes cpu, use this for testing)</source>
-        <translation>Tanpa penundaan (menggunakan CPU, gunakan ini untuk pengujian)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> ms</source>
-        <translation> md</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remember panels state</source>
-        <translation>Ingat status panel</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open ICC Profile</source>
-        <translation>Buka Profil ICC</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>ICC profile files (*.icc *.icm)</source>
-        <translation>File profil ICC (*.icc *.icm)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation>Berkas log (*.log)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Allows dark theme support on Windows</source>
-        <translation>Mengizinkan dukungan tema gelap di Windows</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio balance</source>
-        <translation>Keseimbangan audio</translation>
-    </message>
-    <message>
-        <source>&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/blob/master/DOCS/ipc.md&quot;&gt;JSON IPC&lt;/a&gt; available at %1</source>
-        <translation>&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/blob/master/DOCS/ipc.md&quot;&gt;JSON IPC&lt;/a&gt; tersedia di %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation>Cari...</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show video preview</source>
+        <translation type="vanished">Show video preview</translation>
     </message>
     <message>
         <source>100%</source>
-        <translation>100%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>25%</source>
-        <translation>25%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>50%</source>
-        <translation>50%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>75%</source>
-        <translation>75%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>150%</source>
-        <translation>150%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>200%</source>
-        <translation>200%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>300%</source>
-        <translation>300%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>400%</source>
-        <translation>400%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remove subtitles additions for the deaf or hard-of-hearing (SDH)</source>
-        <translation>Hapus tambahan subtitle untuk tuna rungu atau gangguan pendengaran (SDH)</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Requires restarting the application to apply changes</source>
+        <translation type="vanished">Requires restarting the application to apply changes</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
-        <translation>yt-dlp (video web)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>Tinggi video maksimum:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
-        <translation>Opsi mpv kustom:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Seek to keyframe when hardware decoding is unavailable</source>
-        <translation>Cari ke keyframe ketika dekoding perangkat keras tidak tersedia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Prioritize seeking speed over accuracy</source>
-        <translation>Utamakan kecepatan pencarian daripada akurasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Shadow</source>
-        <translation>Bayangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enable shadow</source>
-        <translation>Aktifkan bayangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>Pilih</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Preset applied</source>
-        <translation>Prasetel diterapkan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Position ASS subs relative to the video frame</source>
-        <translation>Posisikan subtitle ASS relatif terhadap bingkai video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remember Quick Playlist content</source>
-        <translation>Ingat konten Daftar Putar Cepat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Append opened files to Quick Playlist</source>
-        <translation>Tambahkan file yang dibuka ke Daftar Putar Cepat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>%</source>
-        <translation>%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enable background box</source>
-        <translation>Aktifkan kotak latar belakang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Border and background style</source>
-        <translation>Gaya batas dan latar belakang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translucid background box</source>
-        <translation>Kotak latar belakang tembus cahaya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show video preview (restart required)</source>
-        <translation>Tampilkan pratinjau video (perlu mulai ulang)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
-        <translation>Tidak banyak alasan untuk menggunakan ini. HDMI mendukung PCM multisaluran tidak terkompresi, dan mpv mendukung DTS-HD lossless</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Choose Log File</source>
-        <translation>Pilih File Log</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>File title</source>
-        <translation>Judul file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>CRF</source>
-        <translation>CRF</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lossless</source>
-        <translation>Lossless</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation>Kecepatan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Others</source>
-        <translation>Lainnya</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation>Latar belakang video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Status bar background</source>
-        <translation>Latar belakang bilah status</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Status bar foreground</source>
-        <translation>Latar depan bilah status</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use custom colors</source>
-        <translation>Gunakan warna kustom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Source</source>
-        <translation>Sumber</translation>
+        <translation type="unfinished">Source</translation>
     </message>
     <message>
         <source>Built-in</source>
-        <translation>Bawaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
-        <translation>Ikon harus menggunakan nama yang sama seperti di &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repositori&lt;/a&gt;.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use English for the interface</source>
-        <translation>Gunakan bahasa Inggris untuk antarmuka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mono</source>
-        <translation>Mono</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remember last window size and position</source>
-        <translation>Ingat ukuran dan posisi jendela terakhir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use dark colors</source>
-        <translation>Gunakan warna gelap</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Replay Gain</source>
-        <translation>Replay Gain</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Track</source>
-        <translation>Lagu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Album</source>
-        <translation>Album</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Pre-amp</source>
-        <translation>Pra-penguat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> dB</source>
-        <translation> dB</translation>
-    </message>
-    <message>
-        <source>Fallback</source>
-        <translation>Cadangan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Prevent clipping</source>
-        <translation>Cegah clipping</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search settings…</source>
-        <translation>Cari pengaturan…</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>A&amp;pplication name only</source>
-        <translation>Hanya nama aplikasi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loop back to first/last file in folder if needed</source>
-        <translation>Ulangi ke file pertama/terakhir di folder jika perlu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>StatusTime</name>
     <message>
         <source> (%1%)</source>
-        <translation> (%1%)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remaining time</source>
-        <translation>Waktu tersisa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation>Presisi tinggi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation>Tampilkan persentase</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Played: %1</source>
-        <translation>Dimainkan: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remaining: %1</source>
-        <translation>Tersisa: %1</translation>
-    </message>
-    <message>
-        <source>Played</source>
-        <translation type="vanished">Diputar</translation>
-    </message>
-    <message>
-        <source>Remaining</source>
-        <translation type="vanished">Tersisa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ThumbnailerWindow</name>
     <message>
         <source>Source</source>
-        <translation>Sumber</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Browse...</source>
-        <translation>Jelajahi...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>Gambar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>%</source>
-        <translation>%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Width</source>
-        <translation>Lebar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Layout</source>
-        <translation>Tata letak</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Rows</source>
-        <translation>Baris</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Go!</source>
-        <translation>Mulai!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thu&amp;mbnail</source>
-        <translation>Thumbnail</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Quality</source>
-        <translation>Kualitas (&amp;Q)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Columns</source>
-        <translation>Kolom (&amp;C)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save Thumbnails</source>
-        <translation>Simpan Pra-tayang</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>%p%</source>
-        <translation>%p%</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
