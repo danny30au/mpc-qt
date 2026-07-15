@@ -2542,6 +2542,14 @@ Aucune action ne sera déclenchée.</translation>
         <translation>Texte info-bulle</translation>
     </message>
     <message>
+        <source>Placeholder text</source>
+        <translation>Texte par défaut</translation>
+    </message>
+    <message>
+        <source>Accent</source>
+        <translation>Accentuation</translation>
+    </message>
+    <message>
         <source>Active</source>
         <translation>Actif</translation>
     </message>

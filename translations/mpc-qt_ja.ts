@@ -2610,6 +2610,14 @@ No action will be triggered.</source>
         <translation>ツールチップ テキスト</translation>
     </message>
     <message>
+        <source>Placeholder text</source>
+        <translation>プレースホルダー テキスト</translation>
+    </message>
+    <message>
+        <source>Accent</source>
+        <translation>アクセント</translation>
+    </message>
+    <message>
         <source>Active</source>
         <translation>アクティブ</translation>
     </message>
