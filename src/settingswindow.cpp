@@ -796,8 +796,8 @@ void SettingsWindow::sendSignals()
 
     emit afterPlaybackDefault(Helpers::AfterPlayback(WIDGET_LOOKUP(ui->afterPlaybackDefault).toInt()));
 
-    emit option("ytdl-format", QString("bestvideo[height<=?%1]+bestaudio/best").arg(WIDGET_TO_TEXT(ui->ytdlpMaxHeight)));
-    emit option("ytdl-raw-options", "js-runtimes=quickjs,remote-components=ejs:github");
+    emit option("ytdl-format", QString("bestvideo+bestaudio/best"));
+    emit option("ytdl-raw-options", QString("format-sort=res:%1,js-runtimes=quickjs,remote-components=ejs:github").arg(WIDGET_TO_TEXT(ui->ytdlpMaxHeight)));
 
     emit zoomCenter(WIDGET_LOOKUP(ui->playbackAutoCenterWindow).toBool());
     double factor = WIDGET_LOOKUP(ui->playbackAutoFitFactor).toInt() / 100.0;
@@ -1470,6 +1470,26 @@ void SettingsWindow::on_videoDumbMode_toggled(bool checked)
     ui->videoTabs->setEnabled(!checked);
 }
 
+void SettingsWindow::on_scalingSigmoidizedUpscaling_toggled(bool checked)
+{
+    ui->sigmoidizedCenterLabel->setEnabled(checked);
+    ui->sigmoidizedCenter->setEnabled(checked);
+    ui->sigmoidizedSlopeLabel->setEnabled(checked);
+    ui->sigmoidizedSlope->setEnabled(checked);
+}
+
+void SettingsWindow::on_debandEnabled_toggled(bool checked)
+{
+    ui->debandIterationsLabel->setEnabled(checked);
+    ui->debandIterations->setEnabled(checked);
+    ui->debandThresholdLabel->setEnabled(checked);
+    ui->debandThreshold->setEnabled(checked);
+    ui->debandRangeLabel->setEnabled(checked);
+    ui->debandRange->setEnabled(checked);
+    ui->debandGrainLabel->setEnabled(checked);
+    ui->debandGrain->setEnabled(checked);
+}
+
 void SettingsWindow::on_logoExternalBrowse_clicked()
 {
     static QFileDialog::Options options = QFileDialog::Options();
@@ -1713,6 +1733,24 @@ void SettingsWindow::on_hwdecEnable_toggled(bool checked)
 void SettingsWindow::on_audioSpdif_toggled(bool checked)
 {
     ui->audioSpdifCodecs->setEnabled(checked);
+}
+
+void SettingsWindow::on_audioAutoloadExternal_toggled(bool checked)
+{
+    ui->audioAutoloadPathLabel->setEnabled(checked);
+    ui->audioAutoloadPath->setEnabled(checked);
+    ui->audioAutoloadPathReset->setEnabled(checked);
+    ui->audioAutoloadMatchLabel->setEnabled(checked);
+    ui->audioAutoloadMatch->setEnabled(checked);
+}
+
+void SettingsWindow::on_replayGainMode_currentIndexChanged(int index)
+{
+    ui->replayGainPreampLabel->setEnabled(index != 0);
+    ui->replayGainPreamp->setEnabled(index != 0);
+    ui->replayGainFallbackLabel->setEnabled(index != 0);
+    ui->replayGainFallback->setEnabled(index != 0);
+    ui->replayGainClip->setEnabled(index != 0);
 }
 
 void SettingsWindow::on_subsBackgroundBoxEnabled_toggled(bool checked)
