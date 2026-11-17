@@ -407,6 +407,14 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <source>Playlists Backup</source>
         <translation>再生リストのバックアップ</translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation>すべて削除</translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation>すべてのプレイリストのバックアップを削除しますか?</translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -676,7 +684,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>字幕の読み込み(&amp;L)...</translation>
+        <translation type="vanished">字幕の読み込み(&amp;L)...</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -728,7 +736,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -736,7 +744,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -744,7 +752,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -752,7 +760,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -760,7 +768,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -768,7 +776,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -776,7 +784,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -784,7 +792,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -792,7 +800,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -800,7 +808,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
@@ -808,7 +816,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -816,7 +824,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -824,7 +832,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -836,15 +844,15 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="vanished">Alt+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="vanished">Alt+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="vanished">Alt+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -852,7 +860,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="vanished">Alt+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -860,7 +868,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="vanished">Alt+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -868,7 +876,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="vanished">Alt+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1200,7 +1208,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>新しいタブ(&amp;N)</translation>
+        <translation type="vanished">新しいタブ(&amp;N)</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1208,11 +1216,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>タブを閉じる(&amp;L)</translation>
+        <translation type="vanished">タブを閉じる(&amp;L)</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>タブを閉じる</translation>
+        <translation type="vanished">タブを閉じる</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1220,7 +1228,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>タブを複製(&amp;D)</translation>
+        <translation type="vanished">タブを複製(&amp;D)</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1435,6 +1443,10 @@ No action will be triggered.</source>
         <translation>表示</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation>%1%</translation>
+    </message>
+    <message>
         <source>Hide &amp;Borders</source>
         <translation>境界線を隠す(&amp;B)</translation>
     </message>
@@ -1489,6 +1501,10 @@ No action will be triggered.</source>
     <message>
         <source>Buffering (%1%)</source>
         <translation>バッファリング (%1%)</translation>
+    </message>
+    <message>
+        <source>Seeking</source>
+        <translation>シーク中</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1974,6 +1990,34 @@ No action will be triggered.</source>
         <source>Increase Delay</source>
         <translation>遅延を増やす</translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation>字幕ファイルを再読み込み(&amp;R)</translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation>字幕ファイルを読み込む(&amp;L)...</translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation>新しい再生リスト(&amp;N)</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation>再生リストを閉じる(&amp;L)</translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation>再生リストを閉じる</translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation>再生リストを複製(&amp;D)</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation>再生リストを復元(&amp;T)</translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2151,6 +2195,10 @@ No action will be triggered.</source>
         <source>Select File</source>
         <translation>ファイルの選択</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation>参照...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2261,7 +2309,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>新しいタブ</translation>
+        <translation type="vanished">新しいタブ</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2269,7 +2317,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>タブを複製</translation>
+        <translation type="vanished">タブを複製</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2305,7 +2353,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>再生リスト ファイル (*.m3u *.m3u8)</translation>
+        <translation type="vanished">再生リスト ファイル (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2328,7 +2376,7 @@ No action will be triggered.</source>
         <translation type="vanished">消去</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>クリップボードへコピー</translation>
     </message>
     <message>
@@ -2364,6 +2412,24 @@ No action will be triggered.</source>
         <translation>再生リスト名の入力</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation>再生リスト ファイル</translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation>ファイル &quot;%1&quot; は既に存在します。
+置き換えますか?</translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation>名前をコピー</translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation>ファイルの場所を開く</translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>新しい再生リスト(&amp;N)</translation>
     </message>
@@ -2378,6 +2444,14 @@ No action will be triggered.</source>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>再生リストを複製(&amp;D)</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation>場所をコピー</translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation>再生リストを復元(&amp;R)</translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2426,6 +2500,10 @@ No action will be triggered.</source>
     <message>
         <source>Add Folder</source>
         <translation>フォルダーの追加</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation>再生リストを複製</translation>
     </message>
 </context>
 <context>
@@ -3077,15 +3155,15 @@ media file played</source>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>黒地にブレンド</translation>
+        <translation type="vanished">黒地にブレンド</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>使用</translation>
+        <translation type="vanished">使用</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>無視</translation>
+        <translation type="vanished">無視</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3569,7 +3647,7 @@ media file played</source>
     </message>
     <message>
         <source>Browse</source>
-        <translation>参照</translation>
+        <translation type="vanished">参照</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3653,15 +3731,15 @@ media file played</source>
     </message>
     <message>
         <source>Oss</source>
-        <translation>Oss</translation>
+        <translation type="vanished">Oss</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>ミキサー デバイス</translation>
+        <translation type="vanished">ミキサー デバイス</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>ミキサー チャンネル</translation>
+        <translation type="vanished">ミキサー チャンネル</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3773,7 +3851,7 @@ media file played</source>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>デコーダー+ビデオ</translation>
+        <translation type="vanished">デコーダー+ビデオ</translation>
     </message>
     <message>
         <source>None</source>
@@ -3817,7 +3895,7 @@ media file played</source>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>オーディオの間引きサイズ</translation>
+        <translation type="vanished">オーディオの間引きサイズ</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -4086,7 +4164,7 @@ media file played</source>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="vanished">...</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -4114,7 +4192,7 @@ media file played</source>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>スムース</translation>
+        <translation type="vanished">スムース</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4742,7 +4820,7 @@ media file played</source>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>ビデオの最大高さ :</translation>
+        <translation type="vanished">ビデオの最大高さ :</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4838,7 +4916,7 @@ media file played</source>
     </message>
     <message>
         <source>Video background</source>
-        <translation>ビデオの背景</translation>
+        <translation type="vanished">ビデオの背景</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4930,7 +5008,7 @@ media file played</source>
     </message>
     <message>
         <source>Show video preview (restart required), set its height to (% of screen):</source>
-        <translation>動画のプレビューを表示 (再起動が必要)、高さの設定 (画面の ％) :</translation>
+        <translation>ビデオのプレビューを表示 (再起動が必要)、高さの設定 (画面の ％) :</translation>
     </message>
     <message>
         <source>Minimize to tray</source>
@@ -4939,6 +5017,42 @@ media file played</source>
     <message>
         <source>Close to tray</source>
         <translation>閉じるでトレイへ</translation>
+    </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation>最大ビデオ解像度 :</translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation>mpv オプションファイル :</translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation>ビデオに合わせてオーディオをリサンプリングする (オーディオの同期がずれる可能性があります)</translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation>ビデオのフレームをオーディオに合わせる</translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation>ビデオ出力 (推奨)</translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation>デコーダー + ビデオ出力</translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation>ロゴの背景</translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation>色にブレンド</translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation>チェッカーボード柄</translation>
     </message>
 </context>
 <context>
@@ -4958,6 +5072,10 @@ media file played</source>
     <message>
         <source>Show percentage</source>
         <translation>パーセンテージを表示</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation>ツールチップを表示</translation>
     </message>
     <message>
         <source>Played: %1</source>

@@ -4,6 +4,7 @@
 #include <QFileInfo>
 #include <QFileDialog>
 #include <QColorDialog>
+#include <QFontDatabase>
 #include <QStyleHints>
 #include <QToolTip>
 #include <QToolButton>
@@ -133,7 +134,7 @@ QHash<QString, QStringList> SettingMap::indexedValueToText = {
     {"videoFramebuffer", {"rgb8-rgba8", "rgb10-rgb10_a2", "rgba12-rgba12",\
                           "rgb16-rgba16", "rgb16f-rgba16f",\
                           "rgb32f-rgba32f"}},
-    {"videoAlphaMode", {"blend", "yes", "no"}},
+    {"videoBackground", {"color", "tiles", "none"}},
     {"ditherType", {"fruit", "ordered", "no"}},
     {"scaleScaler", {SCALER_SCALERS}},
     {"scaleWindowValue", {SCALER_WINDOWS}},
@@ -170,8 +171,8 @@ QHash<QString, QStringList> SettingMap::indexedValueToText = {
     {"framedroppingDecoderMode", {"none", "default", "nonref", "bidir",\
                                   "nonkey", "all"}},
     {"syncMode", {"audio", "display-resample", "display-resample-vdrop",\
-                  "display-resample-desync", "display-adrop",\
-                  "display-vdrop"}},
+                  "display-resample-desync", "display-vdrop",\
+                  "display-adrop"}},
     {"subtitlePlacementX", {"left", "center", "right"}},
     {"subtitlePlacementY", {"top", "center", "bottom"}},
     {"subtitlesAssOverride", {"no", "yes", "force", "signfs"}},
@@ -346,6 +347,8 @@ SettingsWindow::SettingsWindow(QWidget *parent) :
     ui->encodeDirectoryValue->setPlaceholderText(
                 QStandardPaths::writableLocation(
                     QStandardPaths::PicturesLocation) + "/mpc_encodes");
+    ui->tweaksMpvOptionsFilePath->setPlaceholderText(
+                QStandardPaths::writableLocation(QStandardPaths::ConfigLocation) + "/mpv/mpv.conf");              
     ui->logFilePathValue->setPlaceholderText(
                 QStandardPaths::writableLocation(
                     QStandardPaths::DocumentsLocation) + "/mpc-qt.log");
@@ -437,6 +440,14 @@ void SettingsWindow::setupPlatformWidgets()
         ui->playbackAutozoomWarn->setVisible(false);
     }
 
+    // The font box would start on the first family in alphabetical order,
+    // Academy Engraved LET.  Calibri is MPC-HC's default, and Arial comes
+    // with macOS.
+    if (Platform::isMacOS) {
+        QString subsFont = QFontDatabase::hasFamily("Calibri") ? "Calibri" : "Arial";
+        ui->fontComboBox->setCurrentFont(QFont(subsFont));
+    }
+
     ui->stylesheetFusion->setChecked(Platform::isWindows);
     ui->ipcMpris->setVisible(Platform::isUnix);
     ui->hwdecBackendVaapi->setEnabled(Platform::isUnix);
@@ -460,6 +471,7 @@ void SettingsWindow::setupColorPickers()
         { ui->windowVideoValue, ui->windowVideoPick },
         { ui->windowInfoBackgroundValue, ui->windowInfoBackgroundPick },
         { ui->windowInfoForegroundValue, ui->windowInfoForegroundPick },
+        { ui->videoBackgroundColorValue, ui->videoBackgroundColorPick },
         { ui->subsColorValue, ui->subsColorPick },
         { ui->subsBorderColorValue, ui->subsBorderColorPick },
         { ui->subsShadowColorValue, ui->subsShadowColorPick }
@@ -761,9 +773,6 @@ void SettingsWindow::sendSignals()
         emit applicationPalette(paletteEditor->systemPalette());
     emit videoColor(useCustomColors ? QString("#%1").arg(WIDGET_LOOKUP(ui->windowVideoValue).toString())
                                     : "000000");
-    emit option("background-color", useCustomColors
-                                    ? QString("#%1").arg(WIDGET_LOOKUP(ui->windowVideoValue).toString())
-                                    : "000000");
     QString infoForegroundColor = QString("#%1").arg(WIDGET_LOOKUP(ui->windowInfoForegroundValue).toString());
     QString infoBackgroundColor = QString("#%1").arg(WIDGET_LOOKUP(ui->windowInfoBackgroundValue).toString());
     emit infoStatsColors(useCustomColors ? infoForegroundColor : "FFFFFF",
@@ -797,7 +806,11 @@ void SettingsWindow::sendSignals()
     emit afterPlaybackDefault(Helpers::AfterPlayback(WIDGET_LOOKUP(ui->afterPlaybackDefault).toInt()));
 
     emit option("ytdl-format", QString("bestvideo+bestaudio/best"));
-    emit option("ytdl-raw-options", QString("format-sort=res:%1,js-runtimes=quickjs,remote-components=ejs:github").arg(WIDGET_TO_TEXT(ui->ytdlpMaxHeight)));
+    QStringList subtitleLangPref = WIDGET_PLACEHOLD_LOOKUP(ui->playbackSubtitleTracks).split(QRegularExpression("[^\\w-]+"), Qt::SkipEmptyParts);
+    emit option("ytdl-raw-options",
+        QString("format-sort=res:%1,yes-playlist=,js-runtimes=quickjs,remote-components=ejs:github,write-auto-subs=,sub-langs=[%2,.*-orig]")
+        .arg(WIDGET_TO_TEXT(ui->ytdlpMaxHeight))
+        .arg(subtitleLangPref.join(",")));
 
     emit zoomCenter(WIDGET_LOOKUP(ui->playbackAutoCenterWindow).toBool());
     double factor = WIDGET_LOOKUP(ui->playbackAutoFitFactor).toInt() / 100.0;
@@ -826,7 +839,10 @@ void SettingsWindow::sendSignals()
     emit option("video-sync", WIDGET_TO_TEXT(ui->syncMode));
     emit option("gpu-dumb-mode", WIDGET_LOOKUP(ui->videoDumbMode));
     emit option("fbo-format", WIDGET_TO_TEXT(ui->videoFramebuffer).split('-').value(WIDGET_LOOKUP(ui->videoUseAlpha).toBool()));
-    emit option("alpha", WIDGET_TO_TEXT(ui->videoAlphaMode));
+    emit option("background", WIDGET_TO_TEXT(ui->videoBackground));
+    if (WIDGET_TO_TEXT(ui->videoBackground) == "color")
+        emit option("background-color", QString("#%1").arg(WIDGET_LOOKUP(ui->videoBackgroundColorValue).toString()));
+
     emit option("sharpen", WIDGET_LOOKUP(ui->videoSharpen).toString());
 
     if (WIDGET_LOOKUP(ui->ditherDithering).toBool()) {
@@ -851,46 +867,54 @@ void SettingsWindow::sendSignals()
         emit option("sigmoid-upscaling", false);
     }
 
-    QString scaler;
-    FilterKernel filter;
-    auto fetchFilter = [&](QString prefix, bool temporal = false) {
-        scaler = WIDGET_TO_TEXT_PREFIX(prefix, ui->scaleScaler);
-        filter = filterKernels.value(scaler);
+    auto fetchAndApplyFilter = [&](QString prefix, bool temporal = false) {
+        QString scaler = WIDGET_TO_TEXT_PREFIX(prefix, ui->scaleScaler);
+        FilterKernel filter = filterKernels.value(scaler);
         filter.cutoff_(temporal ? 0.0 : 0.01);
         filter.clamp_(temporal ? 1.0 : 0.0);
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam1Set).toBool())    filter.param1_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam1Value).toDouble());
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam2Set).toBool())    filter.param2_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam2Value).toDouble());
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleRadiusSet).toBool())    filter.radius_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleRadiusValue).toDouble());
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleAntiRingSet).toBool())  filter.antiring_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleAntiRingValue).toDouble());
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleBlurSet).toBool())      filter.blur_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleBlurValue).toDouble());
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleWindowSet).toBool())    filter.window_(WIDGET_TO_TEXT_PREFIX(prefix, ui->scaleWindowValue));
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleWindowParamSet).toBool())   filter.window.param_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleWindowValue).toDouble());
-        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleClampSet).toBool())     filter.clamp_(WIDGET_TO_TEXT_PREFIX(prefix, ui->scaleClampValue).toDouble());
-    };
-    auto applyFilter = [&](QString prefix) {
         emit option(prefix + "scale", scaler);
-        emit option(prefix + "scale-param1", filter.params[0]);
-        emit option(prefix + "scale-param2", filter.params[1]);
-        emit option(prefix + "scale-radius", filter.radius);
-        emit option(prefix + "scale-antiring", filter.antiring);
-        emit option(prefix + "scale-blur", filter.blur);
-        emit option(prefix + "scale-window", filter.windowName);
-        emit option(prefix + "scale-wparam", filter.window.params[0]);
-        emit option(prefix + "scale-clamp", filter.clamp);
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam1Set).toBool()) {
+            filter.param1_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam1Value).toDouble());
+            emit option(prefix + "scale-param1", filter.params[0]);
+        }
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam2Set).toBool()) {
+            filter.param2_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleParam2Value).toDouble());
+            emit option(prefix + "scale-param2", filter.params[1]);
+        }
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleRadiusSet).toBool()){
+            filter.radius_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleRadiusValue).toDouble());
+            emit option(prefix + "scale-radius", filter.radius);
+        }
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleAntiRingSet).toBool()) {
+            filter.antiring_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleAntiRingValue).toDouble());
+            emit option(prefix + "scale-antiring", filter.antiring);
+        }
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleBlurSet).toBool()) {
+            filter.blur_(WIDGET_LOOKUP_PREFIX(prefix, ui->scaleBlurValue).toDouble());
+            emit option(prefix + "scale-blur", filter.blur);
+        }
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleWindowSet).toBool()) {
+            filter.window_(WIDGET_TO_TEXT_PREFIX(prefix, ui->scaleWindowValue));
+            emit option(prefix + "scale-window", filter.windowName);
+        }
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleWindowParamSet).toBool()) {
+            filter.window.param_(WIDGET_LOOKUP_PREFIX(prefix, ui->dscaleWindowParamValue).toDouble());
+            emit option(prefix + "scale-wparam", filter.window.params[0]);
+        }
+        if (WIDGET_LOOKUP_PREFIX(prefix, ui->scaleClampSet).toBool()) {
+            filter.clamp_(WIDGET_TO_TEXT_PREFIX(prefix, ui->scaleClampValue).toDouble());
+            emit option(prefix + "scale-clamp", filter.clamp);
+        }
     };
 
-    fetchFilter("");
-    applyFilter("");
+    fetchAndApplyFilter("");
 
     if (OFFSET_LOOKUP(acceptedSettings, ui->dscaleScaler) != 0)
-        fetchFilter("d");
-    applyFilter("d");
+        fetchAndApplyFilter("d");
 
-    fetchFilter("c");
-    applyFilter("c");
+    fetchAndApplyFilter("c");
 
-    fetchFilter("t", true);
-    applyFilter("t");
+    fetchAndApplyFilter("t", true);
 
     if (WIDGET_LOOKUP(ui->debandEnabled).toBool()) {
         emit option("deband", true);
@@ -935,8 +959,7 @@ void SettingsWindow::sendSignals()
         WIDGET_LOOKUP(ui->fullscreenShowWhen).toInt(), WIDGET_LOOKUP(ui->fullscreenShowWhenDuration).toInt());
     emit hidePanels(WIDGET_LOOKUP(ui->fullscreenHidePanels).toBool());
     emit option("framedrop", WIDGET_TO_TEXT(ui->framedroppingMode));
-    emit option("vf-lavc-framedrop", WIDGET_TO_TEXT(ui->framedroppingDecoderMode));
-    emit option("video-sync-adrop-size", WIDGET_LOOKUP(ui->syncAudioDropSize).toDouble());
+    emit option("vd-lavc-framedrop", WIDGET_TO_TEXT(ui->framedroppingDecoderMode));
     emit option("video-sync-max-audio-change", WIDGET_LOOKUP(ui->syncMaxAudioChange).toDouble());
     emit option("video-sync-max-video-change", WIDGET_LOOKUP(ui->syncMaxVideoChange).toDouble());
     if (WIDGET_LOOKUP(ui->hwdecEnable).toBool()) {
@@ -989,7 +1012,7 @@ void SettingsWindow::sendSignals()
     emit option("audio-channels", index < 4 ? SettingMap::indexedValueToText[ui->audioChannels->objectName()][index]
                                          : channelSwitcher());
     bool flag = WIDGET_LOOKUP(ui->audioStreamSilence).toBool();
-    emit option("stream-silence", flag);
+    emit option("audio-stream-silence", flag);
     emit option("audio-wait-open", flag ? WIDGET_LOOKUP(ui->audioWaitTime).toDouble() : 0.0);
     emit option("audio-pitch-correction", WIDGET_LOOKUP(ui->audioPitchCorrection).toBool());
     emit option("audio-exclusive", WIDGET_LOOKUP(ui->audioExclusiveMode).toBool());
@@ -1000,8 +1023,6 @@ void SettingsWindow::sendSignals()
     emit option("pulse-latency-hacks", WIDGET_LOOKUP(ui->pulseLatency).toBool());
     emit option("alsa-resample", WIDGET_LOOKUP(ui->alsaResample).toBool());
     emit option("alsa-ignore-chmap", WIDGET_LOOKUP(ui->alsaIgnoreChannelMap).toBool());
-    emit option("oss-mixer-channel", WIDGET_LOOKUP(ui->ossMixerChannel).toString());
-    emit option("oss-mixer-device", WIDGET_LOOKUP(ui->ossMixerDevice).toString());
     emit option("jack-autostart", WIDGET_LOOKUP(ui->jackAutostart).toBool());
     emit option("jack-connect", WIDGET_LOOKUP(ui->jackConnect).toBool());
     emit option("jack-name", WIDGET_LOOKUP(ui->jackName).toString());
@@ -1098,7 +1119,6 @@ void SettingsWindow::sendSignals()
     emit screenshotFormat(WIDGET_TO_TEXT(ui->screenshotFormat));
     emit option("screenshot-format", WIDGET_TO_TEXT(ui->screenshotFormat));
     emit option("screenshot-jpeg-quality", WIDGET_LOOKUP(ui->jpgQuality).toInt());
-    emit option("screenshot-jpeg-smooth", WIDGET_LOOKUP(ui->jpgSmooth).toInt());
     emit option("screenshot-jpeg-source-chroma", WIDGET_LOOKUP(ui->jpgSourceChroma).toBool());
     emit option("screenshot-png-compression", WIDGET_LOOKUP(ui->pngCompression).toInt());
     emit option("screenshot-png-filter", WIDGET_LOOKUP(ui->pngFilter).toInt());
@@ -1233,12 +1253,33 @@ bool SettingsWindow::setFilter(QList<QPair<QString, QString>> &filtersList, QStr
 
 void SettingsWindow::setCustomMpvOptions()
 {
-    if (WIDGET_LOOKUP(ui->tweaksMpvOptionsChkBox).toBool()) {
-        QList<MpvOption> mpvOptions = parseMpvOptions(WIDGET_LOOKUP(ui->tweaksMpvOptionsText).toString());
+    auto loadCustomMpvOptions = [&](QString options) {
+        QList<MpvOption> mpvOptions = parseMpvOptions(options);
         for (const auto &mpvOption : mpvOptions) {
             emit optionUncached(mpvOption.name, mpvOption.value);
         }
+    };
+
+    QString filePath = ui->tweaksMpvOptionsFilePath->text().isEmpty() ?
+        ui->tweaksMpvOptionsFilePath->placeholderText() : ui->tweaksMpvOptionsFilePath->text();
+    if (ui->tweaksMpvOptionsFileChkBox->isChecked() && !filePath.isEmpty()) {
+        QFile mpvFile(filePath);
+        if (mpvFile.open(QIODevice::ReadOnly)) {
+            QTextStream stream(&mpvFile);
+            QString line;
+            while (stream.readLineInto(&line)) {
+                if (line.startsWith('#'))
+                    continue;
+                if (line.startsWith('['))
+                    break;
+                loadCustomMpvOptions(line);
+            }
+            mpvFile.close();
+        }
     }
+
+    if (ui->tweaksMpvOptionsChkBox->isChecked())
+        loadCustomMpvOptions(ui->tweaksMpvOptionsText->text());
 }
 
 void SettingsWindow::colorPick_clicked(QLineEdit *colorValue)
@@ -1416,6 +1457,12 @@ void SettingsWindow::on_playerAppendToQuickPlaylist_toggled(bool checked)
         ui->playerRememberQuickPlaylist->setChecked(false);
 }
 
+void SettingsWindow::on_playerTrayIcon_toggled(bool checked)
+{
+    ui->playerMinimizeToTray->setEnabled(QGuiApplication::platformName() == "wayland" ? false : checked);
+    ui->playerCloseToTray->setEnabled(checked);
+}
+
 void SettingsWindow::on_playerKeepHistory_toggled(bool checked)
 {
     bool playerKeepHistoryEnabled = checked;
@@ -1449,9 +1496,7 @@ void SettingsWindow::on_interfaceWidgetDark_toggled(bool checked)
 void SettingsWindow::on_interfaceIconsCustomBrowse_clicked()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options.setFlag(QFileDialog::DontUseNativeDialog)
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QString dir = ui->interfaceIconsCustomFolder->text();
     dir = QFileDialog::getExistingDirectory(this, "", dir, options);
     if (dir.isEmpty())
@@ -1493,9 +1538,7 @@ void SettingsWindow::on_debandEnabled_toggled(bool checked)
 void SettingsWindow::on_logoExternalBrowse_clicked()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QString file = ui->logoExternalLocation->text();
     file = QFileDialog::getOpenFileName(this, tr("Open Logo Image"), file, "", nullptr, options);
     if (file.isEmpty())
@@ -1517,6 +1560,24 @@ void SettingsWindow::on_logoInternal_currentIndexChanged(int index)
 {
     Q_UNUSED(index)
     updateLogoWidget();
+}
+
+void SettingsWindow::on_videoUseAlpha_toggled(bool checked)
+{
+    ui->videoBackgroundLabel->setEnabled(checked);
+    ui->videoBackground->setEnabled(checked);
+    bool blendOnColor = ui->videoBackground->currentIndex() == 0;
+    ui->videoBackgroundColorLabel->setEnabled(checked && blendOnColor);
+    ui->videoBackgroundColorValue->setEnabled(checked && blendOnColor);
+    ui->videoBackgroundColorPick->setEnabled(checked && blendOnColor);
+}
+
+void SettingsWindow::on_videoBackground_currentIndexChanged(int index)
+{
+    bool blendOnColor = index == 0;
+    ui->videoBackgroundColorLabel->setEnabled(blendOnColor);
+    ui->videoBackgroundColorValue->setEnabled(blendOnColor);
+    ui->videoBackgroundColorPick->setEnabled(blendOnColor);
 }
 
 void SettingsWindow::on_videoPreset_currentIndexChanged(int index)
@@ -1546,11 +1607,6 @@ void SettingsWindow::on_screenshotFormat_currentIndexChanged(int index)
 void SettingsWindow::on_jpgQuality_valueChanged(int value)
 {
     ui->jpgQualityValue->setText(QString("%1").arg(value, 3, 10, QChar(0x2007)));
-}
-
-void SettingsWindow::on_jpgSmooth_valueChanged(int value)
-{
-    ui->jpgSmoothValue->setText(QString("%1").arg(value, 3, 10, QChar(0x2007)));
 }
 
 void SettingsWindow::on_pngCompression_valueChanged(int value)
@@ -1588,9 +1644,7 @@ void SettingsWindow::on_keysReset_clicked()
 void SettingsWindow::on_shadersAddFile_clicked()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QStringList files = QFileDialog::getOpenFileNames(this, "", "", "", nullptr, options);
     if (files.isEmpty())
         return;
@@ -1653,7 +1707,7 @@ void SettingsWindow::on_playbackAutoZoom_toggled(bool checked)
     ui->playbackAutoZoomMethod->setEnabled(checked);
     ui->playbackAutoFitFactorLabel->setEnabled(checked);
     ui->playbackAutoFitFactor->setEnabled(checked);
-    ui->playbackAutoCenterWindow->setEnabled(checked);
+    ui->playbackAutoCenterWindow->setEnabled(checked && QGuiApplication::platformName() != "wayland");
     ui->playbackAutozoomWarn->setEnabled(checked);
 }
 
@@ -1676,9 +1730,7 @@ void SettingsWindow::on_ccICCAutodetect_toggled(bool checked)
 void SettingsWindow::on_ccICCBrowse_clicked()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QString file = WIDGET_LOOKUP(ui->ccICCLocation).toString();
     file = QFileDialog::getOpenFileName(this, tr("Open ICC Profile"),
                                         file, tr("ICC profile files (*.icc *.icm)"),
@@ -1717,6 +1769,22 @@ void SettingsWindow::on_ditherTemporal_toggled(bool checked)
 {
     ui->ditherTemporalPeriod->setEnabled(checked);
     ui->ditherTemporalPeriodLabel->setEnabled(checked);
+}
+
+void SettingsWindow::on_framedroppingMode_currentIndexChanged(int index)
+{
+    bool decoderFramedropping = index == 2 || index == 3;
+    ui->framedroppingDecoderModeLabel->setEnabled(decoderFramedropping);
+    ui->framedroppingDecoderMode->setEnabled(decoderFramedropping);
+}
+
+void SettingsWindow::on_syncMode_currentIndexChanged(int index)
+{
+    bool syncModeDisplay = index != 0;
+    ui->syncMaxAudioChangeLabel->setEnabled(syncModeDisplay);
+    ui->syncMaxAudioChange->setEnabled(syncModeDisplay);
+    ui->syncMaxVideoChangeLabel->setEnabled(syncModeDisplay);
+    ui->syncMaxVideoChange->setEnabled(syncModeDisplay);
 }
 
 void SettingsWindow::on_hwdecCodecsMode_currentIndexChanged(int index)
@@ -1780,9 +1848,7 @@ void SettingsWindow::on_screenshotDirectorySet_toggled(bool checked)
 void SettingsWindow::on_screenshotDirectoryBrowse_clicked()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options.setFlag(QFileDialog::DontUseNativeDialog)
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QString dir = ui->screenshotDirectoryValue->text().isEmpty() ?
                                     ui->screenshotDirectoryValue->placeholderText() :
                                     ui->screenshotDirectoryValue->text();
@@ -1814,6 +1880,26 @@ void SettingsWindow::on_tweaksOsdFontChkBox_toggled(bool checked)
 {
     ui->tweaksOsdFont->setEnabled(checked);
     ui->tweaksOsdSize->setEnabled(checked);
+}
+
+void SettingsWindow::on_tweaksMpvOptionsFileChkBox_toggled(bool checked)
+{
+    ui->tweaksMpvOptionsFilePath->setEnabled(checked);
+    ui->tweaksMpvOptionsFileBrowse->setEnabled(checked);
+}
+
+void SettingsWindow::on_tweaksMpvOptionsFileBrowse_clicked()
+{
+    static QFileDialog::Options options = QFileDialog::Options();
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
+    QString file = ui->tweaksMpvOptionsFilePath->text().isEmpty() ?
+                                    ui->tweaksMpvOptionsFilePath->placeholderText() :
+                                    ui->tweaksMpvOptionsFilePath->text();
+    file = QFileDialog::getOpenFileName(this, "", file, "", nullptr, options);
+    if (file.isEmpty())
+        return;
+
+    ui->tweaksMpvOptionsFilePath->setText(file);
 }
 
 void SettingsWindow::on_tweaksMpvOptionsChkBox_toggled(bool checked)
@@ -1919,9 +2005,7 @@ void SettingsWindow::on_webPortLink_linkActivated(const QString &link)
 void SettingsWindow::on_webRootBrowse_clicked()
 {
     static QFileDialog::Options options = QFileDialog::ShowDirsOnly;
-#ifdef Q_OS_MAC
-    options |= QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QString path = QFileDialog::getExistingDirectory(this, "", "", options);
     if (path.isEmpty())
         return;
@@ -1931,9 +2015,7 @@ void SettingsWindow::on_webRootBrowse_clicked()
 void SettingsWindow::on_logFilePathBrowse_clicked()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options |= QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QString file = ui->logFilePathValue->text().isEmpty() ? ui->logFilePathValue->placeholderText() :
                                                             ui->logFilePathValue->text();
     file = QFileDialog::getSaveFileName(this, tr("Choose Log File"), file, tr("Log files (*.log)"), nullptr, options);

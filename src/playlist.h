@@ -111,6 +111,8 @@ public:
     bool contains(const QUuid &itemUuid);
     void iterateItems(const std::function<void(QSharedPointer<Item>)> &callback);
     virtual void addItems(const QUuid &where, const QList<QSharedPointer<Item> > &itemsToAdd);
+    virtual void addItems(int indexWhere, const QList<QSharedPointer<Item> > &itemsToAdd);
+    void addItemsLocked(int indexWhere, const QList<QSharedPointer<Item>> &itemsToAdd);
     virtual void removeItem(const QUuid &itemUuid);
     void takeItemsRaw(const QList<QSharedPointer<Item>> &itemsToRemove);
     QList<QUuid> replaceItem(const QUuid &where, const QList<QUrl> &urls);
@@ -197,8 +199,10 @@ public:
     QSharedPointer<Playlist> takePlaylist(const QUuid &playlistUuid);
     void removePlaylist(const QUuid &playlistUuid);
     void removePlaylist(const QSharedPointer<Playlist> &p);
+    void removeAllPlaylists();
     QSharedPointer<Playlist> playlistAt(int col) const;
     QSharedPointer<Playlist> getPlaylist(const QUuid &playlistUuid) const;
+    int count() const;
 
     void addPlaylist(const QSharedPointer<Playlist> &playlist);
     void fromVList(const QVariantList &data);

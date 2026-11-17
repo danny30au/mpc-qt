@@ -38,11 +38,12 @@ public:
     QUrl getUrlOf(QUuid list, QUuid item);
     QUrl getUrlOfFirst(QUuid list);
     void setMetadata(QUuid list, QUuid item, const QVariantMap &map);
-    void replaceItem(QUuid list, QUuid item, const QList<QUrl> &urls);
+    QUuid replaceItem(QUuid list, QUuid item, const QList<QUrl> &urls, QString itemWanted);
     int extraPlayTimes(QUuid list, QUuid item);
     void setExtraPlayTimes(QUuid list, QUuid item, int amount);
     void deltaExtraPlayTimes(QUuid list, QUuid item, int delta);
     void reshufflePlaylist(const QUuid &playlistUuid);
+    void clearWidgetFocus();
 
     QVariantList tabsToVList(bool saveQuickPlaylist) const;
     void tabsFromVList(const QVariantList &qvl);
@@ -67,6 +68,8 @@ private:
     void setPlaylistFilters(QString filterText);
     void addNewTab(QUuid playlist, QString title);
     void addQuickQueue();
+    void itemDoubleClicked(QUuid playlistUuid, QUuid itemUuid, bool clickedInPlaylist);
+    void backupPlaylist(const DrawnPlaylist &qdp, QSharedPointer<PlaylistCollection> collection);
 
 signals:
     void windowDocked();
@@ -84,6 +87,8 @@ signals:
     void playlistsBackupRequested();
     void playlistMovedToBackup(QUuid backupUuid);
     void closingPlaylist(QUuid playlist);
+    void restoreLastPlaylistBackupRequested();
+    void nowPlayingListChanged(QUuid newPlaylistUuid);
 
 public slots:
     void setIconTheme(IconThemer::FolderMode folderMode, const QString &customFolder);
@@ -96,11 +101,13 @@ public slots:
     void addPlaylistByUuid(QUuid playlistUuid);
     void setDisplayFormatSpecifier(QString fmt);
     void playlist_removeItemRequested();
+    void playlist_openItemFolderRequested();
     void removePlaylistItem(const QUuid &itemUuid);
     void dockLocationMaybeChanged();
 
     void newTab();
     void closeTab();
+    void restorePlaylist();
     void duplicateTab();
     void renameTab();
     void importTab();
@@ -135,13 +142,15 @@ private slots:
     void sortPlaylistByLabel(const QUuid &playlistUuid);
     void sortPlaylistByUrl(const QUuid &playlistUuid);
     void shufflePlaylist(const QUuid &playlistUuid, bool shuffle);
-    void refreshPlaylist(const QUuid &playlistUuid);
-    void restorePlaylist(const QUuid &playlistUuid);
+    void refreshPlaylist(const QUuid &playlistUuid, bool setCurrentItem = true);
+    void restoreOriginalPlaylistOrder(const QUuid &playlistUuid);
 
     void self_visibilityChanged();
     void self_dockLocationChanged(Qt::DockWidgetArea area);
     void playlist_removeAllRequested();
-    void playlist_copySelectionToClipboard(const QUuid &playlistUuid);
+    void playlist_restoreRequested();
+    void playlist_copyNameToClipboard(const QUuid &playlistUuid);
+    void playlist_copySelectionToClipboard(const QUuid &playlistUuid, bool urlAsText);
     void playlist_hideOnFullscreenToggled(bool checked);
     void playlist_contextMenuRequested(const QPoint &p, const QUuid &playlistUuid, const QUuid &itemUuid);
 

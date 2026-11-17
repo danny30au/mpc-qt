@@ -3,12 +3,14 @@
 #include <QPainter>
 #include <QFontMetrics>
 #include <QKeyEvent>
+#include <QMimeData>
 #include "drawnplaylist.h"
 #include "playlist.h"
 #include "helpers.h"
 #include "logger.h"
 
 static constexpr char logModule[] =  "drawnplaylist";
+static constexpr char playlistMimeFormat[] =  "application/x-playlist-items";
 
 PlayPainter::PlayPainter(QObject *parent) : QAbstractItemDelegate(parent) {}
 
@@ -108,14 +110,16 @@ DrawnPlaylist::DrawnPlaylist(QSharedPointer<PlaylistCollection> collection,
     searcher->moveToThread(worker);
 
     collection_ = collection;
-    setSelectionMode(QAbstractItemView::ContiguousSelection);
-    setDragDropMode(QAbstractItemView::InternalMove);
+    setSelectionMode(QAbstractItemView::ExtendedSelection);
+    setAcceptDrops(true);
+    setDragDropMode(QAbstractItemView::DragDrop);
+    setDefaultDropAction(Qt::MoveAction);
 
     setItemDelegate(new PlayPainter(this));
 
     connect(worker, &QThread::finished, searcher, &QObject::deleteLater);
-    connect(model(), SIGNAL(rowsAboutToBeMoved(QModelIndex,int,int,QModelIndex,int)),
-            this, SLOT(model_rowsMoved(QModelIndex,int,int,QModelIndex,int)));
+    connect(model(), &QAbstractItemModel::rowsAboutToBeMoved,
+            this, &DrawnPlaylist::model_rowsMoved);
     connect(this, &DrawnPlaylist::searcher_filterPlaylist,
             searcher, &PlaylistSearcher::filterPlaylist,
             Qt::QueuedConnection);
@@ -124,10 +128,10 @@ DrawnPlaylist::DrawnPlaylist(QSharedPointer<PlaylistCollection> collection,
             Qt::QueuedConnection);
     connect(this, &DrawnPlaylist::currentItemChanged,
             this, &DrawnPlaylist::self_currentItemChanged);
-    connect(this, SIGNAL(itemDoubleClicked(QListWidgetItem*)),
-            this, SLOT(self_itemDoubleClicked(QListWidgetItem*)));
-    connect(this, SIGNAL(customContextMenuRequested(QPoint)),
-            this, SLOT(self_customContextMenuRequested(QPoint)));
+    connect(this, &DrawnPlaylist::itemDoubleClicked,
+            this, &DrawnPlaylist::self_itemDoubleClicked);
+    connect(this, &DrawnPlaylist::customContextMenuRequested,
+            this, &DrawnPlaylist::self_customContextMenuRequested);
     setContextMenuPolicy(Qt::CustomContextMenu);
 }
 
@@ -352,6 +356,114 @@ bool DrawnPlaylist::event(QEvent *e)
     }
     end:
     return QListWidget::event(e);
+}
+
+void DrawnPlaylist::dropEvent(QDropEvent *event)
+{
+    int insertPosition = indexAt(event->position().toPoint()).row();
+    if (dropIndicatorPosition() == QAbstractItemView::BelowItem)
+        insertPosition++;
+    handlePlaylistDrop(event->mimeData(), insertPosition);
+    event->setDropAction(Qt::CopyAction);
+    event->accept();
+}
+
+void DrawnPlaylist::handlePlaylistDrop(const QMimeData *mimeData, int insertPosition)
+{
+    if (!mimeData || !mimeData->hasFormat(playlistMimeFormat))
+        return;
+
+    QByteArray data = mimeData->data(playlistMimeFormat);
+    QDataStream stream(&data, QIODevice::ReadOnly);
+    QUuid sourcePlaylistId;
+    stream >> sourcePlaylistId;
+
+    auto sourcePlaylist = collection_->getPlaylist(sourcePlaylistId);
+    auto destinationPlaylist = playlist();
+    if (!sourcePlaylist || !destinationPlaylist)
+        return;
+
+    QList<QUuid> itemIds;
+    while (!stream.atEnd()) {
+        QUuid id;
+        stream >> id;
+        itemIds << id;
+    }
+    if (itemIds.isEmpty())
+        return;
+
+    // If moving within the same playlist, adjust insertPosition to account
+    // for the removal of dragged items which shifts indices downward
+    if (insertPosition >= 0 && sourcePlaylist->uuid() == destinationPlaylist->uuid()) {
+        int removedBefore = 0;
+        int totalRows = this->count();
+        QSet<QUuid> itemIdSet(itemIds.begin(), itemIds.end());
+        for (int r = 0; r < totalRows; ++r) {
+            auto listItem = this->item(r);
+            if (!listItem) continue;
+            QUuid id(listItem->text());
+            if (itemIdSet.contains(id) && r < insertPosition)
+                ++removedBefore;
+        }
+        insertPosition = std::max(0, insertPosition - removedBefore);
+    }
+
+    QList<QSharedPointer<Item>> items;
+    for (const auto &id : itemIds) {
+        if (sourcePlaylist->contains(id)) {
+            auto itemPtr = sourcePlaylist->getItem(id);
+            if (itemPtr)
+                items.append(itemPtr);
+        }
+    }
+    if (items.isEmpty())
+        return;
+
+    sourcePlaylist->takeItemsRaw(items);
+    destinationPlaylist->addItems(insertPosition, items);
+    emit playlistNeedsRefresh(sourcePlaylistId, false);
+    if (sourcePlaylistId != destinationPlaylist->uuid())
+        emit playlistNeedsRefresh(destinationPlaylist->uuid(), false);
+
+    QUuid playingItemUuid = sourcePlaylist->nowPlaying();
+    bool movedNowPlaying = !playingItemUuid.isNull() && itemIds.contains(playingItemUuid);
+    if (movedNowPlaying && sourcePlaylist != destinationPlaylist) {
+        sourcePlaylist->setNowPlaying(QUuid());
+        destinationPlaylist->setNowPlaying(playingItemUuid);
+        emit nowPlayingListChanged(destinationPlaylist->uuid());
+    }
+
+    clearSelection();
+    if (!itemIds.isEmpty()) {
+        setCurrentItem(itemIds.first());
+        for (const auto &id : itemIds) {
+            auto matchingItems = findItems(id.toString(), Qt::MatchExactly);
+            for (auto *item : matchingItems)
+                item->setSelected(true);
+        }
+    }
+}
+
+// Returns playlist and items uuids for handlePlaylistDrop
+QMimeData *DrawnPlaylist::mimeData(const QList<QListWidgetItem *> &items) const
+{
+    QMimeData *mime = QListWidget::mimeData(items);
+    QByteArray data;
+    QDataStream stream(&data, QIODevice::WriteOnly);
+    stream << playlist()->uuid();
+    QList<QListWidgetItem*> sortedItems = items;
+    std::sort(sortedItems.begin(), sortedItems.end(),
+        [this](QListWidgetItem const *a, QListWidgetItem const *b) {
+            return row(a) < row(b);
+    });
+
+    for (QListWidgetItem const *item : sortedItems) {
+        stream << QUuid(item->text());
+    }
+
+    mime->setData(playlistMimeFormat, data);
+
+    return mime;
 }
 
 void DrawnPlaylist::repopulateItems()

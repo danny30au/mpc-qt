@@ -218,7 +218,7 @@
           </sizepolicy>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>13</number>
          </property>
          <widget class="QWidget" name="playerPage">
           <layout class="QGridLayout" name="playerPageLayout">
@@ -798,22 +798,12 @@ media file played</string>
                      <item row="0" column="0">
                       <widget class="QLabel" name="windowVideoLabel">
                        <property name="text">
-                        <string>Video background</string>
+                        <string>Logo background</string>
                        </property>
                       </widget>
                      </item>
                      <item row="0" column="1">
                       <layout class="QHBoxLayout" name="windowVideoLayout">
-                       <item>
-                        <widget class="QLineEdit" name="windowVideoValue">
-                         <property name="inputMask">
-                          <string notr="true">HHHHHHHH</string>
-                         </property>
-                         <property name="text">
-                          <string notr="true">FF000000</string>
-                         </property>
-                        </widget>
-                       </item>
                        <item>
                         <widget class="QPushButton" name="windowVideoPick">
                          <property name="styleSheet">
@@ -821,6 +811,16 @@ media file played</string>
                          </property>
                          <property name="text">
                           <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="windowVideoValue">
+                         <property name="inputMask">
+                          <string notr="true">HHHHHHHH</string>
+                         </property>
+                         <property name="text">
+                          <string notr="true">FF000000</string>
                          </property>
                         </widget>
                        </item>
@@ -836,22 +836,22 @@ media file played</string>
                      <item row="1" column="1">
                       <layout class="QHBoxLayout" name="windowInfoBackgroundLayout">
                        <item>
-                        <widget class="QLineEdit" name="windowInfoBackgroundValue">
-                         <property name="inputMask">
-                          <string notr="true">HHHHHHHH</string>
-                         </property>
-                         <property name="text">
-                          <string notr="true">FF000000</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
                         <widget class="QPushButton" name="windowInfoBackgroundPick">
                          <property name="styleSheet">
                           <string notr="true">background: #000000;</string>
                          </property>
                          <property name="text">
                           <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="windowInfoBackgroundValue">
+                         <property name="inputMask">
+                          <string notr="true">HHHHHHHH</string>
+                         </property>
+                         <property name="text">
+                          <string notr="true">FF000000</string>
                          </property>
                         </widget>
                        </item>
@@ -867,22 +867,22 @@ media file played</string>
                      <item row="2" column="1">
                       <layout class="QHBoxLayout" name="windowInfoForegroundLayout">
                        <item>
-                        <widget class="QLineEdit" name="windowInfoForegroundValue">
-                         <property name="inputMask">
-                          <string notr="true">HHHHHHHH</string>
-                         </property>
-                         <property name="text">
-                          <string notr="true">FFFFFFFF</string>
-                         </property>
-                        </widget>
-                       </item>
-                       <item>
                         <widget class="QPushButton" name="windowInfoForegroundPick">
                          <property name="styleSheet">
                           <string notr="true">background: #FFFFFF;</string>
                          </property>
                          <property name="text">
                           <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="windowInfoForegroundValue">
+                         <property name="inputMask">
+                          <string notr="true">HHHHHHHH</string>
+                         </property>
+                         <property name="text">
+                          <string notr="true">FFFFFFFF</string>
                          </property>
                         </widget>
                        </item>
@@ -1034,7 +1034,7 @@ media file played</string>
                    <item>
                     <widget class="QPushButton" name="webRootBrowse">
                      <property name="text">
-                      <string>Browse</string>
+                      <string>Browse...</string>
                      </property>
                     </widget>
                    </item>
@@ -1305,6 +1305,9 @@ media file played</string>
               </item>
               <item row="1" column="0" colspan="2">
                <widget class="QCheckBox" name="playbackAutoCenterWindow">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="text">
                  <string>Center window when zooming</string>
                 </property>
@@ -1721,39 +1724,45 @@ media file played</string>
                    </layout>
                   </item>
                   <item row="1" column="0">
-                   <widget class="QLabel" name="videoAlphaModeLabel">
+                   <widget class="QLabel" name="videoBackgroundLabel">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <property name="text">
                      <string>Alpha</string>
                     </property>
                    </widget>
                   </item>
                   <item row="1" column="1">
-                   <widget class="QComboBox" name="videoAlphaMode">
+                   <widget class="QComboBox" name="videoBackground">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
                     <item>
                      <property name="text">
-                      <string>Blend on black</string>
+                      <string>Blend on color</string>
                      </property>
                     </item>
                     <item>
                      <property name="text">
-                      <string>Use</string>
+                      <string>Checkerboard pattern</string>
                      </property>
                     </item>
                     <item>
                      <property name="text">
-                      <string>Ignore</string>
+                      <string>None</string>
                      </property>
                     </item>
                    </widget>
                   </item>
-                  <item row="2" column="0">
+                  <item row="3" column="0">
                    <widget class="QLabel" name="videoSharpenLabel">
                     <property name="text">
                      <string>Sharpen</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="2" column="1">
+                  <item row="3" column="1">
                    <widget class="QDoubleSpinBox" name="videoSharpen">
                     <property name="specialValueText">
                      <string>Disabled</string>
@@ -1766,14 +1775,14 @@ media file played</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="3" column="0">
+                  <item row="4" column="0">
                    <widget class="QLabel" name="videoPresetLabel">
                     <property name="text">
                      <string>Presets</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="3" column="1">
+                  <item row="4" column="1">
                    <layout class="QHBoxLayout" name="videoPresetLayout" stretch="1,0,2">
                     <item>
                      <widget class="QComboBox" name="videoPreset">
@@ -1839,6 +1848,46 @@ media file played</string>
                        </size>
                       </property>
                      </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="videoBackgroundColorLabel">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="text">
+                     <string>Color</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <layout class="QHBoxLayout" name="videoBackgroundColorLayout">
+                    <item>
+                     <widget class="QPushButton" name="videoBackgroundColorPick">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background: #000000;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="videoBackgroundColorValue">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="inputMask">
+                       <string notr="true">HHHHHHHH</string>
+                      </property>
+                      <property name="text">
+                       <string notr="true">FF000000</string>
+                      </property>
+                     </widget>
                     </item>
                    </layout>
                   </item>
@@ -2247,6 +2296,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="scaleParam1Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2271,6 +2323,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="scaleRadiusValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2308,6 +2363,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="scaleParam2Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2339,6 +2397,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="scaleAntiRingValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2373,6 +2434,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="scaleBlurValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2404,6 +2468,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QComboBox" name="scaleWindowValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <item>
                            <property name="text">
                             <string>Box</string>
@@ -2484,6 +2551,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="scaleWindowParamValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2504,6 +2574,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="scaleClampValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2856,6 +2929,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="dscaleParam1Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2887,6 +2963,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="dscaleRadiusValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2924,6 +3003,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="dscaleParam2Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2955,6 +3037,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="dscaleAntiRingValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -2989,6 +3074,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="dscaleBlurValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3016,6 +3104,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="dscaleClampValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3047,6 +3138,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QComboBox" name="dscaleWindowValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <item>
                            <property name="text">
                             <string>Box</string>
@@ -3127,6 +3221,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="dscaleWindowParamValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3316,6 +3413,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="cscaleParam1Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3347,6 +3447,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="cscaleRadiusValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3384,6 +3487,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="cscaleParam2Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3415,6 +3521,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="cscaleAntiRingValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3446,6 +3555,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="cscaleBlurValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3473,6 +3585,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="cscaleClampValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3504,6 +3619,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QComboBox" name="cscaleWindowValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <item>
                            <property name="text">
                             <string>Box</string>
@@ -3584,6 +3702,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="cscaleWindowParamValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3723,6 +3844,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="tscaleParam1Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3754,6 +3878,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="tscaleRadiusValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3791,6 +3918,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="tscaleParam2Value">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3822,6 +3952,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="tscaleAntiRingValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3853,6 +3986,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="tscaleBlurValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3880,6 +4016,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="tscaleClampValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -3905,6 +4044,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QComboBox" name="tscaleWindowValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <item>
                            <property name="text">
                             <string>Box</string>
@@ -3985,6 +4127,9 @@ media file played</string>
                         </item>
                         <item>
                          <widget class="QDoubleSpinBox" name="tscaleWindowParamValue">
+                          <property name="enabled">
+                           <bool>false</bool>
+                          </property>
                           <property name="decimals">
                            <number>6</number>
                           </property>
@@ -4679,7 +4824,7 @@ media file played</string>
                        <bool>false</bool>
                       </property>
                       <property name="text">
-                       <string>Browse</string>
+                       <string>Browse...</string>
                       </property>
                      </widget>
                     </item>
@@ -5228,7 +5373,7 @@ media file played</string>
                 </item>
                 <item>
                  <property name="text">
-                  <string>Video</string>
+                  <string>Video Output (recommended)</string>
                  </property>
                 </item>
                 <item>
@@ -5238,13 +5383,16 @@ media file played</string>
                 </item>
                 <item>
                  <property name="text">
-                  <string>Decoder+Video</string>
+                  <string>Decoder + Video Output</string>
                  </property>
                 </item>
                </widget>
               </item>
               <item row="1" column="0">
                <widget class="QLabel" name="framedroppingDecoderModeLabel">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="text">
                  <string>Decoder</string>
                 </property>
@@ -5252,6 +5400,9 @@ media file played</string>
               </item>
               <item row="1" column="1">
                <widget class="QComboBox" name="framedroppingDecoderMode">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="currentIndex">
                  <number>1</number>
                 </property>
@@ -5299,18 +5450,11 @@ media file played</string>
               <property name="fieldGrowthPolicy">
                <enum>QFormLayout::FieldGrowthPolicy::AllNonFixedFieldsGrow</enum>
               </property>
-              <item row="0" column="0">
-               <widget class="QLabel" name="syncModeLabel">
-                <property name="text">
-                 <string>Mode</string>
-                </property>
-               </widget>
-              </item>
               <item row="0" column="1">
                <widget class="QComboBox" name="syncMode">
                 <item>
                  <property name="text">
-                  <string>Audio</string>
+                  <string>Time video frames to audio</string>
                  </property>
                 </item>
                 <item>
@@ -5325,6 +5469,11 @@ media file played</string>
                 </item>
                 <item>
                  <property name="text">
+                  <string>Resample audio to match video (audio may become desynchronized)</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
                   <string>Drop or repeat video frames</string>
                  </property>
                 </item>
@@ -5335,69 +5484,77 @@ media file played</string>
                 </item>
                </widget>
               </item>
-              <item row="1" column="0">
-               <widget class="QLabel" name="syncAudioDropSizeLabel">
+              <item row="0" column="0">
+               <widget class="QLabel" name="syncModeLabel">
                 <property name="text">
-                 <string>Audio drop size</string>
+                 <string>Mode</string>
                 </property>
                </widget>
               </item>
               <item row="2" column="0">
                <widget class="QLabel" name="syncMaxAudioChangeLabel">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="text">
                  <string>Max audio change</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="0">
+              <item row="2" column="1">
+               <widget class="QDoubleSpinBox" name="syncMaxAudioChange">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+                </property>
+                <property name="suffix">
+                 <string>%</string>
+                </property>
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="maximum">
+                 <double>1.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.005000000000000</double>
+                </property>
+                <property name="value">
+                 <double>0.125000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
                <widget class="QLabel" name="syncMaxVideoChangeLabel">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="text">
                  <string>Max video change</string>
                 </property>
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QDoubleSpinBox" name="syncAudioDropSize">
-                <property name="alignment">
-                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                </property>
-                <property name="decimals">
-                 <number>6</number>
-                </property>
-                <property name="maximum">
-                 <double>1.000000000000000</double>
-                </property>
-                <property name="value">
-                 <double>0.020000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="QDoubleSpinBox" name="syncMaxAudioChange">
-                <property name="alignment">
-                 <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
-                </property>
-                <property name="decimals">
-                 <number>6</number>
-                </property>
-                <property name="maximum">
-                 <double>1.000000000000000</double>
-                </property>
-                <property name="value">
-                 <double>0.120000000000000</double>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="1">
                <widget class="QDoubleSpinBox" name="syncMaxVideoChange">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
                 <property name="alignment">
                  <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
                 </property>
+                <property name="suffix">
+                 <string>%</string>
+                </property>
                 <property name="decimals">
-                 <number>6</number>
+                 <number>2</number>
                 </property>
                 <property name="maximum">
-                 <double>1.000000000000000</double>
+                 <double>100.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>0.500000000000000</double>
                 </property>
                 <property name="value">
                  <double>1.000000000000000</double>
@@ -5911,7 +6068,7 @@ media file played</string>
               <item>
                <widget class="QTabWidget" name="audioTabs">
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>4</number>
                 </property>
                 <widget class="QWidget" name="allTab">
                  <attribute name="title">
@@ -6108,44 +6265,6 @@ media file played</string>
                      </size>
                     </property>
                    </spacer>
-                  </item>
-                 </layout>
-                </widget>
-                <widget class="QWidget" name="ossPage">
-                 <attribute name="title">
-                  <string>Oss</string>
-                 </attribute>
-                 <layout class="QFormLayout" name="ossPageLayout">
-                  <property name="fieldGrowthPolicy">
-                   <enum>QFormLayout::FieldGrowthPolicy::AllNonFixedFieldsGrow</enum>
-                  </property>
-                  <item row="0" column="0">
-                   <widget class="QLabel" name="ossMixerDeviceLabel">
-                    <property name="text">
-                     <string>Mixer device</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="1">
-                   <widget class="QLineEdit" name="ossMixerDevice">
-                    <property name="text">
-                     <string notr="true">/dev/mixer</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="QLabel" name="ossMixerChannelLabel">
-                    <property name="text">
-                     <string>Mixer channel</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="1">
-                   <widget class="QLineEdit" name="ossMixerChannel">
-                    <property name="text">
-                     <string notr="true">pcm</string>
-                    </property>
-                   </widget>
                   </item>
                  </layout>
                 </widget>
@@ -7005,22 +7124,22 @@ media file played</string>
                    <item row="0" column="1">
                     <layout class="QHBoxLayout" name="subsColorLayout">
                      <item>
-                      <widget class="QLineEdit" name="subsColorValue">
-                       <property name="inputMask">
-                        <string notr="true">HHHHHHHH</string>
-                       </property>
-                       <property name="text">
-                        <string notr="true">FFFFFFFF</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
                       <widget class="QPushButton" name="subsColorPick">
                        <property name="styleSheet">
                         <string notr="true">background: #FFFFFF;</string>
                        </property>
                        <property name="text">
                         <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="subsColorValue">
+                       <property name="inputMask">
+                        <string notr="true">HHHHHHHH</string>
+                       </property>
+                       <property name="text">
+                        <string notr="true">FFFFFFFF</string>
                        </property>
                       </widget>
                      </item>
@@ -7036,22 +7155,22 @@ media file played</string>
                    <item row="1" column="1">
                     <layout class="QHBoxLayout" name="subsBorderColorLayout">
                      <item>
-                      <widget class="QLineEdit" name="subsBorderColorValue">
-                       <property name="inputMask">
-                        <string notr="true">HHHHHHHH</string>
-                       </property>
-                       <property name="text">
-                        <string notr="true">FF000000</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
                       <widget class="QPushButton" name="subsBorderColorPick">
                        <property name="styleSheet">
                         <string notr="true">background: #000000;</string>
                        </property>
                        <property name="text">
                         <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="subsBorderColorValue">
+                       <property name="inputMask">
+                        <string notr="true">HHHHHHHH</string>
+                       </property>
+                       <property name="text">
+                        <string notr="true">FF000000</string>
                        </property>
                       </widget>
                      </item>
@@ -7089,19 +7208,6 @@ media file played</string>
                    <item row="2" column="1">
                     <layout class="QHBoxLayout" name="subsShadowColorLayout">
                      <item>
-                      <widget class="QLineEdit" name="subsShadowColorValue">
-                       <property name="enabled">
-                        <bool>false</bool>
-                       </property>
-                       <property name="inputMask">
-                        <string notr="true">HHHHHHHH</string>
-                       </property>
-                       <property name="text">
-                        <string notr="true">AF000000</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
                       <widget class="QPushButton" name="subsShadowColorPick">
                        <property name="enabled">
                         <bool>false</bool>
@@ -7111,6 +7217,19 @@ media file played</string>
                        </property>
                        <property name="text">
                         <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="subsShadowColorValue">
+                       <property name="enabled">
+                        <bool>false</bool>
+                       </property>
+                       <property name="inputMask">
+                        <string notr="true">HHHHHHHH</string>
+                       </property>
+                       <property name="text">
+                        <string notr="true">AF000000</string>
                        </property>
                       </widget>
                      </item>
@@ -7189,7 +7308,7 @@ media file played</string>
                 <item>
                  <widget class="QPushButton" name="screenshotDirectoryBrowse">
                   <property name="text">
-                   <string>...</string>
+                   <string>Browse...</string>
                   </property>
                  </widget>
                 </item>
@@ -7236,7 +7355,7 @@ media file played</string>
                    <bool>false</bool>
                   </property>
                   <property name="text">
-                   <string>...</string>
+                   <string>Browse...</string>
                   </property>
                  </widget>
                 </item>
@@ -7357,6 +7476,13 @@ media file played</string>
                  </property>
                  <widget class="QWidget" name="jpgPage">
                   <layout class="QFormLayout" name="jpgPageLayout">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="jpgQualityLabel">
+                     <property name="text">
+                      <string>Quality</string>
+                     </property>
+                    </widget>
+                   </item>
                    <item row="0" column="1">
                     <layout class="QHBoxLayout" name="jpgQualityLayout">
                      <item>
@@ -7390,7 +7516,7 @@ media file played</string>
                      </item>
                     </layout>
                    </item>
-                   <item row="2" column="0">
+                   <item row="1" column="0">
                     <widget class="QLabel" name="jpgSourceChromaLabel">
                      <property name="text">
                       <string>Source Chroma</string>
@@ -7398,50 +7524,6 @@ media file played</string>
                     </widget>
                    </item>
                    <item row="1" column="1">
-                    <layout class="QHBoxLayout" name="jpgSmoothLayout">
-                     <item>
-                      <widget class="QSlider" name="jpgSmooth">
-                       <property name="cursor">
-                        <cursorShape>PointingHandCursor</cursorShape>
-                       </property>
-                       <property name="maximum">
-                        <number>100</number>
-                       </property>
-                       <property name="orientation">
-                        <enum>Qt::Orientation::Horizontal</enum>
-                       </property>
-                       <property name="tickPosition">
-                        <enum>QSlider::TickPosition::TicksBothSides</enum>
-                       </property>
-                       <property name="tickInterval">
-                        <number>5</number>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="jpgSmoothValue">
-                       <property name="text">
-                        <string notr="true">0</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="jpgQualityLabel">
-                     <property name="text">
-                      <string>Quality</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QLabel" name="jpgSmoothLabel">
-                     <property name="text">
-                      <string>Smooth</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
                     <widget class="QCheckBox" name="jpgSourceChroma">
                      <property name="text">
                       <string>Yes</string>
@@ -8183,6 +8265,52 @@ media file played</string>
             </layout>
            </item>
            <item row="16" column="0" colspan="2">
+            <layout class="QHBoxLayout" name="tweaksMpvOptionsFileLayout" stretch="0,1,0">
+             <item>
+              <widget class="QCheckBox" name="tweaksMpvOptionsFileChkBox">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>mpv options file:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="tweaksMpvOptionsFilePath">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="placeholderText">
+                <string notr="true">~/mpv/mpv.conf</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tweaksMpvOptionsFileBrowse">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Browse...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="17" column="0" colspan="2">
             <layout class="QHBoxLayout" name="tweaksMpvOptionsLayout" stretch="0,1">
              <item>
               <widget class="QCheckBox" name="tweaksMpvOptionsChkBox">
@@ -8214,19 +8342,6 @@ media file played</string>
               </widget>
              </item>
             </layout>
-           </item>
-           <item row="17" column="0">
-            <spacer name="verticalSpacer_9">
-             <property name="orientation">
-              <enum>Qt::Orientation::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
            </item>
           </layout>
          </widget>
@@ -8372,7 +8487,7 @@ media file played</string>
                 <item>
                  <widget class="QPushButton" name="logFilePathBrowse">
                   <property name="text">
-                   <string>...</string>
+                   <string>Browse...</string>
                   </property>
                  </widget>
                 </item>
@@ -8824,12 +8939,12 @@ media file played</string>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>710</x>
-     <y>278</y>
+     <x>328</x>
+     <y>64</y>
     </hint>
     <hint type="destinationlabel">
-     <x>537</x>
-     <y>291</y>
+     <x>328</x>
+     <y>64</y>
     </hint>
    </hints>
   </connection>
@@ -8840,44 +8955,12 @@ media file played</string>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>537</x>
-     <y>100</y>
+     <x>328</x>
+     <y>64</y>
     </hint>
     <hint type="destinationlabel">
-     <x>537</x>
-     <y>149</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>playerTrayIcon</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>playerCloseToTray</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>718</x>
-     <y>84</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>718</x>
-     <y>112</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>playerTrayIcon</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>playerMinimizeToTray</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>718</x>
-     <y>84</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>718</x>
-     <y>112</y>
+     <x>328</x>
+     <y>64</y>
     </hint>
    </hints>
   </connection>
@@ -8888,12 +8971,12 @@ media file played</string>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>443</x>
-     <y>397</y>
+     <x>328</x>
+     <y>64</y>
     </hint>
     <hint type="destinationlabel">
-     <x>682</x>
-     <y>398</y>
+     <x>328</x>
+     <y>64</y>
     </hint>
    </hints>
   </connection>
@@ -8904,12 +8987,524 @@ media file played</string>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>343</x>
-     <y>204</y>
+     <x>289</x>
+     <y>189</y>
     </hint>
     <hint type="destinationlabel">
-     <x>544</x>
-     <y>205</y>
+     <x>333</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleParam1Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleParam1Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>385</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleParam2Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleParam2Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>383</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleBlurSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleBlurValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>323</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleWindowSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleWindowValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleRadiusSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleRadiusValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleAntiRingSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleAntiRingValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>626</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>678</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleClampSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleClampValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>626</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>685</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scaleWindowParamSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>scaleWindowParamValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>608</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleParam1Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleParam1Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>329</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>382</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleParam2Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleParam2Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>390</x>
+     <y>305</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleBlurSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleBlurValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleWindowSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleWindowValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleRadiusSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleRadiusValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>631</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>685</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleAntiRingSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleAntiRingValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>627</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>674</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleClampSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleClampValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>621</x>
+     <y>356</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>654</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dscaleWindowParamSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>dscaleWindowParamValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>574</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>612</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleParam1Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleParam1Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>244</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>368</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleParam2Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleParam2Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>331</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>301</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleBlurSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleBlurValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>349</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleWindowSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleWindowValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>329</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleRadiusSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleRadiusValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>624</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>661</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleAntiRingSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleAntiRingValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>676</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleClampSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleClampValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>667</x>
+     <y>356</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cscaleWindowParamSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cscaleWindowParamValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>573</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>611</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleParam1Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleParam1Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>360</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleParam2Set</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleParam2Value</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>370</x>
+     <y>302</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleBlurSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleBlurValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>321</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleWindowSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleWindowValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleRadiusSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleRadiusValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>620</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>657</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleAntiRingSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleAntiRingValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>678</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleClampSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleClampValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>633</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>682</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscaleWindowParamSet</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>tscaleWindowParamValue</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>569</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>611</x>
+     <y>414</y>
     </hint>
    </hints>
   </connection>

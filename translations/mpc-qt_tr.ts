@@ -9,11 +9,11 @@
     </message>
     <message>
         <source>Version %1</source>
-        <translation type="unfinished">Sürüm %1</translation>
+        <translation>Sürüm %1</translation>
     </message>
     <message>
         <source>Built on %1 at %2</source>
-        <translation type="unfinished">%1 üzerine %2 tarihinde yapıldı</translation>
+        <translation>%1 üzerine %2 tarihinde yapıldı</translation>
     </message>
     <message>
         <source>(Unknown)</source>
@@ -56,7 +56,7 @@
     </message>
     <message>
         <source>Mouse Window</source>
-        <translation type="unfinished">Fare (Pencere)</translation>
+        <translation>Fare (Pencerede)</translation>
     </message>
     <message>
         <source>Mouse Fullscr</source>
@@ -64,7 +64,7 @@
     </message>
     <message>
         <source>Mouse Fullscreen</source>
-        <translation type="unfinished">Fare (Tam Ekran)</translation>
+        <translation>Fare (Tam Ekran)</translation>
     </message>
     <message>
         <source>Volume Mute</source>
@@ -152,11 +152,11 @@
     </message>
     <message>
         <source>16:9 Aspect ratio</source>
-        <translation type="unfinished">16:9 En-Boy Oranı</translation>
+        <translation>16:9 En–Boy Oranı</translation>
     </message>
     <message>
         <source>Decrease Aspect ratio</source>
-        <translation type="unfinished">En–Boy Oranını Azalt</translation>
+        <translation>En–Boy Oranını Azalt</translation>
     </message>
     <message>
         <source>Increase Aspect ratio</source>
@@ -164,11 +164,11 @@
     </message>
     <message>
         <source>Reset Aspect ratio</source>
-        <translation type="unfinished">En–Boy Oranını Sıfırla</translation>
+        <translation>En–Boy Oranını Sıfırla</translation>
     </message>
     <message>
         <source>Disable Aspect ratio</source>
-        <translation type="unfinished">En–Boy Oranını Devre Dışı Bırak</translation>
+        <translation>En–Boy Oranını Devre Dışı Bırak</translation>
     </message>
     <message>
         <source>Decrease Pan and Scan</source>
@@ -374,7 +374,7 @@ Bunun yerine “%3” için kullanmak ister misiniz?</translation>
     </message>
     <message>
         <source>Enter a timecode using the format [hh:]mm:ss.ms to jump to a specified time. You do not need to enter the separators explicitely.</source>
-        <translation>Belirli bir zamana atlamak için [sa:]dd:ss.ms biçiminde bir zaman kodu girin. Ayırıcıları ayrı ayrı girmenize gerek yoktur.</translation>
+        <translation>Belirli bir zamana atlamak için [sa:]dd:ss.ms biçiminde bir zaman kodu girin. Ayırıcıları ayrı girmenize gerek yoktur.</translation>
     </message>
 </context>
 <context>
@@ -397,7 +397,15 @@ Bunun yerine “%3” için kullanmak ister misiniz?</translation>
     </message>
     <message>
         <source>Playlists Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Çalma Listelerini Yedekleme</translation>
+    </message>
+    <message>
+        <source>Remove All</source>
+        <translation>Hepsini Sil</translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation>Tüm çalma listesi yedekleri silinsin mi?</translation>
     </message>
 </context>
 <context>
@@ -424,7 +432,7 @@ Bunun yerine “%3” için kullanmak ister misiniz?</translation>
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation type="unfinished"></translation>
+        <translation>Günlük dosyaları (*.log)</translation>
     </message>
 </context>
 <context>
@@ -668,7 +676,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>Altyazı &amp;Yükle…</translation>
+        <translation type="vanished">Altyazı &amp;Yükle…</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -720,7 +728,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Kontrol+0</translation>
+        <translation type="vanished">Kontrol+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -728,7 +736,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Kontrol+1</translation>
+        <translation type="vanished">Kontrol+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -736,7 +744,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Kontrol+2</translation>
+        <translation type="vanished">Kontrol+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -744,7 +752,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Kontrol+3</translation>
+        <translation type="vanished">Kontrol+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -752,7 +760,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Kontrol+4</translation>
+        <translation type="vanished">Kontrol+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -760,7 +768,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Kontrol+5</translation>
+        <translation type="vanished">Kontrol+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -768,7 +776,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Kontrol+6</translation>
+        <translation type="vanished">Kontrol+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -776,7 +784,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Kontrol+7</translation>
+        <translation type="vanished">Kontrol+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -784,7 +792,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Kontrol+8</translation>
+        <translation type="vanished">Kontrol+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -792,15 +800,15 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Kontrol+9</translation>
+        <translation type="vanished">Kontrol+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
-        <translation>&amp;Minimal</translation>
+        <translation>&amp;Sade</translation>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -808,7 +816,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -816,7 +824,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -828,15 +836,15 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Seçenek+1</translation>
+        <translation type="vanished">Seçenek+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Seçenek+2</translation>
+        <translation type="vanished">Seçenek+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Seçenek+3</translation>
+        <translation type="vanished">Seçenek+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -844,7 +852,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Seçenek+4</translation>
+        <translation type="vanished">Seçenek+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -852,7 +860,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Seçenek+5</translation>
+        <translation type="vanished">Seçenek+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -860,7 +868,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Seçenek+0</translation>
+        <translation type="vanished">Seçenek+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1192,7 +1200,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>&amp;Yeni Sekme</translation>
+        <translation type="vanished">&amp;Yeni Sekme</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1200,11 +1208,11 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>Sekmeyi &amp;Kapat</translation>
+        <translation type="vanished">Sekmeyi &amp;Kapat</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Sekmeyi Kapat</translation>
+        <translation type="vanished">Sekmeyi Kapat</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1212,7 +1220,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>Sekmeyi Ç&amp;oğalt</translation>
+        <translation type="vanished">Sekmeyi Ç&amp;oğalt</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1427,6 +1435,10 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
         <translation>Görünüm</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation>%1%</translation>
+    </message>
+    <message>
         <source>Hide &amp;Borders</source>
         <translation>Kenarlı&amp;kları Gizle</translation>
     </message>
@@ -1440,15 +1452,15 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Software Decoding</source>
-        <translation type="unfinished"></translation>
+        <translation>Yazılımsal Kod Çözme</translation>
     </message>
     <message>
         <source>Hardware Decoding: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Donanımsal Kod Çözme: %1</translation>
     </message>
     <message>
         <source>Hardware Decoding: %1 (slow)</source>
-        <translation type="unfinished"></translation>
+        <translation>Donanımsal Kod Çözme: %1 (yavaş)</translation>
     </message>
     <message>
         <source>Remaining time</source>
@@ -1483,8 +1495,12 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
         <translation>Arabelleğe alınıyor (%%1)</translation>
     </message>
     <message>
+        <source>Seeking</source>
+        <translation>Sarılıyor</translation>
+    </message>
+    <message>
         <source>Error</source>
-        <translation type="unfinished">Hata</translation>
+        <translation>Hata</translation>
     </message>
     <message>
         <source>&amp;Quick Add To Playlist</source>
@@ -1944,14 +1960,42 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Pl&amp;aylists Backup</source>
-        <translation type="unfinished"></translation>
+        <translation>Çalma Listelerini Yedekle</translation>
     </message>
     <message>
         <source>Decrease Delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Gecikmeyi Azalt</translation>
     </message>
     <message>
         <source>Increase Delay</source>
+        <translation>Gecikmeyi Artır</translation>
+    </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation>Altyazı Dosyasını &amp;Yeniden Yükle</translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation>Altyazı Dosyası &amp;Yükle...</translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished">&amp;Yeni Oynatma Listesi</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished">Oyn&amp;atma Listesini Çoğalt</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2110,7 +2154,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Audio delay: %1 ms</source>
-        <translation type="unfinished"></translation>
+        <translation>Ses gecikmesi: %1 ms</translation>
     </message>
 </context>
 <context>
@@ -2130,6 +2174,10 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     <message>
         <source>Select File</source>
         <translation>Dosya Seç</translation>
+    </message>
+    <message>
+        <source>Browse...</source>
+        <translation>Göz At…</translation>
     </message>
 </context>
 <context>
@@ -2152,7 +2200,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Dark colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Koyu renkler</translation>
     </message>
     <message>
         <source>Use dark colors</source>
@@ -2241,7 +2289,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Yeni Sekme</translation>
+        <translation type="vanished">Yeni Sekme</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2249,7 +2297,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Sekmeyi Çoğalt</translation>
+        <translation type="vanished">Sekmeyi Çoğalt</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2285,7 +2333,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>Oynatma listesi dosyaları (*.m3u *.m3u8)</translation>
+        <translation type="vanished">Oynatma listesi dosyaları (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2308,7 +2356,7 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
         <translation type="vanished">Temizle</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>Panoya Kopyala</translation>
     </message>
     <message>
@@ -2344,6 +2392,24 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
         <translation>Oynatma listesi adı gir</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation>Çalma Listesi Dosyaları</translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation>&quot;%1&quot; dosyası zaten var.
+Değiştirmek istiyor musunuz?</translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation>Bulunduğu Klasörü Aç</translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>&amp;Yeni Oynatma Listesi</translation>
     </message>
@@ -2358,6 +2424,14 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>Oyn&amp;atma Listesini Çoğalt</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2406,6 +2480,10 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     <message>
         <source>Add Folder</source>
         <translation>Klasör Ekle</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2603,11 +2681,11 @@ Herhangi bir eylem tetiklenmeyecek.</translation>
     </message>
     <message>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Yer tutucu metin</translation>
     </message>
     <message>
         <source>Accent</source>
-        <translation type="unfinished"></translation>
+        <translation>Vurgu</translation>
     </message>
     <message>
         <source>Active</source>
@@ -3045,15 +3123,15 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Siyah üzerine harmanla</translation>
+        <translation type="vanished">Siyah üzerine harmanla</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Kullan</translation>
+        <translation type="vanished">Kullan</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Yok Say</translation>
+        <translation type="vanished">Yok Say</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3181,7 +3259,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Anti-ring</source>
-        <translation>Anti-ring</translation>
+        <translation>Halka önleme</translation>
     </message>
     <message>
         <source>Blur</source>
@@ -3537,7 +3615,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Göz At</translation>
+        <translation type="vanished">Göz At</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3621,15 +3699,15 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Oss</source>
-        <translation>Oss</translation>
+        <translation type="vanished">Oss</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>Karıştırıcı aygıtı</translation>
+        <translation type="vanished">Karıştırıcı aygıtı</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Karıştırıcı kanalı</translation>
+        <translation type="vanished">Karıştırıcı kanalı</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3741,7 +3819,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Kod çözücü+Video</translation>
+        <translation type="vanished">Kod çözücü+Video</translation>
     </message>
     <message>
         <source>None</source>
@@ -3785,7 +3863,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Ses düşürme boyutu</translation>
+        <translation type="vanished">Ses düşürme boyutu</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -4054,7 +4132,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>...</source>
-        <translation>…</translation>
+        <translation type="vanished">…</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -4082,7 +4160,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Pürüzsüz</translation>
+        <translation type="vanished">Pürüzsüz</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4646,7 +4724,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Log files (*.log)</source>
-        <translation type="unfinished"></translation>
+        <translation>Günlük dosyaları (*.log)</translation>
     </message>
     <message>
         <source>Allows dark theme support on Windows</source>
@@ -4714,7 +4792,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>En çok video yüksekliği:</translation>
+        <translation type="vanished">En çok video yüksekliği:</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4810,7 +4888,7 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation>Video arka planı</translation>
+        <translation type="vanished">Video arka planı</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4854,82 +4932,122 @@ yeni bir &amp;oynatıcı aç</translation>
     </message>
     <message>
         <source>Replay Gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Yeniden Oynatma Kazancı</translation>
     </message>
     <message>
         <source>Track</source>
-        <translation type="unfinished"></translation>
+        <translation>Parça</translation>
     </message>
     <message>
         <source>Album</source>
-        <translation type="unfinished"></translation>
+        <translation>Albüm</translation>
     </message>
     <message>
         <source>Pre-amp</source>
-        <translation type="unfinished"></translation>
+        <translation>Ön Yükseltici</translation>
     </message>
     <message>
         <source> dB</source>
-        <translation type="unfinished"></translation>
+        <translation> dB</translation>
     </message>
     <message>
         <source>Prevent clipping</source>
-        <translation type="unfinished"></translation>
+        <translation>Kırpılmayı Önle</translation>
     </message>
     <message>
         <source>Search settings…</source>
-        <translation type="unfinished"></translation>
+        <translation>Ayarlarda ara…</translation>
     </message>
     <message>
         <source>A&amp;pplication name only</source>
-        <translation type="unfinished"></translation>
+        <translation>Yalnızca uygulama adı</translation>
     </message>
     <message>
         <source>Loop back to first/last file in folder if needed</source>
-        <translation type="unfinished"></translation>
+        <translation>Gerekirse klasördeki ilk/son dosyaya geri dön</translation>
     </message>
     <message>
         <source>Increase maximum volume to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesi en çok şu kadar aç:</translation>
     </message>
     <message>
         <source>Show video preview (restart required), set its height to (% of screen):</source>
-        <translation type="unfinished"></translation>
+        <translation>Video önizlemesini göster (yeniden başlatma gerekir), yüksekliğini (ekran yüzdesine) ayarla:</translation>
     </message>
     <message>
         <source>Minimize to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Sistem tepsisine küçült</translation>
     </message>
     <message>
         <source>Close to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Sistem tepsisine kapat</translation>
+    </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation>En büyük video çözünürlüğü:</translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation>mpv ayar dosyası:</translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation>Sesi videoyla eşleşecek şekilde yeniden örnekle (ses senkronizasyonu bozulabilir)</translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation>Video karelerini sese göre zamanla</translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation>Video Çıkışı (önerilen)</translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation>Kod Çözücü + Video Çıkışı</translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation>Logo arka planı</translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation>Renk üzerine harmanla</translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation>Dama tahtası deseni</translation>
     </message>
 </context>
 <context>
     <name>StatusTime</name>
     <message>
         <source> (%1%)</source>
-        <translation> (%%1)</translation>
+        <translation> (%1%)</translation>
     </message>
     <message>
         <source>Remaining time</source>
-        <translation type="unfinished">Kalan süre</translation>
+        <translation>Kalan süre</translation>
     </message>
     <message>
         <source>High precision</source>
-        <translation type="unfinished">Yüksek kesinlik</translation>
+        <translation>Yüksek kesinlik</translation>
     </message>
     <message>
         <source>Show percentage</source>
-        <translation type="unfinished">Yüzdeyi göster</translation>
+        <translation>Yüzdeyi göster</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation>İpucunu göster</translation>
     </message>
     <message>
         <source>Played: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Oynatılan: %1</translation>
     </message>
     <message>
         <source>Remaining: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalan: %1</translation>
     </message>
 </context>
 <context>

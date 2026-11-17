@@ -71,6 +71,7 @@ public:
     QString formatFiltersList(const QList<QPair<QString, QString>> &filtersList);
     void setSubFile(QString filename);
     void addSubFile(QString filename);
+    void reloadSubFile();
     void setSubtitlesDelay(int subDelayStep);
     void moveSubtitlesVertically(int diff);
     void setAudioDelay(int audioDelayStep);
@@ -110,8 +111,8 @@ public:
     QSize videoSize();
     bool clientDebuggingMessages();
 
-    void setCachedMpvOption(const QString &option, const QVariant &value);
-    void setUncachedMpvOption(const QString &option, const QVariant &value);
+    void setCachedMpvProperty(const QString &property, const QVariant &value);
+    void setUncachedMpvProperty(const QString &property, const QVariant &value);
     QVariant blockingMpvCommand(const QVariant &params);
     QVariant blockingSetMpvPropertyVariant(QString name, const QVariant &value);
     QVariant blockingSetMpvOptionVariant(QString name, const QVariant &value);
@@ -135,6 +136,8 @@ signals:
     void pausedChanged(bool yes);
     void eofReachedChanged(QString eof);
     void playbackFinished();
+    void playbackSeeking();
+    void playbackRestart();
     void playbackIdling(bool yes);
     void mediaTitleChanged(QString title);
     void metaDataChanged(QVariantMap metadata);
@@ -151,6 +154,7 @@ signals:
     void interlacedChanged(bool yes);
     void aspectChanged(double newAspect);
     void aspectNameChanged(QString newAspectName);
+    void volumeChanged(int64_t volume);
     void fileNameChanged(QString filename);
     void fileFormatChanged(QString format);
     void fileSizeChanged(int64_t size);
@@ -169,7 +173,6 @@ signals:
 
     void mouseMoved(int x, int y);
     void mousePress(int x, int y, int btn);
-    void mouseReleased();
     void keyPress(int key);
     void keyRelease(int key);
 

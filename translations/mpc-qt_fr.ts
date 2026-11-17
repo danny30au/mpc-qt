@@ -407,6 +407,14 @@ Voulez-vous l&apos;utiliser pour &quot;%3&quot; à la place&#x202f;?</translatio
         <source>Playlists Backup</source>
         <translation>Sauvegarde des listes de lecture</translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation>Supprimer tout</translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation>Supprimer toutes les sauvegardes de listes de lecture&#x202f;?</translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -672,7 +680,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>&amp;Charger les sous-titres...</translation>
+        <translation type="vanished">&amp;Charger les sous-titres...</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -724,7 +732,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -732,7 +740,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -740,7 +748,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -748,7 +756,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -756,7 +764,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -764,7 +772,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -772,7 +780,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -780,7 +788,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -788,7 +796,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -796,7 +804,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
@@ -804,7 +812,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -812,7 +820,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -820,7 +828,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -832,15 +840,15 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="vanished">Alt+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="vanished">Alt+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="vanished">Alt+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -848,7 +856,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="vanished">Alt+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -856,7 +864,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="vanished">Alt+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -864,7 +872,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="vanished">Alt+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1168,7 +1176,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>&amp;Nouvel onglet</translation>
+        <translation type="vanished">&amp;Nouvel onglet</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1176,11 +1184,11 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>Fermer l’&amp;onglet</translation>
+        <translation type="vanished">Fermer l’&amp;onglet</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Fermer l’onglet</translation>
+        <translation type="vanished">Fermer l’onglet</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1188,7 +1196,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp;Dupliquer l’onglet</translation>
+        <translation type="vanished">&amp;Dupliquer l’onglet</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1387,6 +1395,10 @@ Aucune action ne sera déclenchée.</translation>
         <translation>Affichage</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation>%1 %</translation>
+    </message>
+    <message>
         <source>Hide &amp;Borders</source>
         <translation>Masquer les &amp;bords</translation>
     </message>
@@ -1441,6 +1453,10 @@ Aucune action ne sera déclenchée.</translation>
     <message>
         <source>Buffering (%1%)</source>
         <translation>Mise en mémoire tampon (%1 %)</translation>
+    </message>
+    <message>
+        <source>Seeking</source>
+        <translation>Recherche</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1910,6 +1926,34 @@ Aucune action ne sera déclenchée.</translation>
         <source>Increase Delay</source>
         <translation>Augmenter le délai</translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation>&amp;Recharger le fichier de sous-titres</translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation>&amp;Charger un fichier de sous-titres...</translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation>&amp;Nouvelle liste</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation>Fer&amp;mer la liste</translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation>Fermer la liste</translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation>&amp;Dupliquer la liste</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation>Restaurer la liste</translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2087,6 +2131,10 @@ Aucune action ne sera déclenchée.</translation>
         <source>Select File</source>
         <translation>Sélectionner un fichier</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation>Parcourir...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2197,7 +2245,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Nouvel onglet</translation>
+        <translation type="vanished">Nouvel onglet</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2205,7 +2253,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Dupliquer l’onglet</translation>
+        <translation type="vanished">Dupliquer l’onglet</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2241,7 +2289,7 @@ Aucune action ne sera déclenchée.</translation>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>Fichiers de liste (*.m3u *.m3u8)</translation>
+        <translation type="vanished">Fichiers de liste (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2264,7 +2312,7 @@ Aucune action ne sera déclenchée.</translation>
         <translation type="vanished">Nettoyer</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>Copier dans le presse-papiers</translation>
     </message>
     <message>
@@ -2292,6 +2340,24 @@ Aucune action ne sera déclenchée.</translation>
         <translation>Entrer le nom de la liste</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation>Fichiers de liste</translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation>Le fichier &quot;%1&quot; existe déjà.
+Voulez-vous le remplacer&#x202f;?</translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation>Ouvrir le dossier contenant</translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>&amp;Nouvelle liste</translation>
     </message>
@@ -2306,6 +2372,14 @@ Aucune action ne sera déclenchée.</translation>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>&amp;Dupliquer la liste</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation>&amp;Restaurer la liste</translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2358,6 +2432,10 @@ Aucune action ne sera déclenchée.</translation>
     <message>
         <source>Add Folder</source>
         <translation>Ajouter un dossier</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation>Dupliquer la liste</translation>
     </message>
 </context>
 <context>
@@ -3009,19 +3087,19 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Fusionner sur noir</translation>
+        <translation type="vanished">Fusionner sur noir</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Utiliser</translation>
+        <translation type="vanished">Utiliser</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Ignorer</translation>
+        <translation type="vanished">Ignorer</translation>
     </message>
     <message>
         <source>Sharpen</source>
-        <translation>Affiner</translation>
+        <translation>Renforcer la netteté</translation>
     </message>
     <message>
         <source>Disabled</source>
@@ -3501,7 +3579,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Parcourir</translation>
+        <translation type="vanished">Parcourir</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3585,15 +3663,15 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Oss</source>
-        <translation>Oss</translation>
+        <translation type="vanished">Oss</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>Périphérique de mixage</translation>
+        <translation type="vanished">Périphérique de mixage</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Canal de mixage</translation>
+        <translation type="vanished">Canal de mixage</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3705,7 +3783,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Décodeur+Vidéo</translation>
+        <translation type="vanished">Décodeur+Vidéo</translation>
     </message>
     <message>
         <source>None</source>
@@ -3733,7 +3811,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Resample audio to match video</source>
-        <translation>Resampler l’audio pour correspondre à la vidéo</translation>
+        <translation>Rééchantillonner l&apos;audio pour suivre la vidéo</translation>
     </message>
     <message>
         <source>Resample audio to match video (may drop frames)</source>
@@ -3749,7 +3827,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Taille de la perte audio</translation>
+        <translation type="vanished">Taille de la perte audio</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -4018,7 +4096,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="vanished">...</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -4046,7 +4124,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Lisse</translation>
+        <translation type="vanished">Lisse</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4674,7 +4752,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>Hauteur maximale des vidéos&#xa0;:</translation>
+        <translation type="vanished">Hauteur maximale des vidéos&#xa0;:</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4770,7 +4848,7 @@ fichier média lu</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation>Arrière-plan vidéo</translation>
+        <translation type="vanished">Arrière-plan vidéo</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4872,6 +4950,42 @@ fichier média lu</translation>
         <source>Close to tray</source>
         <translation>Fermer dans la zone de notification</translation>
     </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation>Résolution maximale des vidéos&#xa0;:</translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation>Fichier d&apos;options mpv&#xa0;:</translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation>Rééchantillonner l&apos;audio pour suivre la vidéo (l&apos;audio peut devenir désynchronisé)</translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation>Synchroniser les images vidéo selon l&apos;audio</translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation>Sortie vidéo (recommandé)</translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation>Décodeur + Sortie vidéo</translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation>Arrière-plan du logo</translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation>Fusionner avec la couleur</translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation>Damier</translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4890,6 +5004,10 @@ fichier média lu</translation>
     <message>
         <source>Show percentage</source>
         <translation>Afficher le pourcentage</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation>Afficher l&apos;infobulle</translation>
     </message>
     <message>
         <source>Played: %1</source>

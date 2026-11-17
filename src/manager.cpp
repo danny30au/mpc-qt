@@ -10,7 +10,7 @@ static constexpr char logModule[] =  "manager";
 static constexpr char strTrue[] =  "true";
 static constexpr char strFalse[] =  "false";
 
-Q_GLOBAL_STATIC_WITH_ARGS(QRegularExpression, wordSplitter, ("\\W+"));
+Q_GLOBAL_STATIC_WITH_ARGS(QRegularExpression, wordSplitter, ("[^\\w-]+"));
 
 
 TrackData TrackData::fromMap(const QVariantMap &map)
@@ -122,6 +122,10 @@ void PlaybackManager::setMpvObject(MpvObject *mpvObject, bool makeConnections)
                 this, &PlaybackManager::mpvw_playbackStarted);
         connect(mpvObject, &MpvObject::pausedChanged,
                 this, &PlaybackManager::mpvw_pausedChanged);
+        connect(mpvObject, &MpvObject::playbackSeeking,
+                this, &PlaybackManager::mpvw_playbackSeeking);
+        connect(mpvObject, &MpvObject::playbackRestart,
+                this, &PlaybackManager::mpvw_playbackStarted);
         connect(mpvObject, &MpvObject::playbackIdling,
                 this, &PlaybackManager::mpvw_playbackIdling);
         connect(mpvObject, &MpvObject::playbackError,
@@ -171,6 +175,8 @@ void PlaybackManager::setPlaylistWindow(PlaylistWindow *playlistWindow)
             this, &PlaybackManager::playItem);
     connect(this, &PlaybackManager::nowPlayingChanged,
             playlistWindow, &PlaylistWindow::changePlaylistSelection);
+    connect(playlistWindow, &PlaylistWindow::nowPlayingListChanged,
+            this, &PlaybackManager::setNowPlayingList);
 }
 
 QUrl PlaybackManager::nowPlaying()
@@ -193,6 +199,11 @@ void PlaybackManager::drawLogo()
 PlaybackManager::PlaybackState PlaybackManager::playbackState()
 {
     return playbackState_;
+}
+
+bool PlaybackManager::isPaused()
+{
+    return isPlaybackPaused;
 }
 
 void PlaybackManager::openSeveralFiles(QList<QUrl> what, bool important)
@@ -235,12 +246,12 @@ void PlaybackManager::playDiscFiles(QUrl where)
 {
     if (playbackState_ != StoppedState) {
         playbackState_ = StoppedState;
-        emit stateChanged(playbackState_);
+        emit stateChanged(playbackState_, isPlaybackPaused);
         mpvObject_->stopPlayback();
     }
     mpvObject_->discFilesOpen(where.toLocalFile());
     mpvObject_->setPaused(false);
-    playbackStartState = PlayingState;
+    playbackStartPaused = false;
     nowPlayingItem = QUuid();
     nowPlayingList = QUuid();
     emit nowPlayingChanged(where, QUuid(), QUuid());
@@ -257,6 +268,14 @@ void PlaybackManager::playItem(QUuid playlist, QUuid item, bool clickedInPlaylis
 {
     auto url = playlistWindow_->getUrlOf(playlist, item);
     startPlayWithUuid(url, playlist, item, false, QUrl(), clickedInPlaylist);
+}
+
+void PlaybackManager::setNowPlayingList(QUuid newPlaylistUuid)
+{
+    if (nowPlayingList != newPlaylistUuid) {
+        nowPlayingList = newPlaylistUuid;
+        emit nowPlayingChanged(nowPlaying_, nowPlayingList, nowPlayingItem, false);
+    }
 }
 
 void PlaybackManager::playDevice(QUrl device)
@@ -289,27 +308,23 @@ void PlaybackManager::startPlayer()
 
 void PlaybackManager::playPausePlayer()
 {
-    switch (playbackState_) {
-    case PausedState:
+    if (isPlaybackPaused)
         unpausePlayer();
-        break;
-    case StoppedState:
+    else if (playbackState_ == StoppedState)
         startPlayer();
-        break;
-    default:
+    else
         pausePlayer();
-    }
 }
 
 void PlaybackManager::pausePlayer()
 {
-    if (playbackState_ == PlayingState)
+    if (!isPlaybackPaused)
         mpvObject_->setPaused(true);
 }
 
 void PlaybackManager::unpausePlayer()
 {
-    if (playbackState_ == PausedState) {
+    if (isPlaybackPaused) {
         if (eofReached_)
             navigateToTime(0);
         mpvObject_->setPaused(false);
@@ -321,6 +336,7 @@ void PlaybackManager::stopPlayer()
     nowPlayingItem = QUuid();
     nowPlaying_ = QUrl();
     mpvObject_->stopPlayback();
+    emit stateChanged(playbackState_ = StoppedState, false);
 }
 
 void PlaybackManager::stepBackward()
@@ -722,7 +738,7 @@ void PlaybackManager::startPlayWithUuid(QUrl what, QUuid playlistUuid,
     emit windowShouldBeRaised(false);
     if (playbackState_ == WaitingState || what.isEmpty())
         return;
-    emit stateChanged(playbackState_ = WaitingState);
+    emit stateChanged(playbackState_ = WaitingState, isPlaybackPaused);
 
     if (!isRepeating)
         emit aboutToStartPlayingFile(what);
@@ -748,7 +764,6 @@ void PlaybackManager::startPlayWithUuid(QUrl what, QUuid playlistUuid,
     if (!with.isEmpty())
         mpvObject_->setSubFile(with.toString());
     mpvObject_->setPaused(playbackStartPaused);
-    playbackStartState = playbackStartPaused ? PausedState : PlayingState;
 
     if (!isRepeating && playbackPlayTimes > 1
             && playlistWindow_->extraPlayTimes(playlistUuid, itemUuid) <= 0) {
@@ -1017,7 +1032,7 @@ void PlaybackManager::playPrevFile()
 void PlaybackManager::setDeinterlace(bool enable)
 {
     // Deinterlacing doesn't work with hardware acceleration
-    mpvObject_->setCachedMpvOption("hwdec", enable ? "no" : hwdecBackend);
+    mpvObject_->setCachedMpvProperty("hwdec", enable ? "no" : hwdecBackend);
     emit videoFilter("yadif", "mode=1", enable);
     deinterlaceEnabled = enable;
 }
@@ -1041,7 +1056,7 @@ void PlaybackManager::mpvw_playLengthChanged(double length)
 void PlaybackManager::mpvw_playbackLoading()
 {
     playbackState_ = LoadingState;
-    emit stateChanged(playbackState_);
+    emit stateChanged(playbackState_, isPlaybackPaused);
 }
 
 void PlaybackManager::mpvw_pausedForCache(QString paused)
@@ -1051,19 +1066,25 @@ void PlaybackManager::mpvw_pausedForCache(QString paused)
     else if (paused == strFalse)
         playbackState_ = PlayingState;
     else
-        playbackState_ = StoppedState;
-    emit stateChanged(playbackState_);
+        return;
+    emit stateChanged(playbackState_, isPlaybackPaused);
 }
 
 void PlaybackManager::mpvw_bufferFillStateChanged(int64_t percentage)
 {
-    emit stateChanged(playbackState_, percentage);
+    emit stateChanged(playbackState_, isPlaybackPaused, percentage);
 }
 
 void PlaybackManager::mpvw_playbackStarted()
 {
-    playbackState_ = playbackStartState;
-    emit stateChanged(playbackState_);
+    playbackState_ = PlayingState;
+    emit stateChanged(playbackState_, isPlaybackPaused);
+}
+
+void PlaybackManager::mpvw_playbackSeeking()
+{
+    playbackState_ = PlaybackState::SeekingState;
+    emit stateChanged(playbackState_, isPlaybackPaused);
 }
 
 void PlaybackManager::mpvw_pausedChanged(bool yes)
@@ -1071,8 +1092,8 @@ void PlaybackManager::mpvw_pausedChanged(bool yes)
     if (playbackState_ == StoppedState)
         return;
 
-    playbackState_ = yes ? PausedState : PlayingState;
-    emit stateChanged(playbackState_);
+    isPlaybackPaused = yes;
+    emit stateChanged(playbackState_, isPlaybackPaused);
 }
 
 void PlaybackManager::mpvw_playbackIdling(bool yes)
@@ -1085,7 +1106,7 @@ void PlaybackManager::mpvw_playbackIdling(bool yes)
     if (nowPlayingItem.isNull()) {
         nowPlaying_.clear();
         playbackState_ = StoppedState;
-        emit stateChanged(playbackState_);
+        emit stateChanged(playbackState_, isPlaybackPaused);
         return;
     }
 }
@@ -1093,7 +1114,7 @@ void PlaybackManager::mpvw_playbackIdling(bool yes)
 void PlaybackManager::mpvw_playbackError()
 {
     playbackState_ = ErrorState;
-    emit stateChanged(playbackState_);
+    emit stateChanged(playbackState_, isPlaybackPaused);
     checkAfterPlayback();
 }
 
@@ -1259,9 +1280,12 @@ void PlaybackManager::mpvw_playlistChanged(const QVariantList &playlist)
     // replace current item with the content we got from the archive or playlist file, and trigger its playback
     QList<QUrl> urls;
     bool currentItemFound = false;
+    QString currentMpvPlaylistItemPath;
+    // FIXME: also use i.toMap()["title"]
     for (auto const& i : playlist) {
         if (i.toMap()["current"].toBool()) {
             currentItemFound = true;
+            currentMpvPlaylistItemPath = i.toMap()["filename"].toString();
             if (i.toMap()["id"].toInt() != currentMpvPlaylistItemId)
                 currentMpvPlaylistItemId = i.toMap()["id"].toInt();
             else
@@ -1275,6 +1299,6 @@ void PlaybackManager::mpvw_playlistChanged(const QVariantList &playlist)
     }
     if (!currentItemFound)
         return;
-    playlistWindow_->replaceItem(nowPlayingList, nowPlayingItem, urls);
-    playItem(nowPlayingList, nowPlayingItem);
+    QUuid nextItem = playlistWindow_->replaceItem(nowPlayingList, nowPlayingItem, urls, currentMpvPlaylistItemPath);
+    playItem(nowPlayingList, nextItem);
 }

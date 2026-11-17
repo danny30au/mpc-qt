@@ -14,9 +14,10 @@ DirectShow.
 
 * [Releases](#releases)
 * [Features and improvements over MPC-HC](#features-and-improvements-over-mpc-hc)
-* [Contributing and translation](#contributing-code-and-translations)
+* [Contributing code, translations and more](#contributing-code-translations-and-more)
 * [Compiling](#compiling)
 * [Compiling on Windows](#compiling-on-windows)
+* [Compiling on macOS](#compiling-on-macos)
 * [Questions and answers](#questions-and-answers)
 
 ## Releases
@@ -24,7 +25,7 @@ DirectShow.
 [Packages are available] for various systems.  
 There are release builds for Windows and Linux users on the [release page]; these use time-based
 versioning (e.g. 17.07 corresponds to July 2017).  
-There are [development builds] for Windows and Linux (AppImage, Flatpak and native build).  
+There are [development builds] for Windows, Linux (AppImage, Flatpak and native build) and macOS (app bundle).  
 
 Note that unimplemented features in the options dialog are hidden and (where
 this is not possible) disabled.  This is to preserve the familiar options layout
@@ -72,7 +73,8 @@ writing an encoder-orientated backend.
 
 Suggestions welcome.
 
-## Contributing code and translations
+## Contributing code, translations and more
+See [Contributing] on the wiki for various ways to contribute.
 
 If you are a coder, try to follow the conventions in the code and make a PR (pull request).<br />
 If you are a translator, we will be using [Weblate] to [translate][Translating].<br />
@@ -95,8 +97,8 @@ users, there could even be packages in your distro that help with this (e.g.
 
 You need the Qt6 SDK installed and a recent edition of libmpv.  On Ubuntu you
 can usually install the required libraries and tools with the
-`build-essential`, `cmake`, `qt6-base-dev`, `qt6-l10n-tools`, `libqt6svg6-dev`,
-`libmpv-dev` and `boost` packages.  A recent edition of [libmpv] means either from git
+`build-essential`, `cmake`, `qt6-base-dev`, `qt6-l10n-tools`, `libqt6svg6-dev` and
+`libmpv-dev` packages, and optionally `libboost-stacktrace-dev`.  A recent edition of [libmpv] means either from git
 head or at least version 0.37.0.
 
 ### I don't know git, how do I do this?
@@ -175,21 +177,22 @@ While this program is meant for Unix, it is possible to compile it on Windows
 with MSYS2.  MSVC is not supported due to the nature of the build process, but
 may work in theory if you throw enough stubbornness at it.
 
-From a fresh installation of MSYS2, run the following from an MSYS2 MINGW64
+From a fresh installation of MSYS2, run the following from an MSYS2 UCRT64
 prompt.  First, update the packages
 
 >pacman -Syu
 
-Restart MSYS2 MINGW64 when prompted to do so and re-run pacman.
+Restart MSYS2 UCRT64 when prompted to do so and re-run pacman.
 
 >pacman -Syu
 
 At this stage packages required for building can be installed (Copy and paste
 this as one line).
 
->pacman -S base-devel mingw-w64-x86_64-cmake git mingw-w64-x86_64-toolchain
->mingw-w64-x86_64-qt6 mingw-w64-x86_64-qt-creator
->mingw-w64-x86_64-imagemagick mingw-w64-x86_64-boost
+>pacman -S git base-devel wget p7zip mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-ninja
+>mingw-w64-ucrt-x86_64-toolchain mingw-w64-ucrt-x86_64-qt6 mingw-w64-ucrt-x86_64-qt-creator
+>mingw-w64-ucrt-x86_64-imagemagick mingw-w64-ucrt-x86_64-boost mingw-w64-ucrt-x86_64-mpv
+>mingw-w64-ucrt-x86_64-nsis mingw-w64-ucrt-x86_64-vulkan-loader
 
 MPC-QT can be compiled with a libmpv linked to MSYS2's ffmpeg libraries, or by
 using the prebuilt library released on sourceforge.  To use the prebuilt
@@ -205,12 +208,12 @@ folder into `mpv-dev/include/mpv`.  If you do this, compile with the
 
 Congratulations, you have now built MPC-QT!
 
+## Compiling on macOS
+
+[![macOS CI]][macOS CI link]
+
 ## Questions and answers
-See also the [Wiki Q&A] and the other pages of the wiki.
-### Is MPC-QT compatible with SVP (SmoothVideo Project)?
-Yes! You just need to change two SVP settings:
-- the path to mpv's JSON IPC to point to `/tmp/cmdrkotori.mpc-qt.mpv`
-- the path to the player to point to `/usr/bin/mpc-qt`
+See the [Wiki Q&A] and the other pages of the wiki.
 
 [homepage]:https://mpc-qt.github.io/
 [screenshot]:https://raw.githubusercontent.com/mpc-qt/mpc-qt-screenshots/refs/heads/master/Screenshot_20260701_203013.png
@@ -221,12 +224,15 @@ Yes! You just need to change two SVP settings:
 [development builds]:https://mpc-qt.github.io/downloads#dev-builds
 [yt-dlp]:https://github.com/yt-dlp/yt-dlp
 [weblate]:https://hosted.weblate.org/engage/mpc-qt/
+[Contributing]:https://github.com/mpc-qt/mpc-qt/wiki/Contributing
 [Translating]:https://github.com/mpc-qt/mpc-qt/wiki/Translating
 [Translation status]:https://hosted.weblate.org/widget/mpc-qt/multi-auto.svg
 [C/C++ CI]:https://github.com/mpc-qt/mpc-qt/actions/workflows/linux.yml/badge.svg
 [C/C++ CI link]:https://github.com/mpc-qt/mpc-qt/actions/workflows/linux.yml
 [Msys2 CI]:https://github.com/mpc-qt/mpc-qt/actions/workflows/windows-msys2.yml/badge.svg
 [Msys2 CI link]:https://github.com/mpc-qt/mpc-qt/actions/workflows/windows-msys2.yml
+[macOS CI]:https://github.com/mpc-qt/mpc-qt/actions/workflows/macos.yml/badge.svg
+[macOS CI link]:https://github.com/mpc-qt/mpc-qt/actions/workflows/macos.yml
 [aur]:https://aur.archlinux.org/packages/mpc-qt-git/
 [ports]:https://www.freshports.org/multimedia/mpc-qt
 [mpv-build repo]:https://github.com/mpv-player/mpv-build

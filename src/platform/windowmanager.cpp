@@ -1,15 +1,19 @@
 #include <QDockWidget>
 #include <QMainWindow>
-#include <QMetaMethod>
 #include <QGuiApplication>
 #include <QStyle>
+#include <QTimer>
 #include <QWidget>
 #include "helpers.h"
 #include "logger.h"
 #include "mainwindow.h"
 #include "windowmanager.h"
+#ifdef Q_OS_MACOS
+#include "fullscreen_mac.h"
+#endif
 
 static constexpr char logModule[] =  "windowmanager";
+static constexpr char keyChromeSize[] = "chromeSize";
 static constexpr char keyGeometry[] = "geometry";
 static constexpr char keyMaximized[] = "maximized";
 static constexpr char keyQtState[] = "qtState";
@@ -42,6 +46,7 @@ void WindowManager::saveAppWindow(MainWindow *window, bool rememberWindowGeometr
     if (rememberPanels)
         panels = window->state();
     QVariantMap data = {
+        { keyChromeSize, !rememberWindowGeometry ? Helpers::sizeToVmap(window->chromeSize()) : QVariantMap() },
         { keyGeometry, rememberWindowGeometry ? appWindowGeometryCurrent : QVariantMap() },
         { keyState, panels },
         { keyMaximized, rememberWindowGeometry ? window->isMaximized() : false }
@@ -51,7 +56,8 @@ void WindowManager::saveAppWindow(MainWindow *window, bool rememberWindowGeometr
 
 void WindowManager::updateAppWindowGeometryCache(const MainWindow *window, bool restorePrevious)
 {
-    if (restorePrevious || window->isMaximized() || window->isFullScreen())
+    if (restorePrevious || window->isMaximized() || window->isFullScreen()
+            || window->fullscreenMode())
         appWindowGeometryCurrent = appWindowGeometryPrevious;
     else {
         appWindowGeometryPrevious = appWindowGeometryCurrent;
@@ -81,6 +87,7 @@ void WindowManager::restoreAppWindow(MainWindow *window, const CliInfo &cliInfo)
     QVariantMap data = json_[window->objectName()].toMap();
 
     // restore main window geometry and override it if requested
+    QSize chromeSize = Helpers::vmapToSize(data[keyChromeSize].toMap());
     QRect geometry = Helpers::vmapToRect(data[keyGeometry].toMap());
     appWindowGeometryCurrent = data[keyGeometry].toMap();
     appWindowGeometryPrevious = appWindowGeometryCurrent;
@@ -89,7 +96,7 @@ void WindowManager::restoreAppWindow(MainWindow *window, const CliInfo &cliInfo)
     bool checkMainWindow = data.isEmpty() || geometry.isEmpty();
 
     if (checkMainWindow)
-        desiredSize = window->desirableSize(true);
+        desiredSize = chromeSize.isNull() ? window->size() : window->noVideoSize() + chromeSize;
     if (cliInfo.validCliSize)
         desiredSize = cliInfo.cliSize;
 
@@ -97,6 +104,19 @@ void WindowManager::restoreAppWindow(MainWindow *window, const CliInfo &cliInfo)
         desiredPlace = window->desirablePosition(desiredSize, true);
     if (cliInfo.validCliPos)
         desiredPlace = cliInfo.cliPos;
+
+    // On X11/XWayland the first child paints and the window-manager
+    // decorations can arrive asynchronously, which may show the menu bar
+    // shortly after the rest of the window.  Map the window transparent
+    // and reveal it once the first complete frame is ready.  Systems without
+    // compositing ignore the opacity value.
+    QVariantMap savedState = data[keyState].toMap();
+    bool delayedReveal = QGuiApplication::platformName() == "xcb"
+            && !data.value(keyMaximized, false).toBool()
+            && !savedState.value("actionViewFullscreen", false).toBool();
+
+    if (delayedReveal)
+        window->setWindowOpacity(0.0);
 
     window->setGeometry(QRect(desiredPlace, desiredSize));
 
@@ -106,6 +126,13 @@ void WindowManager::restoreAppWindow(MainWindow *window, const CliInfo &cliInfo)
         window->show();
     window->raise();
     window->setState(data[keyState].toMap());
+
+    if (delayedReveal) {
+        QTimer::singleShot(50, window, [window]() {
+            window->setWindowOpacity(1.0);
+            window->update();
+        });
+    }
 }
 
 void WindowManager::restoreDocks(QMainWindow *dockHost, QList<QDockWidget *> dockWidgets)
@@ -119,11 +146,9 @@ void WindowManager::restoreDocks(QMainWindow *dockHost, QList<QDockWidget *> doc
     dockHost->restoreState(QByteArray::fromBase64(encoded));
     for (auto widget : dockWidgets) {
         dockHost->restoreDockWidget(widget);
-        const QMetaObject *dockMetaObject = widget->metaObject();
-        int index = dockMetaObject->indexOfSlot("dockLocationMaybeChanged(void)");
-        if (index == -1)
-            continue;
-        dockMetaObject->method(index).invoke(widget);
+        if (auto customDock = qobject_cast<PlaylistWindow*>(widget)) {
+            customDock->dockLocationMaybeChanged();
+        }
     }
 }
 
@@ -155,12 +180,19 @@ FullscreenMemory WindowManager::makeFullscreen(QWidget *who, QString preferredSc
         who->setScreen(target);
         who->setGeometry(target->geometry());
     }
+#ifdef Q_OS_MACOS
+    MacFullscreen::enter(who);
+#else
     who->showFullScreen();
+#endif
     return fm;
 }
 
 void WindowManager::restoreFullscreen(QWidget *who, const FullscreenMemory &fm)
 {
+#ifdef Q_OS_MACOS
+    MacFullscreen::leave(who);
+#endif
     who->showNormal();
     if (QGuiApplication::platformName() != "wayland")
         who->setGeometry(fm.normalGeometry);

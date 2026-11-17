@@ -5,15 +5,15 @@
     <name>About</name>
     <message>
         <source>Development Build</source>
-        <translation type="unfinished">Разрабатываемая версия</translation>
+        <translation>Разрабатываемая версия</translation>
     </message>
     <message>
         <source>Version %1</source>
-        <translation type="unfinished">Версия %1</translation>
+        <translation>Версия %1</translation>
     </message>
     <message>
         <source>Built on %1 at %2</source>
-        <translation type="unfinished">Скомпилировано %1 в %2</translation>
+        <translation>Скомпилировано %1 в %2</translation>
     </message>
     <message>
         <source>(Unknown)</source>
@@ -21,19 +21,19 @@
     </message>
     <message>
         <source>About Media Player Classic Qute Theater</source>
-        <translation type="unfinished">О Media Player Classic Qute Theater</translation>
+        <translation>О Media Player Classic Qute Theater</translation>
     </message>
     <message>
         <source>Media Player Classic Qute Theater</source>
-        <translation type="unfinished">Media Player Classic Qute Theater</translation>
+        <translation>Media Player Classic Qute Theater</translation>
     </message>
     <message>
         <source>A clone of Media Player Classic written in Qt</source>
-        <translation type="unfinished">Клон Media Player Classic, написанный на Qt</translation>
+        <translation>Клон Media Player Classic, написанный на Qt</translation>
     </message>
     <message>
         <source>Based on Qt %1 and %2</source>
-        <translation type="unfinished">Используется Qt %1 и %2</translation>
+        <translation>Используется Qt %1 и %2</translation>
     </message>
     <message>
         <source>Running on %1</source>
@@ -164,23 +164,23 @@
     </message>
     <message>
         <source>Disable Aspect ratio</source>
-        <translation type="unfinished">Отключить соотношение сторон</translation>
+        <translation>Отключить соотношение сторон</translation>
     </message>
     <message>
         <source>Decrease Pan and Scan</source>
-        <translation type="unfinished"></translation>
+        <translation>Уменьшить панорамирование и масштабирование</translation>
     </message>
     <message>
         <source>Increase Pan and Scan</source>
-        <translation type="unfinished"></translation>
+        <translation>Увеличить панорамирование и масштабирование</translation>
     </message>
     <message>
         <source>Minimum Pan and Scan</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное панорамирование и масштабирование</translation>
     </message>
     <message>
         <source>Maximum Pan and Scan</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимальное панорамирование и масштабирование</translation>
     </message>
     <message>
         <source>Decrease Zoom</source>
@@ -395,6 +395,14 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <source>Playlists Backup</source>
         <translation>Резервная копия списка воспроизведения</translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation>Удалить все</translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation>Удалить все резервные копии списков воспроизведения?</translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -504,7 +512,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>vo: 0, decoder: 0</source>
-        <translation>vo: 0, декодер: 0</translation>
+        <translation>вывод видео: 0, декодер: 0</translation>
     </message>
     <message>
         <source>Bitrate</source>
@@ -520,7 +528,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>O&amp;pen Disc</source>
-        <translation>О&amp;ткрыть диск</translation>
+        <translation>Открыть &amp;диск</translation>
     </message>
     <message>
         <source>Recent &amp;Files</source>
@@ -664,7 +672,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>&amp;Открыть субтитры...</translation>
+        <translation type="vanished">&amp;Открыть субтитры...</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -716,7 +724,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -724,7 +732,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -732,7 +740,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -740,7 +748,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -748,7 +756,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -756,7 +764,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -764,7 +772,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -772,7 +780,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -780,7 +788,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -788,7 +796,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
@@ -796,7 +804,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -804,7 +812,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -812,7 +820,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -824,15 +832,15 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="vanished">Alt+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="vanished">Alt+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="vanished">Alt+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -840,7 +848,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="vanished">Alt+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -848,7 +856,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="vanished">Alt+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -856,7 +864,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="vanished">Alt+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1188,7 +1196,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>&amp;Новая вкладка</translation>
+        <translation type="vanished">&amp;Новая вкладка</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1196,11 +1204,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>З&amp;акрыть вкладку</translation>
+        <translation type="vanished">З&amp;акрыть вкладку</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Закрыть вкладку</translation>
+        <translation type="vanished">Закрыть вкладку</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1208,7 +1216,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp;Дублировать вкладку</translation>
+        <translation type="vanished">&amp;Дублировать вкладку</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1451,6 +1459,10 @@ No action will be triggered.</source>
         <translation>Нет избранных файлов</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation>%1%</translation>
+    </message>
+    <message>
         <source>No streams favorited</source>
         <translation>Нет избранных потоков</translation>
     </message>
@@ -1465,6 +1477,10 @@ No action will be triggered.</source>
     <message>
         <source>Buffering (%1%)</source>
         <translation>Буферизация (%1%)</translation>
+    </message>
+    <message>
+        <source>Seeking</source>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1736,7 +1752,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>vo: %1, decoder: %2</source>
-        <translation>vo: %1, декодер: %2</translation>
+        <translation>вывод видео: %1, декодер: %2</translation>
     </message>
     <message>
         <source>v: %1 kb/s, a: %2 kb/s</source>
@@ -1748,7 +1764,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Input Cache Statistics</source>
-        <translation type="unfinished">Статистика входного &amp;кэша</translation>
+        <translation>Статистика входного &amp;кэша</translation>
     </message>
     <message>
         <source>&amp;Previous Subtitles track</source>
@@ -1768,19 +1784,19 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Extra Stereo</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Расширенное стерео</translation>
     </message>
     <message>
         <source>&amp;Compressor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Компрессор диапазона</translation>
     </message>
     <message>
         <source>Screenshot</source>
-        <translation type="unfinished">Снимок экрана</translation>
+        <translation>Снимок экрана</translation>
     </message>
     <message>
         <source>&amp;Crossfeed (for headphones)</source>
-        <translation type="unfinished"></translation>
+        <translation>Кроссфид (для &amp;наушников)</translation>
     </message>
     <message>
         <source>More Files</source>
@@ -1909,6 +1925,34 @@ No action will be triggered.</source>
     <message>
         <source>Increase Delay</source>
         <translation>Увеличить задержку</translation>
+    </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation>Перезагрузить файл суб&amp;титров</translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation>Загрузить файл суб&amp;титров...</translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation>&amp;Создать список воспроизведения</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation>&amp;Закрыть список воспроизведения</translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation>Закрыть список воспроизведения</translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation>&amp;Дублировать список воспроизведения</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation>Восстановить список восп&amp;роизведения</translation>
     </message>
 </context>
 <context>
@@ -2087,6 +2131,10 @@ No action will be triggered.</source>
         <source>Select File</source>
         <translation>Выбрать файл</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation>Обзор...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2193,7 +2241,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Новая вкладка</translation>
+        <translation type="vanished">Новая вкладка</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2201,7 +2249,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Дублировать вкладку</translation>
+        <translation type="vanished">Дублировать вкладку</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2237,7 +2285,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>Файлы списков воспроизведения (*.m3u *.m3u8)</translation>
+        <translation type="vanished">Файлы списков воспроизведения (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2260,7 +2308,7 @@ No action will be triggered.</source>
         <translation type="vanished">Очистить</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>Копировать в буфер обмена</translation>
     </message>
     <message>
@@ -2296,6 +2344,24 @@ No action will be triggered.</source>
         <translation>Введите название списка воспроизведения</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation>Файлы списков воспроизведения</translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation>Файл &quot;%1&quot; уже существует.
+Заменить его?</translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation>Открыть содержащую папку</translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>&amp;Создать список воспроизведения</translation>
     </message>
@@ -2310,6 +2376,14 @@ No action will be triggered.</source>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>&amp;Дублировать список воспроизведения</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation>Восстановить список восп&amp;роизведения</translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2358,6 +2432,10 @@ No action will be triggered.</source>
     <message>
         <source>Add Folder</source>
         <translation>Добавить папку</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation>Дублировать список воспроизведения</translation>
     </message>
 </context>
 <context>
@@ -2467,11 +2545,11 @@ No action will be triggered.</source>
     <name>QObject</name>
     <message>
         <source>All Media (*.%1);;All Files (*.*)</source>
-        <translation>Все мультимедиа (*.%1);; Все файлы (*.*)</translation>
+        <translation>Все мультимедиа (*.%1);;Все файлы (*.*)</translation>
     </message>
     <message>
         <source>All Subtitles (*.%1);;All Files (*.*)</source>
-        <translation>Все субтитры (*.%1);; Все файлы (*. *)</translation>
+        <translation>Все субтитры (*.%1);;Все файлы (*.*)</translation>
     </message>
     <message>
         <source>Window text</source>
@@ -2555,11 +2633,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст-заполнитель</translation>
     </message>
     <message>
         <source>Accent</source>
-        <translation type="unfinished"></translation>
+        <translation>Акцент</translation>
     </message>
     <message>
         <source>Active</source>
@@ -2625,7 +2703,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Fullscreen</source>
-        <translation>В полном экране</translation>
+        <translation>Полный экран</translation>
     </message>
     <message>
         <source>Sync</source>
@@ -2697,7 +2775,7 @@ media file played</source>
     </message>
     <message>
         <source>Tray icon</source>
-        <translation>Значок в системном лотке</translation>
+        <translation>Значок в области уведомлений</translation>
     </message>
     <message>
         <source>Show OSD</source>
@@ -2833,7 +2911,7 @@ media file played</source>
     </message>
     <message>
         <source>Custom</source>
-        <translation>Другие</translation>
+        <translation>Выбрать</translation>
     </message>
     <message>
         <source>System (Linux only)</source>
@@ -3009,15 +3087,15 @@ media file played</source>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Смесь на чёрном</translation>
+        <translation type="vanished">Смесь на чёрном</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Использовать</translation>
+        <translation type="vanished">Использовать</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Игнорировать</translation>
+        <translation type="vanished">Игнорировать</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3497,7 +3575,7 @@ media file played</source>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Обзор</translation>
+        <translation type="vanished">Обзор</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3573,7 +3651,7 @@ media file played</source>
     </message>
     <message>
         <source>Resample (may introduce latency)</source>
-        <translation>Перекодировать (может привести к задержке)</translation>
+        <translation>Передискретизировать (может привести к задержке)</translation>
     </message>
     <message>
         <source>Ignore channel map (for specific alsa setups)</source>
@@ -3581,15 +3659,15 @@ media file played</source>
     </message>
     <message>
         <source>Oss</source>
-        <translation>Oss</translation>
+        <translation type="vanished">Oss</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>Микшер</translation>
+        <translation type="vanished">Микшер</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Канал микшера</translation>
+        <translation type="vanished">Канал микшера</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3653,7 +3731,7 @@ media file played</source>
     </message>
     <message>
         <source>Fullscreen monitor</source>
-        <translation>В полном экране</translation>
+        <translation>Монитор для полного экрана</translation>
     </message>
     <message>
         <source>Launch files in fullscreen</source>
@@ -3689,7 +3767,7 @@ media file played</source>
     </message>
     <message>
         <source>Framedropping</source>
-        <translation>Программное выпадение кадров</translation>
+        <translation>Пропуск кадров</translation>
     </message>
     <message>
         <source>Mode</source>
@@ -3701,7 +3779,7 @@ media file played</source>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Декодер+Видео</translation>
+        <translation type="vanished">Декодер+Видео</translation>
     </message>
     <message>
         <source>None</source>
@@ -3729,11 +3807,11 @@ media file played</source>
     </message>
     <message>
         <source>Resample audio to match video</source>
-        <translation>Перекодировать звук, чтобы соответствовать видео</translation>
+        <translation>Передискретизировать аудио, чтобы соответствовать видео</translation>
     </message>
     <message>
         <source>Resample audio to match video (may drop frames)</source>
-        <translation>Перекодировать звук, чтобы соответствовать видео (может пропускать кадры)</translation>
+        <translation>Передискретизировать аудио, чтобы соответствовать видео (возможен пропуск кадров)</translation>
     </message>
     <message>
         <source>Drop or repeat video frames</source>
@@ -3741,11 +3819,11 @@ media file played</source>
     </message>
     <message>
         <source>Drop or repeat audio data</source>
-        <translation>Удалять или повторять данные аудио</translation>
+        <translation>Пропускать или повторять аудиоданные</translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Размер пропуска аудио</translation>
+        <translation type="vanished">Размер пропуска аудио</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -3833,7 +3911,7 @@ media file played</source>
     </message>
     <message>
         <source>Always loop images (manual progression)</source>
-        <translation type="unfinished">Всегда цикл изображения (ручная прогрессия)</translation>
+        <translation>Всегда циклически показывать изображения (ручная смена)</translation>
     </message>
     <message>
         <source>Display Format</source>
@@ -4010,7 +4088,7 @@ media file played</source>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="vanished">...</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -4038,7 +4116,7 @@ media file played</source>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Сглаживание</translation>
+        <translation type="vanished">Сглаживание</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4110,7 +4188,7 @@ media file played</source>
     </message>
     <message>
         <source>Drop frames before the seek target in the decoder</source>
-        <translation>Пропуск кадров при поиске</translation>
+        <translation>Разрешить декодеру пропускать кадры до выбранной при поиске позиции</translation>
     </message>
     <message>
         <source>Show chapter marks in seek bar</source>
@@ -4310,7 +4388,7 @@ media file played</source>
     </message>
     <message>
         <source>Prefer external subtitles over embedded subtitles</source>
-        <translation>Предпочитайте внешние субтитры встроенным</translation>
+        <translation>Предпочитать внешние субтитры встроенным</translation>
     </message>
     <message>
         <source>Ignore embedded subtitles</source>
@@ -4406,7 +4484,7 @@ media file played</source>
     </message>
     <message>
         <source>Shaders contain special effects which can be added to the video rendering process. A list of community-made shaders can be found on &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;the mpv wiki&lt;/span&gt;&lt;/a&gt;.</source>
-        <translation>Шейдеры содержат специальные эффекты, которые могут быть добавлены в процесс рендеринга видео. Список шейдеров, созданных сообществом, можно найти на сайте &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;the mpv wiki&lt;/span&gt;&lt;/a&gt;.</translation>
+        <translation>Шейдеры содержат специальные эффекты, которые могут быть добавлены в процесс рендеринга видео. Список шейдеров, созданных сообществом, можно найти в &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;вики mpv&lt;/span&gt;&lt;/a&gt;.</translation>
     </message>
     <message>
         <source>Pipewire</source>
@@ -4582,7 +4660,7 @@ media file played</source>
     </message>
     <message>
         <source> ms</source>
-        <translation>мс</translation>
+        <translation> мс</translation>
     </message>
     <message>
         <source>Remember panels state</source>
@@ -4662,7 +4740,7 @@ media file played</source>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>Максимальная высота видео:</translation>
+        <translation type="vanished">Максимальная высота видео:</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4754,7 +4832,7 @@ media file played</source>
     </message>
     <message>
         <source>Video background</source>
-        <translation>Фон видео</translation>
+        <translation type="vanished">Фон видео</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4798,7 +4876,7 @@ media file played</source>
     </message>
     <message>
         <source>Replay Gain</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивание громкости</translation>
     </message>
     <message>
         <source>Track</source>
@@ -4822,7 +4900,7 @@ media file played</source>
     </message>
     <message>
         <source>Search settings…</source>
-        <translation>Поиск настроек...</translation>
+        <translation>Поиск настроек…</translation>
     </message>
     <message>
         <source>A&amp;pplication name only</source>
@@ -4838,15 +4916,51 @@ media file played</source>
     </message>
     <message>
         <source>Show video preview (restart required), set its height to (% of screen):</source>
-        <translation type="unfinished">Показывать предпросмотр видео (требуется перезапуск), высота в процентах от экрана:</translation>
+        <translation>Показывать предпросмотр видео (требуется перезапуск), высота в процентах от экрана:</translation>
     </message>
     <message>
         <source>Minimize to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Сворачивать в область уведомлений</translation>
     </message>
     <message>
         <source>Close to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Сворачивать в область уведомлений при закрытии</translation>
+    </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation>Максимальное разрешение видео:</translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation>Файл параметров mpv:</translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation>Передискретизировать аудио, чтобы соответствовать видео (возможна потеря синхронизации аудио)</translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation>Синхронизировать видеокадры с аудио</translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation>Вывод видео (рекомендуется)</translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation>Декодер + вывод видео</translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation>Фон логотипа</translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation>Смешивание по цвету</translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation>Шахматный узор</translation>
     </message>
 </context>
 <context>
@@ -4866,6 +4980,10 @@ media file played</source>
     <message>
         <source>Show percentage</source>
         <translation>Показать процент</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation>Показывать подсказку</translation>
     </message>
     <message>
         <source>Played: %1</source>

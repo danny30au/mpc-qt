@@ -1015,6 +1015,7 @@
      <addaction name="actionPlaySubtitlesPrevious"/>
      <addaction name="actionPlaySubtitlesNext"/>
      <addaction name="actionPlaySubtitlesCopy"/>
+     <addaction name="actionPlaySubtitlesReloadFile"/>
      <addaction name="menuPlaySubtitlesDelay"/>
      <addaction name="menuPlaySubtitlesMove"/>
     </widget>
@@ -1223,8 +1224,11 @@
     <addaction name="actionPlaylistFinishSearching"/>
     <addaction name="separator"/>
     <addaction name="actionPlaylistNewTab"/>
-    <addaction name="actionPlaylistCloseTab"/>
     <addaction name="actionPlaylistDuplicateTab"/>
+    <addaction name="separator"/>
+    <addaction name="actionPlaylistCloseTab"/>
+    <addaction name="actionPlaylistRestore"/>
+    <addaction name="separator"/>
     <addaction name="actionPlaylistImport"/>
     <addaction name="actionPlaylistExport"/>
    </widget>
@@ -1314,7 +1318,7 @@
   </action>
   <action name="actionFileLoadSubtitle">
    <property name="text">
-    <string>&amp;Load Subtitle...</string>
+    <string>&amp;Load Subtitles File...</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+L</string>
@@ -1370,7 +1374,7 @@
     <string>Hide &amp;Menu</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+0</string>
+    <string notr="true">Ctrl+0</string>
    </property>
   </action>
   <action name="actionViewHideSeekbar">
@@ -1384,7 +1388,7 @@
     <string>See&amp;k Bar</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+1</string>
+    <string notr="true">Ctrl+1</string>
    </property>
   </action>
   <action name="actionViewHideControls">
@@ -1398,7 +1402,7 @@
     <string>&amp;Controls</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+2</string>
+    <string notr="true">Ctrl+2</string>
    </property>
   </action>
   <action name="actionViewHideInformation">
@@ -1409,7 +1413,7 @@
     <string>&amp;Information</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+3</string>
+    <string notr="true">Ctrl+3</string>
    </property>
   </action>
   <action name="actionViewHideStatistics">
@@ -1420,7 +1424,7 @@
     <string>&amp;Statistics</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+4</string>
+    <string notr="true">Ctrl+4</string>
    </property>
   </action>
   <action name="actionViewHideStatus">
@@ -1434,7 +1438,7 @@
     <string>S&amp;tatus</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+5</string>
+    <string notr="true">Ctrl+5</string>
    </property>
   </action>
   <action name="actionViewHideSubresync">
@@ -1445,7 +1449,7 @@
     <string>Su&amp;bresync</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+6</string>
+    <string notr="true">Ctrl+6</string>
    </property>
   </action>
   <action name="actionViewHidePlaylist">
@@ -1459,7 +1463,7 @@
     <string>Play&amp;list</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+7</string>
+    <string notr="true">Ctrl+7</string>
    </property>
   </action>
   <action name="actionViewHideCapture">
@@ -1470,7 +1474,7 @@
     <string>Captu&amp;re</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+8</string>
+    <string notr="true">Ctrl+8</string>
    </property>
   </action>
   <action name="actionViewHideNavigation">
@@ -1481,7 +1485,7 @@
     <string>Na&amp;vigation</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+9</string>
+    <string notr="true">Ctrl+9</string>
    </property>
   </action>
   <action name="actionViewPresetsMinimal">
@@ -1489,7 +1493,7 @@
     <string>&amp;Minimal</string>
    </property>
    <property name="shortcut">
-    <string>1</string>
+    <string notr="true">1</string>
    </property>
   </action>
   <action name="actionViewPresetsCompact">
@@ -1497,7 +1501,7 @@
     <string>&amp;Compact</string>
    </property>
    <property name="shortcut">
-    <string>2</string>
+    <string notr="true">2</string>
    </property>
   </action>
   <action name="actionViewPresetsNormal">
@@ -1505,7 +1509,7 @@
     <string>&amp;Normal</string>
    </property>
    <property name="shortcut">
-    <string>3</string>
+    <string notr="true">3</string>
    </property>
   </action>
   <action name="actionViewFullscreen">
@@ -1527,7 +1531,7 @@
     <string>&amp;50%</string>
    </property>
    <property name="shortcut">
-    <string>Alt+1</string>
+    <string notr="true">Alt+1</string>
    </property>
   </action>
   <action name="actionViewZoom100">
@@ -1538,7 +1542,7 @@
     <string>&amp;100%</string>
    </property>
    <property name="shortcut">
-    <string>Alt+2</string>
+    <string notr="true">Alt+2</string>
    </property>
   </action>
   <action name="actionViewZoom200">
@@ -1549,7 +1553,7 @@
     <string>&amp;200%</string>
    </property>
    <property name="shortcut">
-    <string>Alt+3</string>
+    <string notr="true">Alt+3</string>
    </property>
   </action>
   <action name="actionViewZoomAutofit">
@@ -1560,7 +1564,7 @@
     <string>Auto &amp;Fit</string>
    </property>
    <property name="shortcut">
-    <string>Alt+4</string>
+    <string notr="true">Alt+4</string>
    </property>
   </action>
   <action name="actionViewZoomAutofitLarger">
@@ -1571,7 +1575,7 @@
     <string>Auto Fit (&amp;Larger Only)</string>
    </property>
    <property name="shortcut">
-    <string>Alt+5</string>
+    <string notr="true">Alt+5</string>
    </property>
   </action>
   <action name="actionViewZoomDisable">
@@ -1582,7 +1586,7 @@
     <string>&amp;Disable snapping</string>
    </property>
    <property name="shortcut">
-    <string>Alt+0</string>
+    <string notr="true">Alt+0</string>
    </property>
   </action>
   <action name="actionViewOntopDefault">
@@ -1886,6 +1890,9 @@
    <property name="text">
     <string>&amp;About This Program...</string>
    </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::AboutRole</enum>
+   </property>
   </action>
   <action name="actionFileOpenNetworkStream">
    <property name="text">
@@ -2009,7 +2016,7 @@
   </action>
   <action name="actionPlaylistNewTab">
    <property name="text">
-    <string>&amp;New Tab</string>
+    <string>&amp;New Playlist</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+T</string>
@@ -2017,10 +2024,10 @@
   </action>
   <action name="actionPlaylistCloseTab">
    <property name="text">
-    <string>C&amp;lose Tab</string>
+    <string>C&amp;lose Playlist</string>
    </property>
    <property name="toolTip">
-    <string>Close Tab</string>
+    <string>Close Playlist</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+W</string>
@@ -2028,7 +2035,7 @@
   </action>
   <action name="actionPlaylistDuplicateTab">
    <property name="text">
-    <string>&amp;Duplicate Tab</string>
+    <string>&amp;Duplicate Playlist</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+D</string>
@@ -2119,12 +2126,15 @@
     <string>&amp;Remove Selected</string>
    </property>
    <property name="shortcut">
-    <string notr="true">Backspace</string>
+    <string notr="true">Delete</string>
    </property>
   </action>
   <action name="actionHelpAboutQt">
    <property name="text">
     <string>About &amp;Qt...</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::AboutQtRole</enum>
    </property>
   </action>
   <action name="actionViewZoom025">
@@ -2634,6 +2644,11 @@
     <string>Ctrl+S</string>
    </property>
   </action>
+  <action name="actionPlaySubtitlesReloadFile">
+   <property name="text">
+    <string>&amp;Reload Subtitles File</string>
+   </property>
+  </action>
   <action name="actionVideoFiltersDeinterlaceYes">
    <property name="checkable">
     <bool>true</bool>
@@ -2659,6 +2674,11 @@
    </property>
    <property name="text">
     <string>No</string>
+   </property>
+  </action>
+  <action name="actionPlaylistRestore">
+   <property name="text">
+    <string>Res&amp;tore Playlist</string>
    </property>
   </action>
  </widget>

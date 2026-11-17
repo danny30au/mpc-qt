@@ -406,6 +406,14 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <source>Playlists Backup</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -470,11 +478,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Speed Decrease</source>
-        <translation type="unfinished"></translation>
+        <translation>Giảm Tốc Độ</translation>
     </message>
     <message>
         <source>Speed Increase</source>
-        <translation type="unfinished"></translation>
+        <translation>Tăng Tốc Độ</translation>
     </message>
     <message>
         <source>Skip Forward</source>
@@ -673,10 +681,6 @@ No action will be triggered.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&amp;Load Subtitle...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Ctrl+L</source>
         <translation>Ctrl+L</translation>
     </message>
@@ -726,7 +730,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -734,7 +738,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -742,7 +746,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -750,7 +754,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -758,15 +762,15 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
-        <translation type="unfinished"></translation>
+        <translation>Trạng &amp;thái</translation>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -774,7 +778,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -782,7 +786,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -790,7 +794,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -798,14 +802,10 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -814,7 +814,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -822,7 +822,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>3</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -834,15 +834,15 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="vanished">Alt+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="vanished">Alt+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="vanished">Alt+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -850,7 +850,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="vanished">Alt+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -858,7 +858,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="vanished">Alt+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -866,7 +866,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="vanished">Alt+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -894,7 +894,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>O</source>
-        <translation type="unfinished"></translation>
+        <translation>O</translation>
     </message>
     <message>
         <source>&amp;Pause</source>
@@ -966,7 +966,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>9</source>
-        <translation type="unfinished"></translation>
+        <translation>9</translation>
     </message>
     <message>
         <source>&amp;Mute</source>
@@ -1197,28 +1197,16 @@ No action will be triggered.</source>
         <translation type="vanished">Esc</translation>
     </message>
     <message>
-        <source>&amp;New Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Ctrl+Shift+T</source>
         <translation>Ctrl+Shift+T</translation>
     </message>
     <message>
-        <source>C&amp;lose Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Close Tab</source>
-        <translation>Đóng thẻ</translation>
+        <translation type="vanished">Đóng thẻ</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
         <translation>Ctrl+Shift+W</translation>
-    </message>
-    <message>
-        <source>&amp;Duplicate Tab</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1254,7 +1242,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>E</source>
-        <translation type="unfinished"></translation>
+        <translation>E</translation>
     </message>
     <message>
         <source>&amp;Decrement</source>
@@ -1430,7 +1418,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Xem</translation>
     </message>
     <message>
         <source>Hide &amp;Borders</source>
@@ -1461,6 +1449,10 @@ No action will be triggered.</source>
         <translation>Chưa có tệp nào được đánh dấu yêu thích</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>No streams favorited</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1474,6 +1466,10 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Buffering (%1%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Seeking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1646,7 +1642,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>I</source>
-        <translation type="unfinished"></translation>
+        <translation>I</translation>
     </message>
     <message>
         <source>&amp;Decrease Aspect ratio</source>
@@ -1666,11 +1662,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>C</source>
-        <translation type="unfinished"></translation>
+        <translation>C</translation>
     </message>
     <message>
         <source>%1 / %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 / %2</translation>
     </message>
     <message>
         <source>Seek Forwards (normal step)</source>
@@ -1746,7 +1742,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>25%</source>
-        <translation type="unfinished">25%</translation>
+        <translation>25%</translation>
     </message>
     <message>
         <source>&amp;75%</source>
@@ -1972,6 +1968,34 @@ No action will be triggered.</source>
         <source>Increase Delay</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2149,6 +2173,10 @@ No action will be triggered.</source>
         <source>Select File</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation type="unfinished">Duyệt...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2258,16 +2286,8 @@ No action will be triggered.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>New Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Close Tab</source>
         <translation type="vanished">Close Tab</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2303,7 +2323,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>Các tệp danh sách phát (*.m3u *.m3u8)</translation>
+        <translation type="vanished">Các tệp danh sách phát (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2324,10 +2344,6 @@ No action will be triggered.</source>
     <message>
         <source>Clear</source>
         <translation type="vanished">Clear</translation>
-    </message>
-    <message>
-        <source>Copy To clipboard</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save As...</source>
@@ -2362,6 +2378,23 @@ No action will be triggered.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2375,6 +2408,18 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy to Clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2423,6 +2468,10 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Add Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3073,16 +3122,8 @@ tệp phương tiện đã được phát</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Blend on black</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Ignore</source>
-        <translation>Bỏ qua</translation>
+        <translation type="vanished">Bỏ qua</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3206,7 +3247,7 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>2</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">2</translation>
     </message>
     <message>
         <source>Anti-ring</source>
@@ -3566,7 +3607,7 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Duyệt</translation>
+        <translation type="vanished">Duyệt</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3646,18 +3687,6 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>Ignore channel map (for specific alsa setups)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Oss</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Mixer device</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Mixer channel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3770,7 +3799,7 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Bộ giải mã+Video</translation>
+        <translation type="vanished">Bộ giải mã+Video</translation>
     </message>
     <message>
         <source>None</source>
@@ -3811,10 +3840,6 @@ tệp phương tiện đã được phát</translation>
     <message>
         <source>Drop or repeat audio data</source>
         <translation>Bỏ qua hoặc lặp lại dữ liệu âm thanh</translation>
-    </message>
-    <message>
-        <source>Audio drop size</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -4082,10 +4107,6 @@ tệp phương tiện đã được phát</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Encode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4107,10 +4128,6 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Smooth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4327,10 +4344,6 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>Export keys</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Open Logo Image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4662,6 +4675,10 @@ tệp phương tiện đã được phát</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Open Logo Image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open ICC Profile</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4735,7 +4752,7 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>Chiều cao video tối đa:</translation>
+        <translation type="vanished">Chiều cao video tối đa:</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4827,7 +4844,7 @@ tệp phương tiện đã được phát</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation>Nền video</translation>
+        <translation type="vanished">Nền video</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4921,6 +4938,42 @@ tệp phương tiện đã được phát</translation>
         <source>Close to tray</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4939,6 +4992,10 @@ tệp phương tiện đã được phát</translation>
     <message>
         <source>Show percentage</source>
         <translation>Hiển thị phần trăm</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Played: %1</source>

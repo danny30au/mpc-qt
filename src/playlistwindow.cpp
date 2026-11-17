@@ -1,16 +1,20 @@
 #include <QAction>
 #include <QClipboard>
+#include <QDesktopServices>
 #include <QDragEnterEvent>
 #include <QGuiApplication>
 #include <QMimeData>
 #include <QInputDialog>
 #include <QFileDialog>
 #include <QMenu>
+#include <QFileInfo>
+#include <QMessageBox>
 #include "logger.h"
 #include "playlistwindow.h"
 #include "ui_playlistwindow.h"
 #include "widgets/drawnplaylist.h"
 #include "playlist.h"
+#include "platform/unify.h"
 
 static constexpr char logModule[] =  "playlistwindow";
 static constexpr char keyCurrentPlaylist[] = "currentPlaylist";
@@ -31,6 +35,8 @@ PlaylistWindow::PlaylistWindow(QWidget *parent) :
     addQuickQueue();
     ui->searchHost->setVisible(false);
     ui->searchField->installEventFilter(this);
+    ui->tabWidget->tabBar()->setAcceptDrops(true);
+    ui->tabWidget->tabBar()->installEventFilter(this);
 
     setupIconThemer();
     connectSignalsToSlots();
@@ -195,16 +201,16 @@ void PlaylistWindow::setMetadata(QUuid list, QUuid item, const QVariantMap &map)
 
 }
 
-void PlaylistWindow::replaceItem(QUuid list, QUuid item, const QList<QUrl> &urls)
+QUuid PlaylistWindow::replaceItem(QUuid list, QUuid item, const QList<QUrl> &urls, QString itemWanted)
 {
     auto pl = PlaylistCollection::getSingleton()->getPlaylist(list);
     if (!pl)
-        return;
+        return QUuid();
 
     QList<QUrl> filtered = Helpers::filterUrls(urls);
     if (filtered.isEmpty()) {
         // FIXME: remove the item that cannot played
-        return;
+        return QUuid();
     }
 
     QList<QUuid> addedItems = pl->replaceItem(item, filtered);
@@ -217,6 +223,8 @@ void PlaylistWindow::replaceItem(QUuid list, QUuid item, const QList<QUrl> &urls
         qdp->viewport()->update();
 
     updatePlaylistHasItems();
+    auto currentIndex = filtered.indexOf(itemWanted);
+    return currentIndex <= 0 ? item : addedItems.value(currentIndex - 1);
 }
 
 int PlaylistWindow::extraPlayTimes(QUuid list, QUuid item)
@@ -281,9 +289,13 @@ void PlaylistWindow::tabsFromVList(const QVariantList &qvl)
         qdp->setDisplayParser(&displayParser);
         qdp->fromVMap(qvm);
         connect(qdp, &DrawnPlaylist::itemDesiredByDoubleClick,
-                this, &PlaylistWindow::itemDesired);
+                this, &PlaylistWindow::itemDoubleClicked);
         connect(qdp, &DrawnPlaylist::contextMenuRequested,
                 this, &PlaylistWindow::playlist_contextMenuRequested);
+        connect(qdp, &DrawnPlaylist::playlistNeedsRefresh,
+                this, &PlaylistWindow::refreshPlaylist);
+        connect(qdp, &DrawnPlaylist::nowPlayingListChanged,
+                this, &PlaylistWindow::nowPlayingListChanged);
         auto pl = PlaylistCollection::getSingleton()->getPlaylist(qdp->uuid());
         if (pl->uuid().isNull())
             pl->setTitle(tr("Quick Playlist"));
@@ -305,6 +317,12 @@ void PlaylistWindow::updateLanguage()
     ui->retranslateUi(this);
 }
 
+void PlaylistWindow::clearWidgetFocus()
+{
+    if (currentPlaylistWidget()->hasFocus())
+        currentPlaylistWidget()->clearFocus();
+}
+
 bool PlaylistWindow::eventFilter(QObject *obj, QEvent *event)
 {
     Q_UNUSED(obj)
@@ -319,6 +337,23 @@ bool PlaylistWindow::eventFilter(QObject *obj, QEvent *event)
                 selectNext();
             return true;
         }
+    } else if (obj == ui->tabWidget->tabBar() && event->type() == QEvent::DragEnter) {
+        auto *e = static_cast<QDragEnterEvent *>(event);
+        e->acceptProposedAction();
+        return true;
+    } else if (obj == ui->tabWidget->tabBar() && event->type() == QEvent::DragMove) {
+        auto *e = static_cast<QDragMoveEvent *>(event);
+        int index = ui->tabWidget->tabBar()->tabAt(e->position().toPoint());
+        if (index >= 0)
+            ui->tabWidget->setCurrentIndex(index);
+        e->acceptProposedAction();
+        return true;
+    } else if (obj == ui->tabWidget->tabBar() && event->type() == QEvent::Drop) {
+        auto *e = static_cast<QDropEvent *>(event);
+        currentPlaylistWidget()->handlePlaylistDrop(e->mimeData(), -1);
+        e->setDropAction(Qt::CopyAction);
+        e->accept();
+        return true;
     }
     return QDockWidget::eventFilter(obj, event);
 }
@@ -417,9 +452,13 @@ void PlaylistWindow::addNewTab(QUuid playlist, QString title)
     auto qdp = new DrawnPlaylist(PlaylistCollection::getSingleton());
     qdp->setDisplayParser(&displayParser);
     qdp->setUuid(playlist);
-    connect(qdp, &DrawnPlaylist::itemDesiredByDoubleClick, this, &PlaylistWindow::itemDesired);
+    connect(qdp, &DrawnPlaylist::itemDesiredByDoubleClick, this, &PlaylistWindow::itemDoubleClicked);
     connect(qdp, &DrawnPlaylist::contextMenuRequested,
             this, &PlaylistWindow::playlist_contextMenuRequested);
+    connect(qdp, &DrawnPlaylist::playlistNeedsRefresh,
+            this, &PlaylistWindow::refreshPlaylist);
+    connect(qdp, &DrawnPlaylist::nowPlayingListChanged,
+            this, &PlaylistWindow::nowPlayingListChanged);
     widgets.insert(playlist, qdp);
     ui->tabWidget->addTab(qdp, title);
     ui->tabWidget->setCurrentWidget(qdp);
@@ -431,8 +470,25 @@ void PlaylistWindow::addQuickQueue()
     queueWidget->setDisplayParser(&displayParser);
     queueWidget->setUuid(QUuid());
     connect(queueWidget, &DrawnQueue::itemDesiredByDoubleClick,
-            this, &PlaylistWindow::itemDesired);
+            this, &PlaylistWindow::itemDoubleClicked);
     ui->quickPage->layout()->addWidget(queueWidget);
+}
+
+void PlaylistWindow::itemDoubleClicked(QUuid playlistUuid, QUuid itemUuid, bool clickedInPlaylist)
+{
+    clearWidgetFocus();
+    itemDesired(playlistUuid, itemUuid, clickedInPlaylist);
+}
+
+void PlaylistWindow::backupPlaylist(const DrawnPlaylist &qdp, QSharedPointer<PlaylistCollection> collection)
+{
+    emit playlistsBackupRequested();
+    auto backup = PlaylistCollection::getBackup();
+    auto copy = collection->clonePlaylist(qdp.uuid());
+    copy->setCreated(qdp.playlist()->created());
+    collection->takePlaylist(copy->uuid()); // detach 'copy' from collection
+    backup->addPlaylist(copy);
+    emit playlistMovedToBackup(copy->uuid());
 }
 
 void PlaylistWindow::setIconTheme(IconThemer::FolderMode folderMode, const QString &customFolder)
@@ -527,6 +583,11 @@ void PlaylistWindow::closeTab()
     updateCurrentPlaylist();
 }
 
+void PlaylistWindow::restorePlaylist()
+{
+    playlist_restoreRequested();
+}
+
 void PlaylistWindow::duplicateTab()
 {
     auto origin = currentPlaylistWidget();
@@ -561,9 +622,7 @@ void PlaylistWindow::renameTab()
 void PlaylistWindow::importTab()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QString file;
     file = QFileDialog::getOpenFileName(this, tr("Import Playlist File"), QString(),
                                         tr("Playlist files (*.m3u *.m3u8 *.txt)"), nullptr, options);
@@ -763,14 +822,40 @@ void PlaylistWindow::finishSearch()
 void PlaylistWindow::savePlaylist(const QUuid &playlistUuid)
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
-    QString file;
-    file = QFileDialog::getSaveFileName(this, tr("Export Playlist File"), QString(),
-                                        tr("Playlist files (*.m3u *.m3u8)"), nullptr, options);
+
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
+
+    QString file = tr("Playlist") + ".m3u";
+    bool confirmOverwrite = false;
+
+    while (true) {
+        file = QFileDialog::getSaveFileName(this, tr("Export Playlist File"), file,
+                                            tr("Playlist files") + " (*.m3u *.m3u8)", nullptr, options);
+        if(file.isEmpty())
+            return;
+
+        if (!file.endsWith(".m3u")) {
+            file.append(".m3u");
+            confirmOverwrite = true;
+        }
+
+        QFileInfo info(file);
+        if (confirmOverwrite && info.exists()) {
+            QMessageBox msgBox(this);
+            msgBox.setIcon(QMessageBox::Warning);
+            msgBox.setWindowTitle(tr("Export Playlist File"));
+            msgBox.setText(tr("File \"%1\" already exists.\nDo you want to replace it?").arg(info.fileName()));
+            msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
+
+            if (msgBox.exec() != QMessageBox::Ok) {
+                confirmOverwrite = false;
+                continue;
+            }
+        }
+        break;
+    }
     auto pl = PlaylistCollection::getSingleton()->getPlaylist(playlistUuid);
-    if (!file.isEmpty() && pl)
+    if (pl)
         emit exportPlaylist(file, pl->toStringList());
 }
 
@@ -820,18 +905,19 @@ void PlaylistWindow::reshufflePlaylist(const QUuid &playlistUuid)
     refreshPlaylist(playlistUuid);
 }
 
-void PlaylistWindow::refreshPlaylist(const QUuid &playlistUuid)
+void PlaylistWindow::refreshPlaylist(const QUuid &playlistUuid, bool setCurrentItem)
 {
     Logger::log(logModule, "refreshPlaylist start");
     auto qdp = widgets.value(playlistUuid, nullptr);
     if (qdp) {
         qdp->repopulateItems();
-        qdp->setCurrentItem(widgets[playlistUuid]->playlist()->nowPlaying());
+        if (setCurrentItem)
+            qdp->setCurrentItem(widgets[playlistUuid]->playlist()->nowPlaying());
     }
     Logger::log(logModule, "refreshPlaylist done");
 }
 
-void PlaylistWindow::restorePlaylist(const QUuid &playlistUuid)
+void PlaylistWindow::restoreOriginalPlaylistOrder(const QUuid &playlistUuid)
 {
     auto qdp = widgets.value(playlistUuid, nullptr);
     if (!qdp)
@@ -880,6 +966,16 @@ void PlaylistWindow::playlist_removeItemRequested()
     updatePlaylistHasItems();
 }
 
+void PlaylistWindow::playlist_openItemFolderRequested()
+{
+    auto qdp = currentPlaylistWidget();
+    if (!qdp)
+        return;
+
+    auto url = getUrlOf(qdp->uuid(), qdp->currentItemUuid());
+    QDesktopServices::openUrl(url.adjusted(QUrl::RemoveFilename | QUrl::StripTrailingSlash));
+}
+
 void PlaylistWindow::removePlaylistItem(const QUuid &itemUuid)
 {
     auto qdp = currentPlaylistWidget();
@@ -896,11 +992,37 @@ void PlaylistWindow::playlist_removeAllRequested()
     if (!qdp)
         return;
 
+    auto collection = PlaylistCollection::getSingleton();
+    backupPlaylist(*qdp, collection);
+    emit closingPlaylist(qdp->uuid());
+
     qdp->removeAll();
     updatePlaylistHasItems();
 }
 
-void PlaylistWindow::playlist_copySelectionToClipboard(const QUuid &playlistUuid)
+void PlaylistWindow::playlist_restoreRequested()
+{
+    emit playlistsBackupRequested();
+    emit restoreLastPlaylistBackupRequested();
+}
+
+void PlaylistWindow::playlist_copyNameToClipboard(const QUuid &playlistUuid)
+{
+    auto qdp = widgets.value(playlistUuid, nullptr);
+    if (!qdp)
+        return;
+    auto pl = qdp->playlist();
+    QList<QString> names;
+    qdp->traverseSelected([&pl, &names, this](QUuid itemUuid) {
+        auto i = pl->getItem(itemUuid);
+        names << displayParser.parseMetadata(i->metadata(),
+                                             i->toDisplayString(),
+                                             Helpers::VideoFile);
+    });
+    QGuiApplication::clipboard()->setText(names.join("\n"));
+}
+
+void PlaylistWindow::playlist_copySelectionToClipboard(const QUuid &playlistUuid, bool urlAsText)
 {
     auto qdp = widgets.value(playlistUuid, nullptr);
     if (!qdp)
@@ -910,9 +1032,16 @@ void PlaylistWindow::playlist_copySelectionToClipboard(const QUuid &playlistUuid
     qdp->traverseSelected([&pl,&urls](QUuid itemUuid) {
         urls.append(pl->getItem(itemUuid)->url());
     });
-    QMimeData *mimeData = new QMimeData();
-    mimeData->setUrls(urls);
-    QGuiApplication::clipboard()->setMimeData(mimeData);
+    if (urlAsText) {
+        QList<QString> urlsAsString;
+        for (const auto &url : urls)
+            urlsAsString << url.toString();
+        QGuiApplication::clipboard()->setText(urlsAsString.join("\n"));
+    } else {
+        QMimeData *mimeData = new QMimeData();
+        mimeData->setUrls(urls);
+        QGuiApplication::clipboard()->setMimeData(mimeData);
+    }
 }
 
 void PlaylistWindow::playlist_hideOnFullscreenToggled(bool checked)
@@ -960,6 +1089,8 @@ void PlaylistWindow::playlist_contextMenuRequested(const QPoint &p, const QUuid 
     });
     m->addAction(a);
 
+    m->addSeparator();
+
     a = new QAction(m);
     a->setText(tr("Remove"));
     connect(a, &QAction::triggered,
@@ -970,12 +1101,38 @@ void PlaylistWindow::playlist_contextMenuRequested(const QPoint &p, const QUuid 
     m->addSeparator();
 
     a = new QAction(m);
-    a->setText(tr("Copy To clipboard"));
+    a->setText(tr("Copy Name"));
     connect(a, &QAction::triggered,
             this, [this,playlistUuid]() {
-        playlist_copySelectionToClipboard(playlistUuid);
+        playlist_copyNameToClipboard(playlistUuid);
     });
     a->setDisabled(noItemSelected);
+    m->addAction(a);
+
+    a = new QAction(m);
+    a->setText(tr("Copy Location"));
+    connect(a, &QAction::triggered,
+            this, [this,playlistUuid]() {
+        playlist_copySelectionToClipboard(playlistUuid, true);
+    });
+    a->setDisabled(noItemSelected);
+    m->addAction(a);
+
+    a = new QAction(m);
+    a->setText(tr("Copy to Clipboard"));
+    connect(a, &QAction::triggered,
+            this, [this,playlistUuid]() {
+        playlist_copySelectionToClipboard(playlistUuid, false);
+    });
+    a->setDisabled(noItemSelected);
+    m->addAction(a);
+
+    a = new QAction(m);
+    a->setText(tr("Open Containing Folder"));
+    connect(a, &QAction::triggered,
+            this, &PlaylistWindow::playlist_openItemFolderRequested);
+    auto url = getUrlOf(qdp->uuid(), qdp->currentItemUuid());
+    a->setDisabled(noItemSelected || !url.isLocalFile() || qdp->currentItemUuids().size() > 1);
     m->addAction(a);
 
     m->addSeparator();
@@ -1004,7 +1161,7 @@ void PlaylistWindow::playlist_contextMenuRequested(const QPoint &p, const QUuid 
     a->setText(tr("Restore"));
     connect(a, &QAction::triggered,
             this, [this,playlistUuid]() {
-        restorePlaylist(playlistUuid);
+        restoreOriginalPlaylistOrder(playlistUuid);
     });
     if (pl && pl->shuffle())
         a->setDisabled(true);
@@ -1070,13 +1227,7 @@ void PlaylistWindow::on_tabWidget_tabCloseRequested(int index)
         return;
 
     auto collection = PlaylistCollection::getSingleton();
-    emit playlistsBackupRequested();
-    auto backup = PlaylistCollection::getBackup();
-    auto copy = collection->clonePlaylist(qdp->uuid());
-    copy->setCreated(qdp->playlist()->created());
-    collection->takePlaylist(copy->uuid()); // detach 'copy' from collection
-    backup->addPlaylist(copy);
-    emit playlistMovedToBackup(copy->uuid());
+    backupPlaylist(*qdp, collection);
     emit closingPlaylist(qdp->uuid());
 
     if (qdp->uuid().isNull()) {
@@ -1110,15 +1261,18 @@ void PlaylistWindow::on_tabWidget_customContextMenuRequested(const QPoint &pos)
     bool isQuickPlaylist = widget->uuid().isNull();
 
     QMenu *m = new QMenu(this);
-    m->addAction(tr("&New Playlist"), this, SLOT(newTab()));
-    m->addAction(tr("&Remove Playlist"), this, SLOT(closeTab()));
-    m->addAction(tr("&Clear Playlist"), this, SLOT(playlist_removeAllRequested()));
-    m->addAction(tr("&Duplicate Playlist"), this, SLOT(duplicateTab()));
-    QAction *renameTab = m->addAction(tr("&Rename Playlist"), this, SLOT(renameTab()));
+    m->addAction(tr("&New Playlist"), this, &PlaylistWindow::newTab);
+    m->addAction(tr("&Duplicate Playlist"), this, &PlaylistWindow::duplicateTab);
+    m->addSeparator();
+    m->addAction(tr("&Remove Playlist"), this, &PlaylistWindow::closeTab);
+    m->addAction(tr("&Clear Playlist"), this, &PlaylistWindow::playlist_removeAllRequested);
+    m->addAction(tr("&Restore Playlist"), this, &PlaylistWindow::playlist_restoreRequested);
+    m->addSeparator();
+    QAction *renameTab = m->addAction(tr("&Rename Playlist"), this, &PlaylistWindow::renameTab);
     if (isQuickPlaylist)
         renameTab->setEnabled(false);
-    m->addAction(tr("&Import Playlist"), this, SLOT(importTab()));
-    m->addAction(tr("&Export Playlist"), this, SLOT(exportTab()));
+    m->addAction(tr("&Import Playlist"), this, &PlaylistWindow::importTab);
+    m->addAction(tr("&Export Playlist"), this, &PlaylistWindow::exportTab);
     m->exec(ui->tabWidget->mapToGlobal(pos));
     delete m;
 }

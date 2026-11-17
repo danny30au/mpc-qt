@@ -394,6 +394,14 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <source>Playlists Backup</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -662,7 +670,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>&amp;Cargar un subtítulo...</translation>
+        <translation type="vanished">&amp;Cargar un subtítulo...</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -713,55 +721,27 @@ No action will be triggered.</source>
         <translation>Ocultar el &amp;menú</translation>
     </message>
     <message>
-        <source>Ctrl+0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>See&amp;k Bar</source>
         <translation>Barra de búsqueda</translation>
-    </message>
-    <message>
-        <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Controls</source>
         <translation>&amp;Controles</translation>
     </message>
     <message>
-        <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Information</source>
         <translation>&amp;Información</translation>
-    </message>
-    <message>
-        <source>Ctrl+3</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
         <translation>E&amp;stadísticas</translation>
     </message>
     <message>
-        <source>Ctrl+4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>S&amp;tatus</source>
         <translation>Es&amp;tado</translation>
     </message>
     <message>
-        <source>Ctrl+5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Su&amp;bresync</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ctrl+6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -769,48 +749,24 @@ No action will be triggered.</source>
         <translation>&amp;Lista de reproducción</translation>
     </message>
     <message>
-        <source>Ctrl+7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Captu&amp;re</source>
         <translation>Captu&amp;rar</translation>
-    </message>
-    <message>
-        <source>Ctrl+8</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
         <translation>Na&amp;vegación</translation>
     </message>
     <message>
-        <source>Ctrl+9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Minimal</source>
         <translation>&amp;Mínimo</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Compact</source>
         <translation>&amp;Compacto</translation>
     </message>
     <message>
-        <source>2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Normal</source>
         <translation>&amp;Normal</translation>
-    </message>
-    <message>
-        <source>3</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -821,40 +777,16 @@ No action will be triggered.</source>
         <translation type="vanished">Alt+Entrar</translation>
     </message>
     <message>
-        <source>Alt+1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Alt+2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Alt+3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Auto &amp;Fit</source>
         <translation>Autoajustar</translation>
-    </message>
-    <message>
-        <source>Alt+4</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
         <translation>Autoajustar (solo si es mayor)</translation>
     </message>
     <message>
-        <source>Alt+5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;Disable snapping</source>
         <translation>&amp;Desactivar la adherencia</translation>
-    </message>
-    <message>
-        <source>Alt+0</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1174,7 +1106,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>&amp;Nueva pestaña</translation>
+        <translation type="vanished">&amp;Nueva pestaña</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1182,11 +1114,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>Cerrar &amp;la pestaña</translation>
+        <translation type="vanished">Cerrar &amp;la pestaña</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Cerrar la pestaña</translation>
+        <translation type="vanished">Cerrar la pestaña</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1194,7 +1126,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp;Duplicar la pestaña</translation>
+        <translation type="vanished">&amp;Duplicar la pestaña</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1421,6 +1353,10 @@ No action will be triggered.</source>
         <translation>No hay archivos favoritos</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>No streams favorited</source>
         <translation>No hay flujos favoritos</translation>
     </message>
@@ -1430,6 +1366,10 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Buffering (%1%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Seeking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1820,6 +1760,34 @@ No action will be triggered.</source>
         <source>Increase Delay</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished">&amp;Nueva lista de reproducción</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished">&amp;Duplicar la lista de reproducción</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -1997,6 +1965,10 @@ No action will be triggered.</source>
         <source>Select File</source>
         <translation>Seleccionar un archivo</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation type="unfinished">Explorar...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2099,7 +2071,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Nueva pestaña</translation>
+        <translation type="vanished">Nueva pestaña</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2107,7 +2079,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Duplicar la pestaña</translation>
+        <translation type="vanished">Duplicar la pestaña</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2143,7 +2115,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>Archivos de lista de reproducción (*.m3u *.m3u8)</translation>
+        <translation type="vanished">Archivos de lista de reproducción (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2166,7 +2138,7 @@ No action will be triggered.</source>
         <translation type="vanished">Vaciar</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>Copiar al portapapeles</translation>
     </message>
     <message>
@@ -2202,6 +2174,23 @@ No action will be triggered.</source>
         <translation>Introduzca el nombre de la lista de reproducción</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>&amp;Nueva lista de reproducción</translation>
     </message>
@@ -2216,6 +2205,14 @@ No action will be triggered.</source>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>&amp;Duplicar la lista de reproducción</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2263,6 +2260,10 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Add Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2903,15 +2904,15 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Mezcla en negro</translation>
+        <translation type="vanished">Mezcla en negro</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Usar</translation>
+        <translation type="vanished">Usar</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Ignorar</translation>
+        <translation type="vanished">Ignorar</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3391,7 +3392,7 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Explorar</translation>
+        <translation type="vanished">Explorar</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3474,16 +3475,12 @@ archivo multimedia reproducido</translation>
         <translation>Ignorar el mapa de canales (para configuraciones de alsa específicas)</translation>
     </message>
     <message>
-        <source>Oss</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Mixer device</source>
-        <translation>Dispositivo mezclador</translation>
+        <translation type="vanished">Dispositivo mezclador</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Canal del mezclador</translation>
+        <translation type="vanished">Canal del mezclador</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3594,10 +3591,6 @@ archivo multimedia reproducido</translation>
         <translation>Decodificador</translation>
     </message>
     <message>
-        <source>Decoder+Video</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>None</source>
         <translation>Ninguno</translation>
     </message>
@@ -3639,7 +3632,7 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Tamaño de descarte de audio</translation>
+        <translation type="vanished">Tamaño de descarte de audio</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -3907,10 +3900,6 @@ archivo multimedia reproducido</translation>
         <translation>Captura de pantalla</translation>
     </message>
     <message>
-        <source>...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Encode</source>
         <translation>Codificar</translation>
     </message>
@@ -3936,7 +3925,7 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Suavizar</translation>
+        <translation type="vanished">Suavizar</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4137,6 +4126,22 @@ archivo multimedia reproducido</translation>
     <message>
         <source>Open Logo Image</source>
         <translation>Abrir imagen de logo</translation>
+    </message>
+    <message>
+        <source>Open ICC Profile</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ICC profile files (*.icc *.icm)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Log files (*.log)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Audio open settings</source>
@@ -4447,18 +4452,6 @@ archivo multimedia reproducido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open ICC Profile</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>ICC profile files (*.icc *.icm)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Log files (*.log)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Allows dark theme support on Windows</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4508,10 +4501,6 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Max video height:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4575,10 +4564,6 @@ archivo multimedia reproducido</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Choose Log File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
         <translation type="vanished">Vea &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;el repositorio fuente&lt;/a&gt; para los nombres de iconos.</translation>
     </message>
@@ -4600,10 +4585,6 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Others</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Video background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4698,6 +4679,42 @@ archivo multimedia reproducido</translation>
         <source>Close to tray</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4715,6 +4732,10 @@ archivo multimedia reproducido</translation>
     </message>
     <message>
         <source>Show percentage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

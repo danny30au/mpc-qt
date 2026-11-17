@@ -399,6 +399,14 @@ Do you want to use it for &quot;%3&quot; instead?</source>
         <source>Playlists Backup</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -668,7 +676,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>&amp; வசனத்தை ஏற்றவும் ...</translation>
+        <translation type="vanished">&amp; வசனத்தை ஏற்றவும் ...</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -720,7 +728,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -728,7 +736,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -736,7 +744,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -744,7 +752,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -752,7 +760,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -760,7 +768,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -768,7 +776,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -776,7 +784,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -784,7 +792,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -792,7 +800,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
@@ -800,7 +808,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -808,7 +816,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -816,7 +824,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -828,15 +836,15 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>ALT+1</translation>
+        <translation type="vanished">ALT+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>ALT+2</translation>
+        <translation type="vanished">ALT+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>ALT+3</translation>
+        <translation type="vanished">ALT+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -844,7 +852,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>ALT+4</translation>
+        <translation type="vanished">ALT+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -852,7 +860,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>ALT+5</translation>
+        <translation type="vanished">ALT+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -860,7 +868,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>ALT+0</translation>
+        <translation type="vanished">ALT+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1192,7 +1200,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>புதிய தாவல்</translation>
+        <translation type="vanished">புதிய தாவல்</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1200,11 +1208,11 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>சி &amp; இழக்க தாவல்</translation>
+        <translation type="vanished">சி &amp; இழக்க தாவல்</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>தாவலை மூடு</translation>
+        <translation type="vanished">தாவலை மூடு</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1212,7 +1220,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp; நகல் தாவல்</translation>
+        <translation type="vanished">&amp; நகல் தாவல்</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1427,6 +1435,10 @@ No action will be triggered.</source>
         <translation>பார்வை</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Hide &amp;Borders</source>
         <translation>மறை &amp; எல்லைகள்</translation>
     </message>
@@ -1480,6 +1492,10 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Buffering (%1%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Seeking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1954,6 +1970,34 @@ No action will be triggered.</source>
         <source>Increase Delay</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished">புதிய பிளேலிச்ட்</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished">&amp; நகல் பிளேலிச்ட்</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2131,6 +2175,10 @@ No action will be triggered.</source>
         <source>Select File</source>
         <translation>கோப்பைத் தேர்ந்தெடு</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation type="unfinished">உலாவுக ...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2237,7 +2285,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>புதிய தாவல்</translation>
+        <translation type="vanished">புதிய தாவல்</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2245,7 +2293,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>நகல் தாவல்</translation>
+        <translation type="vanished">நகல் தாவல்</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2281,7 +2329,7 @@ No action will be triggered.</source>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>பிளேலிச்ட் கோப்புகள் ( *.m3u *.m3u8)</translation>
+        <translation type="vanished">பிளேலிச்ட் கோப்புகள் ( *.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2304,7 +2352,7 @@ No action will be triggered.</source>
         <translation type="vanished">தெளிவான</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>இடைநிலைப்பலகைக்கு நகலெடுக்கவும்</translation>
     </message>
     <message>
@@ -2340,6 +2388,23 @@ No action will be triggered.</source>
         <translation>பிளேலிச்ட் பெயரை உள்ளிடவும்</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>புதிய பிளேலிச்ட்</translation>
     </message>
@@ -2354,6 +2419,14 @@ No action will be triggered.</source>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>&amp; நகல் பிளேலிச்ட்</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2402,6 +2475,10 @@ No action will be triggered.</source>
     <message>
         <source>Add Folder</source>
         <translation>கோப்புறையைச் சேர்</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3053,15 +3130,15 @@ media file played</source>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>கருப்பு நிறத்தில் கலக்கவும்</translation>
+        <translation type="vanished">கருப்பு நிறத்தில் கலக்கவும்</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>பயன்படுத்தவும்</translation>
+        <translation type="vanished">பயன்படுத்தவும்</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>புறக்கணிக்கவும்</translation>
+        <translation type="vanished">புறக்கணிக்கவும்</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3545,7 +3622,7 @@ media file played</source>
     </message>
     <message>
         <source>Browse</source>
-        <translation>உலாவு</translation>
+        <translation type="vanished">உலாவு</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3629,15 +3706,15 @@ media file played</source>
     </message>
     <message>
         <source>Oss</source>
-        <translation>ஒஎச்எச்</translation>
+        <translation type="vanished">ஒஎச்எச்</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>மிக்சர் சாதனம்</translation>
+        <translation type="vanished">மிக்சர் சாதனம்</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>மிக்சர் சேனல்</translation>
+        <translation type="vanished">மிக்சர் சேனல்</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3749,7 +3826,7 @@ media file played</source>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>டிகோடர்+வீடியோ</translation>
+        <translation type="vanished">டிகோடர்+வீடியோ</translation>
     </message>
     <message>
         <source>None</source>
@@ -3793,7 +3870,7 @@ media file played</source>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>ஆடியோ துளி அளவு</translation>
+        <translation type="vanished">ஆடியோ துளி அளவு</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -4062,7 +4139,7 @@ media file played</source>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="vanished">...</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -4090,7 +4167,7 @@ media file played</source>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>மென்மையான</translation>
+        <translation type="vanished">மென்மையான</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4718,7 +4795,7 @@ media file played</source>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>அதிகபட்ச வீடியோ உயரம்:</translation>
+        <translation type="vanished">அதிகபட்ச வீடியோ உயரம்:</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4814,7 +4891,7 @@ media file played</source>
     </message>
     <message>
         <source>Video background</source>
-        <translation>வீடியோ பின்னணி</translation>
+        <translation type="vanished">வீடியோ பின்னணி</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4908,6 +4985,42 @@ media file played</source>
         <source>Close to tray</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4926,6 +5039,10 @@ media file played</source>
     <message>
         <source>Show percentage</source>
         <translation type="unfinished">சதவீதத்தைக் காட்டு</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Played: %1</source>

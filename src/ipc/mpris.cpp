@@ -108,9 +108,9 @@ void MprisInstance::manager_timeChanged(double time, double length)
     player->instance_timeChange(time, length);
 }
 
-void MprisInstance::manager_stateChanged(PlaybackManager::PlaybackState state)
+void MprisInstance::manager_stateChanged(PlaybackManager::PlaybackState state, bool isPlaybackPaused)
 {
-    player->instance_setPlaybackState(state);
+    player->instance_setPlaybackState(state, isPlaybackPaused);
 }
 
 void MprisInstance::manager_nowPlayingChanged(QUrl itemUrl, QUuid listUuid, QUuid itemUuid)
@@ -217,7 +217,7 @@ MprisInstance *MprisPlayerServer::instance()
 
 QString MprisPlayerServer::playbackStatus()
 {
-    if (playbackState == PlaybackManager::PausedState)
+    if (isPlaybackPaused_)
         return "Paused";
     if (playbackState != PlaybackManager::StoppedState &&
         playbackState != PlaybackManager::ErrorState)
@@ -354,18 +354,19 @@ void MprisPlayerServer::instance_setNowPlayingUrl(const QUrl &nowPlayingUrl)
     }
 }
 
-void MprisPlayerServer::instance_setPlaybackState(PlaybackManager::PlaybackState state)
+void MprisPlayerServer::instance_setPlaybackState(PlaybackManager::PlaybackState state, bool isPlaybackPaused)
 {
-    if (playbackState == state)
+    if (playbackState == state && isPlaybackPaused == isPlaybackPaused_)
         return;
     playbackState = state;
+    isPlaybackPaused_ = isPlaybackPaused;
     QVariantMap propertyMap;
     propertyMap.insert("PlaybackStatus", playbackStatus());
 
     if (maybeChangeCanPlay())
         propertyMap.insert("CanPlay", canPlay_);
 
-    bool canPause = state == PlaybackManager::PlayingState || PlaybackManager::PausedState;
+    bool canPause = state == PlaybackManager::PlayingState || isPlaybackPaused_;
     if (canPause_ != canPause) {
         canPause_ = canPause;
         canSeek_ = canPause; //FIXME: not every stream is seekable
@@ -434,32 +435,28 @@ bool MprisPlayerServer::maybeChangeCanPlay()
     return false;
 }
 
-bool MprisPlayerServer::maybeChangeMetadata()
+QVariantMap MprisPlayerServer::buildMetadata() const
 {
-    // arbitrary bitfield used to detect any changes
-    int infoLevel = (!mpvMetadata.isEmpty()     ? 1<<0 : 0)
-                  + (!mpvMediaTitle.isEmpty()   ? 1<<1 : 0)
-                  + (playbackDuration_ >= 0     ? 1<<2 : 0)
-                  + (nowPlayingUrl_.isValid()   ? 1<<3 : 0);
+    QVariantMap map;
+    if (!nowPlayingUrl_.isValid() && mpvMediaTitle.isEmpty()
+            && mpvMetadata.isEmpty())
+        return map;
 
-    if (infoLevel == metadataInfoLevel)
-        return false;
-    metadataInfoLevel = infoLevel;
-
-    metadata_.clear();
-    if (infoLevel == 0)
-        return true;
-
-    if (mpvMediaTitle.isEmpty())
-        mpvMediaTitle = nowPlayingUrl_.fileName();
+    const QString title = mpvMediaTitle.isEmpty() ? nowPlayingUrl_.fileName()
+                                                  : mpvMediaTitle;
     if (!mpvMetadata.contains("title"))
-        metadata_.insert("xesam:title", mpvMediaTitle);
+        map.insert("xesam:title", title);
     else if (!mpvMetadata.contains("mediaTitle"))
-        metadata_.insert("xesam:mediaTitle", mpvMediaTitle);
+        map.insert("xesam:mediaTitle", title);
 
-    metadata_.insert("mpris:trackid", "/no/text");
-    metadata_.insert("mpris:length", qlonglong(playbackDuration_ * 1000000));
-    metadata_.insert("xesam:url", nowPlayingUrl_.toString());
+    map.insert("mpris:trackid", "/no/text");
+    // mpris:length is optional, so leaving it out while the duration is still
+    // unknown says more to a client than publishing a zero it would have to
+    // treat as a sentinel.
+    if (playbackDuration_ > 0)
+        map.insert("mpris:length", qlonglong(playbackDuration_ * 1000000));
+    if (nowPlayingUrl_.isValid())
+        map.insert("xesam:url", nowPlayingUrl_.toString());
 
     auto trackMangle = [](QString &key, QVariant &value) -> bool {
         key = "track";
@@ -506,7 +503,20 @@ bool MprisPlayerServer::maybeChangeMetadata()
         QString key = it.key();
         QVariant value = it.value();
         if (sanitiser(key, value))
-            metadata_.insert("xesam:" + key, value);
+            map.insert("xesam:" + key, value);
     }
+    return map;
+}
+
+bool MprisPlayerServer::maybeChangeMetadata()
+{
+    // Comparing the rebuilt map against the published one detects a changed
+    // value, not merely a value that appeared or vanished, which is what
+    // switching between two files produces.
+    QVariantMap map = buildMetadata();
+    if (map == metadata_)
+        return false;
+
+    metadata_ = std::move(map);
     return true;
 }

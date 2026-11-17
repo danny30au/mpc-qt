@@ -3,8 +3,11 @@
 #include <cstring>
 #include <QApplication>
 #include <QFileDialog>
+#include <QFileOpenEvent>
 #include <QDir>
+#include <QIcon>
 #include <QStandardPaths>
+#include <QSurfaceFormat>
 #include <QJsonDocument>
 #include <QTimer>
 #include <QCommandLineParser>
@@ -34,6 +37,7 @@
 static constexpr char logModule[] =  "main";
 
 static constexpr char desktopFile[] = "io.github.mpc_qt.mpc-qt";
+static constexpr char mpcQtIconPath[] = ":/images/icon/io.github.mpc_qt.mpc-qt.svg";
 
 static constexpr char keyCommand[] = "command";
 static constexpr char keyDirectory[] = "directory";
@@ -70,7 +74,11 @@ int main(int argc, char *argv[])
     Logger::setConsoleLogging(foundLoggingOpt);
     Logger::singleton();
     Logger::log(logModule, "starting logging");
-    QApplication::setWindowIcon(QIcon(":/images/icon/mpc-qt.svg"));
+    const QIcon bundledIcon{QLatin1String(mpcQtIconPath)};
+    if (Platform::isUnix)
+        QApplication::setWindowIcon(QIcon::fromTheme(QLatin1String(desktopFile), bundledIcon));
+    else
+        QApplication::setWindowIcon(bundledIcon);
 
     // Qt sets the locale in the QApplication constructor, but libmpv requires
     // the LC_NUMERIC category to be set to "C", so change it back.
@@ -287,12 +295,19 @@ void Flow::detectMode() {
         QString lockFilePath =
             Storage::fetchConfigPath() + QLatin1Char('/') + QLatin1String("mpc-qt.lock");
         std::unique_ptr<QLockFile> lockFile = std::make_unique<QLockFile>(lockFilePath);
-        lockFile->setStaleLockTime(10000);
+        const int maxWaitTimeMs = 1000;
+        lockFile->setStaleLockTime(maxWaitTimeMs);
+        QElapsedTimer timer;
+        timer.start();
         while (!lockFile->tryLock()) {
             alreadyAServer = JsonServer::sendPayload(makePayload(), MpcQtServer::defaultSocketName());
             programMode = alreadyAServer ? EarlyQuitMode : PrimaryMode;
             if (programMode == EarlyQuitMode)
                 break;
+            if (timer.elapsed() > maxWaitTimeMs) {
+                Logger::log(logModule, "warning", QString("couldn't create lock file: %1").arg(lockFilePath));
+                break;
+            }
         }
         if (lockFile->isLocked() || lockFile->tryLock())
             lockFile_ = std::move(lockFile);
@@ -367,6 +382,15 @@ void Flow::init() {
     setupMpvObjectConnections();
     setupFlowConnections();
 
+    // Finder hands over files with open events instead of the command line
+    if (Platform::isMacOS) {
+        fileOpenTimer.setSingleShot(true);
+        fileOpenTimer.setInterval(0);
+        connect(&fileOpenTimer, &QTimer::timeout,
+                this, &Flow::fileOpenTimer_timeout);
+        qApp->installEventFilter(this);
+    }
+
     // Setup more ipc and wire them up if we're in the primary mode
     if (programMode == PrimaryMode) {
         setupMpris();
@@ -429,6 +453,15 @@ bool Flow::earlyQuit()
 
 void Flow::earlyPlatformOverride()
 {
+    // macOS hands out a legacy OpenGL 2.1 context unless a core profile is
+    // requested, and mpv needs 3.0 or later for VideoToolbox interop.
+    if (Platform::isMacOS) {
+        QSurfaceFormat format = QSurfaceFormat::defaultFormat();
+        format.setVersion(3, 2);
+        format.setProfile(QSurfaceFormat::CoreProfile);
+        QSurfaceFormat::setDefaultFormat(format);
+    }
+
     if (!Platform::isUnix)
         return;
 
@@ -470,7 +503,7 @@ void Flow::setTranslation(bool updateTranslations)
 
     if (updateTranslations) {
         mainWindow->updateLanguage();
-        mainWindow->setPlaybackState(playbackManager->playbackState(), 0);
+        mainWindow->setPlaybackState(playbackManager->playbackState(), playbackManager->isPaused(), 0);
         mainWindow->playlistWindow()->updateLanguage();
         settingsWindow->updateLanguage();
         propertiesWindow->updateLanguage();
@@ -588,6 +621,10 @@ void Flow::setupMainWindowConnections()
             playbackManager, &PlaybackManager::sendCurrentTrackInfo);
     connect(mainWindow, &MainWindow::deinterlaceSelected,
             playbackManager, &PlaybackManager::setDeinterlaceMode);
+
+    // playlistwindow -> library
+    connect(mainWindow->playlistWindow(), &PlaylistWindow::restoreLastPlaylistBackupRequested,
+            libraryWindow, &LibraryWindow::restoreLastPlaylist);
 
     // playlistwindow -> mainwindow
     connect(mainWindow->playlistWindow(), &PlaylistWindow::viewActionChanged,
@@ -850,9 +887,9 @@ void Flow::setupMpvObjectConnections()
     connect(settingsWindow, &SettingsWindow::logoSource,
             mpvObject, &MpvObject::setLogoUrl);
     connect(settingsWindow, &SettingsWindow::option,
-            mpvObject, &MpvObject::setCachedMpvOption);
+            mpvObject, &MpvObject::setCachedMpvProperty);
     connect(settingsWindow, &SettingsWindow::optionUncached,
-            mpvObject, &MpvObject::setUncachedMpvOption);
+            mpvObject, &MpvObject::setUncachedMpvProperty);
     connect(settingsWindow, &SettingsWindow::audioFilters,
             mpvObject, &MpvObject::setAudioFilters);
     connect(settingsWindow, &SettingsWindow::videoFilters,
@@ -903,8 +940,8 @@ void Flow::setupMpvObjectConnections()
             mainWindow, &MainWindow::setChapterTitle);
     connect(mpvObject, &MpvObject::aspectNameChanged,
             mainWindow, &MainWindow::setAspectName);
-    connect(mpvObject, &MpvObject::mouseReleased,
-            mainWindow, &MainWindow::mpvObject_mouseReleased);
+    connect(mpvObject, &MpvObject::volumeChanged,
+            mainWindow, &MainWindow::mpvVolumeChanged);
 
     // settingswindow -> log
     auto logger = Logger::singleton();
@@ -1388,6 +1425,30 @@ void Flow::restoreWindows_v2(const QVariantMap &geometryMap)
 void Flow::self_windowsRestored()
 {
     server->fakePayload(makePayload());
+    windowsAreRestored = true;
+    if (!fileOpenUrls.isEmpty())
+        fileOpenTimer.start();
+}
+
+bool Flow::eventFilter(QObject *watched, QEvent *event)
+{
+    if (event->type() != QEvent::FileOpen)
+        return QObject::eventFilter(watched, event);
+
+    // Selecting several files in Finder sends one event per file, so collect
+    // them and open them together on the next pass of the event loop.
+    fileOpenUrls << static_cast<QFileOpenEvent*>(event)->url();
+    fileOpenTimer.start();
+    return true;
+}
+
+void Flow::fileOpenTimer_timeout()
+{
+    if (!windowsAreRestored)
+        return;
+    Logger::log(logModule, QString("opening %1 file(s) from open events").arg(fileOpenUrls.count()));
+    playbackManager->openSeveralFiles(fileOpenUrls, true);
+    fileOpenUrls.clear();
 }
 
 void Flow::loadPlaylistsBackup()
@@ -1457,9 +1518,7 @@ void Flow::mainwindow_recentClear()
 void Flow::mainwindow_takeImage(Helpers::ScreenshotRender render)
 {
     static auto options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     // Take a screenshot and save it to a temporary file
     QString fmt("%1/mpc-qt_%2.%3");
     QString tempDir = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
@@ -1540,16 +1599,17 @@ void Flow::mainwindow_optionsOpenRequested()
     settingsWindow->raise();
 }
 
-void Flow::manager_stateChanged(PlaybackManager::PlaybackState state)
+void Flow::manager_stateChanged(PlaybackManager::PlaybackState state, bool isPlaybackPaused)
 {
     // Do nothing if we don't have to
     if (!manipulateScreensaver)
         return;
 
     // If inhibiting the screensaver is switched off, or we just entered the
-    // stopped or paused state, unihibit the screensaver
+    // stopped, error or paused state, unihibit the screensaver
     if (!inhibitScreensaver || state == PlaybackManager::StoppedState
-                            || state == PlaybackManager::PausedState) {
+                            || state == PlaybackManager::ErrorState
+                            || isPlaybackPaused) {
         screenSaver->uninhibitSaver();
         return;
     }
@@ -1600,10 +1660,6 @@ void Flow::manager_openingNewFile()
 
 void Flow::manager_aboutToStartPlayingFile()
 {
-    if (firstFile) {
-        firstFile = false;
-        mainWindow->fixMpvwSize();
-    }
     if (rememberFilePosition)
         updateRecentPosition(false);
 }
@@ -1656,7 +1712,7 @@ void Flow::settingswindow_inhibitScreensaver(bool yes)
     // playback state (2022-03: which optionally re/uninhibits the
     // screensaver)
     this->inhibitScreensaver = yes;
-    manager_stateChanged(playbackManager->playbackState());
+    manager_stateChanged(playbackManager->playbackState(), playbackManager->isPaused());
 }
 
 void Flow::settingswindow_rememberHistory(bool yes, bool onlyVideos)

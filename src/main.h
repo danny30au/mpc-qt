@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <QHash>
-#include <QMetaMethod>
+#include <QTimer>
 #include <QTranslator>
 #include "ipc/http.h"
 #include "ipc/json.h"
@@ -43,6 +43,9 @@ public:
     static void earlyPlatformOverride();
     static bool isNvidiaGPU();
 
+protected:
+    bool eventFilter(QObject *watched, QEvent *event) override;
+
 signals:
     void windowsRestored();
     void flushLog();
@@ -70,6 +73,7 @@ private:
 
 private slots:
     void self_windowsRestored();
+    void fileOpenTimer_timeout();
     void loadPlaylistsBackup();
     void mainwindow_instanceShouldQuit();
     void mainwindow_fullscreenHideControls(bool hide);
@@ -84,7 +88,7 @@ private slots:
     void mainwindow_takeThumbnails();
     void mainwindow_optionsOpenRequested();
     void manager_playLengthChanged();
-    void manager_stateChanged(PlaybackManager::PlaybackState state);
+    void manager_stateChanged(PlaybackManager::PlaybackState state, bool isPlaybackPaused);
     void manager_fileClosed();
     void manager_subtitlesVisible(bool visible);
     void manager_hasNoSubtitles(bool none);
@@ -153,10 +157,12 @@ private:
     bool validCliPos = false;
     bool addToPlaylist = false;
     QStringList customFiles;
+    QTimer fileOpenTimer;
+    QList<QUrl> fileOpenUrls;
+    bool windowsAreRestored = false;
 
     static bool isWayland;
     static bool isWaylandMode;
-    bool firstFile = true;
     bool playlistsBackupLoaded = false;
     bool inhibitScreensaver = false;
     bool manipulateScreensaver = false;

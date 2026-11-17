@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
 project(mpc-qt CXX)
+if(APPLE)
+    enable_language(OBJCXX)
+endif()
 # set(CMAKE_VERBOSE_MAKEFILE ON)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -195,7 +198,7 @@ if(UNIX)
     install(FILES data/io.github.mpc_qt.mpc-qt.desktop DESTINATION share/applications)
     install(FILES data/io.github.mpc_qt.mpc-qt_enqueue.desktop DESTINATION share/applications)
     install(FILES data/io.github.mpc_qt.mpc-qt.metainfo.xml DESTINATION share/metainfo)
-    install(FILES res/images/icon/mpc-qt.svg DESTINATION share/icons/hicolor/scalable/apps)
+    install(FILES res/images/icon/io.github.mpc_qt.mpc-qt.svg DESTINATION share/icons/hicolor/scalable/apps)
 
     add_custom_target(uninstall COMMAND xargs rm -vf < install_manifest.txt)
 endif()

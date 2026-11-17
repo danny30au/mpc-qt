@@ -10,6 +10,7 @@ class LibraryWindow;
 }
 QT_END_NAMESPACE
 
+class CollectionItem;
 class DrawnPlaylist;
 class DrawnCollection;
 
@@ -22,8 +23,12 @@ public:
     ~LibraryWindow();
     void updateLanguage();
 
+private:
+    void restorePlaylist(CollectionItem &collectionItem, int row);
+
 public slots:
     void refreshLibrary();
+    void restoreLastPlaylist();
 
 signals:
     void windowClosed();
@@ -36,6 +41,7 @@ private slots:
     void on_restorePlaylist_clicked();
 
     void on_removePlaylist_clicked();
+    void on_removeAllPlaylists_clicked();
 
 private:
     Ui::LibraryWindow *ui;

@@ -399,6 +399,14 @@ Apakah Anda ingin menggunakannya untuk &quot;%3&quot;?</translation>
         <source>Playlists Backup</source>
         <translation>Cadangan Daftar Putar</translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation>Hapus Semua</translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation>Hapus semua cadangan daftar putar?</translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -668,7 +676,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>Muat Takarir(&amp;L)..</translation>
+        <translation type="vanished">Muat Takarir(&amp;L)..</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -720,7 +728,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -728,7 +736,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -736,7 +744,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -744,7 +752,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -752,7 +760,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -760,7 +768,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -768,7 +776,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -776,7 +784,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -784,7 +792,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -792,7 +800,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
@@ -800,7 +808,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -808,7 +816,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -816,7 +824,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -828,15 +836,15 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="vanished">Alt+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="vanished">Alt+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="vanished">Alt+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -844,7 +852,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="vanished">Alt+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -852,7 +860,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="vanished">Alt+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -860,7 +868,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="vanished">Alt+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1184,7 +1192,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>Tab Baru (&amp;N)</translation>
+        <translation type="vanished">Tab Baru (&amp;N)</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1192,11 +1200,11 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>Tutup tab (&amp;L)</translation>
+        <translation type="vanished">Tutup tab (&amp;L)</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Tutup Tab</translation>
+        <translation type="vanished">Tutup Tab</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1204,7 +1212,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp;Duplikasi Tab</translation>
+        <translation type="vanished">&amp;Duplikasi Tab</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1419,6 +1427,10 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <translation>Lihat</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation>%1%</translation>
+    </message>
+    <message>
         <source>Hide &amp;Borders</source>
         <translation>Sembunyikan &amp;Batas</translation>
     </message>
@@ -1475,8 +1487,12 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <translation>Membuffer (%1%)</translation>
     </message>
     <message>
+        <source>Seeking</source>
+        <translation>Mencari</translation>
+    </message>
+    <message>
         <source>Error</source>
-        <translation type="unfinished">Kesalahan</translation>
+        <translation>Kesalahan</translation>
     </message>
     <message>
         <source>&amp;Quick Add To Playlist</source>
@@ -1910,6 +1926,34 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <source>Increase Delay</source>
         <translation>Tambahkan Delay</translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation>&amp;Muat Ulang File Subtitle</translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation>&amp;Muat File Subtitel...</translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished">Daftar Putar Baru</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished">Duplikasi Daftar Putar</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2087,6 +2131,10 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <source>Select File</source>
         <translation>Pilih File</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation>Telusuri...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2108,7 +2156,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Dark colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Warna gelap</translation>
     </message>
     <message>
         <source>Use dark colors</source>
@@ -2189,7 +2237,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Tab Baru</translation>
+        <translation type="vanished">Tab Baru</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2197,7 +2245,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Duplikasi Tab</translation>
+        <translation type="vanished">Duplikasi Tab</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2225,7 +2273,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>File daftar putar (*.m3u *.m3u8)</translation>
+        <translation type="vanished">File daftar putar (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Open</source>
@@ -2244,7 +2292,7 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <translation type="obsolete">Bersihkan</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>Salin ke Clipboard</translation>
     </message>
     <message>
@@ -2276,6 +2324,24 @@ Tidak ada tindakan yang akan dipicu.</translation>
         <translation>Masukkan nama daftar putar</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation>File playlist</translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation>File &quot;%1&quot; sudah ada.
+Apakah Anda ingin menggantinya?</translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation>Buka Folder Lokasi File</translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>Daftar Putar Baru</translation>
     </message>
@@ -2290,6 +2356,14 @@ Tidak ada tindakan yang akan dipicu.</translation>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>Duplikasi Daftar Putar</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2338,6 +2412,10 @@ Tidak ada tindakan yang akan dipicu.</translation>
     <message>
         <source>Add Folder</source>
         <translation>Tambah Folder</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2531,11 +2609,11 @@ Tidak ada tindakan yang akan dipicu.</translation>
     </message>
     <message>
         <source>Placeholder text</source>
-        <translation type="unfinished"></translation>
+        <translation>Teks placeholder</translation>
     </message>
     <message>
         <source>Accent</source>
-        <translation type="unfinished"></translation>
+        <translation>Aksen</translation>
     </message>
     <message>
         <source>Active</source>
@@ -2897,15 +2975,15 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Campurkan pada hitam</translation>
+        <translation type="vanished">Campurkan pada hitam</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Gunakan</translation>
+        <translation type="vanished">Gunakan</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Abaikan</translation>
+        <translation type="vanished">Abaikan</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3389,7 +3467,7 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Jelajahi</translation>
+        <translation type="vanished">Jelajahi</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3473,15 +3551,15 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Oss</source>
-        <translation>OSS</translation>
+        <translation type="vanished">OSS</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>Perangkat mixer</translation>
+        <translation type="vanished">Perangkat mixer</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Saluran mixer</translation>
+        <translation type="vanished">Saluran mixer</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3593,7 +3671,7 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Dekoder+Video</translation>
+        <translation type="vanished">Dekoder+Video</translation>
     </message>
     <message>
         <source>None</source>
@@ -3637,7 +3715,7 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Ukuran jatuhan audio</translation>
+        <translation type="vanished">Ukuran jatuhan audio</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -3890,7 +3968,7 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="vanished">...</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -3918,7 +3996,7 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Halus</translation>
+        <translation type="vanished">Halus</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4498,7 +4576,7 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>Tinggi video maksimum:</translation>
+        <translation type="vanished">Tinggi video maksimum:</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4590,7 +4668,7 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation>Latar belakang video</translation>
+        <translation type="vanished">Latar belakang video</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4674,19 +4752,55 @@ file media yang diputar</translation>
     </message>
     <message>
         <source>Increase maximum volume to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tingkatkan volume maksimum hingga:</translation>
     </message>
     <message>
         <source>Show video preview (restart required), set its height to (% of screen):</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan pratinjau video (perlu memulai ulang), atur tingginya menjadi (% dari layar):</translation>
     </message>
     <message>
         <source>Minimize to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimalkan ke baki sistem</translation>
     </message>
     <message>
         <source>Close to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Tutup ke baki sistem</translation>
+    </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation>Resolusi video maksimum:</translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation>File opsi mpv:</translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation>Sesuaikan laju sampel audio agar cocok dengan video (audio mungkin menjadi tidak sinkron)</translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation>Sesuaikan waktu bingkai video dengan audio</translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation>Output Video (disarankan)</translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation>Dekoder + Keluaran Video</translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation>Latar belakang logo</translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation>Padukan dengan warna</translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation>Pola papan catur</translation>
     </message>
 </context>
 <context>
@@ -4706,6 +4820,10 @@ file media yang diputar</translation>
     <message>
         <source>Show percentage</source>
         <translation>Tampilkan persentase</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation>Tampilkan tooltip</translation>
     </message>
     <message>
         <source>Played: %1</source>

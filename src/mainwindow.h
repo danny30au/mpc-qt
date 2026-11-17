@@ -45,13 +45,17 @@ public:
     void setScreensaverAbilities(QSet<ScreenSaver::Ability> ab);
     QSize desirableSize(bool first_run = false);
     QPoint desirablePosition(QSize &size, bool first_run = false) const;
+    QSize chromeSize() const;
+    QSize noVideoSize() const;
     void unfreezeWindow();
     void fixMpvwSize();
     void setActionPlayLoopUse();
     void setRemoveFileNotRecycle();
     void updateLanguage();
+    bool fullscreenMode() const;
 
 protected:
+    bool event(QEvent *event) override;
     void resizeEvent(QResizeEvent *event);
     void changeEvent(QEvent *event) override;
     void moveEvent(QMoveEvent *event) override;
@@ -72,8 +76,6 @@ private:
     VolumeSlider *volumeSlider();
 
     DecorationState decorationState() const;
-    bool fullscreenMode() const;
-    QSize noVideoSize() const;
     double sizeFactor() const;
 
     void setDiscState(bool playingADisc);
@@ -129,7 +131,6 @@ private:
     void showAlwaysOnTopWindow(bool show);
     void armAbLoop();
 
-    QIcon createIconFromSvg(const QString &svgPath, int maxSize) const;
     QPixmap renderPixmapFromSvg(const QString &path) const;
 
 signals:
@@ -285,7 +286,7 @@ public slots:
     void setOsdTimerOnSeek(bool enabled);
     void setFullscreenHidePanels(bool hidden);
     void checkExitFullscreenOnEnd();
-    void setPlaybackState(PlaybackManager::PlaybackState state, int64_t bufferFillState);
+    void setPlaybackState(PlaybackManager::PlaybackState state, bool isPlaybackPaused, int64_t bufferFillState);
     void setPlaybackType(PlaybackManager::PlaybackType type);
     void disableChaptersMenus();
     void setChapters(QList<Chapter> chapters);
@@ -318,7 +319,7 @@ public slots:
     void setWindowShouldBeRaised(bool yes);
     void logWindowClosed();
     void libraryWindowClosed();
-    void mpvObject_mouseReleased();
+    void mpvVolumeChanged(int64_t level);
 
 private slots:
     void on_actionFileOpenQuick_triggered();
@@ -446,6 +447,7 @@ private slots:
     void on_actionPlaySubtitlesNext_triggered();
     void on_actionPlaySubtitlesPrevious_triggered();
     void on_actionPlaySubtitlesCopy_triggered();
+    void on_actionPlaySubtitlesReloadFile_triggered();
     void on_actionDecreaseSubtitlesDelay_triggered();
     void on_actionIncreaseSubtitlesDelay_triggered();
     void on_actionMoveSubtitlesUp_triggered();

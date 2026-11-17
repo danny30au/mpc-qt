@@ -1,0 +1,5128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fa">
+<context>
+    <name>About</name>
+    <message>
+        <source>Development Build</source>
+        <translation>نسخهٔ در حال توسعه</translation>
+    </message>
+    <message>
+        <source>Version %1</source>
+        <translation>نسخه %1</translation>
+    </message>
+    <message>
+        <source>Built on %1 at %2</source>
+        <translation>ساخته شده در %1 ساعت %2</translation>
+    </message>
+    <message>
+        <source>(Unknown)</source>
+        <translation>(ناشناخته)</translation>
+    </message>
+    <message>
+        <source>About Media Player Classic Qute Theater</source>
+        <translation>دربارهٔ Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>Media Player Classic Qute Theater</source>
+        <translation>Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>A clone of Media Player Classic written in Qt</source>
+        <translation>یک کپی از Media Player Classic نوشته شده با Qt</translation>
+    </message>
+    <message>
+        <source>Based on Qt %1 and %2</source>
+        <translation>بر پایهٔ Qt %1 و %2</translation>
+    </message>
+    <message>
+        <source>Running on %1</source>
+        <translation>در حال اجرا روی %1</translation>
+    </message>
+    <message>
+        <source>Running under %1</source>
+        <translation type="obsolete">Running under %1</translation>
+    </message>
+</context>
+<context>
+    <name>ActionEditor</name>
+    <message>
+        <source>Command</source>
+        <translation>دستور</translation>
+    </message>
+    <message>
+        <source>Key</source>
+        <translation>کلید</translation>
+    </message>
+    <message>
+        <source>Mouse Window</source>
+        <translation>پنجرهٔ ماوس</translation>
+    </message>
+    <message>
+        <source>Mouse Fullscr</source>
+        <translation type="vanished">Mouse Fullscr</translation>
+    </message>
+    <message>
+        <source>Mouse Fullscreen</source>
+        <translation>تمام‌صفحه ماوس</translation>
+    </message>
+    <message>
+        <source>Volume Up</source>
+        <translation type="vanished">Volume Up</translation>
+    </message>
+    <message>
+        <source>Volume Down</source>
+        <translation type="vanished">Volume Down</translation>
+    </message>
+    <message>
+        <source>Volume Mute</source>
+        <translation>قطع صدای بلندی</translation>
+    </message>
+    <message>
+        <source>After Playback: Exit</source>
+        <translation>پس از پخش: خروج</translation>
+    </message>
+    <message>
+        <source>After Playback: Stand by</source>
+        <translation>پس از پخش: آماده‌باش</translation>
+    </message>
+    <message>
+        <source>After Playback: Hibernate</source>
+        <translation>پس از پخش: خواب زمستانی</translation>
+    </message>
+    <message>
+        <source>After Playback: Shutdown</source>
+        <translation>پس از پخش: خاموش کردن</translation>
+    </message>
+    <message>
+        <source>After Playback: Log Off</source>
+        <translation>پس از پخش: خروج از حساب کاربری</translation>
+    </message>
+    <message>
+        <source>After Playback: Lock</source>
+        <translation>پس از پخش: قفل کردن</translation>
+    </message>
+    <message>
+        <source>After Playback: Play next file</source>
+        <translation>پس از پخش: پخش پروندهٔ بعدی</translation>
+    </message>
+    <message>
+        <source>After Playback: Do nothing</source>
+        <translation>پس از پخش: هیچ کاری نکن</translation>
+    </message>
+    <message>
+        <source>On Top: Default</source>
+        <translation>در بالا: پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>On Top: Always</source>
+        <translation>در بالا: همیشه</translation>
+    </message>
+    <message>
+        <source>On Top: While Playing</source>
+        <translation>در بالا: هنگام پخش</translation>
+    </message>
+    <message>
+        <source>On Top: While Playing Video</source>
+        <translation>در بالا: هنگام پخش ویدیو</translation>
+    </message>
+    <message>
+        <source>Extra Play Times: Increment</source>
+        <translation>دفعات پخش اضافی: افزایش</translation>
+    </message>
+    <message>
+        <source>Extra Play Times: Decrement</source>
+        <translation>دفعات پخش اضافی: کاهش</translation>
+    </message>
+    <message>
+        <source>Move Subtitles Up</source>
+        <translation>انتقال زیرنویس به بالا</translation>
+    </message>
+    <message>
+        <source>Move Subtitles Down</source>
+        <translation>انتقال زیرنویس به پایین</translation>
+    </message>
+    <message>
+        <source>Decrease Subtitles Delay</source>
+        <translation>کاهش تأخیر زیرنویس</translation>
+    </message>
+    <message>
+        <source>Increase Subtitles Delay</source>
+        <translation>افزایش تأخیر زیرنویس</translation>
+    </message>
+    <message>
+        <source>Decrease Audio Delay</source>
+        <translation>کاهش تأخیر صدا</translation>
+    </message>
+    <message>
+        <source>Increase Audio Delay</source>
+        <translation>افزایش تأخیر صدا</translation>
+    </message>
+    <message>
+        <source>16:9 Aspect ratio</source>
+        <translation>نسبت ابعاد 16:9</translation>
+    </message>
+    <message>
+        <source>Decrease Aspect ratio</source>
+        <translation>کاهش نسبت ابعاد</translation>
+    </message>
+    <message>
+        <source>Increase Aspect ratio</source>
+        <translation>افزایش نسبت ابعاد</translation>
+    </message>
+    <message>
+        <source>Reset Aspect ratio</source>
+        <translation>بازنشانی نسبت ابعاد</translation>
+    </message>
+    <message>
+        <source>Disable Aspect ratio</source>
+        <translation>غیرفعال کردن نسبت ابعاد</translation>
+    </message>
+    <message>
+        <source>Decrease Pan and Scan</source>
+        <translation>کاهش پَن و اسکن</translation>
+    </message>
+    <message>
+        <source>Increase Pan and Scan</source>
+        <translation>افزایش پَن و اسکن</translation>
+    </message>
+    <message>
+        <source>Minimum Pan and Scan</source>
+        <translation>حداقل پَن و اسکن</translation>
+    </message>
+    <message>
+        <source>Maximum Pan and Scan</source>
+        <translation>حداکثر پَن و اسکن</translation>
+    </message>
+    <message>
+        <source>Decrease Zoom</source>
+        <translation>کاهش بزرگنمایی</translation>
+    </message>
+    <message>
+        <source>Increase Zoom</source>
+        <translation>افزایش بزرگنمایی</translation>
+    </message>
+    <message>
+        <source>Reset Zoom</source>
+        <translation>بازنشانی بزرگنمایی</translation>
+    </message>
+    <message>
+        <source>Skip Backward / Previous</source>
+        <translation>پرش به عقب / قبلی</translation>
+    </message>
+    <message>
+        <source>Skip Forward / Next</source>
+        <translation>پرش به جلو / بعدی</translation>
+    </message>
+    <message>
+        <source>Shortcut already used</source>
+        <translation>میانبر قبلاً استفاده شده است</translation>
+    </message>
+    <message>
+        <source>&quot;%1&quot; is already used by &quot;%2&quot;.
+Do you want to use it for &quot;%3&quot; instead?</source>
+        <translation>&quot;%1&quot; قبلاً توسط &quot;%2&quot; استفاده شده است.
+آیا می‌خواهید به جای آن از آن برای &quot;%3&quot; استفاده کنید؟</translation>
+    </message>
+    <message>
+        <source>4:3 Aspect ratio</source>
+        <translation>نسبت ابعاد 4:3</translation>
+    </message>
+    <message>
+        <source>Move Left</source>
+        <translation>انتقال به چپ</translation>
+    </message>
+    <message>
+        <source>Move Right</source>
+        <translation>انتقال به راست</translation>
+    </message>
+    <message>
+        <source>Move Up</source>
+        <translation>انتقال به بالا</translation>
+    </message>
+    <message>
+        <source>Move Down</source>
+        <translation>انتقال به پایین</translation>
+    </message>
+    <message>
+        <source>Reset Move</source>
+        <translation>بازنشانی انتقال</translation>
+    </message>
+    <message>
+        <source>Rotate Clockwise</source>
+        <translation>چرخش در جهت عقربه‌های ساعت</translation>
+    </message>
+    <message>
+        <source>Rotate Counterclockwise</source>
+        <translation>چرخش در خلاف جهت عقربه‌های ساعت</translation>
+    </message>
+    <message>
+        <source>Reset Rotate</source>
+        <translation>بازنشانی چرخش</translation>
+    </message>
+    <message>
+        <source>Reset Resize</source>
+        <translation>بازنشانی تغییر اندازه</translation>
+    </message>
+    <message>
+        <source>Volume Increase</source>
+        <translation>افزایش بلندی صدا</translation>
+    </message>
+    <message>
+        <source>Volume Decrease</source>
+        <translation>کاهش بلندی صدا</translation>
+    </message>
+    <message>
+        <source>Play / Pause</source>
+        <translation>پخش / مکث</translation>
+    </message>
+</context>
+<context>
+    <name>ButtonWidget</name>
+    <message>
+        <source>B</source>
+        <translation>ب</translation>
+    </message>
+    <message>
+        <source>K</source>
+        <translation>ک</translation>
+    </message>
+    <message>
+        <source>↑↓</source>
+        <translation>↑↓</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesWindow</name>
+    <message>
+        <source>Organize Favorites</source>
+        <translation>سازماندهی نشان‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Update</source>
+        <translation type="vanished">&amp;Update</translation>
+    </message>
+    <message>
+        <source>&amp;Files</source>
+        <translation>&amp;پرونده‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Streams</source>
+        <translation>&amp;جریان‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Remove</source>
+        <translation>&amp;حذف</translation>
+    </message>
+</context>
+<context>
+    <name>Flow</name>
+    <message>
+        <source>Media Player Classic Qute Theater</source>
+        <translation>Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>Start a new process without saving data.</source>
+        <translation>یک فرایند جدید بدون ذخیره‌سازی داده شروع کن.</translation>
+    </message>
+    <message>
+        <source>Main window size.</source>
+        <translation>اندازهٔ پنجرهٔ اصلی.</translation>
+    </message>
+    <message>
+        <source>Main window position.</source>
+        <translation>موقعیت پنجرهٔ اصلی.</translation>
+    </message>
+    <message>
+        <source>Append the file(s) to the current playlist.</source>
+        <translation>افزودن پرونده(ها) به فهرست پخش فعلی.</translation>
+    </message>
+    <message>
+        <source>URLs to open, optionally.</source>
+        <translation>نشانی‌های اینترنتی برای باز کردن، اختیاری.</translation>
+    </message>
+    <message>
+        <source>Save Image</source>
+        <translation>ذخیرهٔ تصویر</translation>
+    </message>
+    <message>
+        <source>Playing Media</source>
+        <translation>در حال پخش رسانه</translation>
+    </message>
+    <message>
+        <source>Do not load any config files.</source>
+        <translation>هیچ پروندهٔ پیکربندی بارگیری نکن.</translation>
+    </message>
+    <message>
+        <source>Do not load file history, playlists, or favorites.</source>
+        <translation>تاریخچهٔ پرونده‌ها، فهرست‌های پخش یا نشان‌ها را بارگیری نکن.</translation>
+    </message>
+    <message>
+        <source>Also write logging messages to console.</source>
+        <translation>همچنین پیام‌های ثبت رویداد را در کنسول بنویس.</translation>
+    </message>
+</context>
+<context>
+    <name>GoToWindow</name>
+    <message>
+        <source>Go To...</source>
+        <translation>رفتن به...</translation>
+    </message>
+    <message>
+        <source>Time</source>
+        <translation>زمان</translation>
+    </message>
+    <message>
+        <source>Go!</source>
+        <translation>برو!</translation>
+    </message>
+    <message>
+        <source>Frame</source>
+        <translation>فریم</translation>
+    </message>
+    <message>
+        <source>Enter a timecode using the format [hh:]mm:ss.ms to jump to a specified time. You do not need to enter the separators explicitely.</source>
+        <translation>یک زمان‌کد با فرمت [hh:]mm:ss.ms برای پرش به زمان مشخص وارد کنید. نیازی به وارد کردن جداکننده‌ها به صراحت ندارید.</translation>
+    </message>
+</context>
+<context>
+    <name>LibraryWindow</name>
+    <message>
+        <source>Library</source>
+        <translation type="vanished">Library</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation>بازیابی</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>بستن</translation>
+    </message>
+    <message>
+        <source>Playlists Backup</source>
+        <translation>پشتیبان فهرست‌های پخش</translation>
+    </message>
+    <message>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LogWindow</name>
+    <message>
+        <source>Log Messages</source>
+        <translation>پیام‌های ثبت رویداد</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>رونوشت</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>ذخیره</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation>پاک کردن</translation>
+    </message>
+    <message>
+        <source>Save File</source>
+        <translation>ذخیرهٔ پرونده</translation>
+    </message>
+    <message>
+        <source>Log files (*.log)</source>
+        <translation>پرونده‌های ثبت رویداد (*.log)</translation>
+    </message>
+</context>
+<context>
+    <name>Logger</name>
+    <message>
+        <source>Ambiguous shortcut detected</source>
+        <translation>میانبر مبهم تشخیص داده شد</translation>
+    </message>
+    <message>
+        <source>The key sequence &quot;%1&quot; is used for more than one command. Use the &quot;Keys&quot; page in Options to reassign it.
+No action will be triggered.</source>
+        <translation>ترتیب کلید &quot;%1&quot; برای بیش از یک دستور استفاده شده است. برای تخصیص مجدد آن از صفحهٔ &quot;کلیدها&quot; در تنظیمات استفاده کنید.
+هیچ عملی انجام نخواهد شد.</translation>
+    </message>
+</context>
+<context>
+    <name>MainWindow</name>
+    <message>
+        <source>Media Player Classic Qute Theater</source>
+        <translation>Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation>پخش</translation>
+    </message>
+    <message>
+        <source>Pause</source>
+        <translation>مکث</translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>توقف</translation>
+    </message>
+    <message>
+        <source>Skip Backward</source>
+        <translation>پرش به عقب</translation>
+    </message>
+    <message>
+        <source>Speed Decrease</source>
+        <translation>کاهش سرعت</translation>
+    </message>
+    <message>
+        <source>Speed Increase</source>
+        <translation>افزایش سرعت</translation>
+    </message>
+    <message>
+        <source>Skip Forward</source>
+        <translation>پرش به جلو</translation>
+    </message>
+    <message>
+        <source>Step Backward</source>
+        <translation>گام به عقب</translation>
+    </message>
+    <message>
+        <source>Step Forward</source>
+        <translation>گام به جلو</translation>
+    </message>
+    <message>
+        <source>Set Loop Start</source>
+        <translation>تنظیم شروع حلقه</translation>
+    </message>
+    <message>
+        <source>Set Loop End</source>
+        <translation>تنظیم پایان حلقه</translation>
+    </message>
+    <message>
+        <source>Chapter</source>
+        <translation>بخش</translation>
+    </message>
+    <message>
+        <source>Frame rate</source>
+        <translation>نرخ فریم</translation>
+    </message>
+    <message>
+        <source>Sync Offset</source>
+        <translation>افست همگام‌سازی</translation>
+    </message>
+    <message>
+        <source>Framedrops</source>
+        <translation>افت فریم</translation>
+    </message>
+    <message>
+        <source>vo: 0, decoder: 0</source>
+        <translation>vo: 0, decoder: 0</translation>
+    </message>
+    <message>
+        <source>Bitrate</source>
+        <translation>نرخ بیت</translation>
+    </message>
+    <message>
+        <source>Stopped</source>
+        <translation>متوقف شد</translation>
+    </message>
+    <message>
+        <source>&amp;File</source>
+        <translation>&amp;پرونده</translation>
+    </message>
+    <message>
+        <source>O&amp;pen Disc</source>
+        <translation>باز کردن &amp;دیسک</translation>
+    </message>
+    <message>
+        <source>Recent &amp;Files</source>
+        <translation>&amp;پرونده‌های اخیر</translation>
+    </message>
+    <message>
+        <source>Subtitle Data&amp;base</source>
+        <translation>&amp;پایگاه دادهٔ زیرنویس</translation>
+    </message>
+    <message>
+        <source>&amp;View</source>
+        <translation>&amp;نما</translation>
+    </message>
+    <message>
+        <source>&amp;Presets</source>
+        <translation>&amp;پیش‌تنظیم‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Zoom</source>
+        <translation>&amp;بزرگنمایی</translation>
+    </message>
+    <message>
+        <source>On &amp;Top</source>
+        <translation>در &amp;بالا</translation>
+    </message>
+    <message>
+        <source>OS&amp;D</source>
+        <translation>نمایش روی &amp;صفحه</translation>
+    </message>
+    <message>
+        <source>P&amp;lay</source>
+        <translation>&amp;پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Audio</source>
+        <translation>&amp;صدا</translation>
+    </message>
+    <message>
+        <source>Su&amp;btitles</source>
+        <translation>&amp;زیرنویس‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Video Stream</source>
+        <translation type="vanished">&amp;Video Stream</translation>
+    </message>
+    <message>
+        <source>V&amp;olume</source>
+        <translation>&amp;بلندی صدا</translation>
+    </message>
+    <message>
+        <source>Af&amp;ter Playback</source>
+        <translation>پس از &amp;پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Loop</source>
+        <translation>&amp;حلقه</translation>
+    </message>
+    <message>
+        <source>&amp;Navigate</source>
+        <translation>&amp;پیمایش</translation>
+    </message>
+    <message>
+        <source>&amp;Chapters</source>
+        <translation>&amp;بخش‌ها</translation>
+    </message>
+    <message>
+        <source>Favo&amp;rites</source>
+        <translation>&amp;نشان‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Help</source>
+        <translation>&amp;راهنما</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation type="vanished">&amp;Edit</translation>
+    </message>
+    <message>
+        <source>&amp;Extra Play Times</source>
+        <translation>&amp;دفعات پخش اضافی</translation>
+    </message>
+    <message>
+        <source>&amp;Quick Open File...</source>
+        <translation>&amp;باز کردن سریع پرونده...</translation>
+    </message>
+    <message>
+        <source>&amp;Open File...</source>
+        <translation>&amp;باز کردن پرونده...</translation>
+    </message>
+    <message>
+        <source>Ctrl+O</source>
+        <translation>Ctrl+O</translation>
+    </message>
+    <message>
+        <source>Open &amp;DVD/BD...</source>
+        <translation>باز کردن &amp;DVD/BD...</translation>
+    </message>
+    <message>
+        <source>Ctrl+D</source>
+        <translation>Ctrl+D</translation>
+    </message>
+    <message>
+        <source>Open De&amp;vice...</source>
+        <translation>باز کردن &amp;دستگاه...</translation>
+    </message>
+    <message>
+        <source>Ctrl+V</source>
+        <translation>Ctrl+V</translation>
+    </message>
+    <message>
+        <source>Open Dir&amp;ectory...</source>
+        <translation>باز کردن &amp;دایرکتوری...</translation>
+    </message>
+    <message>
+        <source>&amp;Clear list</source>
+        <translation>&amp;پاک کردن لیست</translation>
+    </message>
+    <message>
+        <source>&amp;Close File</source>
+        <translation>&amp;بستن پرونده</translation>
+    </message>
+    <message>
+        <source>Ctrl+W</source>
+        <translation>Ctrl+W</translation>
+    </message>
+    <message>
+        <source>&amp;Save a Copy...</source>
+        <translation>&amp;ذخیرهٔ یک نسخه...</translation>
+    </message>
+    <message>
+        <source>Save &amp;Image...</source>
+        <translation>ذخیرهٔ &amp;تصویر...</translation>
+    </message>
+    <message>
+        <source>Alt+I</source>
+        <translation>Alt+I</translation>
+    </message>
+    <message>
+        <source>Save &amp;Thumbnails</source>
+        <translation>ذخیرهٔ &amp;تصاویر بند انگشتی</translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitle...</source>
+        <translation type="vanished">&amp;بارگیری زیرنویس...</translation>
+    </message>
+    <message>
+        <source>Ctrl+L</source>
+        <translation>Ctrl+L</translation>
+    </message>
+    <message>
+        <source>Save S&amp;ubtitle...</source>
+        <translation>ذخیرهٔ &amp;زیرنویس...</translation>
+    </message>
+    <message>
+        <source>Ctrl+S</source>
+        <translation>Ctrl+S</translation>
+    </message>
+    <message>
+        <source>&amp;Upload...</source>
+        <translation>&amp;بارگذاری...</translation>
+    </message>
+    <message>
+        <source>&amp;Download...</source>
+        <translation>&amp;بارگیری...</translation>
+    </message>
+    <message>
+        <source>D</source>
+        <translation>د</translation>
+    </message>
+    <message>
+        <source>&amp;Search...</source>
+        <translation>&amp;جستجو...</translation>
+    </message>
+    <message>
+        <source>P&amp;roperties</source>
+        <translation>&amp;ویژگی‌ها</translation>
+    </message>
+    <message>
+        <source>Shift+F10</source>
+        <translation type="vanished">Shift+F10</translation>
+    </message>
+    <message>
+        <source>E&amp;xit</source>
+        <translation>&amp;خروج</translation>
+    </message>
+    <message>
+        <source>Alt+X</source>
+        <translation>Alt+X</translation>
+    </message>
+    <message>
+        <source>Hide &amp;Menu</source>
+        <translation>پنهان کردن &amp;منو</translation>
+    </message>
+    <message>
+        <source>Ctrl+0</source>
+        <translation type="vanished">Ctrl+0</translation>
+    </message>
+    <message>
+        <source>See&amp;k Bar</source>
+        <translation>نوار &amp;جستجو</translation>
+    </message>
+    <message>
+        <source>Ctrl+1</source>
+        <translation type="vanished">Ctrl+1</translation>
+    </message>
+    <message>
+        <source>&amp;Controls</source>
+        <translation>&amp;کنترل‌ها</translation>
+    </message>
+    <message>
+        <source>Ctrl+2</source>
+        <translation type="vanished">Ctrl+2</translation>
+    </message>
+    <message>
+        <source>&amp;Information</source>
+        <translation>&amp;اطلاعات</translation>
+    </message>
+    <message>
+        <source>Ctrl+3</source>
+        <translation type="vanished">Ctrl+3</translation>
+    </message>
+    <message>
+        <source>&amp;Statistics</source>
+        <translation>&amp;آمار</translation>
+    </message>
+    <message>
+        <source>Ctrl+4</source>
+        <translation type="vanished">Ctrl+4</translation>
+    </message>
+    <message>
+        <source>S&amp;tatus</source>
+        <translation>&amp;وضعیت</translation>
+    </message>
+    <message>
+        <source>Ctrl+5</source>
+        <translation type="vanished">Ctrl+5</translation>
+    </message>
+    <message>
+        <source>Su&amp;bresync</source>
+        <translation>&amp;همگام‌سازی زیرنویس</translation>
+    </message>
+    <message>
+        <source>Ctrl+6</source>
+        <translation type="vanished">Ctrl+6</translation>
+    </message>
+    <message>
+        <source>Play&amp;list</source>
+        <translation>فهرست &amp;پخش</translation>
+    </message>
+    <message>
+        <source>Ctrl+7</source>
+        <translation type="vanished">Ctrl+7</translation>
+    </message>
+    <message>
+        <source>Captu&amp;re</source>
+        <translation>&amp;ضبط</translation>
+    </message>
+    <message>
+        <source>Ctrl+8</source>
+        <translation type="vanished">Ctrl+8</translation>
+    </message>
+    <message>
+        <source>Na&amp;vigation</source>
+        <translation>&amp;ناوبری</translation>
+    </message>
+    <message>
+        <source>Ctrl+9</source>
+        <translation type="vanished">Ctrl+9</translation>
+    </message>
+    <message>
+        <source>&amp;Minimal</source>
+        <translation>&amp;حداقلی</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation type="vanished">۱</translation>
+    </message>
+    <message>
+        <source>&amp;Compact</source>
+        <translation>&amp;فشرده</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation type="vanished">۲</translation>
+    </message>
+    <message>
+        <source>&amp;Normal</source>
+        <translation>&amp;معمولی</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation type="vanished">۳</translation>
+    </message>
+    <message>
+        <source>F&amp;ullscreen</source>
+        <translation>&amp;تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>Alt+Return</source>
+        <translation type="vanished">Alt+Return</translation>
+    </message>
+    <message>
+        <source>Alt+1</source>
+        <translation type="vanished">Alt+۱</translation>
+    </message>
+    <message>
+        <source>Alt+2</source>
+        <translation type="vanished">Alt+۲</translation>
+    </message>
+    <message>
+        <source>Alt+3</source>
+        <translation type="vanished">Alt+۳</translation>
+    </message>
+    <message>
+        <source>Auto &amp;Fit</source>
+        <translation>&amp;تناسب خودکار</translation>
+    </message>
+    <message>
+        <source>Alt+4</source>
+        <translation type="vanished">Alt+۴</translation>
+    </message>
+    <message>
+        <source>Auto Fit (&amp;Larger Only)</source>
+        <translation>تناسب خودکار (تنها &amp;بزرگ‌تر)</translation>
+    </message>
+    <message>
+        <source>Alt+5</source>
+        <translation type="vanished">Alt+۵</translation>
+    </message>
+    <message>
+        <source>&amp;Disable snapping</source>
+        <translation>&amp;غیرفعال کردن چفت‌شدن</translation>
+    </message>
+    <message>
+        <source>Alt+0</source>
+        <translation type="vanished">Alt+۰</translation>
+    </message>
+    <message>
+        <source>&amp;Default</source>
+        <translation>&amp;پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>&amp;Always</source>
+        <translation>&amp;همیشه</translation>
+    </message>
+    <message>
+        <source>Ctrl+A</source>
+        <translation>Ctrl+A</translation>
+    </message>
+    <message>
+        <source>While &amp;Playing</source>
+        <translation>هنگام &amp;پخش</translation>
+    </message>
+    <message>
+        <source>While Playing &amp;Video</source>
+        <translation>هنگام پخش &amp;ویدیو</translation>
+    </message>
+    <message>
+        <source>&amp;Options...</source>
+        <translation>&amp;تنظیمات...</translation>
+    </message>
+    <message>
+        <source>O</source>
+        <translation>O</translation>
+    </message>
+    <message>
+        <source>&amp;Pause</source>
+        <translation>&amp;مکث</translation>
+    </message>
+    <message>
+        <source>Space</source>
+        <translation type="vanished">Space</translation>
+    </message>
+    <message>
+        <source>&amp;Stop</source>
+        <translation>&amp;توقف</translation>
+    </message>
+    <message>
+        <source>.</source>
+        <translation>.</translation>
+    </message>
+    <message>
+        <source>F&amp;rame Step Forward</source>
+        <translation>گام &amp;فریم به جلو</translation>
+    </message>
+    <message>
+        <source>Ctrl+Right</source>
+        <translation type="vanished">Ctrl+Right</translation>
+    </message>
+    <message>
+        <source>Fra&amp;me Step Backward</source>
+        <translation>گام &amp;فریم به عقب</translation>
+    </message>
+    <message>
+        <source>Ctrl+Left</source>
+        <translation type="vanished">Ctrl+Left</translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Rate</source>
+        <translation>&amp;کاهش نرخ</translation>
+    </message>
+    <message>
+        <source>Ctrl+Down</source>
+        <translation type="vanished">Ctrl+Down</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Rate</source>
+        <translation>&amp;افزایش نرخ</translation>
+    </message>
+    <message>
+        <source>Ctrl+Up</source>
+        <translation type="vanished">Ctrl+Up</translation>
+    </message>
+    <message>
+        <source>R&amp;eset Rate</source>
+        <translation>&amp;بازنشانی نرخ</translation>
+    </message>
+    <message>
+        <source>Ctrl+R</source>
+        <translation>Ctrl+R</translation>
+    </message>
+    <message>
+        <source>&amp;Up</source>
+        <translation>&amp;بالا</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation type="vanished">0</translation>
+    </message>
+    <message>
+        <source>&amp;Down</source>
+        <translation>&amp;پایین</translation>
+    </message>
+    <message>
+        <source>9</source>
+        <translation>۹</translation>
+    </message>
+    <message>
+        <source>&amp;Mute</source>
+        <translation>&amp;قطع صدا</translation>
+    </message>
+    <message>
+        <source>Ctrl+M</source>
+        <translation>Ctrl+M</translation>
+    </message>
+    <message>
+        <source>&amp;Exit</source>
+        <translation>&amp;خروج</translation>
+    </message>
+    <message>
+        <source>&amp;Stand by</source>
+        <translation>&amp;آماده‌باش</translation>
+    </message>
+    <message>
+        <source>&amp;Hibernate</source>
+        <translation>&amp;خواب زمستانی</translation>
+    </message>
+    <message>
+        <source>Shut&amp;down</source>
+        <translation>خاموش &amp;کردن</translation>
+    </message>
+    <message>
+        <source>Log &amp;Off</source>
+        <translation>خروج از حساب &amp;کاربری</translation>
+    </message>
+    <message>
+        <source>&amp;Lock</source>
+        <translation>&amp;قفل</translation>
+    </message>
+    <message>
+        <source>Do &amp;Nothing</source>
+        <translation>هیچ &amp;کاری نکن</translation>
+    </message>
+    <message>
+        <source>Play next in the &amp;folder</source>
+        <translation type="vanished">Play next in the &amp;folder</translation>
+    </message>
+    <message>
+        <source>&amp;Previous</source>
+        <translation>&amp;قبلی</translation>
+    </message>
+    <message>
+        <source>PgUp</source>
+        <translation type="vanished">PgUp</translation>
+    </message>
+    <message>
+        <source>&amp;Next</source>
+        <translation>&amp;بعدی</translation>
+    </message>
+    <message>
+        <source>PgDown</source>
+        <translation type="vanished">PgDown</translation>
+    </message>
+    <message>
+        <source>&amp;Go To...</source>
+        <translation>&amp;رفتن به...</translation>
+    </message>
+    <message>
+        <source>Ctrl+G</source>
+        <translation>Ctrl+G</translation>
+    </message>
+    <message>
+        <source>&amp;Title Menu</source>
+        <translation>&amp;منوی عنوان</translation>
+    </message>
+    <message>
+        <source>Alt+T</source>
+        <translation>Alt+T</translation>
+    </message>
+    <message>
+        <source>&amp;Root Menu</source>
+        <translation>&amp;منوی ریشه</translation>
+    </message>
+    <message>
+        <source>Alt+R</source>
+        <translation>Alt+R</translation>
+    </message>
+    <message>
+        <source>&amp;Subtitle Menu</source>
+        <translation>&amp;منوی زیرنویس</translation>
+    </message>
+    <message>
+        <source>&amp;Audio Menu</source>
+        <translation>&amp;منوی صدا</translation>
+    </message>
+    <message>
+        <source>Angle &amp;Menu</source>
+        <translation>&amp;منوی زاویه</translation>
+    </message>
+    <message>
+        <source>Chapt&amp;er Menu</source>
+        <translation>منوی &amp;بخش</translation>
+    </message>
+    <message>
+        <source>&amp;Add to Favorites...</source>
+        <translation type="vanished">&amp;Add to Favorites...</translation>
+    </message>
+    <message>
+        <source>&amp;Organize Favorites...</source>
+        <translation>&amp;سازماندهی نشان‌ها...</translation>
+    </message>
+    <message>
+        <source>&amp;Home Page</source>
+        <translation>&amp;صفحهٔ اصلی</translation>
+    </message>
+    <message>
+        <source>&amp;About This Program...</source>
+        <translation>&amp;دربارهٔ این برنامه...</translation>
+    </message>
+    <message>
+        <source>Open &amp;Network Stream...</source>
+        <translation>باز کردن &amp;جریان شبکه...</translation>
+    </message>
+    <message>
+        <source>Save I&amp;mage (Auto)</source>
+        <translation>ذخیرهٔ &amp;تصویر (خودکار)</translation>
+    </message>
+    <message>
+        <source>F5</source>
+        <translation type="vanished">F5</translation>
+    </message>
+    <message>
+        <source>Auto Fit (&amp;Smaller Only)</source>
+        <translation>تناسب خودکار (تنها &amp;کوچک‌تر)</translation>
+    </message>
+    <message>
+        <source>Alt+6</source>
+        <translation>Alt+۶</translation>
+    </message>
+    <message>
+        <source>&amp;Play Current</source>
+        <translation type="vanished">&amp;Play Current</translation>
+    </message>
+    <message>
+        <source>Return</source>
+        <translation type="vanished">Return</translation>
+    </message>
+    <message>
+        <source>Seek Forwards</source>
+        <translation type="vanished">Seek Forwards</translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation type="vanished">Right</translation>
+    </message>
+    <message>
+        <source>Seek Backwards</source>
+        <translation type="vanished">Seek Backwards</translation>
+    </message>
+    <message>
+        <source>Left</source>
+        <translation type="vanished">Left</translation>
+    </message>
+    <message>
+        <source>Seek Forwards Finely</source>
+        <translation type="vanished">Seek Forwards Finely</translation>
+    </message>
+    <message>
+        <source>Shift+Right</source>
+        <translation type="vanished">Shift+Right</translation>
+    </message>
+    <message>
+        <source>Seek Backwards Finely</source>
+        <translation type="vanished">Seek Backwards Finely</translation>
+    </message>
+    <message>
+        <source>Shift+Left</source>
+        <translation type="vanished">Shift+Left</translation>
+    </message>
+    <message>
+        <source>&amp;Set Loop Start</source>
+        <translation>&amp;تنظیم شروع حلقه</translation>
+    </message>
+    <message>
+        <source>Ctrl+Home</source>
+        <translation type="vanished">Ctrl+Home</translation>
+    </message>
+    <message>
+        <source>Set &amp;Loop End</source>
+        <translation>تنظیم &amp;پایان حلقه</translation>
+    </message>
+    <message>
+        <source>Ctrl+End</source>
+        <translation type="vanished">Ctrl+End</translation>
+    </message>
+    <message>
+        <source>&amp;Use Loop Points</source>
+        <translation type="vanished">&amp;Use Loop Points</translation>
+    </message>
+    <message>
+        <source>Ctrl+Backspace</source>
+        <translation type="vanished">Ctrl+Backspace</translation>
+    </message>
+    <message>
+        <source>&amp;Clear Loop</source>
+        <translation>&amp;پاک کردن حلقه</translation>
+    </message>
+    <message>
+        <source>Backspace</source>
+        <translation type="vanished">Backspace</translation>
+    </message>
+    <message>
+        <source>&amp;Search Playlist</source>
+        <translation>&amp;جستجو در فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Ctrl+F</source>
+        <translation>Ctrl+F</translation>
+    </message>
+    <message>
+        <source>&amp;Quick Queue Toggle</source>
+        <translation>&amp;تغییر وضعیت صف سریع</translation>
+    </message>
+    <message>
+        <source>Q</source>
+        <translation>Q</translation>
+    </message>
+    <message>
+        <source>&amp;Finish Searching</source>
+        <translation>&amp;پایان جستجو</translation>
+    </message>
+    <message>
+        <source>Esc</source>
+        <translation type="vanished">Esc</translation>
+    </message>
+    <message>
+        <source>&amp;New Tab</source>
+        <translation type="vanished">&amp;زبانهٔ جدید</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+T</source>
+        <translation>Ctrl+Shift+T</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Tab</source>
+        <translation type="vanished">&amp;بستن زبانه</translation>
+    </message>
+    <message>
+        <source>Close Tab</source>
+        <translation type="vanished">بستن زبانه</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+W</source>
+        <translation>Ctrl+Shift+W</translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Tab</source>
+        <translation type="vanished">&amp;تکثیر زبانه</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+D</source>
+        <translation>Ctrl+Shift+D</translation>
+    </message>
+    <message>
+        <source>&amp;Import Playlist</source>
+        <translation>&amp;وارد کردن فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+O</source>
+        <translation>Ctrl+Shift+O</translation>
+    </message>
+    <message>
+        <source>E&amp;xport Playlist</source>
+        <translation>&amp;خروجی گرفتن از فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+S</source>
+        <translation>Ctrl+Shift+S</translation>
+    </message>
+    <message>
+        <source>Queue &amp;Visible</source>
+        <translation>&amp;صف موارد قابل مشاهده</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+Q</source>
+        <translation>Ctrl+Shift+Q</translation>
+    </message>
+    <message>
+        <source>&amp;Increment</source>
+        <translation>&amp;افزایش</translation>
+    </message>
+    <message>
+        <source>E</source>
+        <translation>E</translation>
+    </message>
+    <message>
+        <source>&amp;Decrement</source>
+        <translation>&amp;کاهش</translation>
+    </message>
+    <message>
+        <source>Shift+E</source>
+        <translation>Shift+E</translation>
+    </message>
+    <message>
+        <source>&amp;Clear Play Times</source>
+        <translation>&amp;پاک کردن دفعات پخش</translation>
+    </message>
+    <message>
+        <source>Ctrl+E</source>
+        <translation>Ctrl+E</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Selection</source>
+        <translation>&amp;رونوشت از انتخاب</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+C</source>
+        <translation>Ctrl+Shift+C</translation>
+    </message>
+    <message>
+        <source>Paste</source>
+        <translation>چسباندن</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+V</source>
+        <translation>Ctrl+Shift+V</translation>
+    </message>
+    <message>
+        <source>C&amp;opy Queue</source>
+        <translation>&amp;رونوشت از صف</translation>
+    </message>
+    <message>
+        <source>Ctrl+Alt+C</source>
+        <translation>Ctrl+Alt+C</translation>
+    </message>
+    <message>
+        <source>Paste and Q&amp;ueue</source>
+        <translation>چسباندن و &amp;صف</translation>
+    </message>
+    <message>
+        <source>Ctrl+Alt+V</source>
+        <translation>Ctrl+Alt+V</translation>
+    </message>
+    <message>
+        <source>About &amp;Qt...</source>
+        <translation>دربارهٔ &amp;Qt...</translation>
+    </message>
+    <message>
+        <source>Save Pl&amp;ain Image...</source>
+        <translation>ذخیرهٔ تصویر &amp;ساده...</translation>
+    </message>
+    <message>
+        <source>Alt+Shift+I</source>
+        <translation>Alt+Shift+I</translation>
+    </message>
+    <message>
+        <source>Save Plain Ima&amp;ge (Auto)</source>
+        <translation>ذخیرهٔ تصویر ساده (خودکار)</translation>
+    </message>
+    <message>
+        <source>Shift+F5</source>
+        <translation type="vanished">Shift+F5</translation>
+    </message>
+    <message>
+        <source>Export Encode...</source>
+        <translation>خروجی گرفتن رمزگذاری...</translation>
+    </message>
+    <message>
+        <source>F12</source>
+        <translation type="vanished">F12</translation>
+    </message>
+    <message>
+        <source>S&amp;how Quick Queue</source>
+        <translation>ن&amp;مایش صف سریع</translation>
+    </message>
+    <message>
+        <source>Ctrl+`</source>
+        <translation>Ctrl+`</translation>
+    </message>
+    <message>
+        <source>Save &amp;Window Image...</source>
+        <translation>ذخیرهٔ تصویر &amp;پنجره...</translation>
+    </message>
+    <message>
+        <source>Save Window Image</source>
+        <translation>ذخیرهٔ تصویر پنجره</translation>
+    </message>
+    <message>
+        <source>Ctrl+Alt+I</source>
+        <translation>Ctrl+Alt+I</translation>
+    </message>
+    <message>
+        <source>Save Window Image (Auto)</source>
+        <translation>ذخیرهٔ تصویر پنجره (خودکار)</translation>
+    </message>
+    <message>
+        <source>Ctrl+F5</source>
+        <translation type="vanished">Ctrl+F5</translation>
+    </message>
+    <message>
+        <source>Do No&amp;thing</source>
+        <translation type="vanished">Do No&amp;thing</translation>
+    </message>
+    <message>
+        <source>Repe&amp;at</source>
+        <translation type="vanished">Repe&amp;at</translation>
+    </message>
+    <message>
+        <source>&amp;Repeat</source>
+        <translation>&amp;تکرار</translation>
+    </message>
+    <message>
+        <source>&amp;Application Messages</source>
+        <translation>&amp;پیام‌های برنامه</translation>
+    </message>
+    <message>
+        <source>&amp;General Statistics</source>
+        <translation>&amp;آمار عمومی</translation>
+    </message>
+    <message>
+        <source>&amp;Frame Timings</source>
+        <translation type="vanished">&amp;Frame Timings</translation>
+    </message>
+    <message>
+        <source>&amp;Cycle</source>
+        <translation>&amp;چرخه</translation>
+    </message>
+    <message>
+        <source>Ctrl+J</source>
+        <translation>Ctrl+J</translation>
+    </message>
+    <message>
+        <source>&amp;No Messages</source>
+        <translation>&amp;بدون پیام</translation>
+    </message>
+    <message>
+        <source>&amp;Escape Fullscreen</source>
+        <translation>&amp;خروج از تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>Enable &amp;Subtitles</source>
+        <translation>فعال کردن &amp;زیرنویس‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Next Subtitle</source>
+        <translation type="vanished">&amp;Next Subtitle</translation>
+    </message>
+    <message>
+        <source>&amp;Previous Subtitle</source>
+        <translation type="vanished">&amp;Previous Subtitle</translation>
+    </message>
+    <message>
+        <source>Lo&amp;g</source>
+        <translation>&amp;ثبت رویداد</translation>
+    </message>
+    <message>
+        <source>Once</source>
+        <translation type="vanished">Once</translation>
+    </message>
+    <message>
+        <source>Every time</source>
+        <translation type="vanished">Every time</translation>
+    </message>
+    <message>
+        <source>Re&amp;move File</source>
+        <translation>&amp;حذف پرونده</translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation>نما</translation>
+    </message>
+    <message>
+        <source>Hide &amp;Borders</source>
+        <translation>پنهان کردن &amp;حاشیه‌ها</translation>
+    </message>
+    <message>
+        <source>Sho&amp;w Caption and Menu</source>
+        <translation>ن&amp;مایش عنوان و منو</translation>
+    </message>
+    <message>
+        <source>Quick Open</source>
+        <translation>باز کردن سریع</translation>
+    </message>
+    <message>
+        <source>Software Decoding</source>
+        <translation>رمزگشایی نرم‌افزاری</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1</source>
+        <translation>رمزگشایی سخت‌افزاری: %1</translation>
+    </message>
+    <message>
+        <source>Hardware Decoding: %1 (slow)</source>
+        <translation>رمزگشایی سخت‌افزاری: %1 (کند)</translation>
+    </message>
+    <message>
+        <source>No files favorited</source>
+        <translation>هیچ پرونده‌ای نشان نشده است</translation>
+    </message>
+    <message>
+        <source>%1%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No streams favorited</source>
+        <translation>هیچ جریانی نشان نشده است</translation>
+    </message>
+    <message>
+        <source> [Freestanding]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Loading</source>
+        <translation>در حال بارگیری</translation>
+    </message>
+    <message>
+        <source>Buffering (%1%)</source>
+        <translation>بافرینگ (%1%)</translation>
+    </message>
+    <message>
+        <source>Seeking</source>
+        <translation>در حال جستجو</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطا</translation>
+    </message>
+    <message>
+        <source>&amp;Quick Add To Playlist</source>
+        <translation>&amp;افزودن سریع به فهرست پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Quick Open File</source>
+        <translation>&amp;باز کردن سریع پرونده</translation>
+    </message>
+    <message>
+        <source>Open Directory</source>
+        <translation>باز کردن دایرکتوری</translation>
+    </message>
+    <message>
+        <source>Enter Network Stream</source>
+        <translation>ورود جریان شبکه</translation>
+    </message>
+    <message>
+        <source>Network Stream</source>
+        <translation>جریان شبکه</translation>
+    </message>
+    <message>
+        <source>Open Subtitle</source>
+        <translation>باز کردن زیرنویس</translation>
+    </message>
+    <message>
+        <source>Development Build</source>
+        <translation type="vanished">Development Build</translation>
+    </message>
+    <message>
+        <source>Version %1</source>
+        <translation type="vanished">Version %1</translation>
+    </message>
+    <message>
+        <source>About Media Player Classic Qute Theater</source>
+        <translation type="vanished">About Media Player Classic Qute Theater</translation>
+    </message>
+    <message>
+        <source>A clone of Media Player Classic written in Qt</source>
+        <translation type="vanished">A clone of Media Player Classic written in Qt</translation>
+    </message>
+    <message>
+        <source>Based on Qt %1 and %2</source>
+        <translation type="vanished">Based on Qt %1 and %2</translation>
+    </message>
+    <message>
+        <source>Built on %1 at %2</source>
+        <translation type="vanished">Built on %1 at %2</translation>
+    </message>
+    <message>
+        <source>Alt+Q</source>
+        <translation type="vanished">Alt+Q</translation>
+    </message>
+    <message>
+        <source>Ctrl+Q</source>
+        <translation>Ctrl+Q</translation>
+    </message>
+    <message>
+        <source>Paused</source>
+        <translation>مکث شده</translation>
+    </message>
+    <message>
+        <source>Playing</source>
+        <translation>در حال پخش</translation>
+    </message>
+    <message>
+        <source>Buffering</source>
+        <translation type="vanished">Buffering</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>ناشناخته</translation>
+    </message>
+    <message>
+        <source>&lt;unknown&gt;</source>
+        <translation type="vanished">&lt;unknown&gt;</translation>
+    </message>
+    <message>
+        <source>Libr&amp;ary</source>
+        <translation type="vanished">Libr&amp;ary</translation>
+    </message>
+    <message>
+        <source>Ctrl+=</source>
+        <translation>Ctrl+=</translation>
+    </message>
+    <message>
+        <source>Ctrl+-</source>
+        <translation>Ctrl+-</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Subtitle</source>
+        <translation>&amp;رونوشت از زیرنویس</translation>
+    </message>
+    <message>
+        <source>Controls in Fullscreen</source>
+        <translation>کنترل‌ها در تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>i</source>
+        <translation type="vanished">i</translation>
+    </message>
+    <message>
+        <source>&amp;Previous File</source>
+        <translation>&amp;پروندهٔ قبلی</translation>
+    </message>
+    <message>
+        <source>Ctrl+PgUp</source>
+        <translation type="vanished">Ctrl+PgUp</translation>
+    </message>
+    <message>
+        <source>&amp;Next File</source>
+        <translation>&amp;پروندهٔ بعدی</translation>
+    </message>
+    <message>
+        <source>Ctrl+PgDown</source>
+        <translation type="vanished">Ctrl+PgDown</translation>
+    </message>
+    <message>
+        <source>Play next &amp;file</source>
+        <translation>پخش پروندهٔ &amp;بعدی</translation>
+    </message>
+    <message>
+        <source>Subtitles</source>
+        <translation>زیرنویس‌ها</translation>
+    </message>
+    <message>
+        <source>Mute</source>
+        <translation>قطع صدا</translation>
+    </message>
+    <message>
+        <source>&amp;Add to Favorites</source>
+        <translation>&amp;افزودن به نشان‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Delay</source>
+        <translation>&amp;کاهش تأخیر</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Delay</source>
+        <translation>&amp;افزایش تأخیر</translation>
+    </message>
+    <message>
+        <source>&amp;Video</source>
+        <translation>&amp;ویدیو</translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Aspect</source>
+        <translation type="vanished">&amp;Decrease Aspect</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Aspect</source>
+        <translation type="vanished">&amp;Increase Aspect</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Aspect</source>
+        <translation type="vanished">&amp;Reset Aspect</translation>
+    </message>
+    <message>
+        <source>Disable &amp;aspect</source>
+        <translation type="vanished">Disable &amp;aspect</translation>
+    </message>
+    <message>
+        <source>&amp;Show OSD Timer</source>
+        <translation>&amp;نمایش زمان‌سنج روی صفحه</translation>
+    </message>
+    <message>
+        <source>I</source>
+        <translation>I</translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Aspect ratio</source>
+        <translation type="vanished">&amp;Decrease Aspect ratio</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Aspect ratio</source>
+        <translation type="vanished">&amp;Increase Aspect ratio</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Aspect ratio</source>
+        <translation type="vanished">&amp;Reset Aspect ratio</translation>
+    </message>
+    <message>
+        <source>Disable &amp;Aspect ratio</source>
+        <translation type="vanished">Disable &amp;Aspect ratio</translation>
+    </message>
+    <message>
+        <source>C</source>
+        <translation>C</translation>
+    </message>
+    <message>
+        <source>%1 / %2</source>
+        <translation>%1 / %2</translation>
+    </message>
+    <message>
+        <source>Seek Forwards (normal step)</source>
+        <translation>جستجو به جلو (گام عادی)</translation>
+    </message>
+    <message>
+        <source>Seek Backwards (normal step)</source>
+        <translation>جستجو به عقب (گام عادی)</translation>
+    </message>
+    <message>
+        <source>Seek Forwards (large step)</source>
+        <translation>جستجو به جلو (گام بزرگ)</translation>
+    </message>
+    <message>
+        <source>Seek Backwards (large step)</source>
+        <translation>جستجو به عقب (گام بزرگ)</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>عنوان</translation>
+    </message>
+    <message>
+        <source>&amp;Aspect ratio</source>
+        <translation>&amp;نسبت ابعاد</translation>
+    </message>
+    <message>
+        <source>&amp;Pan and Scan</source>
+        <translation>&amp;پَن و اسکن</translation>
+    </message>
+    <message>
+        <source>Decrease &amp;Pan and Scan</source>
+        <translation type="vanished">Decrease &amp;Pan and Scan</translation>
+    </message>
+    <message>
+        <source>Increase Pan and &amp;Scan</source>
+        <translation type="vanished">Increase Pan and &amp;Scan</translation>
+    </message>
+    <message>
+        <source>&amp;Minimum Pan and Scan</source>
+        <translation type="vanished">&amp;Minimum Pan and Scan</translation>
+    </message>
+    <message>
+        <source>M&amp;aximum Pan and Scan</source>
+        <translation type="vanished">M&amp;aximum Pan and Scan</translation>
+    </message>
+    <message>
+        <source>Music Mode</source>
+        <translation>حالت موسیقی</translation>
+    </message>
+    <message>
+        <source>M</source>
+        <translation>M</translation>
+    </message>
+    <message>
+        <source>&amp;Previous Audio Track</source>
+        <translation>&amp;ردیف صدای قبلی</translation>
+    </message>
+    <message>
+        <source>&amp;Next Audio Track</source>
+        <translation>&amp;ردیف صدای بعدی</translation>
+    </message>
+    <message>
+        <source>&amp;50%</source>
+        <translation>&amp;۵۰٪</translation>
+    </message>
+    <message>
+        <source>&amp;100%</source>
+        <translation>&amp;۱۰۰٪</translation>
+    </message>
+    <message>
+        <source>&amp;200%</source>
+        <translation>&amp;۲۰۰٪</translation>
+    </message>
+    <message>
+        <source>25%</source>
+        <translation>۲۵٪</translation>
+    </message>
+    <message>
+        <source>&amp;75%</source>
+        <translation>&amp;۷۵٪</translation>
+    </message>
+    <message>
+        <source>15&amp;0%</source>
+        <translation>۱۵&amp;۰٪</translation>
+    </message>
+    <message>
+        <source>&amp;400%</source>
+        <translation>&amp;۴۰۰٪</translation>
+    </message>
+    <message>
+        <source>&amp;300%</source>
+        <translation>&amp;۳۰۰٪</translation>
+    </message>
+    <message>
+        <source>vo: %1, decoder: %2</source>
+        <translation>vo: %1, decoder: %2</translation>
+    </message>
+    <message>
+        <source>v: %1 kb/s, a: %2 kb/s</source>
+        <translation>v: %1 kb/s, a: %2 kb/s</translation>
+    </message>
+    <message>
+        <source>v: 0 kb/s, a: 0kb/s</source>
+        <translation>v: 0 kb/s, a: 0kb/s</translation>
+    </message>
+    <message>
+        <source>(Unknown)</source>
+        <translation type="vanished">(Unknown)</translation>
+    </message>
+    <message>
+        <source>Running under %1</source>
+        <translation type="vanished">Running under %1</translation>
+    </message>
+    <message>
+        <source>XWayland or X11</source>
+        <translation type="vanished">XWayland or X11</translation>
+    </message>
+    <message>
+        <source>&amp;Input Cache Statistics</source>
+        <translation>&amp;آمار حافظهٔ پنهان ورودی</translation>
+    </message>
+    <message>
+        <source>&amp;Previous Subtitles track</source>
+        <translation>&amp;ردیف زیرنویس قبلی</translation>
+    </message>
+    <message>
+        <source>&amp;Next Subtitles track</source>
+        <translation>&amp;ردیف زیرنویس بعدی</translation>
+    </message>
+    <message>
+        <source>&amp;Filters</source>
+        <translation>&amp;فیلترها</translation>
+    </message>
+    <message>
+        <source>&amp;Deinterlace</source>
+        <translation>&amp;حذف درهم‌بافتگی</translation>
+    </message>
+    <message>
+        <source>&amp;Extra Stereo</source>
+        <translation>&amp;استریوی اضافی</translation>
+    </message>
+    <message>
+        <source>&amp;Compressor</source>
+        <translation>&amp;فشرده‌ساز</translation>
+    </message>
+    <message>
+        <source>Move File to Recycle Bin</source>
+        <translation type="vanished">Move File to Recycle Bin</translation>
+    </message>
+    <message>
+        <source>Screenshot</source>
+        <translation>عکس‌برداری از صفحه</translation>
+    </message>
+    <message>
+        <source>&amp;Crossfeed (for headphones)</source>
+        <translation>&amp;تغذیهٔ متقاطع (برای هدفون)</translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Zoom</source>
+        <translation type="vanished">&amp;Decrease Zoom</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Zoom</source>
+        <translation type="vanished">&amp;Increase Zoom</translation>
+    </message>
+    <message>
+        <source>&amp;Reset Zoom</source>
+        <translation type="vanished">&amp;Reset Zoom</translation>
+    </message>
+    <message>
+        <source>More Files</source>
+        <translation>پرونده‌های بیشتر</translation>
+    </message>
+    <message>
+        <source>&amp;Decrease</source>
+        <translation>&amp;کاهش</translation>
+    </message>
+    <message>
+        <source>&amp;Increase</source>
+        <translation>&amp;افزایش</translation>
+    </message>
+    <message>
+        <source>&amp;Reset</source>
+        <translation>&amp;بازنشانی</translation>
+    </message>
+    <message>
+        <source>D&amp;isable</source>
+        <translation>&amp;غیرفعال کردن</translation>
+    </message>
+    <message>
+        <source>&amp;Minimum</source>
+        <translation>&amp;حداقل</translation>
+    </message>
+    <message>
+        <source>M&amp;aximum</source>
+        <translation>ح&amp;داکثر</translation>
+    </message>
+    <message>
+        <source>&amp;Resize</source>
+        <translation>&amp;تغییر اندازه</translation>
+    </message>
+    <message>
+        <source>&amp;Decrease Width</source>
+        <translation>&amp;کاهش عرض</translation>
+    </message>
+    <message>
+        <source>&amp;Increase Width</source>
+        <translation>&amp;افزایش عرض</translation>
+    </message>
+    <message>
+        <source>D&amp;ecrease Height</source>
+        <translation>ک&amp;اهش ارتفاع</translation>
+    </message>
+    <message>
+        <source>I&amp;ncrease Height</source>
+        <translation>ا&amp;فزایش ارتفاع</translation>
+    </message>
+    <message>
+        <source>Re&amp;set Size</source>
+        <translation type="vanished">Re&amp;set Size</translation>
+    </message>
+    <message>
+        <source>&amp;Move</source>
+        <translation>&amp;انتقال</translation>
+    </message>
+    <message>
+        <source>&amp;Left</source>
+        <translation>&amp;چپ</translation>
+    </message>
+    <message>
+        <source>&amp;Right</source>
+        <translation>&amp;راست</translation>
+    </message>
+    <message>
+        <source>R&amp;eset</source>
+        <translation>ب&amp;ازنشانی</translation>
+    </message>
+    <message>
+        <source>R&amp;otate</source>
+        <translation>چ&amp;رخش</translation>
+    </message>
+    <message>
+        <source>&amp;Clockwise</source>
+        <translation>&amp;جهت عقربه‌های ساعت</translation>
+    </message>
+    <message>
+        <source>C&amp;ounterclockwise</source>
+        <translation>&amp;خلاف جهت عقربه‌های ساعت</translation>
+    </message>
+    <message>
+        <source>&amp;Horizontal Flip</source>
+        <translation>&amp;چرخش افقی</translation>
+    </message>
+    <message>
+        <source>&amp;Playlist</source>
+        <translation>&amp;فهرست پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Play</source>
+        <translation>&amp;پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Play Selected</source>
+        <translation>&amp;پخش انتخاب‌شده</translation>
+    </message>
+    <message>
+        <source>&amp;Remove Selected</source>
+        <translation>&amp;حذف انتخاب‌شده</translation>
+    </message>
+    <message>
+        <source>&amp;Move File to Recycle Bin</source>
+        <translation>&amp;انتقال پرونده به سطل زباله</translation>
+    </message>
+    <message>
+        <source>Delay</source>
+        <translation>تأخیر</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>بله</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>خودکار</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>خیر</translation>
+    </message>
+    <message>
+        <source>Pl&amp;aylists Backup</source>
+        <translation>&amp;پشتیبان فهرست‌های پخش</translation>
+    </message>
+    <message>
+        <source>Decrease Delay</source>
+        <translation>کاهش تأخیر</translation>
+    </message>
+    <message>
+        <source>Increase Delay</source>
+        <translation>افزایش تأخیر</translation>
+    </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation>&amp;بارگیری مجدد پروندهٔ زیرنویس</translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished">&amp;فهرست پخش جدید</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished">&amp;تکثیر فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MouseState</name>
+    <message>
+        <source>None</source>
+        <translation>هیچ</translation>
+    </message>
+    <message>
+        <source>Wheel</source>
+        <translation>چرخ</translation>
+    </message>
+    <message>
+        <source>Left</source>
+        <translation>چپ</translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation>راست</translation>
+    </message>
+    <message>
+        <source>Middle</source>
+        <translation>وسط</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>عقب</translation>
+    </message>
+    <message>
+        <source>Forward</source>
+        <translation>جلو</translation>
+    </message>
+    <message>
+        <source>Task</source>
+        <translation>وظیفه</translation>
+    </message>
+    <message>
+        <source>XButton4</source>
+        <translation>دکمه X4</translation>
+    </message>
+    <message>
+        <source>XButton5</source>
+        <translation>دکمه X5</translation>
+    </message>
+    <message>
+        <source>XButton6</source>
+        <translation>دکمه X6</translation>
+    </message>
+    <message>
+        <source>XButton7</source>
+        <translation>دکمه X7</translation>
+    </message>
+    <message>
+        <source>XButton8</source>
+        <translation>دکمه X8</translation>
+    </message>
+    <message>
+        <source>XButton9</source>
+        <translation>دکمه X9</translation>
+    </message>
+    <message>
+        <source>XButton10</source>
+        <translation>دکمه X10</translation>
+    </message>
+    <message>
+        <source>XButton11</source>
+        <translation>دکمه X11</translation>
+    </message>
+    <message>
+        <source>XButton12</source>
+        <translation>دکمه X12</translation>
+    </message>
+    <message>
+        <source>XButton13</source>
+        <translation>دکمه X13</translation>
+    </message>
+    <message>
+        <source>XButton14</source>
+        <translation>دکمه X14</translation>
+    </message>
+    <message>
+        <source>XButton15</source>
+        <translation>دکمه X15</translation>
+    </message>
+    <message>
+        <source>XButton16</source>
+        <translation>دکمه X16</translation>
+    </message>
+    <message>
+        <source>XButton17</source>
+        <translation>دکمه X17</translation>
+    </message>
+    <message>
+        <source>XButton18</source>
+        <translation>دکمه X18</translation>
+    </message>
+    <message>
+        <source>XButton19</source>
+        <translation>دکمه X19</translation>
+    </message>
+    <message>
+        <source>XButton20</source>
+        <translation>دکمه X20</translation>
+    </message>
+    <message>
+        <source>XButton21</source>
+        <translation>دکمه X21</translation>
+    </message>
+    <message>
+        <source>XButton22</source>
+        <translation>دکمه X22</translation>
+    </message>
+    <message>
+        <source>XButton23</source>
+        <translation>دکمه X23</translation>
+    </message>
+    <message>
+        <source>XButton24</source>
+        <translation>دکمه X24</translation>
+    </message>
+    <message>
+        <source>Shift</source>
+        <translation>Shift</translation>
+    </message>
+    <message>
+        <source>Control</source>
+        <translation>Control</translation>
+    </message>
+    <message>
+        <source>Alt</source>
+        <translation>Alt</translation>
+    </message>
+    <message>
+        <source>Meta</source>
+        <translation>Meta</translation>
+    </message>
+    <message>
+        <source>Down</source>
+        <translation>پایین</translation>
+    </message>
+    <message>
+        <source>Up</source>
+        <translation>بالا</translation>
+    </message>
+    <message>
+        <source>Twice</source>
+        <translation>دو بار</translation>
+    </message>
+</context>
+<context>
+    <name>MpvObject</name>
+    <message>
+        <source>Subtitles delay: %1 ms</source>
+        <translation>تأخیر زیرنویس: %1 میلی‌ثانیه</translation>
+    </message>
+    <message>
+        <source>Audio delay: %1 ms</source>
+        <translation>تأخیر صدا: %1 میلی‌ثانیه</translation>
+    </message>
+</context>
+<context>
+    <name>OpenFileDialog</name>
+    <message>
+        <source>Open File</source>
+        <translation>باز کردن پرونده</translation>
+    </message>
+    <message>
+        <source>Fi&amp;le</source>
+        <translation>&amp;پرونده</translation>
+    </message>
+    <message>
+        <source>&amp;Subtitles</source>
+        <translation>&amp;زیرنویس‌ها</translation>
+    </message>
+    <message>
+        <source>Select File</source>
+        <translation>انتخاب پرونده</translation>
+    </message>
+    <message>
+        <source>Browse...</source>
+        <translation type="unfinished">مرور...</translation>
+    </message>
+</context>
+<context>
+    <name>PaletteEditor</name>
+    <message>
+        <source>Generate palette from:</source>
+        <translation>تولید پالت از:</translation>
+    </message>
+    <message>
+        <source>Button</source>
+        <translation>دکمه</translation>
+    </message>
+    <message>
+        <source>Button &amp;&amp; Window</source>
+        <translation>دکمه &amp;&amp; پنجره</translation>
+    </message>
+    <message>
+        <source>Reset to System</source>
+        <translation>بازنشانی به سیستم</translation>
+    </message>
+    <message>
+        <source>Dark colors</source>
+        <translation>رنگ‌های تیره</translation>
+    </message>
+    <message>
+        <source>Generate</source>
+        <translation type="vanished">Generate</translation>
+    </message>
+</context>
+<context>
+    <name>PlaybackManager</name>
+    <message>
+        <source>Speed: %1%</source>
+        <translation>سرعت: %1%</translation>
+    </message>
+    <message>
+        <source>Volume: %1%</source>
+        <translation>بلندی صدا: %1%</translation>
+    </message>
+    <message>
+        <source>Mute: on</source>
+        <translation>قطع صدا: روشن</translation>
+    </message>
+    <message>
+        <source>Mute: off</source>
+        <translation>قطع صدا: خاموش</translation>
+    </message>
+    <message>
+        <source>0: None</source>
+        <translation>۰: هیچ</translation>
+    </message>
+    <message>
+        <source>Aspect ratio: %1</source>
+        <translation>نسبت ابعاد: %1</translation>
+    </message>
+    <message>
+        <source>Audio track: </source>
+        <translation>ردیف صدا: </translation>
+    </message>
+    <message>
+        <source>Subtitles track: </source>
+        <translation>ردیف زیرنویس: </translation>
+    </message>
+    <message>
+        <source>Subtitles: on</source>
+        <translation>زیرنویس: روشن</translation>
+    </message>
+    <message>
+        <source>Subtitles: off</source>
+        <translation>زیرنویس: خاموش</translation>
+    </message>
+    <message>
+        <source>File moved to recycle bin: %1</source>
+        <translation>پرونده به سطل زباله منتقل شد: %1</translation>
+    </message>
+    <message>
+        <source>Failed to move file to recycle bin: %1</source>
+        <translation>انتقال پرونده به سطل زباله ناموفق بود: %1</translation>
+    </message>
+</context>
+<context>
+    <name>PlaylistCollection</name>
+    <message>
+        <source>Quick playlist</source>
+        <translation type="vanished">Quick playlist</translation>
+    </message>
+    <message>
+        <source>Quick Playlist</source>
+        <translation>فهرست پخش سریع</translation>
+    </message>
+</context>
+<context>
+    <name>PlaylistWindow</name>
+    <message>
+        <source>P&amp;laylist</source>
+        <translation>ف&amp;هرست پخش</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>جستجو</translation>
+    </message>
+    <message>
+        <source>Visible Items to Quick Queue</source>
+        <translation>موارد قابل مشاهده به صف سریع</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation type="vanished">زبانهٔ جدید</translation>
+    </message>
+    <message>
+        <source>Close Tab</source>
+        <translation type="vanished">Close Tab</translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="vanished">تکثیر زبانه</translation>
+    </message>
+    <message>
+        <source>Import Playlist</source>
+        <translation>وارد کردن فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Export Playlist</source>
+        <translation>خروجی گرفتن از فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Show Queue</source>
+        <translation>نمایش صف</translation>
+    </message>
+    <message>
+        <source>Playlist</source>
+        <translation>فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Quick Playlist</source>
+        <translation>فهرست پخش سریع</translation>
+    </message>
+    <message>
+        <source>New Playlist</source>
+        <translation>فهرست پخش جدید</translation>
+    </message>
+    <message>
+        <source>Enter Playlist Name</source>
+        <translation>نام فهرست پخش را وارد کنید</translation>
+    </message>
+    <message>
+        <source>Import File</source>
+        <translation type="vanished">Import File</translation>
+    </message>
+    <message>
+        <source>Playlist files (*.m3u *.m3u8)</source>
+        <translation type="vanished">Playlist files (*.m3u *.m3u8)</translation>
+    </message>
+    <message>
+        <source>Export File</source>
+        <translation type="vanished">Export File</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation>باز کردن</translation>
+    </message>
+    <message>
+        <source>Add</source>
+        <translation>افزودن</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation type="vanished">Clear</translation>
+    </message>
+    <message>
+        <source>Copy to Clipboard</source>
+        <translation>رونوشت به حافظهٔ موقت</translation>
+    </message>
+    <message>
+        <source>Save As...</source>
+        <translation type="vanished">Save As...</translation>
+    </message>
+    <message>
+        <source>Sort By Label</source>
+        <translation>مرتب‌سازی بر اساس برچسب</translation>
+    </message>
+    <message>
+        <source>Sort By Url</source>
+        <translation>مرتب‌سازی بر اساس نشانی اینترنتی</translation>
+    </message>
+    <message>
+        <source>Randomize</source>
+        <translation type="vanished">Randomize</translation>
+    </message>
+    <message>
+        <source>Restore</source>
+        <translation>بازیابی</translation>
+    </message>
+    <message>
+        <source>Shuffle</source>
+        <translation>به هم ریختن</translation>
+    </message>
+    <message>
+        <source>Hide On Fullscreen</source>
+        <translation>پنهان در تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>Enter playlist name</source>
+        <translation>نام فهرست پخش را وارد کنید</translation>
+    </message>
+    <message>
+        <source>Playlist files</source>
+        <translation>پرونده‌های فهرست پخش</translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation>پروندهٔ &quot;%1&quot; از قبل وجود دارد.
+آیا می‌خواهید آن را جایگزین کنید؟</translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation>&amp;فهرست پخش جدید</translation>
+    </message>
+    <message>
+        <source>&amp;Remove Playlist</source>
+        <translation>&amp;حذف فهرست پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Clear Playlist</source>
+        <translation>&amp;پاک کردن فهرست پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation>&amp;تکثیر فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Rename Playlist</source>
+        <translation>&amp;تغییر نام فهرست پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Import Playlist</source>
+        <translation>&amp;وارد کردن فهرست پخش</translation>
+    </message>
+    <message>
+        <source>&amp;Export Playlist</source>
+        <translation>&amp;خروجی گرفتن از فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Repeat</source>
+        <translation>تکرار</translation>
+    </message>
+    <message>
+        <source>Reshuffle</source>
+        <translation>به هم ریختن مجدد</translation>
+    </message>
+    <message>
+        <source>Queue</source>
+        <translation>صف</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>نام</translation>
+    </message>
+    <message>
+        <source>Quick playlist</source>
+        <translation type="obsolete">Quick playlist</translation>
+    </message>
+    <message>
+        <source>Playlist files (*.m3u *.m3u8 *.txt)</source>
+        <translation>پرونده‌های فهرست پخش (*.m3u *.m3u8 *.txt)</translation>
+    </message>
+    <message>
+        <source>Import Playlist File</source>
+        <translation>وارد کردن پروندهٔ فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Export Playlist File</source>
+        <translation>خروجی گرفتن از پروندهٔ فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation>افزودن پوشه</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PropertiesWindow</name>
+    <message>
+        <source>Properties</source>
+        <translation>ویژگی‌ها</translation>
+    </message>
+    <message>
+        <source>Details</source>
+        <translation>جزئیات</translation>
+    </message>
+    <message>
+        <source>Type:</source>
+        <translation>نوع:</translation>
+    </message>
+    <message>
+        <source>Size:</source>
+        <translation>اندازه:</translation>
+    </message>
+    <message>
+        <source>Media length:</source>
+        <translation>طول رسانه:</translation>
+    </message>
+    <message>
+        <source>Video size:</source>
+        <translation>اندازهٔ ویدیو:</translation>
+    </message>
+    <message>
+        <source>Created:</source>
+        <translation type="vanished">Created:</translation>
+    </message>
+    <message>
+        <source>Clip</source>
+        <translation>بریده</translation>
+    </message>
+    <message>
+        <source>Clip:</source>
+        <translation>بریده:</translation>
+    </message>
+    <message>
+        <source>Author:</source>
+        <translation>نویسنده:</translation>
+    </message>
+    <message>
+        <source>Copyright:</source>
+        <translation>کپی‌رایت:</translation>
+    </message>
+    <message>
+        <source>Rating:</source>
+        <translation>امتیاز:</translation>
+    </message>
+    <message>
+        <source>Location:</source>
+        <translation>مکان:</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>توضیحات:</translation>
+    </message>
+    <message>
+        <source>MediaInfo</source>
+        <translation>اطلاعات رسانه</translation>
+    </message>
+    <message>
+        <source>&amp;Save</source>
+        <translation>&amp;ذخیره</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>ویدیو</translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation>صدا</translation>
+    </message>
+    <message>
+        <source>Subtitles</source>
+        <translation>زیرنویس‌ها</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>عمومی</translation>
+    </message>
+    <message>
+        <source>Menu
+</source>
+        <translation>منو
+</translation>
+    </message>
+    <message>
+        <source>File has no data for this section.
+</source>
+        <translation>پرونده برای این بخش داده‌ای ندارد.
+</translation>
+    </message>
+    <message>
+        <source>Text documents (*.txt);;All files (*.*)</source>
+        <translation>اسناد متنی (*.txt);;همهٔ پرونده‌ها (*.*)</translation>
+    </message>
+    <message>
+        <source>Modified:</source>
+        <translation>تغییر داده شده:</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>All Media (*.%1);;All Files (*.*)</source>
+        <translation>همهٔ رسانه‌ها (*.%1);;همهٔ پرونده‌ها (*.*)</translation>
+    </message>
+    <message>
+        <source>All Subtitles (*.%1);;All Files (*.*)</source>
+        <translation>همهٔ زیرنویس‌ها (*.%1);;همهٔ پرونده‌ها (*.*)</translation>
+    </message>
+    <message>
+        <source>Window text</source>
+        <translation>متن پنجره</translation>
+    </message>
+    <message>
+        <source>Button</source>
+        <translation>دکمه</translation>
+    </message>
+    <message>
+        <source>Light</source>
+        <translation>روشن</translation>
+    </message>
+    <message>
+        <source>Midlight</source>
+        <translation>نیمه‌روشن</translation>
+    </message>
+    <message>
+        <source>Dark</source>
+        <translation>تیره</translation>
+    </message>
+    <message>
+        <source>Mid</source>
+        <translation>متوسط</translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation>متن</translation>
+    </message>
+    <message>
+        <source>Bright text</source>
+        <translation>متن روشن</translation>
+    </message>
+    <message>
+        <source>Button text</source>
+        <translation>متن دکمه</translation>
+    </message>
+    <message>
+        <source>Base</source>
+        <translation>پایه</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>پنجره</translation>
+    </message>
+    <message>
+        <source>Shadow</source>
+        <translation>سایه</translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation>برجسته</translation>
+    </message>
+    <message>
+        <source>Highlighted text</source>
+        <translation>متن برجسته</translation>
+    </message>
+    <message>
+        <source>Link</source>
+        <translation>پیوند</translation>
+    </message>
+    <message>
+        <source>Link (visited)</source>
+        <translation>پیوند (بازدید شده)</translation>
+    </message>
+    <message>
+        <source>Base (alternate)</source>
+        <translation>پایه (جایگزین)</translation>
+    </message>
+    <message>
+        <source>No role</source>
+        <translation>بدون نقش</translation>
+    </message>
+    <message>
+        <source>Tooltip base</source>
+        <translation>پایهٔ راهنما</translation>
+    </message>
+    <message>
+        <source>Tooltip text</source>
+        <translation>متن راهنما</translation>
+    </message>
+    <message>
+        <source>Placeholder text</source>
+        <translation>متن جانمایه</translation>
+    </message>
+    <message>
+        <source>Accent</source>
+        <translation>برجسته‌سازی</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>فعال</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>غیرفعال</translation>
+    </message>
+    <message>
+        <source>Inactive</source>
+        <translation>غیرفعال</translation>
+    </message>
+</context>
+<context>
+    <name>ScreenCombo</name>
+    <message>
+        <source>Current</source>
+        <translation>جاری</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWindow</name>
+    <message>
+        <source>Options</source>
+        <translation>تنظیمات</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>۱</translation>
+    </message>
+    <message>
+        <source>Player</source>
+        <translation>پخش‌کننده</translation>
+    </message>
+    <message>
+        <source>Formats</source>
+        <translation type="vanished">Formats</translation>
+    </message>
+    <message>
+        <source>Keys</source>
+        <translation>کلیدها</translation>
+    </message>
+    <message>
+        <source>Logo</source>
+        <translation>نشانواره</translation>
+    </message>
+    <message>
+        <source>Interface</source>
+        <translation>رابط کاربری</translation>
+    </message>
+    <message>
+        <source>Playback</source>
+        <translation>پخش</translation>
+    </message>
+    <message>
+        <source>Output</source>
+        <translation>خروجی</translation>
+    </message>
+    <message>
+        <source>Shaders</source>
+        <translation>سایه‌زن‌ها</translation>
+    </message>
+    <message>
+        <source>Fullscreen</source>
+        <translation>تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>Sync</source>
+        <translation>همگام‌سازی</translation>
+    </message>
+    <message>
+        <source>Hw. Decoding</source>
+        <translation>رمزگشایی سخت‌افزاری</translation>
+    </message>
+    <message>
+        <source>Playlist</source>
+        <translation>فهرست پخش</translation>
+    </message>
+    <message>
+        <source>Subtitles</source>
+        <translation>زیرنویس‌ها</translation>
+    </message>
+    <message>
+        <source>Default Style</source>
+        <translation>سبک پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>Misc</source>
+        <translation type="vanished">Misc</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>خروجی گرفتن</translation>
+    </message>
+    <message>
+        <source>Encoding</source>
+        <translation>رمزگذاری</translation>
+    </message>
+    <message>
+        <source>Tweaks</source>
+        <translation>تنظیمات جزئی</translation>
+    </message>
+    <message>
+        <source>Logging</source>
+        <translation>ثبت رویداد</translation>
+    </message>
+    <message>
+        <source>Miscellaneous</source>
+        <translation>متفرقه</translation>
+    </message>
+    <message>
+        <source>&lt;big&gt;&lt;b&gt;Player</source>
+        <translation>&lt;big&gt;&lt;b&gt;پخش‌کننده</translation>
+    </message>
+    <message>
+        <source>Open options</source>
+        <translation>تنظیمات باز کردن</translation>
+    </message>
+    <message>
+        <source>Use the same player for
+each &amp;media file</source>
+        <translation>استفاده از همان پخش‌کننده برای
+هر &amp;پروندهٔ رسانه‌ای</translation>
+    </message>
+    <message>
+        <source>Open a new &amp;player for each
+media file played</source>
+        <translation>باز کردن یک پخش‌کنندهٔ &amp;جدید برای هر
+پروندهٔ رسانه‌ای پخش شده</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>دیگر</translation>
+    </message>
+    <message>
+        <source>Tray icon</source>
+        <translation>آیکون سینی</translation>
+    </message>
+    <message>
+        <source>Show OSD</source>
+        <translation>نمایش روی صفحه</translation>
+    </message>
+    <message>
+        <source>Limit window proportions on resize</source>
+        <translation>محدود کردن تناسب پنجره هنگام تغییر اندازه</translation>
+    </message>
+    <message>
+        <source>Disable &quot;Open Disc&quot; menu</source>
+        <translation>غیرفعال کردن منوی &quot;باز کردن دیسک&quot;</translation>
+    </message>
+    <message>
+        <source>Disable screensaver while playing</source>
+        <translation>غیرفعال کردن محافظ صفحه هنگام پخش</translation>
+    </message>
+    <message>
+        <source>Title bar</source>
+        <translation>نوار عنوان</translation>
+    </message>
+    <message>
+        <source>Disp&amp;lay full path</source>
+        <translation>ن&amp;مایش مسیر کامل</translation>
+    </message>
+    <message>
+        <source>File &amp;name only</source>
+        <translation>تنها &amp;نام پرونده</translation>
+    </message>
+    <message>
+        <source>Don&apos;t prefi&amp;x anything</source>
+        <translation type="vanished">Don&apos;t prefi&amp;x anything</translation>
+    </message>
+    <message>
+        <source>Replace file name with title</source>
+        <translation type="vanished">Replace file name with title</translation>
+    </message>
+    <message>
+        <source>History</source>
+        <translation>تاریخچه</translation>
+    </message>
+    <message>
+        <source>Keep history of recently opened files</source>
+        <translation>نگهداری تاریخچهٔ پرونده‌های اخیراً باز شده</translation>
+    </message>
+    <message>
+        <source>Remember last selected playlist</source>
+        <translation>به خاطر سپردن آخرین فهرست پخش انتخاب شده</translation>
+    </message>
+    <message>
+        <source>Remember last window geometry</source>
+        <translation type="vanished">Remember last window geometry</translation>
+    </message>
+    <message>
+        <source>Remember last Pan-n-Scan Zoom</source>
+        <translation>به خاطر سپردن آخرین بزرگنمایی پَن و اسکن</translation>
+    </message>
+    <message>
+        <source>MIME types</source>
+        <translation type="vanished">MIME types</translation>
+    </message>
+    <message>
+        <source>Association</source>
+        <translation type="vanished">Association</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>ویدیو</translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation>صدا</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>همه</translation>
+    </message>
+    <message>
+        <source>&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/blob/master/DOCS/ipc.md&quot;&gt;JSON IPC&lt;/a&gt; available at %1</source>
+        <translation>&lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/blob/master/DOCS/ipc.md&quot;&gt;JSON IPC&lt;/a&gt; در %1 در دسترس است</translation>
+    </message>
+    <message>
+        <source>MPRIS</source>
+        <translation>MPRIS</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation>بازنشانی</translation>
+    </message>
+    <message>
+        <source>E&amp;xternal</source>
+        <translation>&amp;خارجی</translation>
+    </message>
+    <message>
+        <source>Interna&amp;l</source>
+        <translation>&amp;داخلی</translation>
+    </message>
+    <message>
+        <source>Browse...</source>
+        <translation>مرور...</translation>
+    </message>
+    <message>
+        <source>Blank</source>
+        <translation>خالی</translation>
+    </message>
+    <message>
+        <source>Color film stock</source>
+        <translation type="vanished">Color film stock</translation>
+    </message>
+    <message>
+        <source>Black and white film stock</source>
+        <translation type="vanished">Black and white film stock</translation>
+    </message>
+    <message>
+        <source>Triangle in circle</source>
+        <translation>مثلث در دایره</translation>
+    </message>
+    <message>
+        <source>Multi purpose vehicle</source>
+        <translation>خودروی چندمنظوره</translation>
+    </message>
+    <message>
+        <source>Icons</source>
+        <translation>آیکون‌ها</translation>
+    </message>
+    <message>
+        <source>Theme</source>
+        <translation type="vanished">Theme</translation>
+    </message>
+    <message>
+        <source>Built-in fallback</source>
+        <translation type="vanished">Built-in fallback</translation>
+    </message>
+    <message>
+        <source>Custom</source>
+        <translation>سفارشی</translation>
+    </message>
+    <message>
+        <source>System (Linux only)</source>
+        <translation>سیستم (فقط لینوکس)</translation>
+    </message>
+    <message>
+        <source>Folder (e.g. ~/Pictures/MyIcons/mpc-qt/leet)</source>
+        <translation>پوشه (مثلاً ~/Pictures/MyIcons/mpc-qt/leet)</translation>
+    </message>
+    <message>
+        <source>See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</source>
+        <translation type="vanished">See &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/images/theme/black&quot;&gt;source repo&lt;/a&gt; for icon names.</translation>
+    </message>
+    <message>
+        <source>Fallback</source>
+        <translation>جایگزین</translation>
+    </message>
+    <message>
+        <source>Black (for white palette)</source>
+        <translation type="vanished">Black (for white palette)</translation>
+    </message>
+    <message>
+        <source>White (for black palette)</source>
+        <translation type="vanished">White (for black palette)</translation>
+    </message>
+    <message>
+        <source>Widget Color</source>
+        <translation type="vanished">Widget Color</translation>
+    </message>
+    <message>
+        <source>Use custom theme</source>
+        <translation type="vanished">Use custom theme</translation>
+    </message>
+    <message>
+        <source>Window Color</source>
+        <translation type="vanished">Window Color</translation>
+    </message>
+    <message>
+        <source>HHHHHH</source>
+        <translation type="vanished">HHHHHH</translation>
+    </message>
+    <message>
+        <source>Info Background</source>
+        <translation type="vanished">Info Background</translation>
+    </message>
+    <message>
+        <source>Info Foreground</source>
+        <translation type="vanished">Info Foreground</translation>
+    </message>
+    <message>
+        <source>Control</source>
+        <translation>کنترل</translation>
+    </message>
+    <message>
+        <source>Volume step</source>
+        <translation>گام بلندی صدا</translation>
+    </message>
+    <message>
+        <source>Speed step</source>
+        <translation>گام سرعت</translation>
+    </message>
+    <message>
+        <source>Auto</source>
+        <translation>خودکار</translation>
+    </message>
+    <message>
+        <source>Time step</source>
+        <translation type="vanished">Time step</translation>
+    </message>
+    <message>
+        <source>Fine step</source>
+        <translation type="vanished">Fine step</translation>
+    </message>
+    <message>
+        <source>Center window when zooming</source>
+        <translation>وسط‌چین کردن پنجره هنگام بزرگنمایی</translation>
+    </message>
+    <message>
+        <source>Auto zoom</source>
+        <translation>بزرگنمایی خودکار</translation>
+    </message>
+    <message>
+        <source>Autofit</source>
+        <translation>تناسب خودکار</translation>
+    </message>
+    <message>
+        <source>Autofit (Larger Only)</source>
+        <translation>تناسب خودکار (تنها بزرگ‌تر)</translation>
+    </message>
+    <message>
+        <source>Autofit (Smaller Only)</source>
+        <translation>تناسب خودکار (تنها کوچک‌تر)</translation>
+    </message>
+    <message>
+        <source>Auto fit factor</source>
+        <translation>ضریب تناسب خودکار</translation>
+    </message>
+    <message>
+        <source>Autofitting in tiling window managers requires that the window be in floating mode.</source>
+        <translation>تناسب خودکار در مدیران پنجرهٔ کاشی‌ای نیازمند این است که پنجره در حالت شناور باشد.</translation>
+    </message>
+    <message>
+        <source>Volume</source>
+        <translation type="vanished">Volume</translation>
+    </message>
+    <message>
+        <source>Use Qt&apos;s inbuilt fusion style</source>
+        <translation>استفاده از سبک تلفیقی داخلی Qt</translation>
+    </message>
+    <message>
+        <source>Balance</source>
+        <translation type="vanished">Balance</translation>
+    </message>
+    <message>
+        <source>Default track preference</source>
+        <translation>ترجیح ردیف پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>Mouse hiding</source>
+        <translation>پنهان کردن ماوس</translation>
+    </message>
+    <message>
+        <source>Windowed</source>
+        <translation>پنجره‌ای</translation>
+    </message>
+    <message>
+        <source>Video Renderer</source>
+        <translation>رندر ویدیو</translation>
+    </message>
+    <message>
+        <source>Dumb mode</source>
+        <translation>حالت ساده</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>عمومی</translation>
+    </message>
+    <message>
+        <source>Framebuffer</source>
+        <translation>بافر فریم</translation>
+    </message>
+    <message>
+        <source>8 bits</source>
+        <translation>۸ بیت</translation>
+    </message>
+    <message>
+        <source>10 bits</source>
+        <translation>۱۰ بیت</translation>
+    </message>
+    <message>
+        <source>12 bits</source>
+        <translation>۱۲ بیت</translation>
+    </message>
+    <message>
+        <source>16 bits</source>
+        <translation>۱۶ بیت</translation>
+    </message>
+    <message>
+        <source>16 bits float</source>
+        <translation>۱۶ بیت اعشاری</translation>
+    </message>
+    <message>
+        <source>32 bits float</source>
+        <translation>۳۲ بیت اعشاری</translation>
+    </message>
+    <message>
+        <source>Alpha channel</source>
+        <translation>کانال آلفا</translation>
+    </message>
+    <message>
+        <source>Alpha</source>
+        <translation>آلفا</translation>
+    </message>
+    <message>
+        <source>Blend on black</source>
+        <translation type="vanished">ترکیب روی سیاه</translation>
+    </message>
+    <message>
+        <source>Use</source>
+        <translation type="vanished">استفاده</translation>
+    </message>
+    <message>
+        <source>Ignore</source>
+        <translation type="vanished">نادیده گرفتن</translation>
+    </message>
+    <message>
+        <source>Sharpen</source>
+        <translation>تیز کردن</translation>
+    </message>
+    <message>
+        <source>Disabled</source>
+        <translation>غیرفعال</translation>
+    </message>
+    <message>
+        <source>Presets</source>
+        <translation>پیش‌تنظیم‌ها</translation>
+    </message>
+    <message>
+        <source>Plain</source>
+        <translation>ساده</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>کم</translation>
+    </message>
+    <message>
+        <source>High</source>
+        <translation>زیاد</translation>
+    </message>
+    <message>
+        <source>Highest</source>
+        <translation>بیشترین</translation>
+    </message>
+    <message>
+        <source>Placebo</source>
+        <translation>دارونما</translation>
+    </message>
+    <message>
+        <source>Load</source>
+        <translation>بارگیری</translation>
+    </message>
+    <message>
+        <source>Dither</source>
+        <translation>نویزدهی</translation>
+    </message>
+    <message>
+        <source>Dithering</source>
+        <translation>نویزدهی</translation>
+    </message>
+    <message>
+        <source>Depth</source>
+        <translation>عمق</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>نوع</translation>
+    </message>
+    <message>
+        <source>Fruit</source>
+        <translation>میوه</translation>
+    </message>
+    <message>
+        <source>Ordered</source>
+        <translation>مرتب</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>خیر</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>اندازه</translation>
+    </message>
+    <message>
+        <source>Often, LCDs perform dithering on their own, which conflicts with OpenGL&apos;s output and can lead to ugly output.  In which case you should lower the dither depth.</source>
+        <translation>اغلب، صفحه‌نمایش‌های LCD خودشان نویزدهی را انجام می‌دهند که با خروجی OpenGL تداخل دارد و می‌تواند به خروجی نامطلوب منجر شود. در این صورت باید عمق نویزدهی را کاهش دهید.</translation>
+    </message>
+    <message>
+        <source>Temporal dithering</source>
+        <translation>نویزدهی زمانی</translation>
+    </message>
+    <message>
+        <source>Period</source>
+        <translation>دوره</translation>
+    </message>
+    <message>
+        <source>This can lead to flicker on LCD displays, since these  have a high reaction time.</source>
+        <translation>این می‌تواند به لرزش در صفحه‌نمایش‌های LCD منجر شود، زیرا این صفحه‌نمایش‌ها زمان واکنش بالایی دارند.</translation>
+    </message>
+    <message>
+        <source>Scaling</source>
+        <translation>مقیاس‌گذاری</translation>
+    </message>
+    <message>
+        <source>Correct downscaling</source>
+        <translation>کاهش مقیاس صحیح</translation>
+    </message>
+    <message>
+        <source>Temporal interpolation</source>
+        <translation>درون‌یابی زمانی</translation>
+    </message>
+    <message>
+        <source>Blend subtitles</source>
+        <translation>ترکیب زیرنویس‌ها</translation>
+    </message>
+    <message>
+        <source>Sigmoidized upscaling</source>
+        <translation>افزایش مقیاس سیگموئیدی</translation>
+    </message>
+    <message>
+        <source>Center</source>
+        <translation>مرکز</translation>
+    </message>
+    <message>
+        <source>Slope</source>
+        <translation>شیب</translation>
+    </message>
+    <message>
+        <source>Scale</source>
+        <translation>مقیاس</translation>
+    </message>
+    <message>
+        <source>Scaler</source>
+        <translation>مقیاس‌گذار</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>۲</translation>
+    </message>
+    <message>
+        <source>Anti-ring</source>
+        <translation>ضد حلقه</translation>
+    </message>
+    <message>
+        <source>Blur</source>
+        <translation>محو</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>پنجره</translation>
+    </message>
+    <message>
+        <source>Box</source>
+        <translation>جعبه</translation>
+    </message>
+    <message>
+        <source>Triangle</source>
+        <translation>مثلث</translation>
+    </message>
+    <message>
+        <source>Bartlett</source>
+        <translation>بارتلت</translation>
+    </message>
+    <message>
+        <source>Hanning</source>
+        <translation>هانینگ</translation>
+    </message>
+    <message>
+        <source>Hamming</source>
+        <translation>همینگ</translation>
+    </message>
+    <message>
+        <source>Quadric</source>
+        <translation>چهارگانه</translation>
+    </message>
+    <message>
+        <source>Welch</source>
+        <translation>ولچ</translation>
+    </message>
+    <message>
+        <source>Kaiser</source>
+        <translation>کیزر</translation>
+    </message>
+    <message>
+        <source>Blackman</source>
+        <translation>بلکمن</translation>
+    </message>
+    <message>
+        <source>Gaussian</source>
+        <translation>گاوسی</translation>
+    </message>
+    <message>
+        <source>Sinc</source>
+        <translation>سینک</translation>
+    </message>
+    <message>
+        <source>Jinc</source>
+        <translation>جینک</translation>
+    </message>
+    <message>
+        <source>Sphinx</source>
+        <translation>اسفینکس</translation>
+    </message>
+    <message>
+        <source>Clamp</source>
+        <translation>گیره</translation>
+    </message>
+    <message>
+        <source>Radius</source>
+        <translation>شعاع</translation>
+    </message>
+    <message>
+        <source>Bilinear</source>
+        <translation>دوخطی</translation>
+    </message>
+    <message>
+        <source>Bicubic_fast</source>
+        <translation>دو مکعبی سریع</translation>
+    </message>
+    <message>
+        <source>Oversample</source>
+        <translation>نمونه‌برداری بیش از حد</translation>
+    </message>
+    <message>
+        <source>Spline16</source>
+        <translation>اسپلاین ۱۶</translation>
+    </message>
+    <message>
+        <source>Spline36</source>
+        <translation>اسپلاین ۳۶</translation>
+    </message>
+    <message>
+        <source>Spline64</source>
+        <translation>اسپلاین ۶۴</translation>
+    </message>
+    <message>
+        <source>Lanczos</source>
+        <translation>لنکوز</translation>
+    </message>
+    <message>
+        <source>Ginseng</source>
+        <translation>جینسینگ</translation>
+    </message>
+    <message>
+        <source>Ewa lanczos</source>
+        <translation>ایوا لنکوز</translation>
+    </message>
+    <message>
+        <source>Ewa hanning</source>
+        <translation>ایوا هانینگ</translation>
+    </message>
+    <message>
+        <source>Ewa ginseng</source>
+        <translation>ایوا جینسینگ</translation>
+    </message>
+    <message>
+        <source>Ewa lanczos sharp</source>
+        <translation>ایوا لنکوز تیز</translation>
+    </message>
+    <message>
+        <source>Ewa lanczos soft</source>
+        <translation>ایوا لنکوز نرم</translation>
+    </message>
+    <message>
+        <source>Haasnsoft</source>
+        <translation>هاسن‌سافت</translation>
+    </message>
+    <message>
+        <source>Bicubic</source>
+        <translation>دو مکعبی</translation>
+    </message>
+    <message>
+        <source>Bc spline</source>
+        <translation>بی‌سی اسپلاین</translation>
+    </message>
+    <message>
+        <source>Catmull rom</source>
+        <translation>کتمول رام</translation>
+    </message>
+    <message>
+        <source>Mitchell</source>
+        <translation>میچل</translation>
+    </message>
+    <message>
+        <source>Robidoux</source>
+        <translation>روبدو</translation>
+    </message>
+    <message>
+        <source>Robidoux sharp</source>
+        <translation>روبدو تیز</translation>
+    </message>
+    <message>
+        <source>Ewa robidoux</source>
+        <translation>ایوا روبدو</translation>
+    </message>
+    <message>
+        <source>Ewa robidoux sharp</source>
+        <translation>ایوا روبدو تیز</translation>
+    </message>
+    <message>
+        <source>Nearest</source>
+        <translation>نزدیک‌ترین</translation>
+    </message>
+    <message>
+        <source>Downscale</source>
+        <translation>کاهش مقیاس</translation>
+    </message>
+    <message>
+        <source>Unset</source>
+        <translation>تنظیم نشده</translation>
+    </message>
+    <message>
+        <source>Color</source>
+        <translation>رنگ</translation>
+    </message>
+    <message>
+        <source>Temporal</source>
+        <translation>زمانی</translation>
+    </message>
+    <message>
+        <source>Linear</source>
+        <translation>خطی</translation>
+    </message>
+    <message>
+        <source>Deband</source>
+        <translation>حذف باند</translation>
+    </message>
+    <message>
+        <source>State</source>
+        <translation>وضعیت</translation>
+    </message>
+    <message>
+        <source>Enabled</source>
+        <translation>فعال</translation>
+    </message>
+    <message>
+        <source>Iterations</source>
+        <translation>تکرارها</translation>
+    </message>
+    <message>
+        <source>Threshold</source>
+        <translation>آستانه</translation>
+    </message>
+    <message>
+        <source>Range</source>
+        <translation>محدوده</translation>
+    </message>
+    <message>
+        <source>Grain</source>
+        <translation>دانه‌بندی</translation>
+    </message>
+    <message>
+        <source>Color Correction</source>
+        <translation>تصحیح رنگ</translation>
+    </message>
+    <message>
+        <source>Gamma</source>
+        <translation>گاما</translation>
+    </message>
+    <message>
+        <source>Only implemented on Mac</source>
+        <translation type="vanished">Only implemented on Mac</translation>
+    </message>
+    <message>
+        <source>Autodetect</source>
+        <translation>تشخیص خودکار</translation>
+    </message>
+    <message>
+        <source>Target Prim</source>
+        <translation>هدف اولیه</translation>
+    </message>
+    <message>
+        <source>BT.470m</source>
+        <translation type="vanished">BT.470m</translation>
+    </message>
+    <message>
+        <source>BT.601-525</source>
+        <translation>BT.601-525</translation>
+    </message>
+    <message>
+        <source>BT.601-625</source>
+        <translation>BT.601-625</translation>
+    </message>
+    <message>
+        <source>BT.709</source>
+        <translation>BT.709</translation>
+    </message>
+    <message>
+        <source>BT.2020</source>
+        <translation>BT.2020</translation>
+    </message>
+    <message>
+        <source>Apple</source>
+        <translation>اپل</translation>
+    </message>
+    <message>
+        <source>Adobe</source>
+        <translation>ادوبی</translation>
+    </message>
+    <message>
+        <source>ProPhoto</source>
+        <translation>پروفوتو</translation>
+    </message>
+    <message>
+        <source>CIE1931</source>
+        <translation>CIE1931</translation>
+    </message>
+    <message>
+        <source>DCI-P3</source>
+        <translation>DCI-P3</translation>
+    </message>
+    <message>
+        <source>Target TRC</source>
+        <translation>TRC هدف</translation>
+    </message>
+    <message>
+        <source>BT.1886</source>
+        <translation>BT.1886</translation>
+    </message>
+    <message>
+        <source>sRGB</source>
+        <translation>sRGB</translation>
+    </message>
+    <message>
+        <source>Gamma 1.8</source>
+        <translation>گاما ۱٫۸</translation>
+    </message>
+    <message>
+        <source>Gamma 2.2</source>
+        <translation>گاما ۲٫۲</translation>
+    </message>
+    <message>
+        <source>Gamma 2.8</source>
+        <translation>گاما ۲٫۸</translation>
+    </message>
+    <message>
+        <source>PQ</source>
+        <translation>PQ</translation>
+    </message>
+    <message>
+        <source>HLG</source>
+        <translation>HLG</translation>
+    </message>
+    <message>
+        <source>Panasonic V-Log</source>
+        <translation>پاناسونیک V-Log</translation>
+    </message>
+    <message>
+        <source>Sony S-Log1</source>
+        <translation>سونی S-Log1</translation>
+    </message>
+    <message>
+        <source>Sony S-Log2</source>
+        <translation>سونی S-Log2</translation>
+    </message>
+    <message>
+        <source>HDR Tone mapping</source>
+        <translation>نگاشت تن HDR</translation>
+    </message>
+    <message>
+        <source>Clip</source>
+        <translation>برش</translation>
+    </message>
+    <message>
+        <source>Mobius</source>
+        <translation>موبیوس</translation>
+    </message>
+    <message>
+        <source>Reinhard</source>
+        <translation>راینهارد</translation>
+    </message>
+    <message>
+        <source>Hable</source>
+        <translation>هیبل</translation>
+    </message>
+    <message>
+        <source>Luma</source>
+        <translation>روشنایی</translation>
+    </message>
+    <message>
+        <source>Juncture</source>
+        <translation>نقطهٔ اتصال</translation>
+    </message>
+    <message>
+        <source>Contrast</source>
+        <translation>کنتراست</translation>
+    </message>
+    <message>
+        <source>HDR Desaturate</source>
+        <translation type="vanished">HDR Desaturate</translation>
+    </message>
+    <message>
+        <source>ICC Profile</source>
+        <translation>نمایهٔ ICC</translation>
+    </message>
+    <message>
+        <source>Browse</source>
+        <translation type="vanished">مرور</translation>
+    </message>
+    <message>
+        <source>Audio Renderer</source>
+        <translation>رندر صدا</translation>
+    </message>
+    <message>
+        <source>Device</source>
+        <translation>دستگاه</translation>
+    </message>
+    <message>
+        <source>Channel layout</source>
+        <translation>چیدمان کانال</translation>
+    </message>
+    <message>
+        <source>System layout (stereo fallback)</source>
+        <translation>چیدمان سیستمی (جایگزین استریو)</translation>
+    </message>
+    <message>
+        <source>Maximal layout (may output to unconnected channels)</source>
+        <translation>چیدمان حداکثری (ممکن است به کانال‌های متصل نشده خروجی بدهد)</translation>
+    </message>
+    <message>
+        <source>Stereo</source>
+        <translation>استریو</translation>
+    </message>
+    <message>
+        <source>Audio switcher (WIP)</source>
+        <translation>سوئیچر صدا (در حال توسعه)</translation>
+    </message>
+    <message>
+        <source>Stream silence (HDMI fixup)</source>
+        <translation>جریان سکوت (رفع HDMI)</translation>
+    </message>
+    <message>
+        <source> seconds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pitch correction</source>
+        <translation>تصحیح گام</translation>
+    </message>
+    <message>
+        <source>Exclusive mode</source>
+        <translation>حالت انحصاری</translation>
+    </message>
+    <message>
+        <source>Normalize downmix</source>
+        <translation>عادی‌سازی میکس پایین</translation>
+    </message>
+    <message>
+        <source>Use S/PDIF when available</source>
+        <translation>استفاده از S/PDIF در صورت موجود بودن</translation>
+    </message>
+    <message>
+        <source>Pulse</source>
+        <translation>پالس</translation>
+    </message>
+    <message>
+        <source>Buffer</source>
+        <translation>بافر</translation>
+    </message>
+    <message>
+        <source>Fixes</source>
+        <translation>رفع‌ها</translation>
+    </message>
+    <message>
+        <source>Latency hacks</source>
+        <translation>کمک‌های تأخیر</translation>
+    </message>
+    <message>
+        <source>Alsa</source>
+        <translation>Alsa</translation>
+    </message>
+    <message>
+        <source>Resample (may introduce latency)</source>
+        <translation>نمونه‌برداری مجدد (ممکن است تأخیر ایجاد کند)</translation>
+    </message>
+    <message>
+        <source>Ignore channel map (for specific alsa setups)</source>
+        <translation>نادیده گرفتن نقشهٔ کانال (برای تنظیمات خاص alsa)</translation>
+    </message>
+    <message>
+        <source>Oss</source>
+        <translation type="vanished">Oss</translation>
+    </message>
+    <message>
+        <source>Mixer device</source>
+        <translation type="vanished">دستگاه میکسر</translation>
+    </message>
+    <message>
+        <source>Mixer channel</source>
+        <translation type="vanished">کانال میکسر</translation>
+    </message>
+    <message>
+        <source>Jack</source>
+        <translation>جک</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>نام</translation>
+    </message>
+    <message>
+        <source>Port</source>
+        <translation>درگاه</translation>
+    </message>
+    <message>
+        <source>Auto connect</source>
+        <translation>اتصال خودکار</translation>
+    </message>
+    <message>
+        <source>Start jackd at startup</source>
+        <translation>راه‌اندازی jackd در شروع</translation>
+    </message>
+    <message>
+        <source>Startup</source>
+        <translation>شروع</translation>
+    </message>
+    <message>
+        <source>Filesystem</source>
+        <translation>سیستم پرونده</translation>
+    </message>
+    <message>
+        <source>Add shader file(s)...</source>
+        <translation>افزودن پرونده(های) سایه‌زن...</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Add to shaders</source>
+        <translation>افزودن به سایه‌زن‌ها</translation>
+    </message>
+    <message>
+        <source>Shader presets</source>
+        <translation>پیش‌تنظیم‌های سایه‌زن</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>ذخیره</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>حذف</translation>
+    </message>
+    <message>
+        <source>Wiki</source>
+        <translation>ویکی</translation>
+    </message>
+    <message>
+        <source>Active shaders</source>
+        <translation>سایه‌زن‌های فعال</translation>
+    </message>
+    <message>
+        <source>Fullscreen monitor</source>
+        <translation>مانیتور تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>Launch files in fullscreen</source>
+        <translation>راه‌اندازی پرونده‌ها در تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>Exit fullscreen at the end of playback</source>
+        <translation>خروج از تمام‌صفحه در پایان پخش</translation>
+    </message>
+    <message>
+        <source>Hiding</source>
+        <translation>پنهان کردن</translation>
+    </message>
+    <message>
+        <source>Hide docked panels</source>
+        <translation>پنهان کردن پنل‌های متصل</translation>
+    </message>
+    <message>
+        <source>Hide controls in fullscreen</source>
+        <translation>پنهان کردن کنترل‌ها در تمام‌صفحه</translation>
+    </message>
+    <message>
+        <source>Never show</source>
+        <translation>هرگز نشان نده</translation>
+    </message>
+    <message>
+        <source>Show when moving the cursor, hide after:</source>
+        <translation>هنگام حرکت مکان‌نما نشان بده، پس از این مدت پنهان کن:</translation>
+    </message>
+    <message>
+        <source>Show when hovering control, hide after:</source>
+        <translation>هنگام قرارگیری نشانگر روی کنترل نشان بده، پس از این مدت پنهان کن:</translation>
+    </message>
+    <message>
+        <source>Framedropping</source>
+        <translation>افت فریم</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation>حالت</translation>
+    </message>
+    <message>
+        <source>Decoder</source>
+        <translation>رمزگشا</translation>
+    </message>
+    <message>
+        <source>Decoder+Video</source>
+        <translation type="vanished">رمزگشا+ویدیو</translation>
+    </message>
+    <message>
+        <source>None</source>
+        <translation>هیچ</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>Non reference</source>
+        <translation>غیر مرجع</translation>
+    </message>
+    <message>
+        <source>Bi-directional</source>
+        <translation>دو جهته</translation>
+    </message>
+    <message>
+        <source>Non key</source>
+        <translation>غیر کلیدی</translation>
+    </message>
+    <message>
+        <source>Audio/Video sync</source>
+        <translation>همگام‌سازی صدا/ویدیو</translation>
+    </message>
+    <message>
+        <source>Resample audio to match video</source>
+        <translation>نمونه‌برداری مجدد صدا برای تطابق با ویدیو</translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (may drop frames)</source>
+        <translation>نمونه‌برداری مجدد صدا برای تطابق با ویدیو (ممکن است فریم‌ها را حذف کند)</translation>
+    </message>
+    <message>
+        <source>Drop or repeat video frames</source>
+        <translation>حذف یا تکرار فریم‌های ویدیو</translation>
+    </message>
+    <message>
+        <source>Drop or repeat audio data</source>
+        <translation>حذف یا تکرار داده‌های صوتی</translation>
+    </message>
+    <message>
+        <source>Audio drop size</source>
+        <translation type="vanished">اندازهٔ حذف صدا</translation>
+    </message>
+    <message>
+        <source>Max audio change</source>
+        <translation>حداکثر تغییر صدا</translation>
+    </message>
+    <message>
+        <source>Max video change</source>
+        <translation>حداکثر تغییر ویدیو</translation>
+    </message>
+    <message>
+        <source>Hardware decoding may produce a smoother, more efficient overall experience and reduce strain on your cpu. However, some of the listed codecs (depending upon your installed hardware and software) may not be available, may be broken, and may produce incorrect output. A safe and always correct rule of thumb with respect to image quality is to prefer software decoding if your cpu can handle it.</source>
+        <translation>رمزگشایی سخت‌افزاری ممکن است تجربه‌ای نرم‌تر و کارآمدتر ایجاد کند و فشار روی پردازنده را کاهش دهد. با این حال، برخی از کدک‌های فهرست شده (بسته به سخت‌افزار و نرم‌افزار نصب شده شما) ممکن است در دسترس نباشند، ممکن است خراب باشند و خروجی نادرست تولید کنند. یک قانون سرانگشتی ایمن و همیشه صحیح با توجه به کیفیت تصویر این است که اگر پردازنده شما توانایی آن را دارد، رمزگشایی نرم‌افزاری را ترجیح دهید.</translation>
+    </message>
+    <message>
+        <source>Use hardware-accelerated decoding</source>
+        <translation>استفاده از رمزگشایی شتاب‌دهی شده با سخت‌افزار</translation>
+    </message>
+    <message>
+        <source>Codecs to allow hardware decoding</source>
+        <translation>کدک‌های مجاز برای رمزگشایی سخت‌افزاری</translation>
+    </message>
+    <message>
+        <source>Hardware decoding backend</source>
+        <translation>پشتیبان رمزگشایی سخت‌افزاری</translation>
+    </message>
+    <message>
+        <source>Hover over each backend to display a description.</source>
+        <translation>برای نمایش توضیحات، نشانگر را روی هر پشتیبان قرار دهید.</translation>
+    </message>
+    <message>
+        <source>Autodetect - best of VAAPI, DXVA, D3D11VA</source>
+        <translation type="vanished">Autodetect - best of VAAPI, DXVA, D3D11VA</translation>
+    </message>
+    <message>
+        <source>A&amp;utodetect</source>
+        <translation>تشخیص &amp;خودکار</translation>
+    </message>
+    <message>
+        <source>Linux - requires Mesa 11 and most likely works with Intel GPUs only; may only be correct in BT.601 and BT.709</source>
+        <translation type="vanished">Linux - requires Mesa 11 and most likely works with Intel GPUs only; may only be correct in BT.601 and BT.709</translation>
+    </message>
+    <message>
+        <source>Linux - some gpus, does not always treat certain colorspaces like BT.2020 correctly</source>
+        <translation>لینوکس - برخی GPUها، همیشه برخی فضاهای رنگی مانند BT.2020 را به درستی پردازش نمی‌کنند</translation>
+    </message>
+    <message>
+        <source>Windows - not safe; it appears to always use BT.601 for forced RGB conversion, but actual behavior depends on the GPU drivers</source>
+        <translation>ویندوز - ایمن نیست؛ به نظر می‌رسد همیشه از BT.601 برای تبدیل اجباری RGB استفاده می‌کند، اما رفتار واقعی به درایورهای GPU بستگی دارد</translation>
+    </message>
+    <message>
+        <source>Windows 8+ - usually safe but rounds 10 bit to 8 bit</source>
+        <translation>ویندوز ۸+ - معمولاً ایمن است اما ۱۰ بیت را به ۸ بیت گرد می‌کند</translation>
+    </message>
+    <message>
+        <source>Raspberry PI - hardware overlay renderer</source>
+        <translation type="vanished">Raspberry PI - hardware overlay renderer</translation>
+    </message>
+    <message>
+        <source>MacOS - safe</source>
+        <translation type="vanished">MacOS - safe</translation>
+    </message>
+    <message>
+        <source>nVidia only (likely 10x0+ only) - safe</source>
+        <translation>فقط nVidia (احتمالاً فقط 10x0+) - ایمن</translation>
+    </message>
+    <message>
+        <source>PCI-E decoder card - safe</source>
+        <translation>کارت رمزگشای PCI-E - ایمن</translation>
+    </message>
+    <message>
+        <source>Playback progression</source>
+        <translation>پیشروی پخش</translation>
+    </message>
+    <message>
+        <source>Pla&amp;y</source>
+        <translation>&amp;پخش</translation>
+    </message>
+    <message>
+        <source>times</source>
+        <translation>بار</translation>
+    </message>
+    <message>
+        <source>Repeat fore&amp;ver</source>
+        <translation>تکرار &amp;همیشگی</translation>
+    </message>
+    <message>
+        <source>Always loop images (manual progression)</source>
+        <translation>همیشه حلقه کردن تصاویر (پیشروی دستی)</translation>
+    </message>
+    <message>
+        <source>Display Format</source>
+        <translation>قالب نمایش</translation>
+    </message>
+    <message>
+        <source>qrc:/text/playlistFormat.html</source>
+        <translation>qrc:/text/playlistFormat.html</translation>
+    </message>
+    <message>
+        <source>Placement</source>
+        <translation type="vanished">Placement</translation>
+    </message>
+    <message>
+        <source>Override default subtitle placement</source>
+        <translation type="vanished">Override default subtitle placement</translation>
+    </message>
+    <message>
+        <source>X</source>
+        <translation>X</translation>
+    </message>
+    <message>
+        <source>Left</source>
+        <translation type="vanished">Left</translation>
+    </message>
+    <message>
+        <source>Right</source>
+        <translation type="vanished">Right</translation>
+    </message>
+    <message>
+        <source>Y</source>
+        <translation>Y</translation>
+    </message>
+    <message>
+        <source>Top</source>
+        <translation type="vanished">Top</translation>
+    </message>
+    <message>
+        <source>Bottom</source>
+        <translation type="vanished">Bottom</translation>
+    </message>
+    <message>
+        <source>Position</source>
+        <translation type="vanished">Position</translation>
+    </message>
+    <message>
+        <source>Use margins</source>
+        <translation type="vanished">Use margins</translation>
+    </message>
+    <message>
+        <source>Force grayscale</source>
+        <translation>اجبار به سطح خاکستری</translation>
+    </message>
+    <message>
+        <source>Fix timing</source>
+        <translation>رفع زمان‌بندی</translation>
+    </message>
+    <message>
+        <source>Clear on seek</source>
+        <translation>پاک کردن در جستجو</translation>
+    </message>
+    <message>
+        <source>ASS override</source>
+        <extracomment>Might cause issues</extracomment>
+        <translation>لغو ASS</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation>بله</translation>
+    </message>
+    <message>
+        <source>Yes and only zoom signs</source>
+        <translation type="vanished">Yes and only zoom signs</translation>
+    </message>
+    <message>
+        <source>Force</source>
+        <translation type="vanished">Force</translation>
+    </message>
+    <message>
+        <source>Font</source>
+        <translation>قلم</translation>
+    </message>
+    <message>
+        <source>Style</source>
+        <translation>سبک</translation>
+    </message>
+    <message>
+        <source>Bold</source>
+        <translation>پررنگ</translation>
+    </message>
+    <message>
+        <source>Italic</source>
+        <translation>کج</translation>
+    </message>
+    <message>
+        <source>Border style</source>
+        <translation type="vanished">Border style</translation>
+    </message>
+    <message>
+        <source>Border size</source>
+        <translation>اندازهٔ حاشیه</translation>
+    </message>
+    <message>
+        <source>Shadow offset</source>
+        <translation>افست سایه</translation>
+    </message>
+    <message>
+        <source>Screen Alignment &amp;&amp; Margins</source>
+        <translation>تراز صفحه و حاشیه‌ها</translation>
+    </message>
+    <message>
+        <source>Position subs relative to the video frame</source>
+        <translation>موقعیت زیرنویس‌ها نسبت به فریم ویدیو</translation>
+    </message>
+    <message>
+        <source>Colors</source>
+        <translation>رنگ‌ها</translation>
+    </message>
+    <message>
+        <source>Border color</source>
+        <translation>رنگ حاشیه</translation>
+    </message>
+    <message>
+        <source>Shadow color</source>
+        <translation>رنگ سایه</translation>
+    </message>
+    <message>
+        <source>Prefer forced and/or default subtitle tracks</source>
+        <translation>ترجیح ردیف‌های زیرنویس اجباری و/یا پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>Automatically load external subtitles</source>
+        <translation type="vanished">Automatically load external subtitles</translation>
+    </message>
+    <message>
+        <source>Autoload paths</source>
+        <translation>مسیرهای بارگیری خودکار</translation>
+    </message>
+    <message>
+        <source>Path</source>
+        <translation>مسیر</translation>
+    </message>
+    <message>
+        <source>Match</source>
+        <translation>مطابقت</translation>
+    </message>
+    <message>
+        <source>Exact</source>
+        <translation>دقیق</translation>
+    </message>
+    <message>
+        <source>Fuzzy</source>
+        <translation>تقریبی</translation>
+    </message>
+    <message>
+        <source>Online database</source>
+        <translation>پایگاه دادهٔ برخط</translation>
+    </message>
+    <message>
+        <source>Base url of the online subtitle database:</source>
+        <translation>نشانی اینترنتی پایهٔ پایگاه دادهٔ زیرنویس برخط:</translation>
+    </message>
+    <message>
+        <source>https://</source>
+        <translation>https://</translation>
+    </message>
+    <message>
+        <source>Test</source>
+        <translation>آزمایش</translation>
+    </message>
+    <message>
+        <source>Directories</source>
+        <translation>دایرکتوری‌ها</translation>
+    </message>
+    <message>
+        <source>Screenshot</source>
+        <translation>عکس‌برداری از صفحه</translation>
+    </message>
+    <message>
+        <source>...</source>
+        <translation type="vanished">...</translation>
+    </message>
+    <message>
+        <source>Encode</source>
+        <translation>رمزگذاری</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Unchecked directories will place output files in the source directory. Streams do not have a source directory and will bring up a dialog when a field is left blank; &lt;span style=&quot; font-weight:600;&quot;&gt;Alt+I&lt;/span&gt; will always ask where to place files. Directories will be created if necessary; this may not work across all filesystems.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;دایرکتوری‌های علامت‌نخورده، پرونده‌های خروجی را در دایرکتوری مبدأ قرار می‌دهند. جریان‌ها دایرکتوری مبدأ ندارند و وقتی یک فیلد خالی گذاشته شود، یک محاوره نشان می‌دهند؛ &lt;span style=&quot; font-weight:600;&quot;&gt;Alt+I&lt;/span&gt; همیشه می‌پرسد که پرونده‌ها کجا قرار داده شوند. در صورت نیاز دایرکتوری‌ها ایجاد می‌شوند؛ این ممکن است در همهٔ سیستم‌های پرونده کار نکند.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Filename template</source>
+        <translation>قالب نام پرونده</translation>
+    </message>
+    <message>
+        <source>qrc:/text/encodeFormat.html</source>
+        <translation>qrc:/text/encodeFormat.html</translation>
+    </message>
+    <message>
+        <source>Save with high bit depth</source>
+        <translation>ذخیره با عمق بیت بالا</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation>کیفیت</translation>
+    </message>
+    <message>
+        <source>Smooth</source>
+        <translation type="vanished">نرم</translation>
+    </message>
+    <message>
+        <source>Source Chroma</source>
+        <translation>کرومای منبع</translation>
+    </message>
+    <message>
+        <source>Compression</source>
+        <translation>فشرده‌سازی</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>فیلتر</translation>
+    </message>
+    <message>
+        <source>Colorspace</source>
+        <translation>فضای رنگی</translation>
+    </message>
+    <message>
+        <source>Include tag</source>
+        <translation>شامل برچسب</translation>
+    </message>
+    <message>
+        <source>Don&apos;t encode the video</source>
+        <translation>ویدیو را رمزگذاری نکن</translation>
+    </message>
+    <message>
+        <source>Hardsub</source>
+        <translation>زیرنویس سخت</translation>
+    </message>
+    <message>
+        <source>Filesi&amp;ze</source>
+        <translation>اندازهٔ &amp;پرونده</translation>
+    </message>
+    <message>
+        <source>MB</source>
+        <translation>مگابایت</translation>
+    </message>
+    <message>
+        <source>Bitrate</source>
+        <translation>نرخ بیت</translation>
+    </message>
+    <message>
+        <source>kBits</source>
+        <translation>کیلوبیت</translation>
+    </message>
+    <message>
+        <source>crf</source>
+        <translation>crf</translation>
+    </message>
+    <message>
+        <source>qmin</source>
+        <translation>qmin</translation>
+    </message>
+    <message>
+        <source>qmax</source>
+        <translation>qmax</translation>
+    </message>
+    <message>
+        <source>Don&apos;t encode the audio</source>
+        <translation>صدا را رمزگذاری نکن</translation>
+    </message>
+    <message>
+        <source>&quot;Don&apos;t encode&quot; checkboxes are ignored for audio-only or video-only files.</source>
+        <translation>چک‌باکس‌های &quot;رمزگذاری نکن&quot; برای پرونده‌های فقط صوتی یا فقط ویدیویی نادیده گرفته می‌شوند.</translation>
+    </message>
+    <message>
+        <source>Fast seek (when skipping)</source>
+        <translation type="vanished">Fast seek (when skipping)</translation>
+    </message>
+    <message>
+        <source>Drop frames before the seek target in the decoder</source>
+        <translation>حذف فریم‌های قبل از هدف جستجو در رمزگشا</translation>
+    </message>
+    <message>
+        <source>Show chapter marks in seek bar</source>
+        <translation>نمایش نشانه‌های بخش در نوار جستجو</translation>
+    </message>
+    <message>
+        <source>Play next file in folder when there is only one item in the playlist</source>
+        <translation type="vanished">Play next file in folder when there is only one item in the playlist</translation>
+    </message>
+    <message>
+        <source>Above seekbar</source>
+        <translation>بالای نوار جستجو</translation>
+    </message>
+    <message>
+        <source>Below seekbar</source>
+        <translation>پایین نوار جستجو</translation>
+    </message>
+    <message>
+        <source>OSD font:</source>
+        <translation type="vanished">OSD font:</translation>
+    </message>
+    <message>
+        <source>Prefer Wayland over XWayland (restart required)</source>
+        <translation>ترجیح Wayland بر XWayland (نیاز به راه‌اندازی مجدد)</translation>
+    </message>
+    <message>
+        <source>Turn on logging (may produce stuttering)</source>
+        <translation>روشن کردن ثبت رویداد (ممکن است باعث لکنت شود)</translation>
+    </message>
+    <message>
+        <source>Debugging</source>
+        <translation>اشکال‌زدایی</translation>
+    </message>
+    <message>
+        <source>Client</source>
+        <translation>کاربر</translation>
+    </message>
+    <message>
+        <source>Event messages</source>
+        <translation>پیام‌های رویداد</translation>
+    </message>
+    <message>
+        <source>mpv</source>
+        <translation>mpv</translation>
+    </message>
+    <message>
+        <source>No (complete silence)</source>
+        <translation>خیر (سکوت کامل)</translation>
+    </message>
+    <message>
+        <source>Fatal</source>
+        <translation>مهلک</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>خطا</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation>اخطار</translation>
+    </message>
+    <message>
+        <source>Informational</source>
+        <translation>اطلاعاتی</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation>پرحرف</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>اشکال‌زدایی</translation>
+    </message>
+    <message>
+        <source>Trace (very noisy)</source>
+        <translation>ردگیری (بسیار پرمخاطب)</translation>
+    </message>
+    <message>
+        <source>Log file</source>
+        <translation>پروندهٔ ثبت رویداد</translation>
+    </message>
+    <message>
+        <source>Create log file (contents will be overwritten)</source>
+        <translation>ایجاد پروندهٔ ثبت رویداد (محتوا بازنویسی می‌شود)</translation>
+    </message>
+    <message>
+        <source>~/mpc-qt-log.txt</source>
+        <translation type="vanished">~/mpc-qt-log.txt</translation>
+    </message>
+    <message>
+        <source>Window update interval</source>
+        <translation type="vanished">Window update interval</translation>
+    </message>
+    <message>
+        <source>No delay (consumes cpu)</source>
+        <translation type="vanished">No delay (consumes cpu)</translation>
+    </message>
+    <message>
+        <source> msec</source>
+        <translation type="vanished"> msec</translation>
+    </message>
+    <message>
+        <source>Every </source>
+        <translation>هر </translation>
+    </message>
+    <message>
+        <source>Window history</source>
+        <translation>تاریخچهٔ پنجره</translation>
+    </message>
+    <message>
+        <source>Trim old lines</source>
+        <translation>کوتاه کردن خطوط قدیمی</translation>
+    </message>
+    <message>
+        <source> lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep </source>
+        <translation>نگهداری </translation>
+    </message>
+    <message>
+        <source>Color controls</source>
+        <translation>کنترل‌های رنگ</translation>
+    </message>
+    <message>
+        <source>Brightness</source>
+        <translation>روشنایی</translation>
+    </message>
+    <message>
+        <source>Hue</source>
+        <translation>رنگ</translation>
+    </message>
+    <message>
+        <source>Saturation</source>
+        <translation>اشباع</translation>
+    </message>
+    <message>
+        <source>Settings management</source>
+        <translation>مدیریت تنظیمات</translation>
+    </message>
+    <message>
+        <source>Export keys</source>
+        <translation>خروجی گرفتن از کلیدها</translation>
+    </message>
+    <message>
+        <source>Open Logo Image</source>
+        <translation>باز کردن تصویر نشانواره</translation>
+    </message>
+    <message>
+        <source>Audio open settings</source>
+        <translation>تنظیمات باز کردن صدا</translation>
+    </message>
+    <message>
+        <source>Paths</source>
+        <translation>مسیرها</translation>
+    </message>
+    <message>
+        <source>Dela&amp;yed</source>
+        <translation>با &amp;تأخیر</translation>
+    </message>
+    <message>
+        <source>Unlimited (consumes &amp;memory)</source>
+        <translation>نامحدود (مصرف &amp;حافظه)</translation>
+    </message>
+    <message>
+        <source>Auto-load external audio files</source>
+        <translation>بارگیری خودکار پرونده‌های صوتی خارجی</translation>
+    </message>
+    <message>
+        <source>Limit volume to 100% like mpc-hc</source>
+        <translation type="vanished">Limit volume to 100% like mpc-hc</translation>
+    </message>
+    <message>
+        <source>Shorten the playback time indicator like mpc-hc</source>
+        <translation type="vanished">Shorten the playback time indicator like mpc-hc</translation>
+    </message>
+    <message>
+        <source>HDR Compute Peak</source>
+        <translation>محاسبهٔ اوج HDR</translation>
+    </message>
+    <message>
+        <source>Target Peak</source>
+        <translation>اوج هدف</translation>
+    </message>
+    <message>
+        <source>Based on TRC</source>
+        <translation>بر اساس TRC</translation>
+    </message>
+    <message>
+        <source>Downscale in linear light</source>
+        <translation>کاهش مقیاس در نور خطی</translation>
+    </message>
+    <message>
+        <source>Upscale in linear light</source>
+        <translation>افزایش مقیاس در نور خطی</translation>
+    </message>
+    <message>
+        <source>Use additive speed step</source>
+        <translation>استفاده از گام سرعت افزایشی</translation>
+    </message>
+    <message>
+        <source>Prefer external subtitles over embedded subtitles</source>
+        <translation>ترجیح زیرنویس‌های خارجی بر زیرنویس‌های داخلی</translation>
+    </message>
+    <message>
+        <source>Ignore embedded subtitles</source>
+        <translation>نادیده گرفتن زیرنویس‌های داخلی</translation>
+    </message>
+    <message>
+        <source>Web Interface</source>
+        <translation>رابط وب</translation>
+    </message>
+    <message>
+        <source>Allow access from localhost only</source>
+        <translation>اجازهٔ دسترسی فقط از localhost</translation>
+    </message>
+    <message>
+        <source>webroot</source>
+        <translation>ریشهٔ وب</translation>
+    </message>
+    <message>
+        <source>Default page</source>
+        <translation>صفحهٔ پیش‌فرض</translation>
+    </message>
+    <message>
+        <source>index.html</source>
+        <translation>index.html</translation>
+    </message>
+    <message>
+        <source>TCP/IP</source>
+        <translation>TCP/IP</translation>
+    </message>
+    <message>
+        <source>&lt;a href=&quot;#&quot;&gt;Launch in web browser...&lt;/a&gt;</source>
+        <translation>&lt;a href=&quot;#&quot;&gt;راه‌اندازی در مرورگر وب...&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <source>Local files</source>
+        <translation>پرونده‌های محلی</translation>
+    </message>
+    <message>
+        <source>Web root</source>
+        <translation>ریشهٔ وب</translation>
+    </message>
+    <message>
+        <source>Security</source>
+        <translation>امنیت</translation>
+    </message>
+    <message>
+        <source>Enable web server</source>
+        <translation>فعال کردن سرور وب</translation>
+    </message>
+    <message>
+        <source>Serve pages from disk</source>
+        <translation>ارائهٔ صفحات از دیسک</translation>
+    </message>
+    <message>
+        <source>Back color</source>
+        <translation type="vanished">Back color</translation>
+    </message>
+    <message>
+        <source>Enable back color</source>
+        <translation type="vanished">Enable back color</translation>
+    </message>
+    <message>
+        <source>Stylesheet</source>
+        <translation>برگهٔ سبک</translation>
+    </message>
+    <message>
+        <source>Application Stylesheet</source>
+        <translation>برگهٔ سبک برنامه</translation>
+    </message>
+    <message>
+        <source>High-contrast timeline and volume sliders</source>
+        <translation>لغزنده‌های زمان‌بندی و بلندی صدا با کنتراست بالا</translation>
+    </message>
+    <message>
+        <source>Default After Playback action:</source>
+        <translation>عمل پیش‌فرض پس از پخش:</translation>
+    </message>
+    <message>
+        <source>Do nothing</source>
+        <translation>هیچ کاری نکن</translation>
+    </message>
+    <message>
+        <source>Repeat</source>
+        <translation>تکرار</translation>
+    </message>
+    <message>
+        <source>Play next in the folder</source>
+        <translation type="vanished">Play next in the folder</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>خروج</translation>
+    </message>
+    <message>
+        <source>After Playback</source>
+        <translation>پس از پخش</translation>
+    </message>
+    <message>
+        <source>Shaders contain special effects which can be added to the video rendering process. A list of community-made shaders can be found on &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;the mpv wiki&lt;/span&gt;&lt;/a&gt;.</source>
+        <translation>سایه‌زن‌ها حاوی جلوه‌های ویژه‌ای هستند که می‌توانند به فرایند رندر ویدیو اضافه شوند. فهرستی از سایه‌زن‌های ساخته شده توسط جامعه را می‌توانید در &lt;a href=&quot;https://github.com/mpv-player/mpv/wiki/User-Scripts#user-shaders&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;ویکی mpv&lt;/span&gt;&lt;/a&gt; بیابید.</translation>
+    </message>
+    <message>
+        <source>Pipewire</source>
+        <translation>Pipewire</translation>
+    </message>
+    <message>
+        <source>Use time tooltip:</source>
+        <translation type="vanished">Use time tooltip:</translation>
+    </message>
+    <message>
+        <source>Language Override</source>
+        <translation>لغو زبان</translation>
+    </message>
+    <message>
+        <source>Locale (Autodetect)</source>
+        <translation type="vanished">Locale (Autodetect)</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>متوسط</translation>
+    </message>
+    <message>
+        <source>BT.470M</source>
+        <translation>BT.470M</translation>
+    </message>
+    <message>
+        <source>V-Gamut</source>
+        <translation>V-Gamut</translation>
+    </message>
+    <message>
+        <source>S-Gamut</source>
+        <translation>S-Gamut</translation>
+    </message>
+    <message>
+        <source>EBU3213</source>
+        <translation>EBU3213</translation>
+    </message>
+    <message>
+        <source>Film-C</source>
+        <translation>Film-C</translation>
+    </message>
+    <message>
+        <source>ACES AP0</source>
+        <translation>ACES AP0</translation>
+    </message>
+    <message>
+        <source>ACES AP1</source>
+        <translation>ACES AP1</translation>
+    </message>
+    <message>
+        <source>Gamma 2.0</source>
+        <translation>گاما ۲٫۰</translation>
+    </message>
+    <message>
+        <source>Gamma 2.4</source>
+        <translation>گاما ۲٫۴</translation>
+    </message>
+    <message>
+        <source>Gamma 2.6</source>
+        <translation>گاما ۲٫۶</translation>
+    </message>
+    <message>
+        <source>ST 428</source>
+        <translation>ST 428</translation>
+    </message>
+    <message>
+        <source>Target Gamut</source>
+        <translation>گاموت هدف</translation>
+    </message>
+    <message>
+        <source>Gamut mapping</source>
+        <translation>نگاشت گاموت</translation>
+    </message>
+    <message>
+        <source>Perceptual</source>
+        <translation>ادراکی</translation>
+    </message>
+    <message>
+        <source>Relative</source>
+        <translation>نسبی</translation>
+    </message>
+    <message>
+        <source>Absolute</source>
+        <translation>مطلق</translation>
+    </message>
+    <message>
+        <source>Desaturate</source>
+        <translation>کاهش اشباع</translation>
+    </message>
+    <message>
+        <source>Darken</source>
+        <translation>تیره کردن</translation>
+    </message>
+    <message>
+        <source>Warn</source>
+        <translation>اخطار</translation>
+    </message>
+    <message>
+        <source>Send mouse events to mpv</source>
+        <translation>ارسال رویدادهای ماوس به mpv</translation>
+    </message>
+    <message>
+        <source>Send key events to mpv</source>
+        <translation>ارسال رویدادهای کلید به mpv</translation>
+    </message>
+    <message>
+        <source>Remember file position</source>
+        <translation>به خاطر سپردن موقعیت پرونده</translation>
+    </message>
+    <message>
+        <source>Use next/previous file in folder when there is only one item in the playlist</source>
+        <translation>استفاده از پروندهٔ بعدی/قبلی در پوشه زمانی که فقط یک آیتم در فهرست پخش وجود دارد</translation>
+    </message>
+    <message>
+        <source>Play next file</source>
+        <translation>پخش پروندهٔ بعدی</translation>
+    </message>
+    <message>
+        <source>Delay step</source>
+        <translation>گام تأخیر</translation>
+    </message>
+    <message>
+        <source>Autodetect - best of VAAPI, DXVA, D3D11VA, etc.</source>
+        <translation>تشخیص خودکار - بهترین از VAAPI، DXVA، D3D11VA و غیره</translation>
+    </message>
+    <message>
+        <source>Linux - works with Intel and AMD GPUs through Mesa, and with nVidia through a translation layer; may only be correct in BT.601 and BT.709</source>
+        <translation>لینوکس - با GPUهای Intel و AMD از طریق Mesa و با nVidia از طریق لایهٔ ترجمه کار می‌کند؛ ممکن است فقط در BT.601 و BT.709 صحیح باشد</translation>
+    </message>
+    <message>
+        <source>nVidia only (faster than CUDA)</source>
+        <translation>فقط nVidia (سریع‌تر از CUDA)</translation>
+    </message>
+    <message>
+        <source>Show OSD timer on seek</source>
+        <translation>نمایش زمان‌سنج روی صفحه در جستجو</translation>
+    </message>
+    <message>
+        <source>Normal step</source>
+        <translation>گام عادی</translation>
+    </message>
+    <message>
+        <source>Large step</source>
+        <translation>گام بزرگ</translation>
+    </message>
+    <message>
+        <source>Show time tooltip:</source>
+        <translation>نمایش راهنمای زمان:</translation>
+    </message>
+    <message>
+        <source>Change OSD font:</source>
+        <translation>تغییر قلم OSD:</translation>
+    </message>
+    <message>
+        <source>Only keep history for videos</source>
+        <translation>فقط تاریخچه را برای ویدیوها نگه دار</translation>
+    </message>
+    <message>
+        <source>Cinema screen</source>
+        <translation>صفحهٔ سینما</translation>
+    </message>
+    <message>
+        <source>Update interval</source>
+        <translation>فاصلهٔ به‌روزرسانی</translation>
+    </message>
+    <message>
+        <source>No delay (consumes cpu, use this for testing)</source>
+        <translation>بدون تأخیر (مصرف پردازنده، برای آزمایش استفاده کنید)</translation>
+    </message>
+    <message>
+        <source> ms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remember panels state</source>
+        <translation>به خاطر سپردن وضعیت پنل‌ها</translation>
+    </message>
+    <message>
+        <source>Open ICC Profile</source>
+        <translation>باز کردن نمایهٔ ICC</translation>
+    </message>
+    <message>
+        <source>ICC profile files (*.icc *.icm)</source>
+        <translation>پرونده‌های نمایهٔ ICC (*.icc *.icm)</translation>
+    </message>
+    <message>
+        <source>Log files (*.log)</source>
+        <translation>پرونده‌های ثبت رویداد (*.log)</translation>
+    </message>
+    <message>
+        <source>Allows dark theme support on Windows</source>
+        <translation>اجازهٔ پشتیبانی از تم تاریک در ویندوز</translation>
+    </message>
+    <message>
+        <source>Audio balance</source>
+        <translation>تعادل صدا</translation>
+    </message>
+    <message>
+        <source>Search...</source>
+        <translation>جستجو…</translation>
+    </message>
+    <message>
+        <source>Show video preview</source>
+        <translation type="vanished">Show video preview</translation>
+    </message>
+    <message>
+        <source>100%</source>
+        <translation>۱۰۰٪</translation>
+    </message>
+    <message>
+        <source>25%</source>
+        <translation>۲۵٪</translation>
+    </message>
+    <message>
+        <source>50%</source>
+        <translation>۵۰٪</translation>
+    </message>
+    <message>
+        <source>75%</source>
+        <translation>۷۵٪</translation>
+    </message>
+    <message>
+        <source>150%</source>
+        <translation>۱۵۰٪</translation>
+    </message>
+    <message>
+        <source>200%</source>
+        <translation>۲۰۰٪</translation>
+    </message>
+    <message>
+        <source>300%</source>
+        <translation>۳۰۰٪</translation>
+    </message>
+    <message>
+        <source>400%</source>
+        <translation>۴۰۰٪</translation>
+    </message>
+    <message>
+        <source>Remove subtitles additions for the deaf or hard-of-hearing (SDH)</source>
+        <translation>حذف زیرنویس‌های اضافی برای ناشنوایان یا کم‌شنوایان (SDH)</translation>
+    </message>
+    <message>
+        <source>Requires restarting the application to apply changes</source>
+        <translation type="vanished">Requires restarting the application to apply changes</translation>
+    </message>
+    <message>
+        <source>yt-dlp (web videos)</source>
+        <translation>yt-dlp (ویدیوهای وب)</translation>
+    </message>
+    <message>
+        <source>Max video height:</source>
+        <translation type="vanished">Max video height:</translation>
+    </message>
+    <message>
+        <source>Custom mpv options:</source>
+        <translation>گزینه‌های سفارشی mpv:</translation>
+    </message>
+    <message>
+        <source>Seek to keyframe when hardware decoding is unavailable</source>
+        <translation>جستجو به فریم کلیدی زمانی که رمزگشایی سخت‌افزاری در دسترس نیست</translation>
+    </message>
+    <message>
+        <source>Prioritize seeking speed over accuracy</source>
+        <translation>اولویت دادن به سرعت جستجو بر دقت</translation>
+    </message>
+    <message>
+        <source>Shadow</source>
+        <translation>سایه</translation>
+    </message>
+    <message>
+        <source>Enable shadow</source>
+        <translation>فعال کردن سایه</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation>انتخاب</translation>
+    </message>
+    <message>
+        <source>Preset applied</source>
+        <translation>پیش‌تنظیم اعمال شد</translation>
+    </message>
+    <message>
+        <source>Position ASS subs relative to the video frame</source>
+        <translation>موقعیت زیرنویس‌های ASS نسبت به فریم ویدیو</translation>
+    </message>
+    <message>
+        <source>Remember Quick Playlist content</source>
+        <translation>به خاطر سپردن محتوای فهرست پخش سریع</translation>
+    </message>
+    <message>
+        <source>Append opened files to Quick Playlist</source>
+        <translation>افزودن پرونده‌های باز شده به فهرست پخش سریع</translation>
+    </message>
+    <message>
+        <source>%</source>
+        <translation>&apos;٪&apos;</translation>
+    </message>
+    <message>
+        <source>Enable background box</source>
+        <translation>فعال کردن کادر پس‌زمینه</translation>
+    </message>
+    <message>
+        <source>Border and background style</source>
+        <translation>سبک حاشیه و پس‌زمینه</translation>
+    </message>
+    <message>
+        <source>Translucid background box</source>
+        <translation>کادر پس‌زمینهٔ نیمه‌شفاف</translation>
+    </message>
+    <message>
+        <source>Show video preview (restart required)</source>
+        <translation type="vanished">Show video preview (restart required)</translation>
+    </message>
+    <message>
+        <source>There is not much reason to use this. HDMI supports uncompressed multichannel PCM, and mpv supports lossless DTS-HD</source>
+        <translation>دلیل چندانی برای استفاده از این وجود ندارد. HDMI از PCM چندکانالهٔ فشرده‌نشده پشتیبانی می‌کند و mpv از DTS-HD بدون اتلاف پشتیبانی می‌کند</translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation>انتخاب پروندهٔ ثبت رویداد</translation>
+    </message>
+    <message>
+        <source>File title</source>
+        <translation>عنوان پرونده</translation>
+    </message>
+    <message>
+        <source>CRF</source>
+        <translation>CRF</translation>
+    </message>
+    <message>
+        <source>Lossless</source>
+        <translation>بدون اتلاف</translation>
+    </message>
+    <message>
+        <source>Speed</source>
+        <translation>سرعت</translation>
+    </message>
+    <message>
+        <source>Others</source>
+        <translation>دیگران</translation>
+    </message>
+    <message>
+        <source>Video background</source>
+        <translation type="vanished">پس‌زمینهٔ ویدیو</translation>
+    </message>
+    <message>
+        <source>Status bar background</source>
+        <translation>پس‌زمینهٔ نوار وضعیت</translation>
+    </message>
+    <message>
+        <source>Status bar foreground</source>
+        <translation>پیش‌زمینهٔ نوار وضعیت</translation>
+    </message>
+    <message>
+        <source>Use custom colors</source>
+        <translation>استفاده از رنگ‌های سفارشی</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>منبع</translation>
+    </message>
+    <message>
+        <source>Built-in</source>
+        <translation>داخلی</translation>
+    </message>
+    <message>
+        <source>Icons have to use the same names as in the &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;repository&lt;/a&gt;.</source>
+        <translation>آیکون‌ها باید از همان نام‌های موجود در &lt;a href=&quot;https://github.com/mpc-qt/mpc-qt/tree/master/res/images/theme/black&quot;&gt;مخزن&lt;/a&gt; استفاده کنند.</translation>
+    </message>
+    <message>
+        <source>Use English for the interface</source>
+        <translation>استفاده از انگلیسی برای رابط کاربری</translation>
+    </message>
+    <message>
+        <source>Mono</source>
+        <translation>تک‌کاناله</translation>
+    </message>
+    <message>
+        <source>Remember last window size and position</source>
+        <translation>به خاطر سپردن آخرین اندازه و موقعیت پنجره</translation>
+    </message>
+    <message>
+        <source>Use dark colors</source>
+        <translation>استفاده از رنگ‌های تیره</translation>
+    </message>
+    <message>
+        <source>Replay Gain</source>
+        <translation>به‌دست‌آوردن مجدد</translation>
+    </message>
+    <message>
+        <source>Track</source>
+        <translation>ردیف</translation>
+    </message>
+    <message>
+        <source>Album</source>
+        <translation>آلبوم</translation>
+    </message>
+    <message>
+        <source>Pre-amp</source>
+        <translation>پیش‌تقویت‌کننده</translation>
+    </message>
+    <message>
+        <source> dB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Prevent clipping</source>
+        <translation>جلوگیری از بریدگی</translation>
+    </message>
+    <message>
+        <source>Search settings…</source>
+        <translation>جستجوی تنظیمات…</translation>
+    </message>
+    <message>
+        <source>A&amp;pplication name only</source>
+        <translation>تنها &amp;نام برنامه</translation>
+    </message>
+    <message>
+        <source>Loop back to first/last file in folder if needed</source>
+        <translation>در صورت نیاز به اولین/آخرین پرونده در پوشه برگرد</translation>
+    </message>
+    <message>
+        <source>Increase maximum volume to:</source>
+        <translation>افزایش حداکثر بلندی صدا به:</translation>
+    </message>
+    <message>
+        <source>Show video preview (restart required), set its height to (% of screen):</source>
+        <translation>نمایش پیش‌نمایش ویدیو (نیاز به راه‌اندازی مجدد)، ارتفاع آن را بر حسب (٪ از صفحه) تنظیم کنید:</translation>
+    </message>
+    <message>
+        <source>Minimize to tray</source>
+        <translation>کوچک‌سازی به سینی</translation>
+    </message>
+    <message>
+        <source>Close to tray</source>
+        <translation>بستن به سینی</translation>
+    </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation>حداکثر رزولوشن ویدیو:</translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>StatusTime</name>
+    <message>
+        <source> (%1%)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remaining time</source>
+        <translation>زمان باقیمانده</translation>
+    </message>
+    <message>
+        <source>High precision</source>
+        <translation>دقت بالا</translation>
+    </message>
+    <message>
+        <source>Show percentage</source>
+        <translation>نمایش درصد</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation>نمایش راهنما</translation>
+    </message>
+    <message>
+        <source>Played: %1</source>
+        <translation>پخش شده: %1</translation>
+    </message>
+    <message>
+        <source>Remaining: %1</source>
+        <translation>باقیمانده: %1</translation>
+    </message>
+</context>
+<context>
+    <name>ThumbnailerWindow</name>
+    <message>
+        <source>Source</source>
+        <translation>منبع</translation>
+    </message>
+    <message>
+        <source>&amp;Browse...</source>
+        <translation>&amp;مرور...</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>تصویر</translation>
+    </message>
+    <message>
+        <source>%</source>
+        <translation>&apos;٪&apos;</translation>
+    </message>
+    <message>
+        <source>Width</source>
+        <translation>عرض</translation>
+    </message>
+    <message>
+        <source>Layout</source>
+        <translation>چیدمان</translation>
+    </message>
+    <message>
+        <source>Rows</source>
+        <translation>ردیف‌ها</translation>
+    </message>
+    <message>
+        <source>&amp;Go!</source>
+        <translation>&amp;برو!</translation>
+    </message>
+    <message>
+        <source>Thu&amp;mbnail</source>
+        <translation>تصویر بند &amp;انگشتی</translation>
+    </message>
+    <message>
+        <source>&amp;Quality</source>
+        <translation>&amp;کیفیت</translation>
+    </message>
+    <message>
+        <source>&amp;Columns</source>
+        <translation>&amp;ستون‌ها</translation>
+    </message>
+    <message>
+        <source>Save Thumbnails</source>
+        <translation>ذخیرهٔ تصاویر بند انگشتی</translation>
+    </message>
+    <message>
+        <source>%p%</source>
+        <translation>%p%</translation>
+    </message>
+</context>
+</TS>

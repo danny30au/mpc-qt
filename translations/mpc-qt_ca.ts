@@ -395,6 +395,14 @@ Voleu utilitzar-lo en comptes per &quot;%3&quot;?</translation>
         <source>Playlists Backup</source>
         <translation>Còpia de seguretat de les llistes de reproducció</translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -664,7 +672,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>&amp;Carregar un subtítol...</translation>
+        <translation type="vanished">&amp;Carregar un subtítol...</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -716,7 +724,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -724,7 +732,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -732,7 +740,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -740,7 +748,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -748,7 +756,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -756,7 +764,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -764,7 +772,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -772,7 +780,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -780,7 +788,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -788,7 +796,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
@@ -796,7 +804,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -804,7 +812,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -812,7 +820,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -824,15 +832,15 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="vanished">Alt+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="vanished">Alt+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="vanished">Alt+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -840,7 +848,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="vanished">Alt+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -848,7 +856,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="vanished">Alt+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -856,7 +864,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="vanished">Alt+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1188,7 +1196,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>&amp;Nova pestanya</translation>
+        <translation type="vanished">&amp;Nova pestanya</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1196,11 +1204,11 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>&amp;Tancar pestanya</translation>
+        <translation type="vanished">&amp;Tancar pestanya</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Tancar pestanya</translation>
+        <translation type="vanished">Tancar pestanya</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1208,7 +1216,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp;Duplicar pestanya</translation>
+        <translation type="vanished">&amp;Duplicar pestanya</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1451,6 +1459,10 @@ No s&apos;activarà cap acció.</translation>
         <translation>Sense arxius preferits</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>No streams favorited</source>
         <translation>Sense fluxos preferits</translation>
     </message>
@@ -1465,6 +1477,10 @@ No s&apos;activarà cap acció.</translation>
     <message>
         <source>Buffering (%1%)</source>
         <translation>Memòria intermèdia (%1%)</translation>
+    </message>
+    <message>
+        <source>Seeking</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Error</source>
@@ -1930,6 +1946,34 @@ No s&apos;activarà cap acció.</translation>
         <source>Increase Delay</source>
         <translation>Incrementar retard</translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished">&amp;Nova llista de reproducció</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished">&amp;Duplicar llista de reproducció</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -2107,6 +2151,10 @@ No s&apos;activarà cap acció.</translation>
         <source>Select File</source>
         <translation>Seleccionar fitxer</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation type="unfinished">Explorar...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2217,7 +2265,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Nova pestanya</translation>
+        <translation type="vanished">Nova pestanya</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2225,7 +2273,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Duplicar pestanya</translation>
+        <translation type="vanished">Duplicar pestanya</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2261,7 +2309,7 @@ No s&apos;activarà cap acció.</translation>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>Fitxers de llista de reproducció (*.m3u *.m3u8)</translation>
+        <translation type="vanished">Fitxers de llista de reproducció (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2284,7 +2332,7 @@ No s&apos;activarà cap acció.</translation>
         <translation type="vanished">Netejar</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>Copiar al porta-retalls</translation>
     </message>
     <message>
@@ -2320,6 +2368,23 @@ No s&apos;activarà cap acció.</translation>
         <translation>Introduir nom de la llista de reproducció</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>&amp;Nova llista de reproducció</translation>
     </message>
@@ -2334,6 +2399,14 @@ No s&apos;activarà cap acció.</translation>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>&amp;Duplicar llista de reproducció</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2382,6 +2455,10 @@ No s&apos;activarà cap acció.</translation>
     <message>
         <source>Add Folder</source>
         <translation>Afegir carpeta</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3033,15 +3110,15 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Barrejar en negre</translation>
+        <translation type="vanished">Barrejar en negre</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Utilitzar</translation>
+        <translation type="vanished">Utilitzar</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Ignorar</translation>
+        <translation type="vanished">Ignorar</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3525,7 +3602,7 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Explorar</translation>
+        <translation type="vanished">Explorar</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3609,15 +3686,15 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Oss</source>
-        <translation>OSS</translation>
+        <translation type="vanished">OSS</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>Dispositiu mesclador</translation>
+        <translation type="vanished">Dispositiu mesclador</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Canal del mesclador</translation>
+        <translation type="vanished">Canal del mesclador</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3729,7 +3806,7 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Descodificador+Vídeo</translation>
+        <translation type="vanished">Descodificador+Vídeo</translation>
     </message>
     <message>
         <source>None</source>
@@ -3773,7 +3850,7 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Mida pèrdua d&apos;àudio</translation>
+        <translation type="vanished">Mida pèrdua d&apos;àudio</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -4042,7 +4119,7 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="vanished">...</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -4070,7 +4147,7 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Suavitzar</translation>
+        <translation type="vanished">Suavitzar</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -4690,7 +4767,7 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Max video height:</source>
-        <translation>Altura de vídeo màxima:</translation>
+        <translation type="vanished">Altura de vídeo màxima:</translation>
     </message>
     <message>
         <source>Custom mpv options:</source>
@@ -4786,7 +4863,7 @@ arxiu multimèdia reproduït</translation>
     </message>
     <message>
         <source>Video background</source>
-        <translation>Fons del vídeo</translation>
+        <translation type="vanished">Fons del vídeo</translation>
     </message>
     <message>
         <source>Status bar background</source>
@@ -4880,6 +4957,42 @@ arxiu multimèdia reproduït</translation>
         <source>Close to tray</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4898,6 +5011,10 @@ arxiu multimèdia reproduït</translation>
     <message>
         <source>Show percentage</source>
         <translation>Mostrar el percentatge</translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Played: %1</source>

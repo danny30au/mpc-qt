@@ -1,31 +1,40 @@
 #include <QApplication>
+#include <QGraphicsDropShadowEffect>
 #include "videopreview.h"
 
 static constexpr char logModule[] =  "videopreview";
 static constexpr int previewMarginX = 20;
 static constexpr int labelHeight = 20;
+static constexpr int shadowMargin = 8;
 
 VideoPreview::VideoPreview(QWidget *parent) : QWidget(parent)
 {
     mpv = new MpvObject(this);
-    videoWidget = new MpvGlWidget(mpv, parent);
+    videoContainer = new QWidget(parent);
+    auto *shadow = new QGraphicsDropShadowEffect(videoContainer);
+    shadow->setBlurRadius(40);
+    shadow->setOffset(0);
+    shadow->setColor(QColor(0, 0, 0));
+    videoContainer->setGraphicsEffect(shadow);
+
+    videoWidget = new MpvGlWidget(mpv, videoContainer);
     mpv->setWidgetType(Helpers::CustomWidget, videoWidget);
-    textLabel = new QLabel(parent);
+    textLabel = new QLabel(videoContainer);
     textLabel->setAlignment(Qt::AlignCenter);
 
     textLabel->setAutoFillBackground(true);
     updatePalette();
 
-    emit mpv->ctrlSetOptionVariant("vo", "libmpv");
-    emit mpv->ctrlSetOptionVariant("keep-open", true);
-    emit mpv->ctrlSetOptionVariant("sub-visibility", "no");
-    emit mpv->ctrlSetOptionVariant("hr-seek", "no");
-    emit mpv->ctrlSetOptionVariant("audio", "no");
-    emit mpv->ctrlSetOptionVariant("audio-display", "no");
-    emit mpv->ctrlSetOptionVariant("ytdl-format",
+    emit mpv->ctrlSetPropertyVariant("vo", "libmpv");
+    emit mpv->ctrlSetPropertyVariant("keep-open", true);
+    emit mpv->ctrlSetPropertyVariant("sub-visibility", "no");
+    emit mpv->ctrlSetPropertyVariant("hr-seek", "no");
+    emit mpv->ctrlSetPropertyVariant("audio", "no");
+    emit mpv->ctrlSetPropertyVariant("audio-display", "no");
+    emit mpv->ctrlSetPropertyVariant("ytdl-format",
         "bestvideo/best");
     setYtdlRawOptions();
-    emit mpv->ctrlSetOptionVariant("clipboard-backends", "clr");
+    emit mpv->ctrlSetPropertyVariant("clipboard-backends", "clr");
     mpv->setPaused(true);
 
     connect(mpv, &MpvObject::aspectChanged,
@@ -80,7 +89,7 @@ void VideoPreview::show(const QString &text, double videoPosition, const QPoint 
 
 void VideoPreview::setPreviewPosition(const QPoint &where, int mainWindowWidth)
 {
-    int tooltipWidth = videoWidget->width();
+    int tooltipWidth = videoContainer->width();
     int xPos = where.x() - std::round(tooltipWidth / 2);
     if (xPos + tooltipWidth + previewMarginX > mainWindowWidth)
         xPos = mainWindowWidth - tooltipWidth - previewMarginX;
@@ -96,9 +105,14 @@ void VideoPreview::updateWidth(double newAspect)
         return;
     }
     aspectRatio = newAspect;
-    int newWidth = int(videoWidget->height() * newAspect);
+    double dpr = devicePixelRatioF();
+    int newWidth = floor(round(videoWidget->height() * dpr) * newAspect) / dpr;
     videoWidget->setFixedWidth(newWidth);
     textLabel->setFixedSize(newWidth, labelHeight);
+    videoWidget->move(0, shadowMargin);
+    textLabel->move(0, shadowMargin + videoWidget->height());
+    videoContainer->setFixedSize(newWidth,
+                                 videoWidget->height() + labelHeight + shadowMargin * 2);
     aspectRatioSet = true;
     if (shouldBeShown)
         show();
@@ -108,7 +122,7 @@ void VideoPreview::updateWidth(double newAspect)
 
 void VideoPreview::setYtdlRawOptions()
 {
-    emit mpv->ctrlSetOptionVariant("ytdl-raw-options", QString("js-runtimes=quickjs,"\
+    emit mpv->ctrlSetPropertyVariant("ytdl-raw-options", QString("js-runtimes=quickjs,"\
                                                     "remote-components=ejs:github,"\
                                                     "format-sort=[res:%1,+size,+br,+fps]").arg(videoWidget->height()));
 }
@@ -119,14 +133,11 @@ void VideoPreview::show()
         shouldBeShown = true;
         return;
     }
-    videoWidget->move(previewBottomLeft.x(),
-                      previewBottomLeft.y() - videoWidget->height() - textLabel->height());
-    textLabel->move(previewBottomLeft.x(),
-                    previewBottomLeft.y() - textLabel->height());
+    videoContainer->move(previewBottomLeft.x(),
+                         previewBottomLeft.y() - videoContainer->height());
 }
 
 void VideoPreview::hide() {
     shouldBeShown = false;
-    videoWidget->move(-50000, -50000);
-    textLabel->move(-50000, -50000);
+    videoContainer->move(-50000, -50000);
 }

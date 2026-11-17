@@ -383,6 +383,14 @@ Haluatko käyttää sitä sen sijaan komennolle &quot;%3&quot;?</translation>
         <source>Playlists Backup</source>
         <translation>Soittolistojen varmuuskopio</translation>
     </message>
+    <message>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove all playlists backups?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LogWindow</name>
@@ -652,7 +660,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>&amp;Load Subtitle...</source>
-        <translation>&amp;Lataa tekstitys...</translation>
+        <translation type="vanished">&amp;Lataa tekstitys...</translation>
     </message>
     <message>
         <source>Ctrl+L</source>
@@ -700,7 +708,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+0</source>
-        <translation>Ctrl+0</translation>
+        <translation type="vanished">Ctrl+0</translation>
     </message>
     <message>
         <source>See&amp;k Bar</source>
@@ -708,7 +716,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+1</source>
-        <translation>Ctrl+1</translation>
+        <translation type="vanished">Ctrl+1</translation>
     </message>
     <message>
         <source>&amp;Controls</source>
@@ -716,7 +724,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+2</source>
-        <translation>Ctrl+2</translation>
+        <translation type="vanished">Ctrl+2</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -724,7 +732,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+3</source>
-        <translation>Ctrl+3</translation>
+        <translation type="vanished">Ctrl+3</translation>
     </message>
     <message>
         <source>&amp;Statistics</source>
@@ -732,7 +740,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+4</source>
-        <translation>Ctrl+4</translation>
+        <translation type="vanished">Ctrl+4</translation>
     </message>
     <message>
         <source>S&amp;tatus</source>
@@ -740,7 +748,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+5</source>
-        <translation>Ctrl+5</translation>
+        <translation type="vanished">Ctrl+5</translation>
     </message>
     <message>
         <source>Su&amp;bresync</source>
@@ -748,7 +756,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+6</source>
-        <translation>Ctrl+6</translation>
+        <translation type="vanished">Ctrl+6</translation>
     </message>
     <message>
         <source>Play&amp;list</source>
@@ -756,7 +764,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+7</source>
-        <translation>Ctrl+7</translation>
+        <translation type="vanished">Ctrl+7</translation>
     </message>
     <message>
         <source>Captu&amp;re</source>
@@ -764,7 +772,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+8</source>
-        <translation>Ctrl+8</translation>
+        <translation type="vanished">Ctrl+8</translation>
     </message>
     <message>
         <source>Na&amp;vigation</source>
@@ -772,7 +780,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Ctrl+9</source>
-        <translation>Ctrl+9</translation>
+        <translation type="vanished">Ctrl+9</translation>
     </message>
     <message>
         <source>&amp;Minimal</source>
@@ -780,7 +788,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>1</source>
-        <translation>1</translation>
+        <translation type="vanished">1</translation>
     </message>
     <message>
         <source>&amp;Compact</source>
@@ -788,7 +796,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>2</source>
-        <translation>2</translation>
+        <translation type="vanished">2</translation>
     </message>
     <message>
         <source>&amp;Normal</source>
@@ -796,7 +804,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>3</source>
-        <translation>3</translation>
+        <translation type="vanished">3</translation>
     </message>
     <message>
         <source>F&amp;ullscreen</source>
@@ -804,15 +812,15 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Alt+1</source>
-        <translation>Alt+1</translation>
+        <translation type="vanished">Alt+1</translation>
     </message>
     <message>
         <source>Alt+2</source>
-        <translation>Alt+2</translation>
+        <translation type="vanished">Alt+2</translation>
     </message>
     <message>
         <source>Alt+3</source>
-        <translation>Alt+3</translation>
+        <translation type="vanished">Alt+3</translation>
     </message>
     <message>
         <source>Auto &amp;Fit</source>
@@ -820,7 +828,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Alt+4</source>
-        <translation>Alt+4</translation>
+        <translation type="vanished">Alt+4</translation>
     </message>
     <message>
         <source>Auto Fit (&amp;Larger Only)</source>
@@ -828,7 +836,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Alt+5</source>
-        <translation>Alt+5</translation>
+        <translation type="vanished">Alt+5</translation>
     </message>
     <message>
         <source>&amp;Disable snapping</source>
@@ -836,7 +844,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Alt+0</source>
-        <translation>Alt+0</translation>
+        <translation type="vanished">Alt+0</translation>
     </message>
     <message>
         <source>&amp;Default</source>
@@ -1112,7 +1120,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>&amp;New Tab</source>
-        <translation>&amp;Uusi Välilehti</translation>
+        <translation type="vanished">&amp;Uusi Välilehti</translation>
     </message>
     <message>
         <source>Ctrl+Shift+T</source>
@@ -1120,11 +1128,11 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>C&amp;lose Tab</source>
-        <translation>&amp;Sulje Välilehti</translation>
+        <translation type="vanished">&amp;Sulje Välilehti</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Sulje välilehti</translation>
+        <translation type="vanished">Sulje välilehti</translation>
     </message>
     <message>
         <source>Ctrl+Shift+W</source>
@@ -1132,7 +1140,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>&amp;Duplicate Tab</source>
-        <translation>&amp;Kopioi Välilehti</translation>
+        <translation type="vanished">&amp;Kopioi Välilehti</translation>
     </message>
     <message>
         <source>Ctrl+Shift+D</source>
@@ -1363,6 +1371,10 @@ Mitään toimintoa ei suoriteta.</translation>
         <translation>Ei suosikkitiedostoja</translation>
     </message>
     <message>
+        <source>%1%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>No streams favorited</source>
         <translation>Ei suosikkistriimejä</translation>
     </message>
@@ -1377,6 +1389,10 @@ Mitään toimintoa ei suoriteta.</translation>
     <message>
         <source>Buffering (%1%)</source>
         <translation>Puskuroidaan (%1%)</translation>
+    </message>
+    <message>
+        <source>Seeking</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Error</source>
@@ -1786,6 +1802,34 @@ Mitään toimintoa ei suoriteta.</translation>
         <source>Increase Delay</source>
         <translation>Lisää viivettä</translation>
     </message>
+    <message>
+        <source>&amp;Reload Subtitles File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Load Subtitles File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;New Playlist</source>
+        <translation type="unfinished">&amp;Uusi Soittolista</translation>
+    </message>
+    <message>
+        <source>C&amp;lose Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Duplicate Playlist</source>
+        <translation type="unfinished">&amp;Kopioi Soittolista</translation>
+    </message>
+    <message>
+        <source>Res&amp;tore Playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MouseState</name>
@@ -1963,6 +2007,10 @@ Mitään toimintoa ei suoriteta.</translation>
         <source>Select File</source>
         <translation>Valitse Tiedosto</translation>
     </message>
+    <message>
+        <source>Browse...</source>
+        <translation type="unfinished">Selaa...</translation>
+    </message>
 </context>
 <context>
     <name>PaletteEditor</name>
@@ -2069,7 +2117,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation type="vanished">Uusi välilehti</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -2077,7 +2125,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Kopioi Välilehti</translation>
+        <translation type="vanished">Kopioi Välilehti</translation>
     </message>
     <message>
         <source>Import Playlist</source>
@@ -2113,7 +2161,7 @@ Mitään toimintoa ei suoriteta.</translation>
     </message>
     <message>
         <source>Playlist files (*.m3u *.m3u8)</source>
-        <translation>Soittolistatiedostot (*.m3u *.m3u8)</translation>
+        <translation type="vanished">Soittolistatiedostot (*.m3u *.m3u8)</translation>
     </message>
     <message>
         <source>Export File</source>
@@ -2136,7 +2184,7 @@ Mitään toimintoa ei suoriteta.</translation>
         <translation type="vanished">Tyhjennä</translation>
     </message>
     <message>
-        <source>Copy To clipboard</source>
+        <source>Copy to Clipboard</source>
         <translation>Kopioi Leikepöydälle</translation>
     </message>
     <message>
@@ -2172,6 +2220,23 @@ Mitään toimintoa ei suoriteta.</translation>
         <translation>Kirjoita Soittolistan Nimi</translation>
     </message>
     <message>
+        <source>Playlist files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>File &quot;%1&quot; already exists.
+Do you want to replace it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Containing Folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&amp;New Playlist</source>
         <translation>&amp;Uusi Soittolista</translation>
     </message>
@@ -2186,6 +2251,14 @@ Mitään toimintoa ei suoriteta.</translation>
     <message>
         <source>&amp;Duplicate Playlist</source>
         <translation>&amp;Kopioi Soittolista</translation>
+    </message>
+    <message>
+        <source>Copy Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Restore Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Rename Playlist</source>
@@ -2234,6 +2307,10 @@ Mitään toimintoa ei suoriteta.</translation>
     <message>
         <source>Add Folder</source>
         <translation>Lisää kansio</translation>
+    </message>
+    <message>
+        <source>Duplicate Playlist</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2781,15 +2858,15 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Blend on black</source>
-        <translation>Sekoita mustaan</translation>
+        <translation type="vanished">Sekoita mustaan</translation>
     </message>
     <message>
         <source>Use</source>
-        <translation>Käytä</translation>
+        <translation type="vanished">Käytä</translation>
     </message>
     <message>
         <source>Ignore</source>
-        <translation>Ohita</translation>
+        <translation type="vanished">Ohita</translation>
     </message>
     <message>
         <source>Sharpen</source>
@@ -3261,7 +3338,7 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation>Selaa</translation>
+        <translation type="vanished">Selaa</translation>
     </message>
     <message>
         <source>Audio Renderer</source>
@@ -3345,15 +3422,15 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Oss</source>
-        <translation>Oss</translation>
+        <translation type="vanished">Oss</translation>
     </message>
     <message>
         <source>Mixer device</source>
-        <translation>Mikserilaite</translation>
+        <translation type="vanished">Mikserilaite</translation>
     </message>
     <message>
         <source>Mixer channel</source>
-        <translation>Mikserikanava</translation>
+        <translation type="vanished">Mikserikanava</translation>
     </message>
     <message>
         <source>Jack</source>
@@ -3465,7 +3542,7 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Decoder+Video</source>
-        <translation>Dekooderi+Video</translation>
+        <translation type="vanished">Dekooderi+Video</translation>
     </message>
     <message>
         <source>None</source>
@@ -3509,7 +3586,7 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Audio drop size</source>
-        <translation>Äänen pudotuskoko</translation>
+        <translation type="vanished">Äänen pudotuskoko</translation>
     </message>
     <message>
         <source>Max audio change</source>
@@ -3722,7 +3799,7 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>...</source>
-        <translation>...</translation>
+        <translation type="vanished">...</translation>
     </message>
     <message>
         <source>Encode</source>
@@ -3750,7 +3827,7 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Smooth</source>
-        <translation>Tasainen</translation>
+        <translation type="vanished">Tasainen</translation>
     </message>
     <message>
         <source>Source Chroma</source>
@@ -3938,10 +4015,6 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Export keys</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Open Logo Image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4249,6 +4322,10 @@ toistetulle mediatiedostolle</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Open Logo Image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open ICC Profile</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4259,6 +4336,10 @@ toistetulle mediatiedostolle</translation>
     <message>
         <source>Log files (*.log)</source>
         <translation type="unfinished">Lokitiedostot (*.log)</translation>
+    </message>
+    <message>
+        <source>Choose Log File</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Allows dark theme support on Windows</source>
@@ -4314,10 +4395,6 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>yt-dlp (web videos)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Max video height:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4381,10 +4458,6 @@ toistetulle mediatiedostolle</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Choose Log File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>File title</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4402,10 +4475,6 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Others</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Video background</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4504,6 +4573,42 @@ toistetulle mediatiedostolle</translation>
         <source>Close to tray</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Maximum video resolution:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>mpv options file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Resample audio to match video (audio may become desynchronized)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Time video frames to audio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Video Output (recommended)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decoder + Video Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Logo background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Blend on color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checkerboard pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>StatusTime</name>
@@ -4521,6 +4626,10 @@ toistetulle mediatiedostolle</translation>
     </message>
     <message>
         <source>Show percentage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show tooltip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

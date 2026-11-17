@@ -27,7 +27,7 @@ using namespace Helpers;
 static constexpr char logModule[] =  "mainwindow";
 static constexpr char SKIPACTION[] = "Skip";
 static constexpr char textWindowTitle[] = "Media Player Classic Qute Theater";
-static constexpr char mpcQtIconPath[] = ":/images/icon/mpc-qt.svg";
+static constexpr char mpcQtIconPath[] = ":/images/icon/io.github.mpc_qt.mpc-qt.svg";
 static constexpr char tinyIconPath[] = ":/images/icon/tinyicon.svg";
 
 
@@ -66,16 +66,6 @@ MainWindow::MainWindow(QWidget *parent) :
     setUiEnabledState(false);
     setDiscState(false);
 
-    // Sync with X11
-    if (Platform::isUnix) {
-        setAttribute(Qt::WA_DontShowOnScreen, true);
-        show();
-        QApplication::processEvents(QEventLoop::AllEvents |
-                            QEventLoop::WaitForMoreEvents,
-                            50);
-        hide();
-        setAttribute(Qt::WA_DontShowOnScreen, false);
-    }
     setRemoveFileNotRecycle();
 }
 
@@ -199,7 +189,8 @@ QVariantMap MainWindow::state()
         { "shownStatsPage", mpvObject_->selectedStatsPage() },
         { "timeShortMode", ui->statusTime->shortMode() },
         { "timeRemainingMode", ui->statusTime->remainingMode() },
-        { "timePercentageMode", ui->statusTime->percentMode() }
+        { "timePercentageMode", ui->statusTime->percentMode() },
+        { "timeHoverTooltip", ui->statusTime->showTooltip() }
     };
 #undef WRAP
 }
@@ -245,6 +236,7 @@ void MainWindow::setState(const QVariantMap &map)
     ui->statusTime->setShortMode(map.value("timeShortMode", true).toBool());
     ui->statusTime->setRemainingMode(map.value("timeRemainingMode", false).toBool());
     ui->statusTime->setPercentMode(map.value("timePercentageMode", false).toBool());
+    ui->statusTime->setShowTooltip(map.value("timeHoverTooltip", true).toBool());
     updateOnTop();
 
 #undef UNWRAP
@@ -337,6 +329,16 @@ QPoint MainWindow::desirablePosition(QSize &size, bool first_run) const
                                size, available).topLeft() + clientOffset;
 }
 
+QSize MainWindow::chromeSize() const
+{
+    return size() - (mpvw ? mpvw->size() : noVideoSize_);
+}
+
+QSize MainWindow::noVideoSize() const
+{
+    return noVideoSize_;
+}
+
 void MainWindow::unfreezeWindow()
 {
     frozenWindow = false;
@@ -345,8 +347,10 @@ void MainWindow::unfreezeWindow()
 // REMOVEME: work around bug on Wayland where video doesn't fit window
 void MainWindow::fixMpvwSize()
 {
+    if (QGuiApplication::platformName() != "wayland")
+        return;
     QSize size = mpvw->size();
-    mpvw->resize(noVideoSize_);
+    mpvw->resize(size.width() + 1, size.height() + 1);
     mpvw->resize(size);
 }
 
@@ -377,6 +381,17 @@ void MainWindow::resizePlaylistToFit()
         dockHost()->resizeDocks({playlistWindow_}, {this->height()}, Qt::Vertical);
         QApplication::processEvents();
     }
+}
+
+bool MainWindow::event(QEvent *event)
+{
+#if QT_VERSION >= QT_VERSION_CHECK(6,6,0)
+    if (event->type() == QEvent::DevicePixelRatioChange && mpvw) {
+        Logger::log(logModule, "DevicePixelRatioChange");
+        fixMpvwSize();
+    }
+#endif
+    return QMainWindow::event(event);
 }
 
 void MainWindow::resizeEvent(QResizeEvent *event)
@@ -492,6 +507,17 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event)
     }
 }
 
+// A pointer on the right or bottom screen edge can map one pixel past a full
+// screen widget (macOS does this), which would count as having left it.
+static QPoint pointInWidget(QPointF globalPos, QWidget const *widget) {
+    QPoint p = widget->mapFromGlobal(globalPos).toPoint();
+    if (p.x() == widget->width())
+        p.rx()--;
+    if (p.y() == widget->height())
+        p.ry()--;
+    return p;
+}
+
 static bool insideWidget(QPoint p, QWidget const *widget) {
     if (widget == nullptr)
         return false;
@@ -501,6 +527,7 @@ static bool insideWidget(QPoint p, QWidget const *widget) {
 
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
+    playlistWindow_->clearWidgetFocus();
     mousePressPosition = event->globalPosition().toPoint();
     bool isInMpvw = mpvw ? insideWidget(mousePressPosition, mpvw) : false;
     mousePressedInBottomArea = ui->bottomArea->isVisible() ?
@@ -603,11 +630,6 @@ bool MainWindow::fullscreenMode() const
     return fullscreenMode_;
 }
 
-QSize MainWindow::noVideoSize() const
-{
-    return noVideoSize_;
-}
-
 double MainWindow::sizeFactor() const
 {
     return sizeFactor_;
@@ -626,6 +648,8 @@ void MainWindow::setFullscreenMode(bool fullscreenMode)
     else {
         WindowManager::restoreFullscreen(this, fullscreenMemory);
         showAlwaysOnTopWindow(false);
+        if (Platform::isMacOS)
+            updateWindowFlags();
         if (videoPreview)
             videoPreview->hide();
         if (tooltip)
@@ -662,6 +686,17 @@ void MainWindow::setupMenu()
     ui->actionViewHideNavigation->setVisible(false);
 
     ui->infoStats->setVisible(false);
+
+    ui->menuViewOntop->setDisabled(QGuiApplication::platformName() == "wayland");
+
+    // Command-Q quits on a Mac.  Qt maps Ctrl to Command there, so Quick Open
+    // gives up its Ctrl+Q to Exit.
+    if (Platform::isMacOS) {
+        const QKeySequence quit(QKeySequence::Quit);
+        if (ui->actionFileOpenQuick->shortcut() == quit)
+            ui->actionFileOpenQuick->setShortcut(QKeySequence());
+        ui->actionFileExit->setShortcut(quit);
+    }
 
     connect(Platform::deviceManager(), &DeviceManager::deviceListChanged,
             this, [this]() { updateDiscList(); });
@@ -742,9 +777,8 @@ void MainWindow::setupTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIcon->setContextMenu(trayMenu);
     trayIcon->setToolTip(textWindowTitle);
-    Logger::log(logModule, "rendering trayIcon sizes");
-    trayIcon->setIcon(createIconFromSvg(mpcQtIconPath, 64));
-    Logger::log(logModule, "rendering trayIcon sizes done");
+    const QIcon bundledIcon{QLatin1String(mpcQtIconPath)};
+    trayIcon->setIcon(QIcon::fromTheme(QGuiApplication::desktopFileName(), bundledIcon));
     connect(trayIcon, &QSystemTrayIcon::activated,
             this, &MainWindow::trayIcon_activated);
 }
@@ -816,6 +850,8 @@ void MainWindow::setupVolumeSlider()
     volumeSlider_->setMinimum(0);
     volumeSlider_->setMaximum(130);
     volumeSlider_->setValue(100);
+    volumeSlider_->setToolTip(tr("%1%").arg(100));
+
     ui->controlbar->layout()->addWidget(volumeSlider_);
     connect(volumeSlider_, &VolumeSlider::sliderMoved,
             this, &MainWindow::volume_sliderMoved);
@@ -1007,6 +1043,8 @@ void MainWindow::connectPlaylistWindowToActions() const
             playlistWindow_, &PlaylistWindow::newTab);
     connect(ui->actionPlaylistCloseTab, &QAction::triggered,
             playlistWindow_, &PlaylistWindow::closeTab);
+    connect(ui->actionPlaylistRestore, &QAction::triggered,
+            playlistWindow_, &PlaylistWindow::restorePlaylist);
     connect(ui->actionPlaylistDuplicateTab, &QAction::triggered,
             playlistWindow_, &PlaylistWindow::duplicateTab);
     connect(ui->actionPlaylistImport, &QAction::triggered,
@@ -1097,9 +1135,9 @@ void MainWindow::setUiEnabledState(bool enabled)
 
     ui->pause->setChecked(false);
 
-    ui->actionFileOpenDevice->setEnabled(false);
+    ui->actionFileOpenDevice->setVisible(enabled && false);
     ui->actionFileClose->setEnabled(enabled);
-    ui->actionFileSaveCopy->setEnabled(enabled && false);
+    ui->actionFileSaveCopy->setVisible(enabled && false);
     ui->menuFileScreenshot->setEnabled(enabled);
     ui->actionFileSaveImage->setEnabled(enabled);
     ui->actionFileSaveImageAuto->setEnabled(enabled);
@@ -1108,9 +1146,11 @@ void MainWindow::setUiEnabledState(bool enabled)
     ui->actionFileSaveWindowImage->setEnabled(enabled);
     ui->actionFileSaveWindowImageAuto->setEnabled(enabled);
     ui->actionFileSaveThumbnails->setEnabled(enabled);
-    ui->actionFileExportEncode->setEnabled(enabled && false);
+    ui->actionFileExportEncode->setVisible(enabled && false);
     ui->actionFileLoadSubtitle->setEnabled(enabled);
-    ui->actionFileSaveSubtitle->setEnabled(enabled && false);
+    ui->actionFileSaveSubtitle->setVisible(enabled && false);
+    ui->menuFileSubtitleDatabase->setEnabled(enabled);
+    ui->actionFileSubtitleDatabaseUpload->setEnabled(enabled && false);
     ui->actionFileSubtitleDatabaseDownload->setEnabled(enabled && false);
     ui->actionPlayStop->setEnabled(enabled);
     ui->actionPlayFrameBackward->setEnabled(enabled);
@@ -1126,9 +1166,6 @@ void MainWindow::setUiEnabledState(bool enabled)
     ui->actionNavigateGoto->setEnabled(enabled);
     ui->actionFavoritesAdd->setEnabled(enabled);
 
-    ui->menuFileSubtitleDatabase->setEnabled(enabled);
-    ui->actionFileSubtitleDatabaseUpload->setEnabled(false);
-    ui->actionFileSubtitleDatabaseDownload->setEnabled(false);
     ui->menuPlayLoop->setEnabled(enabled);
     if (!enabled) {
         ui->menuPlayAudio->setEnabled(false);
@@ -1178,8 +1215,7 @@ void MainWindow::checkBottomArea(QPointF mousePosition)
     case Helpers::ShowWhenHovering:
         if (mpvw == nullptr)
             break;
-        relMousePosition = mpvw->mapFromGlobal(mousePosition);
-        if (ui->bottomArea->geometry().contains(relMousePosition.toPoint())) {
+        if (ui->bottomArea->geometry().contains(pointInWidget(mousePosition, mpvw))) {
             if (ui->bottomArea->isHidden())
                 ui->bottomArea->show();
         } else if (ui->bottomArea->isVisible() && !hideTimer.isActive()) {
@@ -1259,7 +1295,7 @@ void MainWindow::updateSize(bool first_run)
     if (frozenWindow)
         return;
 
-    if (!first_run && (isMaximized() || isFullScreen()))
+    if (!first_run && (isMaximized() || isFullScreen() || fullscreenMode_))
         return;
 
     if (zoomMode == FitToWindow)
@@ -1299,6 +1335,8 @@ void MainWindow::updateInfostats()
 
 void MainWindow::updateOnTop()
 {
+    if (QGuiApplication::platformName() == "wayland")
+        return;
     switch (onTopMode) {
     case AlwaysOnTop:
         showOnTop = true;
@@ -1318,6 +1356,9 @@ void MainWindow::updateOnTop()
 void MainWindow::updateWindowFlags()
 {
     if (frozenWindow)
+        return;
+    // Applying flags would put the title bar back on the full screen window.
+    if (Platform::isMacOS && fullscreenMode_)
         return;
 
     Qt::WindowFlags flags = windowFlags();
@@ -1407,9 +1448,7 @@ void MainWindow::showMuteMenu()
 QList<QUrl> MainWindow::doQuickOpenFileDialog()
 {
     static QFileDialog::Options options = QFileDialog::Options();
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QList<QUrl> urls;
     static QString filter;
     if (filter.isEmpty())
@@ -1457,22 +1496,6 @@ void MainWindow::showAlwaysOnTopWindow(bool show)
         createAlwaysOnTopWindow();
     if (alwaysOnTopWindow)
         alwaysOnTopWindow->setVisible(show);
-}
-
-QIcon MainWindow::createIconFromSvg(const QString &svgPath, int maxSize) const
-{
-    QIcon icon;
-    QSvgRenderer svgRenderer(svgPath);
-
-    // Render the SVG at multiple sizes and add to the QIcon
-    for (int size = 16; size <= maxSize; ++size) {
-        QPixmap pixmap(QSize(size, size));
-        pixmap.fill(Qt::transparent); // Ensure transparency
-        QPainter painter(&pixmap);
-        svgRenderer.render(&painter);
-        icon.addPixmap(pixmap);
-    }
-    return icon;
 }
 
 QPixmap MainWindow::renderPixmapFromSvg(const QString &path) const
@@ -2206,7 +2229,7 @@ void MainWindow::checkExitFullscreenOnEnd()
         ui->actionViewFullscreen->setChecked(false);
 }
 
-void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state, int64_t bufferFillState)
+void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state, bool isPlaybackPaused, int64_t bufferFillState)
 {
     // Update the fullscreen state
     if (state == PlaybackManager::StoppedState) {
@@ -2222,11 +2245,11 @@ void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state, int64_t 
     case PlaybackManager::StoppedState:
         ui->status->setText(tr("Stopped"));
         break;
-    case PlaybackManager::PausedState:
-        ui->status->setText(tr("Paused"));
-        break;
     case PlaybackManager::PlayingState:
-        ui->status->setText(tr("Playing"));
+        if (isPlaybackPaused)
+            ui->status->setText(tr("Paused"));
+        else
+            ui->status->setText(tr("Playing"));
         break;
     case PlaybackManager::LoadingState:
         ui->status->setText(tr("Loading"));
@@ -2234,8 +2257,11 @@ void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state, int64_t 
     case PlaybackManager::BufferingState:
         ui->status->setText(tr("Buffering (%1%)").arg(bufferFillState));
         break;
+    case PlaybackManager::SeekingState:
+        ui->status->setText(tr("Seeking"));
+        break;
     case PlaybackManager::WaitingState:
-        ui->status->setText(tr("Unknown"));
+        ui->status->setText(tr("Loading"));
         break;
     case PlaybackManager::ErrorState:
         ui->status->setText(tr("Error"));
@@ -2243,12 +2269,12 @@ void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state, int64_t 
     }
     isPlaying = state != PlaybackManager::StoppedState &&
                 state != PlaybackManager::ErrorState;
-    isPaused = state == PlaybackManager::PausedState;
+    isPaused = isPlaybackPaused;
     setUiEnabledState(state != PlaybackManager::StoppedState);
-    if (isPaused) {
+
+    if (isPaused || state == PlaybackManager::StoppedState
+                 || state == PlaybackManager::ErrorState)
         ui->actionPlayPause->setText(tr("&Play"));
-        ui->pause->setChecked(true);
-    }
     else
         ui->actionPlayPause->setText(tr("&Pause"));
 
@@ -2258,7 +2284,10 @@ void MainWindow::setPlaybackState(PlaybackManager::PlaybackState state, int64_t 
         positionSlider_->setLoopB(-1);
         ui->actionPlayLoopUse->setChecked(false);
     }
-    ui->play->setChecked(state == PlaybackManager::PlayingState);
+    ui->play->setChecked(state != PlaybackManager::StoppedState &&
+                         state != PlaybackManager::ErrorState &&
+                         !isPlaybackPaused);
+    ui->pause->setChecked((isPaused || state == PlaybackManager::ErrorState) && state != PlaybackManager::StoppedState);
     ui->stop->setChecked(state == PlaybackManager::StoppedState);
     updateOnTop();
 }
@@ -2412,6 +2441,7 @@ void MainWindow::setSubtitleTracks(QList<Track > tracks)
     ui->menuPlaySubtitles->addAction(ui->actionPlaySubtitlesPrevious);
     ui->menuPlaySubtitles->addAction(ui->actionPlaySubtitlesNext);
     ui->menuPlaySubtitles->addAction(ui->actionPlaySubtitlesCopy);
+    ui->menuPlaySubtitles->addAction(ui->actionPlaySubtitlesReloadFile);
     ui->menuPlaySubtitles->addMenu(ui->menuPlaySubtitlesDelay);
     ui->menuPlaySubtitles->addMenu(ui->menuPlaySubtitlesMove);
     subtitleTracksGroup->actions().constFirst()->setChecked(true);
@@ -2458,13 +2488,16 @@ void MainWindow::setSubtitleText(QString subText)
 void MainWindow::setVolume(int level, bool onInit)
 {
     volumeSlider_->setValue(level);
+    volumeSlider_->setToolTip(tr("%1%").arg(level));
     emit volumeChanged(level, onInit);
 }
 
 void MainWindow::setVolumeDouble(double level)
 {
-    volumeSlider_->setValue(level*100);
-    emit volumeChanged(static_cast<int64_t>(level*100));
+    int vol = static_cast<int>(level * 100);
+    volumeSlider_->setValue(vol);
+    volumeSlider_->setToolTip(tr("%1%").arg(vol));
+    emit volumeChanged(static_cast<int64_t>(vol));
 }
 
 void MainWindow::setVolumeMax(int level)
@@ -2577,14 +2610,6 @@ void MainWindow::libraryWindowClosed()
     ui->actionViewHideLibrary->setChecked(false);
 }
 
-void MainWindow::mpvObject_mouseReleased()
-{
-    if (!isPlaying && !mousePressedInBottomArea) {
-        emit playCurrentItemRequested();
-        return;
-    }
-}
-
 void MainWindow::setPlaylistVisibleState(bool yes) {
     Logger::log(logModule, "setPlaylistVisibleState");
     if (fullscreenMode_ || !ui || mainwindowIsClosing)
@@ -2608,7 +2633,7 @@ void MainWindow::on_actionFileOpenQuick_triggered()
     QList<QUrl> urls = doQuickOpenFileDialog();
     if (urls.isEmpty())
         return;
-    emit severalFilesOpened(urls, true);
+    emit severalFilesOpened(urls, !ui->actionViewHidePlaylist->isChecked());
 }
 
 void MainWindow::on_actionFileOpen_triggered()
@@ -2623,9 +2648,7 @@ void MainWindow::on_actionFileOpen_triggered()
 void MainWindow::on_actionFileOpenDvdbd_triggered()
 {
     static QFileDialog::Options options = QFileDialog::ShowDirsOnly;
-#ifdef Q_OS_MAC
-    options |= QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QUrl dir;
     static QUrl lastDir;
     dir = QFileDialog::getExistingDirectoryUrl(this, tr("Open Directory"),
@@ -2639,9 +2662,7 @@ void MainWindow::on_actionFileOpenDvdbd_triggered()
 void MainWindow::on_actionFileOpenDirectory_triggered()
 {
     static QFileDialog::Options options = QFileDialog::ShowDirsOnly;
-#ifdef Q_OS_MAC
-    options |= QFileDialog::DontUseNativeDialog;
-#endif
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
     QUrl url;
     static QUrl lastDir;
     url = QFileDialog::getExistingDirectoryUrl(this, tr("Open Directory"),
@@ -2718,15 +2739,11 @@ void MainWindow::on_actionFileSaveWindowImageAuto_triggered()
 void MainWindow::on_actionFileLoadSubtitle_triggered()
 {
     QUrl url;
-    static QUrl lastUrl;
     static QFileDialog::Options options;
-#ifdef Q_OS_MAC
-    options = QFileDialog::DontUseNativeDialog;
-#endif
-    url = QFileDialog::getOpenFileUrl(this, tr("Open Subtitle"), lastUrl, "", nullptr, options);
+    options.setFlag(QFileDialog::DontUseNativeDialog, Platform::isMacOS);
+    url = QFileDialog::getOpenFileUrl(this, tr("Open Subtitle"), currentFile, "", nullptr, options);
     if (url.isEmpty())
         return;
-    lastUrl = url;
     emit subtitlesLoaded(url);
 }
 
@@ -2761,21 +2778,24 @@ void MainWindow::on_actionViewHideMenu_triggered()
 
 void MainWindow::on_actionViewHideSeekbar_toggled(bool checked)
 {
-    if (checked && ui->seekbar->isHidden())
+    if (checked && ui->seekbar->isHidden()) {
         ui->seekbar->show();
-    else if (!checked && ui->seekbar->isVisible())
+        ui->controlbar->layout()->update();
+        ui->seekbar->update();
+    } else if (!checked && ui->seekbar->isVisible()) {
         ui->seekbar->hide();
-    ui->controlSection->adjustSize();
+    }
     updateSize();
 }
 
 void MainWindow::on_actionViewHideControls_toggled(bool checked)
 {
-    if (checked && ui->controlbar->isHidden())
+    if (checked && ui->controlbar->isHidden()) {
         ui->controlbar->show();
-    else if (!checked && ui->controlbar->isVisible())
+        ui->controlbar->layout()->update();
+    } else if (!checked && ui->controlbar->isVisible()) {
         ui->controlbar->hide();
-    ui->controlSection->adjustSize();
+    }
     updateSize();
 }
 
@@ -2880,7 +2900,7 @@ void MainWindow::on_actionViewMusicMode_toggled(bool checked)
         }
         playlistWindow_->setVisible(checked);
         ui->actionViewHidePlaylist->setEnabled(!checked);
-        mpvObject_->setCachedMpvOption("audio-display", checked ? "no" : "embedded-first");
+        mpvObject_->setCachedMpvProperty("audio-display", checked ? "no" : "embedded-first");
         resizePlaylistToFit();
     }
 }
@@ -3431,6 +3451,11 @@ void MainWindow::on_actionPlaySubtitlesCopy_triggered()
     clippy->setText(subtitleText);
 }
 
+void MainWindow::on_actionPlaySubtitlesReloadFile_triggered()
+{
+    mpvObject_->reloadSubFile();
+}
+
 void MainWindow::on_actionDecreaseSubtitlesDelay_triggered()
 {
     mpvObject_->setSubtitlesDelay(-subtitlesDelayStep);
@@ -3684,6 +3709,7 @@ void MainWindow::on_play_clicked()
 
 void MainWindow::volume_sliderMoved(double position)
 {
+    volumeSlider_->setToolTip(tr("%1%").arg(int(position)));
     emit volumeChanged(int(position));
 }
 
@@ -3706,7 +3732,7 @@ void MainWindow::hideTimer_timeout()
     if (mpvw == nullptr)
         return;
     if (fullscreenMode_ &&
-            !ui->bottomArea->geometry().contains(mpvw->mapFromGlobal(QCursor::pos())))
+            !ui->bottomArea->geometry().contains(pointInWidget(QCursor::pos(), mpvw)))
         ui->bottomArea->hide();
 }
 
@@ -3763,3 +3789,10 @@ void MainWindow::on_actionFavoritesOrganize_triggered()
 }
 
 
+void MainWindow::mpvVolumeChanged(int64_t level)
+{
+    // Keep UI in sync with MPV’s internal state.
+    volumeSlider_->setValue(level);
+    volumeSlider_->setToolTip(tr("%1%").arg(level));
+    // No need to emit volumeChanged again – MPV is the source of truth.
+}

@@ -240,6 +240,8 @@ private slots:
 
     void on_playerAppendToQuickPlaylist_toggled(bool checked);
 
+    void on_playerTrayIcon_toggled(bool checked);
+
     void on_playerKeepHistory_toggled(bool checked);
 
     void on_interfaceIconsTheme_currentIndexChanged(int index);
@@ -264,6 +266,10 @@ private slots:
 
     void on_logoInternal_currentIndexChanged(int index);
 
+    void on_videoUseAlpha_toggled(bool checked);
+
+    void on_videoBackground_currentIndexChanged(int index);
+
     void on_videoPreset_currentIndexChanged(int index);
 
     void on_ccHdrCompute_currentIndexChanged(int index);
@@ -271,8 +277,6 @@ private slots:
     void on_screenshotFormat_currentIndexChanged(int index);
 
     void on_jpgQuality_valueChanged(int value);
-
-    void on_jpgSmooth_valueChanged(int value);
 
     void on_pngCompression_valueChanged(int value);
 
@@ -322,6 +326,10 @@ private slots:
 
     void on_ditherTemporal_toggled(bool checked);
 
+    void on_framedroppingMode_currentIndexChanged(int index);
+
+    void on_syncMode_currentIndexChanged(int index);
+
     void on_hwdecCodecsMode_currentIndexChanged(int index);
 
     void on_hwdecEnable_toggled(bool checked);
@@ -347,6 +355,10 @@ private slots:
     void on_tweaksTimeTooltip_toggled(bool checked);
 
     void on_tweaksOsdFontChkBox_toggled(bool checked);
+
+    void on_tweaksMpvOptionsFileChkBox_toggled(bool checked);
+
+    void on_tweaksMpvOptionsFileBrowse_clicked();
 
     void on_tweaksMpvOptionsChkBox_toggled(bool checked);
 

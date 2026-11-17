@@ -40,6 +40,8 @@ mouse, double click it.
 
 The *stop* command stops the player.
 
+The *exit* command closes MPC-QT (in single instance mode) or the main window.
+
 The *repeat* command repeats the currently played file.  If nothing is being
 played, nothing happens.
 
@@ -66,7 +68,7 @@ the playlist, nothing happens.
 
 The ipc interface also provides a mechanism for passing through custom queries
 of the internal mpv state, and executing some commands.  These ipc commands
-are called *setMpvOption*, *setMpvProperty*, *getMpvProperty*, and
+are called *setMpvOption* (deprecated), *setMpvProperty*, *getMpvProperty*, and
 *doMpvCommand*.  Note that some mpv properties and commands are filtered
 because they are managed internally by mpv or would cause undefined behavior,
 and will return an error code of -0xdedbeef.  See the section below.
